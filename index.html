@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-8U7jSevqhCOtEzBZs4u8hOsaUjjOzbsvEwRH5sKwcw8='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-dX4kibYPDmU6IN039fMl8zkLYbuLArc3oQg/Psk8ebQ='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="今のApexは、これだけ見ればいい。Apex Legends の最新パッチまとめ、今強いレジェンドTOP10、MBTIと8つの質問で選ぶレジェンド適性診断。">
@@ -210,6 +210,9 @@ a.rank:hover,a.rank:focus-visible{border-color:var(--amber);border-left-color:va
 .sc.live .sc-state{color:var(--buff);font-weight:700}
 .sc.soon .sc-state{color:var(--amber)}
 .sc-note{color:var(--mute)}
+.sc-cal{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.cal{font:inherit;font-size:13px;color:var(--amber);background:transparent;border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer;text-decoration:none;line-height:1.4}
+.cal:hover,.cal:focus-visible{border-color:var(--amber)}
 @media (max-width:560px){.sc{grid-template-columns:1fr;gap:8px}.sc-date{flex-direction:row;align-items:baseline;gap:8px}.sc-d{font-size:24px}}
 .foot{font-size:12px;color:var(--mute);margin-top:28px;display:flex;flex-direction:column;gap:4px}
 @media (max-width:420px){
@@ -882,6 +885,9 @@ function renderRank(){
 const EVK={ingame:["ゲーム内イベント","--amber"],esports:["公式大会","--c-skirm"],streamer:["配信者大会","--c-ctrl"],season:["シーズン・ランク","--c-recon"]};
 const jst=s=>new Date(String(s).slice(0,10)+"T00:00:00+09:00");
 const DAY=86400000;
+const ymd=(s,add=0)=>{const d=new Date(String(s).slice(0,10)+"T00:00:00Z");d.setUTCDate(d.getUTCDate()+add);return d.toISOString().slice(0,10).replace(/-/g,"");};
+const calDesc=e=>[e.time,e.note,safeUrl(e.url)?"出典："+safeUrl(e.url):"","APEX NOW（https://rocketrrrrrr.github.io/rocket/）より"].filter(Boolean).join("\n");
+const gcalUrl=e=>"https://calendar.google.com/calendar/render?"+new URLSearchParams({action:"TEMPLATE",text:e.title||"",dates:`${ymd(e.start)}/${ymd(e.end||e.start,1)}`,details:calDesc(e),location:e.place||""});
 function evState(e){const now=Date.now(),st=jst(e.start).getTime(),en=jst(e.end||e.start).getTime()+DAY;
   if(now>=en) return {k:"done",t:"終了"}; if(now>=st) return {k:"live",t:"開催中"};
   const n=Math.ceil((st-now)/DAY); return {k:"soon",t:n<=1?"明日":`あと${n}日`};}
@@ -919,13 +925,14 @@ function renderEvents(){
   const big=d=>{const x=new Date(jst(d).getTime()+9*3600e3);return `${String(x.getUTCMonth()+1).padStart(2,"0")}.${String(x.getUTCDate()).padStart(2,"0")}`};
   const wd=d=>"日月火水木金土"[new Date(jst(d).getTime()+9*3600e3).getUTCDay()];
   return `<div class="stack"><div class="patch-head"><h2>Apex の予定</h2></div>
-  <p class="src">公式に発表された予定だけを載せています。日付は公式発表の表記です。</p>
+  <p class="src">公式に発表された予定だけを載せています。日付は公式発表の表記です。カレンダーには終日の予定として追加されます。</p>
   <div class="sched">${list.map(({e,s})=>{const k=(EVK[e.kind]||["その他","--line"]);return `<article class="sc ${s.k}" style="--k:var(${k[1]})">
     <div class="sc-date"><span class="sc-d">${big(e.start)}</span><span class="sc-w">${wd(e.start)}</span>${e.end&&e.end!==e.start?`<span class="sc-to">〜 ${big(e.end)}（${wd(e.end)}）</span>`:""}</div>
     <div class="sc-body"><p class="sc-meta"><span class="sc-kind">${k[0]}</span><span class="sc-state">${esc(s.t)}</span>${e.status&&e.status!=="確定"?`<span class="sc-note">${esc(e.status)}</span>`:""}</p>
       <h3>${esc(e.title)}</h3>
       <p class="mute">${[e.time,e.place].filter(Boolean).map(esc).join("　")}</p>
-      ${e.note?`<p>${esc(e.note)}</p>`:""}${srcLink(e.url)}</div></article>`}).join("")}</div>
+      ${e.note?`<p>${esc(e.note)}</p>`:""}${srcLink(e.url)}
+      ${s.k!=="done"?`<div class="sc-cal"><a class="cal" href="cal/${esc(String(e.id).replace(/[^a-z0-9-]/gi,""))}.ics" aria-label="${esc(e.title)} をカレンダーに追加">カレンダーに追加</a><a class="cal" href="${esc(gcalUrl(e))}" target="_blank" rel="noopener noreferrer" aria-label="${esc(e.title)} を Google カレンダーに追加">Google カレンダー</a></div>`:""}</div></article>`}).join("")}</div>
   <p class="src">未発表の時刻やスクリム日程は、公式に発表され次第更新します。噂やリーク情報は載せていません。</p></div>`;
 }
 function renderComps(){

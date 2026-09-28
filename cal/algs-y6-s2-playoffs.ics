@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//APEX NOW//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:algs-y6-s2-playoffs@rocketrrrrrr.github.io
+DTSTAMP:20260928T201421Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261102
+SUMMARY:ALGS Year 6 Split 2 プレイオフ
+LOCATION:ラスベガス（アメリカ）
+DESCRIPTION:現地時間\n世界の強豪チームが集まるオフラ
+ イン大会。チャンピオンシップポイントを争う\n出典
+ ：https://algs.ea.com/en/year-6/split-2-playoffs/competition-overview\n
+ APEX NOW（https://rocketrrrrrr.github.io/rocket/）より
+URL:https://algs.ea.com/en/year-6/split-2-playoffs/competition-overview
+END:VEVENT
+END:VCALENDAR
