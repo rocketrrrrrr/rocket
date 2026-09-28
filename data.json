@@ -209,6 +209,276 @@
      "name": "LFCarry ティアリスト",
      "url": "https://lfcarry.com/guides/apex-legends-tier-list"
     }
+   ],
+   "tiers": [
+    {
+     "id": "pred",
+     "label": "プレデター",
+     "scope": "プレデター826人の集計",
+     "updated": "2026-09-26",
+     "comps": [
+      {
+       "legends": [
+        "axle",
+        "loba",
+        "pathfinder"
+       ],
+       "tag": "最多",
+       "stat": "1,639部隊・平均 +54.6 RP/試合",
+       "note": "アクセルとパスファインダーで部隊ごと動き、ローバで物資をそろえる"
+      },
+      {
+       "legends": [
+        "axle",
+        "loba",
+        "vantage"
+       ],
+       "tag": "RP最高",
+       "stat": "1,378部隊・平均 +71.9 RP/試合",
+       "note": "遠距離武器が強い環境で、ヴァンテージが削りと索敵を担当"
+      },
+      {
+       "legends": [
+        "axle",
+        "loba",
+        "seer"
+       ],
+       "tag": "野良向け",
+       "stat": "1,007部隊・平均 +60.4 RP/試合",
+       "note": "シアの索敵で情報を先に取る。野良でも組みやすい定番"
+      },
+      {
+       "legends": [
+        "axle",
+        "loba",
+        "sparrow"
+       ],
+       "tag": "固定向け",
+       "stat": "",
+       "note": "シアの代わりにスパロー。連携の取れる固定パーティで採用が多い"
+      }
+     ],
+     "picks": [
+      {
+       "id": "axle",
+       "rate": 20.0
+      },
+      {
+       "id": "loba",
+       "rate": 18.8
+      },
+      {
+       "id": "pathfinder",
+       "rate": 13.5
+      },
+      {
+       "id": "vantage",
+       "rate": 8.8
+      },
+      {
+       "id": "seer",
+       "rate": 7.0
+      }
+     ],
+     "sources": [
+      {
+       "name": "ApexRanked",
+       "url": "https://apexranked.com/meta"
+      },
+      {
+       "name": "LFCarry",
+       "url": "https://lfcarry.com/guides/apex-legends-tier-list"
+      }
+     ]
+    },
+    {
+     "id": "masterpred",
+     "label": "マスター＋プレデター",
+     "scope": "マスターとプレデターの合算。マスターだけの集計は公開されていません。サンプルが少なめです",
+     "updated": "2026-09-29",
+     "comps": [],
+     "picks": [
+      {
+       "id": "axle",
+       "rate": 24.8
+      },
+      {
+       "id": "loba",
+       "rate": 19.2
+      },
+      {
+       "id": "pathfinder",
+       "rate": 13.2
+      },
+      {
+       "id": "mad-maggie",
+       "rate": 4.8
+      },
+      {
+       "id": "vantage",
+       "rate": 4.7
+      },
+      {
+       "id": "seer",
+       "rate": 4.3
+      },
+      {
+       "id": "revenant",
+       "rate": 4.1
+      },
+      {
+       "id": "octane",
+       "rate": 3.8
+      }
+     ],
+     "sources": [
+      {
+       "name": "Apex Legends Status",
+       "url": "https://apexlegendsstatus.com/game-stats/legends-pick-rates/Masterpred"
+      }
+     ]
+    },
+    {
+     "id": "diamond",
+     "label": "ダイヤ",
+     "scope": "ダイヤ帯の集計",
+     "updated": "2026-09-29",
+     "comps": [],
+     "picks": [
+      {
+       "id": "axle",
+       "rate": 17.5
+      },
+      {
+       "id": "pathfinder",
+       "rate": 14.6
+      },
+      {
+       "id": "loba",
+       "rate": 11.4
+      },
+      {
+       "id": "mad-maggie",
+       "rate": 8.1
+      },
+      {
+       "id": "bangalore",
+       "rate": 4.4
+      },
+      {
+       "id": "conduit",
+       "rate": 4.3
+      },
+      {
+       "id": "octane",
+       "rate": 3.6
+      },
+      {
+       "id": "fuse",
+       "rate": 3.6
+      }
+     ],
+     "sources": [
+      {
+       "name": "Apex Legends Status",
+       "url": "https://apexlegendsstatus.com/game-stats/legends-pick-rates/Diamond"
+      }
+     ]
+    },
+    {
+     "id": "platinum",
+     "label": "プラチナ",
+     "scope": "プラチナ帯の集計",
+     "updated": "2026-09-29",
+     "comps": [],
+     "picks": [
+      {
+       "id": "pathfinder",
+       "rate": 11.9
+      },
+      {
+       "id": "axle",
+       "rate": 10.9
+      },
+      {
+       "id": "mad-maggie",
+       "rate": 7.4
+      },
+      {
+       "id": "loba",
+       "rate": 7.4
+      },
+      {
+       "id": "fuse",
+       "rate": 6.8
+      },
+      {
+       "id": "conduit",
+       "rate": 5.4
+      },
+      {
+       "id": "octane",
+       "rate": 5.3
+      },
+      {
+       "id": "bangalore",
+       "rate": 4.1
+      }
+     ],
+     "sources": [
+      {
+       "name": "Apex Legends Status",
+       "url": "https://apexlegendsstatus.com/game-stats/legends-pick-rates/Platinum"
+      }
+     ]
+    },
+    {
+     "id": "gold",
+     "label": "ゴールド",
+     "scope": "ゴールド帯の集計",
+     "updated": "2026-09-29",
+     "comps": [],
+     "picks": [
+      {
+       "id": "pathfinder",
+       "rate": 8.9
+      },
+      {
+       "id": "axle",
+       "rate": 7.4
+      },
+      {
+       "id": "octane",
+       "rate": 7.3
+      },
+      {
+       "id": "fuse",
+       "rate": 6.9
+      },
+      {
+       "id": "loba",
+       "rate": 6.0
+      },
+      {
+       "id": "mad-maggie",
+       "rate": 5.4
+      },
+      {
+       "id": "wraith",
+       "rate": 5.2
+      },
+      {
+       "id": "conduit",
+       "rate": 4.1
+      }
+     ],
+     "sources": [
+      {
+       "name": "Apex Legends Status",
+       "url": "https://apexlegendsstatus.com/game-stats/legends-pick-rates/Gold"
+      }
+     ]
+    }
    ]
   },
   "state": {

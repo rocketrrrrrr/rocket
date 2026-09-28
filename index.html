@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-rjg2DQrkEdeekBfh/SHjqc581T3K3JhnLSsGWeYgzE8=' 'sha256-m+O0WWFSM3DNQjJ2qcIFaV2pTJ/6OD9Lva8Dx0e+Ksc='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-rjg2DQrkEdeekBfh/SHjqc581T3K3JhnLSsGWeYgzE8=' 'sha256-pUlaQMF9NpsQoIXwrD32Qo37stdekOJ3FLSskgx4hKc='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="今のApexは、これだけ見ればいい。Apex Legends の最新パッチまとめ、今強いレジェンドTOP10、MBTIと8つの質問で選ぶレジェンド適性診断。">
@@ -154,6 +154,14 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--
 .comp-mem .pt{--w:52px}
 .comp-stat{font-size:12px;color:var(--ink);font-variant-numeric:tabular-nums}
 .comp-note{font-size:12px;color:var(--mute)}
+.tier-tabs{display:flex;flex-wrap:wrap;gap:6px}
+.tt{font-size:12px;padding:6px 10px;min-height:32px;border-radius:999px;border:1px solid var(--line);color:var(--mute);background:transparent}
+.tt[aria-selected="true"]{background:var(--amber);border-color:var(--amber);color:var(--amber-ink);font-weight:700}
+.sub-h{margin:4px 0 0;font-size:13px;font-weight:700;color:var(--ink)}
+.picks{display:flex;flex-direction:column;gap:6px}
+.pk{display:grid;grid-template-columns:96px 1fr 44px;align-items:center;gap:8px;font-size:12px}
+.pb{height:7px;background:var(--panel2);border-radius:4px;overflow:hidden}.pb i{display:block;height:100%;background:var(--amber)}
+.pv{text-align:right;font-family:"Chakra Petch",monospace;font-variant-numeric:tabular-nums;color:var(--mute)}
 .foot{font-size:12px;color:var(--mute);margin-top:28px;display:flex;flex-direction:column;gap:4px}
 @media (max-width:420px){
   .rank{grid-template-columns:28px auto 1fr;gap:10px}
@@ -351,11 +359,12 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--
     <div><div class="tierblock"><span class="tier S+">S+</span><div class="names"><span class="name-chip">30-30リピーター</span><span class="name-chip">クレーバー</span><span class="name-chip">L-STAR</span></div></div><div class="tierblock"><span class="tier S">S</span><div class="names"><span class="name-chip">チャージライフル</span><span class="name-chip">トリプルテイク</span><span class="name-chip">ボセックボウ</span></div></div><div class="tierblock"><span class="tier A+">A+</span><div class="names"><span class="name-chip">R-301カービン</span><span class="name-chip">プラウラー</span><span class="name-chip">ディヴォーション</span><span class="name-chip">ネメシス</span><span class="name-chip">G7スカウト</span></div></div><div class="tierblock"><span class="tier A">A</span><div class="names"><span class="name-chip">ウィングマン</span><span class="name-chip">P2020</span><span class="name-chip">RE-45</span></div></div></div></div>
     <div class="card stack"><h2>今のメタ</h2><ul class="notes"><li>ローバ はプレデター帯でピック率24%。ルートが減った今シーズンは物資を確保できる価値が高い</li><li>アクセル は Split 2 でスタンが大幅に短縮されたが、機動力で上位を維持</li><li>シア は戦術でシールド・壁・蘇生などの発動を止められる点が評価されている</li><li>遠距離武器（30-30リピーター / チャージライフル / トリプルテイク）が強い環境。Corrupted アタッチメントで構成の選び方が変わった</li></ul></div>
     <button class="tab" data-go="quiz" style="border:1px solid var(--line);color:var(--amber);align-self:flex-start">あなたに合うレジェンドを診断する ▶</button>
-  </div><aside class="comps" aria-label="上位帯のメタ構成">
+  </div><aside class="comps" aria-label="ランク帯別のメタ">
     <div class="eyebrow">Ranked Meta</div>
-    <h2>上位帯で多い構成</h2>
-    <p class="scope">プレデター帯の集計。マスター帯だけの集計は未確認です（2026/09/27 時点）</p>
-    <div class="comp">
+    <h2>ランク帯別のメタ</h2>
+    <div class="tier-tabs" role="tablist"><button class="tt" role="tab" data-tier="pred" aria-selected="true">プレデター</button><button class="tt" role="tab" data-tier="masterpred" aria-selected="false">マスター＋プレデター</button><button class="tt" role="tab" data-tier="diamond" aria-selected="false">ダイヤ</button><button class="tt" role="tab" data-tier="platinum" aria-selected="false">プラチナ</button><button class="tt" role="tab" data-tier="gold" aria-selected="false">ゴールド</button></div>
+    <p class="scope">プレデター826人の集計（2026/09/26 時点）</p>
+    <h3 class="sub-h">多い構成</h3><div class="comp">
       <div class="comp-top"><span class="comp-no">#1</span><span class="comp-tag">最多</span></div>
       <div class="comp-mem"><div class="m"><span class="pt " style="--cls:var(--c-skirm)"><img src="img/axle.webp" alt="アクセル" loading="lazy"></span><b>アクセル</b></div><div class="m"><span class="pt " style="--cls:var(--c-support)"><img src="img/loba.webp" alt="ローバ" loading="lazy"></span><b>ローバ</b></div><div class="m"><span class="pt " style="--cls:var(--c-skirm)"><img src="img/pathfinder.webp" alt="パスファインダー" loading="lazy"></span><b>パスファインダー</b></div></div>
       <div class="comp-stat">1,639部隊・平均 +54.6 RP/試合</div>
@@ -376,7 +385,9 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--
       
       <div class="comp-note">シアの代わりにスパロー。連携の取れる固定パーティで採用が多い</div>
     </div>
-    <p class="scope">出典：<a href="https://apexranked.com/meta" target="_blank" rel="noopener noreferrer">ApexRanked（プレデター826人の集計）</a>・<a href="https://lfcarry.com/guides/apex-legends-tier-list" target="_blank" rel="noopener noreferrer">LFCarry ティアリスト</a></p>
+    <h3 class="sub-h">ピック率</h3>
+    <div class="picks"><div class="pk"><span>アクセル</span><span class="pb"><i style="width:100%"></i></span><span class="pv">20%</span></div><div class="pk"><span>ローバ</span><span class="pb"><i style="width:94%"></i></span><span class="pv">18.8%</span></div><div class="pk"><span>パスファインダー</span><span class="pb"><i style="width:68%"></i></span><span class="pv">13.5%</span></div><div class="pk"><span>ヴァンテージ</span><span class="pb"><i style="width:44%"></i></span><span class="pv">8.8%</span></div><div class="pk"><span>シア</span><span class="pb"><i style="width:35%"></i></span><span class="pv">7%</span></div></div>
+    <p class="scope">出典：<a href="https://apexranked.com/meta" target="_blank" rel="noopener noreferrer">ApexRanked</a>・<a href="https://lfcarry.com/guides/apex-legends-tier-list" target="_blank" rel="noopener noreferrer">LFCarry</a></p>
   </aside></div></main>
 
   <div class="foot">
@@ -774,7 +785,7 @@ const D={state:null,meta:null,patches:[],weapons:[],legends:[]};
 window.QUIZ_IMG=n=>{const L=D.legends.find(x=>x.ja===n);return L&&/^img\/[a-z0-9-]+\.webp$/.test(L.img)?L.img:null;};
 let tab="rank"; try{const t=localStorage.getItem("apx-tab"); if(t) tab=t;}catch(e){}
 if(location.hash && /^#(rank|patch|legends|weapons|history|quiz)$/.test(location.hash)) tab=location.hash.slice(1);
-const ui={q:"",dir:"all",cls:"all",cat:"all"};
+const ui={q:"",dir:"all",cls:"all",cat:"all",tier:"pred"};
 const view=document.getElementById("view");
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const fmtDate=s=>esc(s?String(s).slice(0,10).replace(/-/g,"/"):"—");
@@ -818,18 +829,25 @@ function renderRank(){
   </div>${renderComps()}</div>`;
 }
 function renderComps(){
-  const m=D.meta, cs=m&&m.comps; if(!cs||!cs.length) return "";
-  return `<aside class="comps" aria-label="上位帯のメタ構成">
+  const m=D.meta, ts=m&&m.tiers; if(!ts||!ts.length) return "";
+  const t=ts.find(x=>x.id===ui.tier)||ts[0];
+  const mx=Math.max(1,...(t.picks||[]).map(p=>+p.rate||0));
+  const top3=(t.picks||[]).slice(0,3).map(p=>p.id);
+  const srcs=(t.sources||[]).filter(x=>x&&safeUrl(x.url));
+  return `<aside class="comps" aria-label="ランク帯別のメタ">
     <div class="eyebrow">Ranked Meta</div>
-    <h2>上位帯で多い構成</h2>
-    <p class="scope">${esc(m.compsScope||"")}${m.compsUpdated?`（${fmtDate(m.compsUpdated)} 時点）`:""}</p>
-    ${cs.map((c,i)=>`<div class="comp">
+    <h2>ランク帯別のメタ</h2>
+    <div class="tier-tabs" role="tablist">${ts.map(x=>`<button class="tt" role="tab" data-tier="${esc(x.id)}" aria-selected="${x.id===t.id}">${esc(x.label)}</button>`).join("")}</div>
+    <p class="scope">${esc(t.scope||"")}${t.updated?`（${fmtDate(t.updated)} 時点）`:""}</p>
+    ${(t.comps||[]).length?`<h3 class="sub-h">多い構成</h3>${t.comps.map((c,i)=>`<div class="comp">
       <div class="comp-top"><span class="comp-no">#${i+1}</span>${c.tag?`<span class="comp-tag">${esc(c.tag)}</span>`:""}</div>
       <div class="comp-mem">${(c.legends||[]).map(id=>{const L=byId(D.legends,id)||{id,ja:id,cls:""};return `<div class="m">${avatar({...L,id})}<b>${esc(L.ja)}</b></div>`}).join("")}</div>
       ${c.stat?`<div class="comp-stat">${esc(c.stat)}</div>`:""}
       ${c.note?`<div class="comp-note">${esc(c.note)}</div>`:""}
-    </div>`).join("")}
-    ${(m.compsSources||[]).filter(x=>x&&safeUrl(x.url)).length?`<p class="scope">出典：${m.compsSources.filter(x=>x&&safeUrl(x.url)).map(x=>`<a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener noreferrer">${esc(x.name||"出典")}</a>`).join("・")}</p>`:""}
+    </div>`).join("")}`:`<h3 class="sub-h">よく使われる3体</h3><div class="comp"><div class="comp-mem">${top3.map(id=>{const L=byId(D.legends,id)||{id,ja:id,cls:""};return `<div class="m">${avatar({...L,id})}<b>${esc(L.ja)}</b></div>`}).join("")}</div><div class="comp-note">ピック率の上位3体です。同じ部隊で組まれた構成の集計ではありません。</div></div>`}
+    <h3 class="sub-h">ピック率</h3>
+    <div class="picks">${(t.picks||[]).map(p=>{const L=byId(D.legends,p.id)||{ja:p.id};return `<div class="pk"><span>${esc(L.ja)}</span><span class="pb"><i style="width:${Math.round((+p.rate||0)/mx*100)}%"></i></span><span class="pv">${esc(p.rate)}%</span></div>`}).join("")}</div>
+    ${srcs.length?`<p class="scope">出典：${srcs.map(x=>`<a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener noreferrer">${esc(x.name||"出典")}</a>`).join("・")}</p>`:""}
   </aside>`;
 }
 function renderMeta(){
@@ -910,6 +928,7 @@ function render(){
   if(focusId==="q"){const q=document.getElementById("q"); if(q){q.focus(); try{q.setSelectionRange(pos,pos)}catch(e){}}}
 }
 document.addEventListener("click",e=>{
+  const tb=e.target.closest("[data-tier]"); if(tb){ui.tier=tb.dataset.tier;render();return;}
   const go=e.target.closest("[data-go]"); if(!go) return;
   e.preventDefault(); tab=go.dataset.go; try{localStorage.setItem("apx-tab",tab)}catch(_){}
   render(); const nav=document.querySelector("nav"); if(nav) nav.scrollIntoView({block:"start"});
