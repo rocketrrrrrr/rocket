@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-dX4kibYPDmU6IN039fMl8zkLYbuLArc3oQg/Psk8ebQ='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-i2pMs/fXY5D9TCNJwpVOKHPrxjtYpvPYHS4rodlL44U='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="今のApexは、これだけ見ればいい。Apex Legends の最新パッチまとめ、今強いレジェンドTOP10、MBTIと8つの質問で選ぶレジェンド適性診断。">
@@ -142,6 +142,14 @@ a.rank:hover,a.rank:focus-visible{border-color:var(--amber);border-left-color:va
 .pt.card{--w:84px}
 @media (max-width:420px){.pt.lg{--w:76px}.pt{--w:48px}.pt.card{--w:72px}}
 .lg-head{display:flex;align-items:center;gap:12px;min-width:0}
+.abil{display:flex;flex-direction:column;gap:6px;padding:10px 12px;background:var(--panel2);border-radius:8px}
+.abil .eyebrow{font-size:11px}
+.abil p{margin:0;font-size:13px}
+.abil dl{margin:0;display:flex;flex-direction:column;gap:8px}
+.abil dt{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;font-size:14px}
+.abil dd{margin:2px 0 0;font-size:13px;color:var(--mute)}
+.ab-k{font-size:11px;color:var(--amber);border:1px solid var(--line);border-radius:999px;padding:0 8px;line-height:1.6}
+.hist-label{font-size:11px}
 
 .rank-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;align-items:start}
 @media (min-width:900px){.rank-layout{grid-template-columns:minmax(0,1fr) 330px}.comps{position:sticky;top:calc(env(safe-area-inset-top,0px) + 72px)}}
@@ -985,18 +993,28 @@ function renderPatch(){
 }
 
 function histBlock(h){return `<div class="stack" style="gap:4px"><div class="meta-row"><span class="mono mute">${fmtDate(h.date)}</span>${pill(h.dir)}${srcLink(h.url)}</div><ul>${h.lines.map(l=>`<li>${esc(l)}</li>`).join("")}</ul></div>`;}
+const ROLE={assault:"前に出て撃ち合う",skirm:"機動力で動き回る",recon:"敵の位置を探る",support:"味方を回復・援護する",ctrl:"エリアを守る"};
+const AB=[["passive","パッシブ"],["tactical","戦術"],["ultimate","アルティメット"]];
+function abilBlock(L){
+  const a=L.abilities||{};
+  const rows=AB.filter(([k])=>a[k]&&a[k].name).map(([k,label])=>`<div><dt><span class="ab-k">${label}</span><b>${esc(a[k].name)}</b></dt><dd>${a[k].desc?esc(a[k].desc):"説明は未確認"}</dd></div>`).join("");
+  if(!rows) return `<div class="abil"><span class="eyebrow">能力</span><p class="mute">能力の情報は未確認です</p></div>`;
+  return `<div class="abil"><div class="meta-row"><span class="eyebrow">能力</span>${a.checked?`<span class="mono mute" style="font-size:12px">${fmtDate(a.checked)} 確認</span>`:""}${srcLink(a.source)}</div><dl>${rows}</dl></div>`;
+}
 function itemCard(title,sub,tier,hist,L){
   const [h,...rest]=hist||[];
   const t=`<div class="t"><b>${esc(title)}</b><small>${sub}</small></div>`;
-  return `<div class="item ${h?"":"quiet"}"${L&&L.id?` id="lg-${esc(L.id)}"`:""}>
+  return `<div class="item ${h||(L&&L.abilities)?"":"quiet"}"${L&&L.id?` id="lg-${esc(L.id)}"`:""}>
     <div class="item-head">${L?`<div class="lg-head">${avatar(L,"card")}${t}</div>`:t}${tier?`<span class="tier ${esc(tier)}">${esc(tier)}</span>`:""}</div>
+    ${L?abilBlock(L):""}${L&&h?`<span class="eyebrow hist-label">今シーズンの変更</span>`:""}
     ${h?histBlock(h):`<p class="mute" style="font-size:13px">今シーズンの調整なし</p>`}
     ${rest.length?`<details><summary>過去の変更 ${rest.length}件</summary><div class="hist">${rest.map(histBlock).join("")}</div></details>`:""}
   </div>`;
 }
 function filterHist(x){
   const q=ui.q.trim().toLowerCase();
-  if(q && !JSON.stringify([x.ja,x.en,x.name,x.id]).toLowerCase().includes(q)) return false;
+  const ab=x.abilities?AB.map(([k])=>x.abilities[k]&&x.abilities[k].name):[];
+  if(q && !JSON.stringify([x.ja,x.en,x.name,x.id,...ab]).toLowerCase().includes(q)) return false;
   if(ui.dir==="changed" && !(x.history||[]).length) return false;
   if(["buff","nerf","rework","change"].includes(ui.dir) && !((x.history||[])[0]&&x.history[0].dir===ui.dir)) return false;
   return true;
@@ -1012,7 +1030,7 @@ function tools(extra){
 function renderLegends(){
   const opt=`<select id="cls" aria-label="クラス"><option value="all">全クラス</option>${Object.entries(CLS).map(([k,v])=>`<option value="${k}" ${ui.cls===k?"selected":""}>${v[0]}</option>`).join("")}</select>`;
   const arr=D.legends.filter(x=>filterHist(x)&&(ui.cls==="all"||x.cls===ui.cls)).sort(sortChanged);
-  return `<div class="stack">${tools(opt)}<div class="items">${arr.map(x=>itemCard(x.ja,`${CLS[x.cls]?CLS[x.cls][0]:""}`,x.tier,x.history,x)).join("")||`<p class="empty">該当なし</p>`}</div></div>`;
+  return `<div class="stack">${tools(opt)}<div class="items">${arr.map(x=>itemCard(x.ja,`${CLS[x.cls]?`${CLS[x.cls][0]}・${ROLE[x.cls]}`:""}`,x.tier,x.history,x)).join("")||`<p class="empty">該当なし</p>`}</div></div>`;
 }
 function renderWeapons(){
   const cats=[...new Set(D.weapons.map(w=>w.category))];

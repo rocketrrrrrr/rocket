@@ -25,3 +25,19 @@
 - 予定タブの「カレンダーに追加」は `cal/<予定の id>.ics` を開く。iPhone でカレンダーの追加画面を出すため、ブラウザ内で作らずファイルとして置いている
 - `cal/` は data.json が main に入ると GitHub Actions（`.github/workflows/build-ics.yml`）が `scripts/build-ics.mjs` で自動生成する。手で編集しない
 - 同じ予定の日付などを直すときは id を変えない（カレンダー側で同じ予定として扱われる）
+
+## レジェンドの能力（data.json の legends[].abilities）
+
+- レジェンドタブの「能力」欄は、各レジェンドの `abilities` を表示する。ないレジェンドは「能力の情報は未確認です」と出る
+- 能力名は公式の日本語名、説明は初心者向けに1〜2行。EA 公式の日本語ページなどで確認できたものだけ入れる
+- 形式（既存のフィールドはそのまま、`abilities` を足すだけ）
+
+```json
+"abilities": {
+  "passive":  { "name": "公式の能力名", "desc": "何ができるか" },
+  "tactical": { "name": "公式の能力名", "desc": "何ができるか" },
+  "ultimate": { "name": "公式の能力名", "desc": "何ができるか" },
+  "source": "確認した公式ページの URL",
+  "checked": "確認した日（YYYY-MM-DD）"
+}
+```
