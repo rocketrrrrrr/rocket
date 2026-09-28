@@ -155,7 +155,61 @@
     "シア は戦術でシールド・壁・蘇生などの発動を止められる点が評価されている",
     "遠距離武器（30-30リピーター / チャージライフル / トリプルテイク）が強い環境。Corrupted アタッチメントで構成の選び方が変わった"
    ],
-   "id": "meta"
+   "id": "meta",
+   "compsScope": "プレデター帯の集計。マスター帯だけの集計は未確認です",
+   "compsUpdated": "2026-09-27",
+   "comps": [
+    {
+     "legends": [
+      "axle",
+      "loba",
+      "pathfinder"
+     ],
+     "tag": "最多",
+     "stat": "1,639部隊・平均 +54.6 RP/試合",
+     "note": "アクセルとパスファインダーで部隊ごと動き、ローバで物資をそろえる"
+    },
+    {
+     "legends": [
+      "axle",
+      "loba",
+      "vantage"
+     ],
+     "tag": "RP最高",
+     "stat": "1,378部隊・平均 +71.9 RP/試合",
+     "note": "遠距離武器が強い環境で、ヴァンテージが削りと索敵を担当"
+    },
+    {
+     "legends": [
+      "axle",
+      "loba",
+      "seer"
+     ],
+     "tag": "野良向け",
+     "stat": "1,007部隊・平均 +60.4 RP/試合",
+     "note": "シアの索敵で情報を先に取る。野良でも組みやすい定番"
+    },
+    {
+     "legends": [
+      "axle",
+      "loba",
+      "sparrow"
+     ],
+     "tag": "固定向け",
+     "stat": "",
+     "note": "シアの代わりにスパロー。連携の取れる固定パーティで採用が多い"
+    }
+   ],
+   "compsSources": [
+    {
+     "name": "ApexRanked（プレデター826人の集計）",
+     "url": "https://apexranked.com/meta"
+    },
+    {
+     "name": "LFCarry ティアリスト",
+     "url": "https://lfcarry.com/guides/apex-legends-tier-list"
+    }
+   ]
   },
   "state": {
    "season": 30,

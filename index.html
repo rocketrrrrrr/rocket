@@ -2,12 +2,12 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-xyH78yvLpa3djbQXO0u1s8D4smDwleX4gWwWivcqEUw=' 'sha256-psa6JNhljB1tRSObZvOiDwrrejZm0TaGK7nesAJIWhQ='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-rjg2DQrkEdeekBfh/SHjqc581T3K3JhnLSsGWeYgzE8=' 'sha256-m+O0WWFSM3DNQjJ2qcIFaV2pTJ/6OD9Lva8Dx0e+Ksc='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Apex Legends の最新パッチ、武器・レジェンドの調整、今強いレジェンドTOP10、MBTIと8つの質問で選ぶレジェンド適性診断。">
-<meta property="og:title" content="Apex パッチ速報">
-<meta property="og:description" content="今強いレジェンドTOP10、最新パッチの変更まとめ、MBTIで選ぶレジェンド適性診断。">
+<meta name="description" content="今のApexは、これだけ見ればいい。Apex Legends の最新パッチまとめ、今強いレジェンドTOP10、MBTIと8つの質問で選ぶレジェンド適性診断。">
+<meta property="og:title" content="APEX NOW｜今のApexは、これだけ見ればいい。">
+<meta property="og:description" content="最新パッチのまとめ、今強いレジェンドTOP10、あなたに合うレジェンドがわかる適性診断。">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:url" content="https://rocketrrrrrr.github.io/rocket/">
@@ -15,11 +15,11 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:site_name" content="Apex パッチ速報">
+<meta property="og:site_name" content="APEX NOW">
 <link rel="canonical" href="https://rocketrrrrrr.github.io/rocket/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<title>Apex パッチ速報</title>
+<title>APEX NOW｜今のApexは、これだけ見ればいい。</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
 <style>
@@ -37,7 +37,7 @@ body{margin:0;background:var(--bg);color:var(--ink);
   font-size:15px;line-height:1.65;-webkit-tap-highlight-color:transparent;
   background-image:linear-gradient(transparent 0 calc(100% - 1px),rgba(255,255,255,.025) 0),linear-gradient(90deg,transparent 0 calc(100% - 1px),rgba(255,255,255,.025) 0);
   background-size:28px 28px}
-.wrap{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:18px 56px}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:16px;padding-block:18px 56px}
 h1,h2{font-family:"Dela Gothic One","Zen Kaku Gothic New",sans-serif;font-weight:400;margin:0;text-wrap:balance}
 h1{font-size:clamp(26px,7vw,36px);line-height:1.2}
 h2{font-size:19px;line-height:1.4}
@@ -52,6 +52,11 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 .stack{display:flex;flex-direction:column;gap:14px}
 
 header{display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
+header .brand{font-family:"Chakra Petch","Dela Gothic One",sans-serif;font-weight:700;letter-spacing:.06em;font-size:clamp(34px,9vw,48px);line-height:1}
+header .tagline{font-family:"Dela Gothic One","Zen Kaku Gothic New",sans-serif;font-size:clamp(17px,4.6vw,21px);color:var(--amber);line-height:1.4}
+header .subline{font-size:14px;color:var(--mute);max-width:60ch}
+header .hero-go{align-self:flex-start;display:inline-flex;align-items:center;min-height:40px;padding:8px 14px;border:1px solid var(--amber);border-radius:8px;color:var(--amber);font-weight:700;font-size:14px;text-decoration:none}
+header .hero-go:hover{background:color-mix(in srgb,var(--amber) 12%,transparent)}
 .status{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;color:var(--mute)}
 .status b{color:var(--ink);font-weight:500}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--buff);margin-right:6px;vertical-align:1px}
@@ -133,6 +138,22 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--
 .pt.card{--w:84px}
 @media (max-width:420px){.pt.lg{--w:76px}.pt{--w:48px}.pt.card{--w:72px}}
 .lg-head{display:flex;align-items:center;gap:12px;min-width:0}
+
+.rank-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;align-items:start}
+@media (min-width:900px){.rank-layout{grid-template-columns:minmax(0,1fr) 330px}.comps{position:sticky;top:calc(env(safe-area-inset-top,0px) + 72px)}}
+.comps{display:flex;flex-direction:column;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px}
+.comps h2{font-size:17px}
+.comps .scope{font-size:12px;color:var(--mute)}
+.comp{display:flex;flex-direction:column;gap:8px;background:var(--panel2);border-radius:8px;padding:10px 12px}
+.comp-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.comp-tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:color-mix(in srgb,var(--amber) 18%,transparent);color:var(--amber);white-space:nowrap}
+.comp-no{font-family:"Chakra Petch",monospace;font-weight:700;color:var(--mute);font-size:13px}
+.comp-mem{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.comp-mem .m{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0}
+.comp-mem .m b{font-size:12px;font-weight:700;text-align:center;line-height:1.3}
+.comp-mem .pt{--w:52px}
+.comp-stat{font-size:12px;color:var(--ink);font-variant-numeric:tabular-nums}
+.comp-note{font-size:12px;color:var(--mute)}
 .foot{font-size:12px;color:var(--mute);margin-top:28px;display:flex;flex-direction:column;gap:4px}
 @media (max-width:420px){
   .rank{grid-template-columns:28px auto 1fr;gap:10px}
@@ -252,7 +273,10 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--
 <div class="wrap">
   <header>
     <div class="eyebrow" id="seasonLine">Season 30 · Marked · Split 2</div>
-    <h1>Apex パッチ速報</h1>
+    <h1 class="brand">APEX NOW</h1>
+    <p class="tagline">今のApexは、これだけ見ればいい。</p>
+    <p class="subline">最新パッチのまとめと、今強いレジェンドTOP10をパッチが来るたびに更新。さらに、MBTIと8つの質問で「あなたが使うべきレジェンド」も診断できます。</p>
+    <a class="hero-go" href="#quiz" data-go="quiz">あなたのレジェンドを診断する ▶</a>
     <div class="status">
       <span><span class="dot off" id="liveDot"></span><span id="liveText">読み込み中</span></span>
       <span>最終チェック <b class="mono" id="checked">—</b></span>
@@ -269,7 +293,7 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--
     <button class="tab" role="tab" data-tab="quiz">適性診断</button>
   </div></nav>
 
-  <main id="view"><div class="stack">
+  <main id="view"><div class="rank-layout"><div class="stack">
     <div class="patch-head"><h2>今強いレジェンド TOP10</h2><span class="src mono">2026/09/17 時点</span></div>
     <div class="rank-list"><div class="rank" style="--cls:var(--c-support)">
         <div class="no">1</div>
@@ -327,7 +351,33 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--
     <div><div class="tierblock"><span class="tier S+">S+</span><div class="names"><span class="name-chip">30-30リピーター</span><span class="name-chip">クレーバー</span><span class="name-chip">L-STAR</span></div></div><div class="tierblock"><span class="tier S">S</span><div class="names"><span class="name-chip">チャージライフル</span><span class="name-chip">トリプルテイク</span><span class="name-chip">ボセックボウ</span></div></div><div class="tierblock"><span class="tier A+">A+</span><div class="names"><span class="name-chip">R-301カービン</span><span class="name-chip">プラウラー</span><span class="name-chip">ディヴォーション</span><span class="name-chip">ネメシス</span><span class="name-chip">G7スカウト</span></div></div><div class="tierblock"><span class="tier A">A</span><div class="names"><span class="name-chip">ウィングマン</span><span class="name-chip">P2020</span><span class="name-chip">RE-45</span></div></div></div></div>
     <div class="card stack"><h2>今のメタ</h2><ul class="notes"><li>ローバ はプレデター帯でピック率24%。ルートが減った今シーズンは物資を確保できる価値が高い</li><li>アクセル は Split 2 でスタンが大幅に短縮されたが、機動力で上位を維持</li><li>シア は戦術でシールド・壁・蘇生などの発動を止められる点が評価されている</li><li>遠距離武器（30-30リピーター / チャージライフル / トリプルテイク）が強い環境。Corrupted アタッチメントで構成の選び方が変わった</li></ul></div>
     <button class="tab" data-go="quiz" style="border:1px solid var(--line);color:var(--amber);align-self:flex-start">あなたに合うレジェンドを診断する ▶</button>
-  </div></main>
+  </div><aside class="comps" aria-label="上位帯のメタ構成">
+    <div class="eyebrow">Ranked Meta</div>
+    <h2>上位帯で多い構成</h2>
+    <p class="scope">プレデター帯の集計。マスター帯だけの集計は未確認です（2026/09/27 時点）</p>
+    <div class="comp">
+      <div class="comp-top"><span class="comp-no">#1</span><span class="comp-tag">最多</span></div>
+      <div class="comp-mem"><div class="m"><span class="pt " style="--cls:var(--c-skirm)"><img src="img/axle.webp" alt="アクセル" loading="lazy"></span><b>アクセル</b></div><div class="m"><span class="pt " style="--cls:var(--c-support)"><img src="img/loba.webp" alt="ローバ" loading="lazy"></span><b>ローバ</b></div><div class="m"><span class="pt " style="--cls:var(--c-skirm)"><img src="img/pathfinder.webp" alt="パスファインダー" loading="lazy"></span><b>パスファインダー</b></div></div>
+      <div class="comp-stat">1,639部隊・平均 +54.6 RP/試合</div>
+      <div class="comp-note">アクセルとパスファインダーで部隊ごと動き、ローバで物資をそろえる</div>
+    </div><div class="comp">
+      <div class="comp-top"><span class="comp-no">#2</span><span class="comp-tag">RP最高</span></div>
+      <div class="comp-mem"><div class="m"><span class="pt " style="--cls:var(--c-skirm)"><img src="img/axle.webp" alt="アクセル" loading="lazy"></span><b>アクセル</b></div><div class="m"><span class="pt " style="--cls:var(--c-support)"><img src="img/loba.webp" alt="ローバ" loading="lazy"></span><b>ローバ</b></div><div class="m"><span class="pt " style="--cls:var(--c-recon)"><img src="img/vantage.webp" alt="ヴァンテージ" loading="lazy"></span><b>ヴァンテージ</b></div></div>
+      <div class="comp-stat">1,378部隊・平均 +71.9 RP/試合</div>
+      <div class="comp-note">遠距離武器が強い環境で、ヴァンテージが削りと索敵を担当</div>
+    </div><div class="comp">
+      <div class="comp-top"><span class="comp-no">#3</span><span class="comp-tag">野良向け</span></div>
+      <div class="comp-mem"><div class="m"><span class="pt " style="--cls:var(--c-skirm)"><img src="img/axle.webp" alt="アクセル" loading="lazy"></span><b>アクセル</b></div><div class="m"><span class="pt " style="--cls:var(--c-support)"><img src="img/loba.webp" alt="ローバ" loading="lazy"></span><b>ローバ</b></div><div class="m"><span class="pt " style="--cls:var(--c-recon)"><img src="img/seer.webp" alt="シア" loading="lazy"></span><b>シア</b></div></div>
+      <div class="comp-stat">1,007部隊・平均 +60.4 RP/試合</div>
+      <div class="comp-note">シアの索敵で情報を先に取る。野良でも組みやすい定番</div>
+    </div><div class="comp">
+      <div class="comp-top"><span class="comp-no">#4</span><span class="comp-tag">固定向け</span></div>
+      <div class="comp-mem"><div class="m"><span class="pt " style="--cls:var(--c-skirm)"><img src="img/axle.webp" alt="アクセル" loading="lazy"></span><b>アクセル</b></div><div class="m"><span class="pt " style="--cls:var(--c-support)"><img src="img/loba.webp" alt="ローバ" loading="lazy"></span><b>ローバ</b></div><div class="m"><span class="pt " style="--cls:var(--c-recon)"><img src="img/sparrow.webp" alt="スパロー" loading="lazy"></span><b>スパロー</b></div></div>
+      
+      <div class="comp-note">シアの代わりにスパロー。連携の取れる固定パーティで採用が多い</div>
+    </div>
+    <p class="scope">出典：<a href="https://apexranked.com/meta" target="_blank" rel="noopener noreferrer">ApexRanked（プレデター826人の集計）</a>・<a href="https://lfcarry.com/guides/apex-legends-tier-list" target="_blank" rel="noopener noreferrer">LFCarry ティアリスト</a></p>
+  </aside></div></main>
 
   <div class="foot">
     <p>数値は公式パッチノートを優先し、強さランキングは外部のティアリストをもとにまとめています。各項目の「出典」から一次情報を確認できます。</p>
@@ -693,7 +743,7 @@ async function makeCard(L,cls,shareText,siteUrl){
   const sh=g.createLinearGradient(0,0,760,0);sh.addColorStop(0,"rgba(16,24,28,.92)");sh.addColorStop(.62,"rgba(16,24,28,.78)");sh.addColorStop(1,"rgba(16,24,28,0)");g.fillStyle=sh;g.fillRect(0,0,760,H);
   const disp='"Dela Gothic One","Zen Kaku Gothic New",sans-serif', body='"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif', mono='"Chakra Petch",monospace';
   g.textBaseline="top";
-  g.fillStyle=amber;g.font=`700 34px ${mono}`;g.fillText("MY APEX LEGEND / 適性診断",70,80);
+  g.fillStyle=amber;g.font=`700 34px ${mono}`;g.fillText("APEX NOW / レジェンド適性診断",70,80);
   g.fillStyle="#9aa8a6";g.font=`500 36px ${mono}`;g.fillText(L.en.toUpperCase(),70,170);
   g.fillStyle="#ece3d0";let fs=150;g.font=`400 ${fs}px ${disp}`;while(g.measureText(L.n).width>620&&fs>70){fs-=6;g.font=`400 ${fs}px ${disp}`;}
   g.fillText(L.n,66,220);
@@ -752,7 +802,7 @@ function header(){
 
 function renderRank(){
   const m=D.meta; if(!m||!m.ranking) return `<p class="empty">ランキングはまだありません</p>`;
-  return `<div class="stack">
+  return `<div class="rank-layout"><div class="stack">
     <div class="patch-head"><h2>今強いレジェンド TOP10</h2><span class="src mono">${fmtDate(m.updated)} 時点</span></div>
     <div class="rank-list">${m.ranking.map(r=>{
       const L=byId(D.legends,r.id)||{ja:r.id,cls:""}; const c=CLS[L.cls]||["","--line"];
@@ -765,7 +815,22 @@ function renderRank(){
     <p class="banner">${esc(m.rankingBasis||"")}　出典：${(m.sourceUrls||[]).filter(safeUrl).map((u,i)=>`<a href="${esc(safeUrl(u))}" target="_blank" rel="noopener noreferrer">${esc(m.source||"ティアリスト")}${m.sourceUrls.length>1?` ${i+1}`:""}</a>`).join("・")}</p>
     ${renderMeta()}
     <button class="tab" data-go="quiz" style="border:1px solid var(--line);color:var(--amber);align-self:flex-start">あなたに合うレジェンドを診断する ▶</button>
-  </div>`;
+  </div>${renderComps()}</div>`;
+}
+function renderComps(){
+  const m=D.meta, cs=m&&m.comps; if(!cs||!cs.length) return "";
+  return `<aside class="comps" aria-label="上位帯のメタ構成">
+    <div class="eyebrow">Ranked Meta</div>
+    <h2>上位帯で多い構成</h2>
+    <p class="scope">${esc(m.compsScope||"")}${m.compsUpdated?`（${fmtDate(m.compsUpdated)} 時点）`:""}</p>
+    ${cs.map((c,i)=>`<div class="comp">
+      <div class="comp-top"><span class="comp-no">#${i+1}</span>${c.tag?`<span class="comp-tag">${esc(c.tag)}</span>`:""}</div>
+      <div class="comp-mem">${(c.legends||[]).map(id=>{const L=byId(D.legends,id)||{id,ja:id,cls:""};return `<div class="m">${avatar({...L,id})}<b>${esc(L.ja)}</b></div>`}).join("")}</div>
+      ${c.stat?`<div class="comp-stat">${esc(c.stat)}</div>`:""}
+      ${c.note?`<div class="comp-note">${esc(c.note)}</div>`:""}
+    </div>`).join("")}
+    ${(m.compsSources||[]).filter(x=>x&&safeUrl(x.url)).length?`<p class="scope">出典：${m.compsSources.filter(x=>x&&safeUrl(x.url)).map(x=>`<a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener noreferrer">${esc(x.name||"出典")}</a>`).join("・")}</p>`:""}
+  </aside>`;
 }
 function renderMeta(){
   const m=D.meta; if(!m) return "";
@@ -844,6 +909,11 @@ function render(){
   bind("q","q");bind("dir","dir");bind("cls","cls");bind("cat","cat");
   if(focusId==="q"){const q=document.getElementById("q"); if(q){q.focus(); try{q.setSelectionRange(pos,pos)}catch(e){}}}
 }
+document.addEventListener("click",e=>{
+  const go=e.target.closest("[data-go]"); if(!go) return;
+  e.preventDefault(); tab=go.dataset.go; try{localStorage.setItem("apx-tab",tab)}catch(_){}
+  render(); const nav=document.querySelector("nav"); if(nav) nav.scrollIntoView({block:"start"});
+});
 document.getElementById("tabs").addEventListener("click",e=>{
   const b=e.target.closest(".tab"); if(!b) return; tab=b.dataset.tab;
   try{localStorage.setItem("apx-tab",tab)}catch(e){}
