@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-Rmpmy2/8Ma+JJ7sPNZOVZRQJrFKgJke8aS3XRegWQRQ='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-safWqkghTFqraZ4RZEyAj5lXRjoBCJOlVXGK9zy7K/w='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="今のApexは、これだけ見ればいい。Apex Legends の最新パッチまとめ、今強いレジェンドTOP10、MBTIと8つの質問で選ぶレジェンド適性診断。">
@@ -341,10 +341,9 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--
   <nav><div class="tabs" role="tablist" id="tabs">
     <button class="tab" role="tab" data-tab="rank" aria-selected="true">強さTOP10</button>
     <button class="tab" role="tab" data-tab="events">予定</button>
-    <button class="tab" role="tab" data-tab="patch">最新パッチ</button>
+    <button class="tab" role="tab" data-tab="patch">パッチ</button>
     <button class="tab" role="tab" data-tab="legends">レジェンド</button>
     <button class="tab" role="tab" data-tab="weapons">武器</button>
-    <button class="tab" role="tab" data-tab="history">パッチ履歴</button>
     <button class="tab" role="tab" data-tab="quiz">適性診断</button>
   </div></nav>
 
@@ -832,6 +831,7 @@ const D={state:null,meta:null,patches:[],weapons:[],legends:[],events:[]};
 window.QUIZ_IMG=n=>{const L=D.legends.find(x=>x.ja===n);return L&&/^img\/[a-z0-9-]+\.webp$/.test(L.img)?L.img:null;};
 let tab="rank"; try{const t=localStorage.getItem("apx-tab"); if(t) tab=t;}catch(e){}
 if(location.hash && /^#(rank|events|patch|legends|weapons|history|quiz)$/.test(location.hash)) tab=location.hash.slice(1);
+if(tab==="history") tab="patch";
 const ui={q:"",dir:"all",cls:"all",cat:"all",tier:"pred"};
 const view=document.getElementById("view");
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -968,8 +968,10 @@ function patchCard(p,full){
     ${ws.length?`<div class="stack" style="gap:6px"><span class="eyebrow">Weapons</span><div class="tools">${row(ws,x=>x._n)}</div></div>`:""}
   </article>`;
 }
-function renderPatch(){const p=D.patches[0]; return p?patchCard(p,true):`<p class="empty">パッチ情報はまだありません</p>`;}
-function renderHistory(){return D.patches.length?`<div class="stack">${D.patches.map(p=>patchCard(p,false)).join("")}</div>`:`<p class="empty">履歴はまだありません</p>`;}
+function renderPatch(){
+  const [p,...rest]=D.patches; if(!p) return `<p class="empty">パッチ情報はまだありません</p>`;
+  return `<div class="stack">${patchCard(p,true)}${rest.length?`<h2>過去のパッチ</h2>${rest.map(x=>patchCard(x,false)).join("")}`:""}</div>`;
+}
 
 function histBlock(h){return `<div class="stack" style="gap:4px"><div class="meta-row"><span class="mono mute">${fmtDate(h.date)}</span>${pill(h.dir)}${srcLink(h.url)}</div><ul>${h.lines.map(l=>`<li>${esc(l)}</li>`).join("")}</ul></div>`;}
 function itemCard(title,sub,tier,hist,L){
@@ -1016,7 +1018,7 @@ function render(){
     return;
   }
   view.dataset.mount=tab;
-  const f={events:renderEvents,rank:renderRank,patch:renderPatch,legends:renderLegends,weapons:renderWeapons,history:renderHistory}[tab]||renderRank;
+  const f={events:renderEvents,rank:renderRank,patch:renderPatch,legends:renderLegends,weapons:renderWeapons}[tab]||renderRank;
   const focusId=document.activeElement&&document.activeElement.id, pos=focusId==="q"?document.activeElement.selectionStart:null;
   view.innerHTML=f();
   const bind=(id,key)=>{const el=document.getElementById(id); if(el) el.addEventListener(id==="q"?"input":"change",e=>{ui[key]=e.target.value;render();});};
