@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-xyH78yvLpa3djbQXO0u1s8D4smDwleX4gWwWivcqEUw=' 'sha256-psa6JNhljB1tRSObZvOiDwrrejZm0TaGK7nesAJIWhQ='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Apex Legends の最新パッチ、武器・レジェンドの調整、今強いレジェンドTOP10、MBTIと8つの質問で選ぶレジェンド適性診断。">
+<meta property="og:title" content="Apex パッチ速報">
+<meta property="og:description" content="今強いレジェンドTOP10、最新パッチの変更まとめ、MBTIで選ぶレジェンド適性診断。">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://rocketrrrrrr.github.io/rocket/">
+<meta property="og:image" content="https://rocketrrrrrr.github.io/rocket/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Apex パッチ速報">
+<link rel="canonical" href="https://rocketrrrrrr.github.io/rocket/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Apex パッチ速報</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  color-scheme: dark;
+  --bg:#10181c; --panel:#18242a; --panel2:#1f2e35; --line:#2d4049;
+  --ink:#ece3d0; --mute:#9aa8a6; --amber:#ffb03b; --amber-ink:#1b1206;
+  --buff:#6fd68a; --nerf:#f0715a; --change:#8fb7c9; --rework:#c79af2;
+  --c-assault:#ec6a4c; --c-skirm:#4cc3e6; --c-recon:#9ad461; --c-support:#f0cf4f; --c-ctrl:#bb8cf0;
+  --r:10px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Zen Kaku Gothic New",system-ui,-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;
+  font-size:15px;line-height:1.65;-webkit-tap-highlight-color:transparent;
+  background-image:linear-gradient(transparent 0 calc(100% - 1px),rgba(255,255,255,.025) 0),linear-gradient(90deg,transparent 0 calc(100% - 1px),rgba(255,255,255,.025) 0);
+  background-size:28px 28px}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:18px 56px}
+h1,h2{font-family:"Dela Gothic One","Zen Kaku Gothic New",sans-serif;font-weight:400;margin:0;text-wrap:balance}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.2}
+h2{font-size:19px;line-height:1.4}
+p{margin:0}
+a{color:var(--amber)}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.eyebrow{font-family:"Chakra Petch",monospace;font-size:12px;letter-spacing:.18em;color:var(--amber);text-transform:uppercase}
+.mono{font-family:"Chakra Petch",monospace;font-variant-numeric:tabular-nums}
+.mute{color:var(--mute)}
+.stack{display:flex;flex-direction:column;gap:14px}
+
+header{display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
+.status{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;color:var(--mute)}
+.status b{color:var(--ink);font-weight:500}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--buff);margin-right:6px;vertical-align:1px}
+.dot.off{background:var(--mute)}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:8px;margin-bottom:8px;border-bottom:1px solid var(--line)}
+.tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{white-space:nowrap;padding:8px 14px;min-height:40px;border-radius:8px;color:var(--mute);font-weight:500}
+.tab[aria-selected="true"]{background:var(--panel2);color:var(--ink);box-shadow:inset 0 -2px 0 var(--amber)}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px}
+.pill{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;line-height:1.6}
+.pill.buff{background:color-mix(in srgb,var(--buff) 20%,transparent);color:var(--buff)}
+.pill.nerf{background:color-mix(in srgb,var(--nerf) 20%,transparent);color:var(--nerf)}
+.pill.change{background:color-mix(in srgb,var(--change) 20%,transparent);color:var(--change)}
+.pill.rework{background:color-mix(in srgb,var(--rework) 20%,transparent);color:var(--rework)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:2px 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap;color:var(--mute)}
+.chip i{width:8px;height:8px;border-radius:2px;display:block}
+.tier{font-family:"Chakra Petch",monospace;font-weight:700;font-size:13px;min-width:34px;text-align:center;padding:2px 6px;border-radius:4px;background:var(--panel2);color:var(--ink)}
+.tier.S\+,.tier.S{background:var(--amber);color:var(--amber-ink)}
+.tier.A\+,.tier.A{background:#3a5360}
+
+/* ranking */
+.rank-list{display:flex;flex-direction:column;gap:8px}
+.rank{display:grid;grid-template-columns:36px auto 1fr auto;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;border-left:4px solid var(--cls)}
+.rank .no{font-family:"Chakra Petch",monospace;font-weight:700;font-size:26px;line-height:1;text-align:center;color:var(--mute)}
+.rank:nth-child(-n+3) .no{color:var(--amber)}
+.rank .nm{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.rank .nm b{font-size:17px}
+.rank .rs{font-size:13px;color:var(--mute);margin-top:2px}
+.rank .side{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.trend{font-family:"Chakra Petch",monospace;font-size:12px;font-weight:700;white-space:nowrap}
+.trend.up{color:var(--buff)} .trend.down{color:var(--nerf)} .trend.same{color:var(--mute)}
+.rank:first-child{padding-block:18px;background:linear-gradient(100deg,color-mix(in srgb,var(--cls) 18%,var(--panel)),var(--panel) 60%)}
+.rank:first-child .no{font-size:36px}
+.rank:first-child .nm b{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:24px}
+
+/* patch */
+.patch{display:flex;flex-direction:column;gap:10px}
+.patch-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+.patch ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
+.src{font-size:12px;color:var(--mute)}
+
+/* list */
+.tools{display:flex;flex-wrap:wrap;gap:8px}
+.tools input,.tools select{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px;min-height:42px}
+.tools input{flex:1 1 180px;min-width:0}
+.tools select{flex:0 1 auto}
+.items{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.item.quiet{opacity:.72}
+.item-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.item-head .t{display:flex;flex-direction:column;min-width:0}
+.item-head b{font-size:16px}
+.item-head small{font-size:12px;color:var(--mute)}
+.item ul{margin:0;padding-left:1.1em;font-size:14px;display:flex;flex-direction:column;gap:2px}
+.item details{font-size:13px}
+.item summary{cursor:pointer;color:var(--mute);padding-block:2px}
+.hist{display:flex;flex-direction:column;gap:8px;margin-top:6px;padding-left:10px;border-left:2px solid var(--line)}
+.meta-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.empty{color:var(--mute);text-align:center;padding:24px}
+
+.tierblock{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:start;padding-block:6px;border-bottom:1px solid var(--line)}
+.tierblock:last-child{border-bottom:0}
+.tierblock .names{display:flex;flex-wrap:wrap;gap:6px}
+.name-chip{padding:3px 10px;border-radius:6px;background:var(--panel2);font-size:14px}
+.notes{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+.banner{font-size:13px;color:var(--mute);background:var(--panel);border:1px dashed var(--line);border-radius:8px;padding:10px 12px}
+.av{--s:48px;width:var(--s);height:var(--s);flex:none;position:relative;display:grid;place-items:center;overflow:hidden;
+  clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);background:var(--cls,#3a5360)}
+.av img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;display:block}
+.av .ini{font-family:"Chakra Petch",monospace;font-weight:700;font-size:calc(var(--s)*.34);color:#14100a;letter-spacing:.02em}
+.av.lg{--s:64px}
+.pt{--w:56px;width:var(--w);aspect-ratio:3/4;flex:none;border-radius:8px;overflow:hidden;position:relative;
+  background:linear-gradient(180deg,var(--panel2) 30%,color-mix(in srgb,var(--cls) 45%,var(--panel2)));border:1px solid color-mix(in srgb,var(--cls) 50%,var(--line))}
+.pt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.pt.lg{--w:96px}
+.pt.card{--w:84px}
+@media (max-width:420px){.pt.lg{--w:76px}.pt{--w:48px}.pt.card{--w:72px}}
+.lg-head{display:flex;align-items:center;gap:12px;min-width:0}
+.foot{font-size:12px;color:var(--mute);margin-top:28px;display:flex;flex-direction:column;gap:4px}
+@media (max-width:420px){
+  .rank{grid-template-columns:28px auto 1fr;gap:10px}
+  .rank .side{grid-column:3;flex-direction:row;align-items:center;justify-content:flex-start}
+  .items{grid-template-columns:1fr}
+}
+/* ---- 適性診断 ---- */
+#quiz .mono{font-family:"Chakra Petch",ui-monospace,monospace;letter-spacing:.08em}
+#quiz .eyebrow{font-family:"Chakra Petch",monospace;font-size:12px;letter-spacing:.18em;color:var(--amber);text-transform:uppercase}
+#quiz .stack{display:flex;flex-direction:column;gap:14px}
+#quiz .hero{display:flex;flex-direction:column;gap:14px;padding-block:18px 6px}
+#quiz .hero .lead{color:var(--mute)}
+#quiz .classes{display:flex;flex-wrap:wrap;gap:8px}
+#quiz .chip{display:inline-flex;align-items:center;gap:6px;font-size:13px;padding:4px 10px;border-radius:999px;background:var(--panel2);border:1px solid var(--line);white-space:nowrap}
+#quiz .chip i{width:8px;height:8px;border-radius:2px;display:block}
+#quiz .steps{display:grid;grid-template-columns:auto 1fr;gap:10px 12px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+#quiz .steps b{font-family:"Chakra Petch",monospace;color:var(--amber)}
+#quiz .steps span{color:var(--ink)}
+#quiz .cta{
+  display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:56px;
+  background:var(--amber);color:var(--amber-ink);font-weight:700;font-size:17px;border-radius:var(--r);
+  clip-path:polygon(0 0,100% 0,100% 70%,calc(100% - 14px) 100%,0 100%);
+  transition:transform .12s ease, filter .12s;
+}
+#quiz .cta:active{transform:scale(.98)}
+#quiz .cta:hover{filter:brightness(1.07)}
+#quiz .ghost{min-height:48px;width:100%;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);color:var(--ink);font-weight:500}
+#quiz .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;display:flex;align-items:center;gap:12px}
+#quiz .bar .track{flex:1;height:6px;background:var(--panel2);border-radius:3px;overflow:hidden}
+#quiz .bar .fill{height:100%;background:var(--amber);width:0;transition:width .3s ease}
+#quiz .bar .count{font-family:"Chakra Petch",monospace;font-size:13px;color:var(--mute);min-width:46px;text-align:right}
+#quiz .back{font-size:13px;color:var(--mute);padding:6px 4px;min-height:36px}
+#quiz .mbti-group{display:flex;flex-direction:column;gap:8px}
+#quiz .mbti-group h3{margin:0;font-size:13px;font-weight:500;color:var(--mute)}
+#quiz .mbti-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+#quiz .mbti-btn{
+  min-height:58px;border-radius:8px;background:var(--panel);border:1px solid var(--line);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;padding:6px 2px;
+}
+#quiz .mbti-btn b{font-family:"Chakra Petch",monospace;font-size:17px;letter-spacing:.06em}
+#quiz .mbti-btn small{font-size:10.5px;color:var(--mute);line-height:1.3}
+#quiz .mbti-btn:active{background:var(--panel2)}
+#quiz .mbti-btn[data-g="NT"] b{color:#c8a6f3}
+#quiz .mbti-btn[data-g="NF"] b{color:#8fdc8a}
+#quiz .mbti-btn[data-g="SJ"] b{color:#7fcdea}
+#quiz .mbti-btn[data-g="SP"] b{color:#f5c969}
+#quiz .q-card{display:flex;flex-direction:column;gap:18px;padding-top:8px}
+#quiz .q-scene{font-size:14px;color:var(--mute)}
+#quiz .opts{display:flex;flex-direction:column;gap:10px}
+#quiz .opt{
+  display:grid;grid-template-columns:34px 1fr;align-items:center;gap:12px;text-align:left;
+  min-height:62px;padding:12px 14px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line);
+  transition:border-color .12s, background .12s, transform .12s;
+}
+#quiz .opt .k{font-family:"Chakra Petch",monospace;font-weight:700;width:34px;height:34px;display:grid;place-items:center;border-radius:6px;background:var(--panel2);color:var(--amber)}
+#quiz .opt:hover{border-color:#4a6470}
+#quiz .opt:active,#quiz .opt.picked{background:var(--panel2);border-color:var(--amber);transform:scale(.99)}
+#quiz .select{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;min-height:60vh;text-align:center}
+#quiz .select .roll{font-family:"Dela Gothic One",sans-serif;font-size:clamp(34px,10vw,52px);line-height:1.1;min-height:1.2em}
+#quiz .select .scan{width:min(280px,80%);height:4px;background:var(--panel2);border-radius:2px;overflow:hidden}
+#quiz .select .scan i{display:block;height:100%;width:40%;background:var(--amber);animation:qscan 0.9s ease-in-out infinite alternate}
+@keyframes qscan{from{transform:translateX(-10%)}to{transform:translateX(160%)}}
+#quiz .result{display:flex;flex-direction:column;gap:18px;padding-top:8px}
+#quiz .qcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+#quiz .card-top{position:relative;padding:22px 18px 18px;display:flex;flex-direction:column;gap:10px;
+  background:linear-gradient(160deg, color-mix(in srgb, var(--cls) 26%, transparent), transparent 62%);}
+#quiz .card-top::after{content:"";position:absolute;right:-30px;top:-30px;width:140px;height:140px;border:10px solid var(--cls);opacity:.18;transform:rotate(45deg)}
+#quiz .name{font-family:"Dela Gothic One",sans-serif;font-size:clamp(38px,11vw,56px);line-height:1.05}
+#quiz .en{font-family:"Chakra Petch",monospace;font-size:13px;letter-spacing:.2em;color:var(--mute);text-transform:uppercase}
+#quiz .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+#quiz .cls{font-size:13px;font-weight:700;padding:3px 10px;border-radius:4px;background:var(--cls);color:#14100a}
+#quiz .sync{font-family:"Chakra Petch",monospace;font-size:13px;color:var(--ink)}
+#quiz .sync b{font-size:20px;color:var(--amber)}
+#quiz .copyline{font-weight:700;font-size:18px}
+#quiz .card-body{padding:4px 18px 18px;display:flex;flex-direction:column;gap:16px}
+#quiz .block{display:flex;flex-direction:column;gap:6px}
+#quiz .block h4{margin:0;font-family:"Chakra Petch",monospace;font-size:12px;letter-spacing:.16em;color:var(--mute);font-weight:500;text-transform:uppercase}
+#quiz .roast{background:var(--panel2);border-left:3px solid var(--cls);padding:10px 12px;border-radius:0 8px 8px 0}
+#quiz .why{display:flex;flex-wrap:wrap;gap:6px}
+#quiz .why .chip{background:transparent}
+#quiz .traits{display:flex;flex-direction:column;gap:8px}
+#quiz .trait{display:grid;grid-template-columns:92px 1fr 30px;align-items:center;gap:10px;font-size:14px}
+#quiz .trait .t{height:8px;background:var(--panel2);border-radius:4px;overflow:hidden}
+#quiz .trait .t i{display:block;height:100%;background:var(--amber);border-radius:4px}
+#quiz .trait .v{font-family:"Chakra Petch",monospace;font-size:13px;color:var(--mute);text-align:right;font-variant-numeric:tabular-nums}
+#quiz .subs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#quiz .sub{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:4px;border-top:3px solid var(--cls)}
+#quiz .sub .n{font-weight:700;font-size:17px}
+#quiz .sub .c{font-size:12px;color:var(--mute)}
+#quiz .sub .p{font-family:"Chakra Petch",monospace;color:var(--amber);font-size:14px}
+#quiz .buddy{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--panel2);border-radius:8px;padding:10px 12px}
+#quiz .buddy b{font-size:16px}
+#quiz .actions{display:flex;flex-direction:column;gap:10px}
+#quiz .toast{font-size:13px;color:var(--amber);text-align:center;min-height:1.4em}
+#quiz .xbtn{display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--ink)}
+#quiz .sharebox{width:100%;min-height:84px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit;font-size:14px;resize:none}
+#quiz .qfoot{font-size:12px;color:var(--mute);text-align:center}
+#quiz .fade{animation:qfade .28s ease both}
+@keyframes qfade{from{opacity:.001;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){#quiz .fade,#quiz .select .scan i{animation:none}#quiz .bar .fill{transition:none}}
+@media (max-width:370px){#quiz .mbti-btn small{display:none}#quiz .trait{grid-template-columns:78px 1fr 26px}}
+#quiz h1,#quiz h2{font-family:'Dela Gothic One','Zen Kaku Gothic New',sans-serif;font-weight:400}
+#quiz h1{font-size:clamp(28px,7.5vw,40px);line-height:1.2}
+#quiz h2{font-size:clamp(20px,5.4vw,25px);line-height:1.35}
+#quiz{max-width:560px;margin:0 auto;font-size:16px}
+#quiz .portrait{position:absolute;right:6px;bottom:0;height:calc(100% - 8px);max-width:44%;object-fit:contain;object-position:bottom right;pointer-events:none}
+#quiz .card-top.has-pt{padding-right:40%;min-height:230px}
+#quiz .card-top.has-pt::after{display:none}
+#quiz .sub{position:relative;overflow:hidden}
+#quiz .sub .mini-pt{position:absolute;right:4px;bottom:0;height:88%;opacity:.9;pointer-events:none}
+#quiz .sub .n,#quiz .sub .c,#quiz .sub .p{position:relative;max-width:62%}
+
+</style>
+<style>[hidden]{display:none!important}img{max-width:100%}</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow" id="seasonLine">Season 30 · Marked · Split 2</div>
+    <h1>Apex パッチ速報</h1>
+    <div class="status">
+      <span><span class="dot off" id="liveDot"></span><span id="liveText">読み込み中</span></span>
+      <span>最終チェック <b class="mono" id="checked">—</b></span>
+      <span>最新パッチ <b class="mono" id="latestDate">—</b></span>
+    </div>
+  </header>
+
+  <nav><div class="tabs" role="tablist" id="tabs">
+    <button class="tab" role="tab" data-tab="rank" aria-selected="true">強さTOP10</button>
+    <button class="tab" role="tab" data-tab="patch">最新パッチ</button>
+    <button class="tab" role="tab" data-tab="legends">レジェンド</button>
+    <button class="tab" role="tab" data-tab="weapons">武器</button>
+    <button class="tab" role="tab" data-tab="history">パッチ履歴</button>
+    <button class="tab" role="tab" data-tab="quiz">適性診断</button>
+  </div></nav>
+
+  <main id="view"><div class="stack">
+    <div class="patch-head"><h2>今強いレジェンド TOP10</h2><span class="src mono">2026/09/17 時点</span></div>
+    <div class="rank-list"><div class="rank" style="--cls:var(--c-support)">
+        <div class="no">1</div>
+        <span class="pt lg" style="--cls:var(--c-support)"><img src="img/loba.webp" alt="ローバ" loading="lazy"></span>
+        <div><div class="nm"><b>ローバ</b><span class="chip"><i style="background:var(--c-support)"></i>サポート</span></div><p class="rs">ルートが減った環境で物資を確保できる価値が最大。S30開幕で戦術・ウルトが強化</p></div>
+        <div class="side"><span class="tier S">S</span><span class="trend same">― 維持</span></div>
+      </div><div class="rank" style="--cls:var(--c-skirm)">
+        <div class="no">2</div>
+        <span class="pt " style="--cls:var(--c-skirm)"><img src="img/axle.webp" alt="アクセル" loading="lazy"></span>
+        <div><div class="nm"><b>アクセル</b><span class="chip"><i style="background:var(--c-skirm)"></i>スカーミッシャー</span></div><p class="rs">Split 2 でスタン 1.5秒→0.25秒に弱体化。それでも機動力で上位を維持</p></div>
+        <div class="side"><span class="tier S">S</span><span class="trend down">▼ 下降</span></div>
+      </div><div class="rank" style="--cls:var(--c-recon)">
+        <div class="no">3</div>
+        <span class="pt " style="--cls:var(--c-recon)"><img src="img/seer.webp" alt="シア" loading="lazy"></span>
+        <div><div class="nm"><b>シア</b><span class="chip"><i style="background:var(--c-recon)"></i>リコン</span></div><p class="rs">振り向き低下は削除されたが、戦術でシールドや蘇生の発動を止められる点が健在</p></div>
+        <div class="side"><span class="tier S">S</span><span class="trend down">▼ 下降</span></div>
+      </div><div class="rank" style="--cls:var(--c-recon)">
+        <div class="no">4</div>
+        <span class="pt " style="--cls:var(--c-recon)"><img src="img/vantage.webp" alt="ヴァンテージ" loading="lazy"></span>
+        <div><div class="nm"><b>ヴァンテージ</b><span class="chip"><i style="background:var(--c-recon)"></i>リコン</span></div><p class="rs">遠距離武器が強い環境と相性が良い</p></div>
+        <div class="side"><span class="tier A+">A+</span><span class="trend same">― 維持</span></div>
+      </div><div class="rank" style="--cls:var(--c-skirm)">
+        <div class="no">5</div>
+        <span class="pt " style="--cls:var(--c-skirm)"><img src="img/pathfinder.webp" alt="パスファインダー" loading="lazy"></span>
+        <div><div class="nm"><b>パスファインダー</b><span class="chip"><i style="background:var(--c-skirm)"></i>スカーミッシャー</span></div><p class="rs">グラップルとジップラインで部隊ごと動ける</p></div>
+        <div class="side"><span class="tier A+">A+</span><span class="trend same">― 維持</span></div>
+      </div><div class="rank" style="--cls:var(--c-support)">
+        <div class="no">6</div>
+        <span class="pt " style="--cls:var(--c-support)"><img src="img/conduit.webp" alt="コンジット" loading="lazy"></span>
+        <div><div class="nm"><b>コンジット</b><span class="chip"><i style="background:var(--c-support)"></i>サポート</span></div><p class="rs">Split 2 でウルトの展開速度などが強化</p></div>
+        <div class="side"><span class="tier A+">A+</span><span class="trend up">▲ 上昇</span></div>
+      </div><div class="rank" style="--cls:var(--c-recon)">
+        <div class="no">7</div>
+        <span class="pt " style="--cls:var(--c-recon)"><img src="img/bloodhound.webp" alt="ブラッドハウンド" loading="lazy"></span>
+        <div><div class="nm"><b>ブラッドハウンド</b><span class="chip"><i style="background:var(--c-recon)"></i>リコン</span></div><p class="rs">S30で大幅リワーク、Split 2 でクロークがさらに強化</p></div>
+        <div class="side"><span class="tier A">A</span><span class="trend up">▲ 上昇</span></div>
+      </div><div class="rank" style="--cls:var(--c-recon)">
+        <div class="no">8</div>
+        <span class="pt " style="--cls:var(--c-recon)"><img src="img/sparrow.webp" alt="スパロー" loading="lazy"></span>
+        <div><div class="nm"><b>スパロー</b><span class="chip"><i style="background:var(--c-recon)"></i>リコン</span></div><p class="rs">ボセック の矢ストック増加（クイーバー 50→70）の恩恵</p></div>
+        <div class="side"><span class="tier A">A</span><span class="trend up">▲ 上昇</span></div>
+      </div><div class="rank" style="--cls:var(--c-assault)">
+        <div class="no">9</div>
+        <span class="pt " style="--cls:var(--c-assault)"><img src="img/fuse.webp" alt="ヒューズ" loading="lazy"></span>
+        <div><div class="nm"><b>ヒューズ</b><span class="chip"><i style="background:var(--c-assault)"></i>アサルト</span></div><p class="rs">Split 2 で爆発耐性パッシブ追加など大幅強化</p></div>
+        <div class="side"><span class="tier B+">B+</span><span class="trend up">▲ 上昇</span></div>
+      </div><div class="rank" style="--cls:var(--c-ctrl)">
+        <div class="no">10</div>
+        <span class="pt " style="--cls:var(--c-ctrl)"><img src="img/catalyst.webp" alt="カタリスト" loading="lazy"></span>
+        <div><div class="nm"><b>カタリスト</b><span class="chip"><i style="background:var(--c-ctrl)"></i>コントローラー</span></div><p class="rs">Split 2 で戦術CT短縮・ウルト高速化</p></div>
+        <div class="side"><span class="tier B+">B+</span><span class="trend up">▲ 上昇</span></div>
+      </div></div>
+    <p class="banner">Split 2 ティアリストの順位に、Marked ミッドシーズン（9/15）の強化・弱体化を矢印で反映　出典：<a href="https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/" target="_blank" rel="noopener noreferrer">Two Average Gamers（Split 2 ティアリスト） 1</a>・<a href="https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/" target="_blank" rel="noopener noreferrer">Two Average Gamers（Split 2 ティアリスト） 2</a></p>
+    <div class="card stack"><h2>武器ティア（上位）</h2>
+    <div><div class="tierblock"><span class="tier S+">S+</span><div class="names"><span class="name-chip">30-30リピーター</span><span class="name-chip">クレーバー</span><span class="name-chip">L-STAR</span></div></div><div class="tierblock"><span class="tier S">S</span><div class="names"><span class="name-chip">チャージライフル</span><span class="name-chip">トリプルテイク</span><span class="name-chip">ボセックボウ</span></div></div><div class="tierblock"><span class="tier A+">A+</span><div class="names"><span class="name-chip">R-301カービン</span><span class="name-chip">プラウラー</span><span class="name-chip">ディヴォーション</span><span class="name-chip">ネメシス</span><span class="name-chip">G7スカウト</span></div></div><div class="tierblock"><span class="tier A">A</span><div class="names"><span class="name-chip">ウィングマン</span><span class="name-chip">P2020</span><span class="name-chip">RE-45</span></div></div></div></div>
+    <div class="card stack"><h2>今のメタ</h2><ul class="notes"><li>ローバ はプレデター帯でピック率24%。ルートが減った今シーズンは物資を確保できる価値が高い</li><li>アクセル は Split 2 でスタンが大幅に短縮されたが、機動力で上位を維持</li><li>シア は戦術でシールド・壁・蘇生などの発動を止められる点が評価されている</li><li>遠距離武器（30-30リピーター / チャージライフル / トリプルテイク）が強い環境。Corrupted アタッチメントで構成の選び方が変わった</li></ul></div>
+    <button class="tab" data-go="quiz" style="border:1px solid var(--line);color:var(--amber);align-self:flex-start">あなたに合うレジェンドを診断する ▶</button>
+  </div></main>
+
+  <div class="foot">
+    <p>数値は公式パッチノートを優先し、強さランキングは外部のティアリストをもとにまとめています。各項目の「出典」から一次情報を確認できます。</p>
+    <p>当サイトは Electronic Arts / Respawn Entertainment とは関係のない非公式ファンサイトです。Apex Legends の名称・画像などの権利は各権利者に帰属します。</p>
+  </div>
+</div>
+
+<script>
+(function(){
+const imgFor=n=>{try{return window.QUIZ_IMG?window.QUIZ_IMG(n):null}catch(e){return null}};
+
+/* ---------- data ---------- */
+const CLASSES = {
+  assault:{ja:"アサルト",v:"--c-assault"},
+  skirm:{ja:"スカーミッシャー",v:"--c-skirm"},
+  recon:{ja:"リコン",v:"--c-recon"},
+  support:{ja:"サポート",v:"--c-support"},
+  ctrl:{ja:"コントローラー",v:"--c-ctrl"}
+};
+const TRAITS = {
+  aggro:"攻め気", move:"機動力", intel:"情報収集", support:"仲間想い", control:"陣地づくり",
+  trick:"撹乱", range:"遠距離", lead:"リーダー気質", chaos:"ノリの良さ"
+};
+
+const LEGENDS = [
+ {n:"バンガロール",en:"Bangalore",c:"assault",t:{aggro:2,lead:3,control:1,range:1},m:["ESTJ","ISTJ"],
+  copy:"頼れる職業軍人",roast:"段取りの悪い現場を見ると、黙ってスモークを焚きたくなるタイプ。",
+  tip:"スモークを焚いてから前進、の基本だけで部隊の動きが安定します。撃たれたときの加速で射線から抜けましょう。",buddy:"シア"},
+ {n:"ブラッドハウンド",en:"Bloodhound",c:"recon",t:{intel:3,aggro:2,lead:1},m:["INFJ","ISTP"],
+  copy:"狩りの神に選ばれし者",roast:"グループLINEの既読が異常に早い。そして誰がどこにいるか把握している。",
+  tip:"スキャンで位置を取り、ウルトで一気に詰める。スキャンは結果を報告するところまでがワンセットです。",buddy:"レイス"},
+ {n:"コースティック",en:"Caustic",c:"ctrl",t:{control:3,aggro:1,trick:1},m:["INTJ","INTP"],
+  copy:"ガスをこよなく愛する研究者",roast:"家に来た友人をなかなか帰さない。玄関の前に何か置いてある。",
+  tip:"建物に入ったらドア前と階段にガスを置いて籠もる。最終盤の籠城で強さがはっきり出ます。",buddy:"ジブラルタル"},
+ {n:"ジブラルタル",en:"Gibraltar",c:"support",t:{support:3,control:1,lead:1},m:["ESFJ","ISFJ"],
+  copy:"みんなの大きな盾",roast:"飲み会の帰り道、全員が家に着いたか最後まで気にしている。",
+  tip:"ドームを張って蘇生、ガンシールドで撃ち合い。ドームは守りだけでなく、詰めるときの足場にもなります。",buddy:"オクタン"},
+ {n:"ライフライン",en:"Lifeline",c:"support",t:{support:3,lead:1,aggro:1},m:["ENFJ","ESFJ"],
+  copy:"戦場を駆ける救急医",roast:"友達の体調の変化に本人より先に気づく。",
+  tip:"蘇生はシールドを出してから安全に。ウルトの補給パッケージで部隊の装備を底上げしましょう。",buddy:"バリスティック"},
+ {n:"ミラージュ",en:"Mirage",c:"support",t:{trick:3,chaos:2,support:1},m:["ENFP","ESFP"],
+  copy:"騙しの天才（自称）",roast:"話を盛るのが上手い。盛った話を自分で信じ始める。",
+  tip:"デコイを走らせて敵の反応を見る。撃たれた方向がそのまま敵の位置情報になります。",buddy:"パスファインダー"},
+ {n:"パスファインダー",en:"Pathfinder",c:"skirm",t:{move:3,intel:1,chaos:2},m:["ENFP","ESFJ"],
+  copy:"ポジティブ全開の移動ロボ",roast:"知らない人にも話しかけて、5分後には友達になっている。",
+  tip:"グラップルで高所を先に取る。ジップラインは攻めだけでなく、部隊の退路としても使えます。",buddy:"ミラージュ"},
+ {n:"レイス",en:"Wraith",c:"skirm",t:{move:2,aggro:2,intel:1},m:["INTJ","ISTP"],
+  copy:"虚空の声を聴く者",roast:"集合写真の端で気配を消している。でも写真には写っている。",
+  tip:"フェーズで不利な撃ち合いから抜ける。ポータルは攻めより逃げに使ったほうが部隊を救えます。",buddy:"ブラッドハウンド"},
+ {n:"オクタン",en:"Octane",c:"skirm",t:{move:3,aggro:2,chaos:3},m:["ESTP","ESFP"],
+  copy:"スピード狂のアドレナリンジャンキー",roast:"階段は2段飛ばし。エスカレーターも歩く。",
+  tip:"ジャンプパッドは突入口にも逃げ道にもなります。先行しすぎたら一度振り返る勇気を。",buddy:"ジブラルタル"},
+ {n:"ワットソン",en:"Wattson",c:"ctrl",t:{control:3,intel:1},m:["INTP","INFP"],
+  copy:"電気で守る天才エンジニア",roast:"部屋のケーブル配線が異常にきれい。",
+  tip:"フェンスで建物を囲い、パイロンで飛んでくるグレネードを止める。最終円で真価を発揮します。",buddy:"ランパート"},
+ {n:"クリプト",en:"Crypto",c:"recon",t:{intel:3,range:1,control:1},m:["INTP","INTJ"],
+  copy:"影に潜むハッカー",roast:"パスワードは32文字。ただし本人も覚えていない。",
+  tip:"ドローンでビーコンをスキャンし、EMPで敵のシールドを削って味方に詰めてもらいましょう。",buddy:"レヴナント"},
+ {n:"レヴナント",en:"Revenant",c:"assault",t:{aggro:3,trick:1,lead:1},m:["ENTJ","ISTP"],
+  copy:"人間嫌いの暗殺シミュラクラム",roast:"月曜の朝の顔が、一週間ずっと続いている。",
+  tip:"高いジャンプで屋上から奇襲。部隊ごと突っ込むタイミングを自分で作れます。",buddy:"クリプト"},
+ {n:"ローバ",en:"Loba",c:"support",t:{support:2,move:1,trick:1,chaos:1},m:["ENTP","ESTP"],
+  copy:"優雅な大泥棒",roast:"欲しいもののセール最安値を全部知っている。",
+  tip:"ブラックマーケットで部隊の弾と回復をそろえる。ブレスレットのテレポートで移動と逃げを両立。",buddy:"ランパート"},
+ {n:"ランパート",en:"Rampart",c:"ctrl",t:{control:2,aggro:1,range:2,chaos:1},m:["ESTP","ENTP"],
+  copy:"改造武器屋のお姉さん",roast:"DIY工具だけは異常にそろっている。完成品は少ない。",
+  tip:"遮蔽を置いて強ポジに籠もり、シーラでなぎ払う。良い場所を取ったら動かないことが強さです。",buddy:"ワットソン"},
+ {n:"ホライゾン",en:"Horizon",c:"skirm",t:{move:2,aggro:1,control:1,chaos:1},m:["ENTP","ENFP"],
+  copy:"重力を操る天体物理学者",roast:"宇宙の話を始めると止まらない。",
+  tip:"グラビティリフトで高所取りと撤退。ブラックホールで敵をまとめたら、味方と一緒に投げ物を。",buddy:"ヒューズ"},
+ {n:"ヒューズ",en:"Fuse",c:"assault",t:{aggro:3,chaos:2,range:1},m:["ESFP","ESTP"],
+  copy:"爆発大好きおじさん",roast:"花火大会の最前列を朝から陣取っている。",
+  tip:"ナックルクラスターで遮蔽裏の敵をあぶり出す。グレネードを多めに持てるので投げ物で攻めましょう。",buddy:"ホライゾン"},
+ {n:"ヴァルキリー",en:"Valkyrie",c:"skirm",t:{move:2,lead:2,intel:1,range:1},m:["ENTJ","ESTJ"],
+  copy:"空を翔ける開拓者",roast:"旅行の計画を立てるのはいつもこの人。",
+  tip:"スカイワードダイブで部隊ごと移動。空中から敵の位置を見て、降りる場所を決めましょう。",buddy:"ブラッドハウンド"},
+ {n:"シア",en:"Seer",c:"recon",t:{intel:3,aggro:1},m:["INFJ","INFP"],
+  copy:"鼓動まで読むアーティスト",roast:"相手の本音を察しすぎて、帰り道にどっと疲れる。",
+  tip:"タクティカルで敵のアーマーを確認してから撃ち合う。情報で先に有利を作るのが仕事です。",buddy:"バンガロール"},
+ {n:"アッシュ",en:"Ash",c:"assault",t:{aggro:2,move:1,intel:1,lead:1},m:["INTJ","ENTJ"],
+  copy:"冷徹なシミュラクラム",roast:"会議で結論だけ言って退出する。",
+  tip:"アークスネアで足止め、フェーズブリーチで奇襲か撤退。デスボックスから倒した敵の情報も拾えます。",buddy:"ヴァルキリー"},
+ {n:"マッドマギー",en:"Mad Maggie",c:"assault",t:{aggro:3,chaos:1},m:["ESTP","ENTJ"],
+  copy:"反逆の戦士",roast:"炎上しても、むしろそれを燃料にする。",
+  tip:"ライオットドリルで遮蔽裏の敵を追い出し、ウルトのボールで突撃。攻め続けることが仕事です。",buddy:"ニューキャッスル"},
+ {n:"ニューキャッスル",en:"Newcastle",c:"support",t:{support:3,control:1,aggro:1},m:["ISFJ","ENFJ"],
+  copy:"仲間を守るヒーロー",roast:"困っている人を見ると、頼まれていなくても駆けつける。",
+  tip:"シールドを構えながら蘇生。ウルトで味方の前に壁を作って救出に向かいましょう。",buddy:"マッドマギー"},
+ {n:"ヴァンテージ",en:"Vantage",c:"recon",t:{range:3,intel:1},m:["ISFP","ISTP"],
+  copy:"サバイバルの達人",roast:"キャンプ道具が一式ある。使ったのは1回。",
+  tip:"相棒エコーを使って高所へ移動し、ウルトのスナイパーで敵をマーク。部隊の狙う相手を決められます。",buddy:"レイス"},
+ {n:"カタリスト",en:"Catalyst",c:"ctrl",t:{control:3,support:1},m:["INFP","ISFJ"],
+  copy:"フェロフルイドの魔女",roast:"推しの話になると急に早口になる。",
+  tip:"ドアを強化して建物に籠もり、ウルトの壁で敵部隊を分断します。",buddy:"ジブラルタル"},
+ {n:"バリスティック",en:"Ballistic",c:"assault",t:{aggro:2,support:1,range:1,lead:1},m:["ESTJ","ISTJ"],
+  copy:"現役復帰したガンスリンガー",roast:"「昔はな…」から始まる話が、なぜか毎回面白い。",
+  tip:"ウィストラーで敵の武器を過熱させ、ウルトで部隊全体を加速させて一気に攻めます。",buddy:"ライフライン"},
+ {n:"コンジット",en:"Conduit",c:"support",t:{support:3,move:1},m:["ENFJ","ISFP"],
+  copy:"エネルギーで仲間を支える",roast:"会うと元気をくれる。本人の充電はよく切れている。",
+  tip:"タクティカルで味方のシールドを回復、ウルトの妨害装置で敵の動きを止めましょう。",buddy:"ヴァルキリー"},
+ {n:"オルター",en:"Alter",c:"skirm",t:{trick:2,move:2,chaos:1},m:["ENTP","INTP"],
+  copy:"次元を越えるトリックスター",roast:"話のオチをわざと言わずに帰る。",
+  tip:"壁を抜けるポータルで裏取りや撤退。ウルトで戻り先を用意しておくと強気に動けます。",buddy:"ブラッドハウンド"},
+ {n:"スパロー",en:"Sparrow",c:"recon",t:{intel:2,range:2,move:1},m:["ISFP","INFP"],
+  copy:"弓を操る若きハンター",roast:"一人行動が好きなのに、グループの誰よりも周りを見ている。",
+  tip:"トラッカーで敵の動きを追い、身軽な動きで高所を取る。情報を取ってから仕掛けましょう。",buddy:"ヴァンテージ"},
+ {n:"アクセル",en:"Axle",c:"skirm",t:{move:3,aggro:2},m:["ESTP","ISTP"],
+  copy:"改造ボディのバイクレーサー",roast:"信号が青になった瞬間、誰より先に出る。",
+  tip:"スライドを多用して撃ち合いに入り、ニトロゲートで部隊ごと加速。ゲートは敵も通れるので置き場所に注意。",buddy:"オクタン"}
+];
+
+const MBTI = [
+ {g:"NT",label:"分析家",types:[["INTJ","建築家"],["INTP","論理学者"],["ENTJ","指揮官"],["ENTP","討論者"]]},
+ {g:"NF",label:"外交官",types:[["INFJ","提唱者"],["INFP","仲介者"],["ENFJ","主人公"],["ENFP","運動家"]]},
+ {g:"SJ",label:"番人",types:[["ISTJ","管理者"],["ISFJ","擁護者"],["ESTJ","幹部"],["ESFJ","領事"]]},
+ {g:"SP",label:"探検家",types:[["ISTP","巨匠"],["ISFP","冒険家"],["ESTP","起業家"],["ESFP","エンターテイナー"]]}
+];
+
+const QUESTIONS = [
+ {s:"降下開始",q:"ジャンプマスターが降下地点を決めた。あなたの本音は？",o:[
+  ["激戦区に降りたい。最初の30秒が一番楽しい",{aggro:2,chaos:1}],
+  ["人のいない所でゆっくり物資を集めたい",{control:1,range:1,support:1}],
+  ["どこでもいい。味方とはぐれないことが大事",{support:1,lead:1}],
+  ["降りる前に、周りに何部隊いるか数えている",{intel:2}]]},
+ {s:"交戦前",q:"遠くに敵部隊が見えた。最初にすることは？",o:[
+  ["撃たれる前に詰める",{aggro:2,move:1}],
+  ["ここから削れるだけ削る",{range:2}],
+  ["ピンを刺して「3人、右の建物」と報告",{intel:1,lead:1}],
+  ["来るのを待って、罠を張る",{control:2}]]},
+ {s:"緊急事態",q:"味方がダウンした。",o:[
+  ["身を挺してでも即蘇生",{support:2}],
+  ["倒したやつを先に倒す",{aggro:2}],
+  ["敵の位置を確認してから安全に起こす",{intel:1,control:1}],
+  ["煙やデコイで目くらましして、そのすきに",{trick:2}]]},
+ {s:"リング収縮",q:"リングが迫ってきた。",o:[
+  ["とっくに安地の中で待っている",{control:1,intel:1}],
+  ["ギリギリでアビリティを使って飛び込む",{move:2,chaos:1}],
+  ["道中の部隊を狩りながら入る",{aggro:1,lead:1}],
+  ["特に何も考えていない。なんとかなる",{chaos:2}]]},
+ {s:"日常パート",q:"締め切り前夜のあなたは？",o:[
+  ["1週間前に終わっている",{control:1,lead:1}],
+  ["今夜が本番。スピード勝負",{move:1,aggro:1,chaos:1}],
+  ["人の手伝いをしていたら自分の分が終わっていない",{support:2}],
+  ["調べものが楽しくなって本題が進まない",{intel:2}]]},
+ {s:"キルログ",q:"一番気持ちいい倒し方は？",o:[
+  ["至近距離のショットガン",{aggro:2}],
+  ["遠距離からのヘッドショット",{range:2}],
+  ["仕掛けた罠に敵が入った瞬間",{control:2,trick:1}],
+  ["敵が混乱しているすきに後ろから",{trick:2,chaos:1}]]},
+ {s:"VC",q:"ボイスチャットでのあなたの立ち位置は？",o:[
+  ["指示を出すIGL",{lead:2}],
+  ["盛り上げ役。負けても笑っている",{chaos:2}],
+  ["無言。結果で語る",{aggro:1,range:1}],
+  ["情報だけを淡々と伝える",{intel:2}]]},
+ {s:"最終質問",q:"ひとつだけ超能力をもらえるなら？",o:[
+  ["瞬間移動",{move:2,trick:1}],
+  ["壁の向こうが見える透視",{intel:2}],
+  ["分身の術",{trick:2}],
+  ["絶対に壊れないバリア",{control:1,support:1}]]}
+];
+
+/* ---------- state ---------- */
+let app = null;
+let state = {mbti:null, answers:[], step:"intro"};
+const KEYS = ["A","B","C","D"];
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function top(){try{window.scrollTo({top:0,behavior:"instant"})}catch(e){window.scrollTo(0,0)}}
+
+/* ---------- scoring ---------- */
+function userTraits(){
+  const u={}; Object.keys(TRAITS).forEach(k=>u[k]=0);
+  state.answers.forEach((a,i)=>{const add=QUESTIONS[i].o[a][1]; for(const k in add)u[k]+=add[k];});
+  return u;
+}
+function rank(){
+  const u=userTraits();
+  return LEGENDS.map(L=>{
+    let dot=0,norm=0;
+    for(const k in L.t){dot+=u[k]*L.t[k];norm+=L.t[k]*L.t[k];}
+    let s=dot/Math.sqrt(norm);
+    if(state.mbti && L.m.includes(state.mbti)) s+=2.5;
+    return {L,s};
+  }).sort((a,b)=>b.s-a.s);
+}
+
+/* ---------- screens ---------- */
+function render(){
+  if(!app || app.dataset.mount!=="quiz") return;
+  const s=state.step;
+  if(s==="intro") return intro();
+  if(s==="mbti") return mbti();
+  if(s==="loading") return loading();
+  if(s==="result") return result();
+  return question(s);
+}
+
+function intro(){
+  app.innerHTML=`
+  <section class="hero fade">
+    <div class="eyebrow">Legend Select / 適性診断</div>
+    <h1>あなたが使うべき<br>レジェンドは誰だ。</h1>
+    <p class="lead">MBTIと8つの質問から、全28レジェンドの中であなたと一番シンクロするキャラを選びます。所要時間は約1分。</p>
+    <div class="classes">
+      ${Object.values(CLASSES).map(c=>`<span class="chip"><i style="background:var(${c.v})"></i>${c.ja}</span>`).join("")}
+    </div>
+  </section>
+  <div class="stack fade" style="margin-top:22px">
+    <div class="steps">
+      <b>01</b><span>MBTIを選ぶ（わからなくてもOK）</span>
+      <b>02</b><span>試合中と日常の質問に8問答える</span>
+      <b>03</b><span>あなたのレジェンドと立ち回りのコツを表示</span>
+    </div>
+    <button class="cta" id="go">診断をはじめる <span class="mono">▶</span></button>
+    <p class="qfoot">レジェンドの能力やクラスは Season 30 時点の情報をもとにしています。</p>
+  </div>`;
+  document.getElementById("go").onclick=()=>{state.step="mbti";render();top();};
+}
+
+function progress(i,total,backFn){
+  return `<div class="bar">
+    <button class="back" id="back">◀ 戻る</button>
+    <div class="track"><div class="fill" style="width:${Math.round(i/total*100)}%"></div></div>
+    <span class="count">${i}/${total}</span></div>`;
+}
+
+function mbti(){
+  const total=QUESTIONS.length+1;
+  app.innerHTML=`${progress(0,total)}
+  <section class="q-card fade">
+    <div class="q-scene eyebrow">Step 01 / MBTI</div>
+    <h2>あなたのMBTIは？</h2>
+    ${MBTI.map(gr=>`<div class="mbti-group"><h3>${gr.label}</h3>
+      <div class="mbti-grid">${gr.types.map(([t,j])=>`<button class="mbti-btn" data-g="${gr.g}" data-t="${t}"><b>${t}</b><small>${j}</small></button>`).join("")}</div></div>`).join("")}
+    <button class="ghost" data-t="">わからない・スキップ</button>
+  </section>`;
+  document.getElementById("back").onclick=()=>{state.step="intro";render();top();};
+  app.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>{
+    state.mbti=b.dataset.t||null; state.answers=[]; state.step=0; render(); top();
+  });
+}
+
+function question(i){
+  const Q=QUESTIONS[i], total=QUESTIONS.length+1;
+  app.innerHTML=`${progress(i+1,total)}
+  <section class="q-card fade">
+    <div class="q-scene eyebrow">Q${i+1} / ${esc(Q.s)}</div>
+    <h2>${esc(Q.q)}</h2>
+    <div class="opts">${Q.o.map((o,k)=>`<button class="opt" data-k="${k}"><span class="k">${KEYS[k]}</span><span>${esc(o[0])}</span></button>`).join("")}</div>
+  </section>`;
+  document.getElementById("back").onclick=()=>{
+    if(i===0){state.step="mbti";} else {state.answers.length=i-1; state.step=i-1;}
+    render(); top();
+  };
+  let locked=false;
+  app.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
+    if(locked) return; locked=true;
+    b.classList.add("picked");
+    state.answers[i]=+b.dataset.k; state.answers.length=i+1;
+    setTimeout(()=>{ state.step = i+1<QUESTIONS.length ? i+1 : "loading"; render(); top(); }, reduce?0:180);
+  });
+}
+
+function loading(){
+  app.innerHTML=`<section class="select">
+    <div class="eyebrow">Legend Select</div>
+    <div class="roll" id="roll">…</div>
+    <div class="scan"><i></i></div>
+    <p class="q-scene">あなたとシンクロするレジェンドを選出中</p></section>`;
+  const roll=document.getElementById("roll");
+  if(reduce){state.step="result";return render();}
+  let n=0; const iv=setInterval(()=>{roll.textContent=LEGENDS[Math.floor(Math.random()*LEGENDS.length)].n; if(++n>14){clearInterval(iv);state.step="result";render();top();}},90);
+}
+
+function result(){
+  const r=rank(), best=r[0], L=best.L, cls=CLASSES[L.c];
+  const pct=s=>Math.max(52,Math.min(99,Math.round(99*s/best.s)));
+  const u=userTraits();
+  const maxU=Math.max(1,...Object.values(u));
+  const userTop=Object.entries(u).sort((a,b)=>b[1]-a[1]).slice(0,5);
+  const shared=Object.keys(L.t).filter(k=>u[k]>0).sort((a,b)=>u[b]*L.t[b]-u[a]*L.t[a]).slice(0,3);
+  const mbtiHit = state.mbti && L.m.includes(state.mbti);
+  const buddy=LEGENDS.find(x=>x.n===L.buddy);
+  const shareText=`私のApexレジェンドは「${L.n}」(${cls.ja})！シンクロ率99%\n${L.copy}${state.mbti?`／${state.mbti}`:""}\n#レジェンド適性診断`;
+  app.innerHTML=`
+  <section class="result fade">
+    <div class="eyebrow">Your Legend</div>
+    <article class="qcard" style="--cls:var(${cls.v})">
+      <div class="card-top${imgFor(L.n)?" has-pt":""}">${imgFor(L.n)?`<img class="portrait" src="${imgFor(L.n)}" alt="">`:""}
+        <div class="en">${esc(L.en)}</div>
+        <div class="name">${esc(L.n)}</div>
+        <div class="meta"><span class="cls">${cls.ja}</span><span class="sync">シンクロ率 <b>99</b>%</span></div>
+        <p class="copyline">${esc(L.copy)}</p>
+      </div>
+      <div class="card-body">
+        <div class="block"><h4>あなたはこんな人</h4><p class="roast">${esc(L.roast)}</p></div>
+        <div class="block"><h4>選ばれた理由</h4>
+          <div class="why">
+            ${shared.map(k=>`<span class="chip">${TRAITS[k]}</span>`).join("")}
+            ${mbtiHit?`<span class="chip">${state.mbti}と相性◎</span>`:""}
+          </div></div>
+        <div class="block"><h4>ピックしたら、まずこれ</h4><p>${esc(L.tip)}</p></div>
+        ${buddy?`<div class="block"><h4>組みたい味方</h4>
+          <div class="buddy"><b>${esc(buddy.n)}</b><span class="chip"><i style="background:var(${CLASSES[buddy.c].v})"></i>${CLASSES[buddy.c].ja}</span></div></div>`:""}
+      </div>
+    </article>
+
+    <div class="block"><h4 class="eyebrow" style="color:var(--mute)">あなたのプレイスタイル</h4>
+      <div class="traits">${userTop.map(([k,v])=>`<div class="trait"><span>${TRAITS[k]}</span><span class="t"><i style="width:${Math.round(v/maxU*100)}%"></i></span><span class="v">${v}</span></div>`).join("")}</div>
+    </div>
+
+    <div class="block"><h4 class="eyebrow" style="color:var(--mute)">サブ候補</h4>
+      <div class="subs">${r.slice(1,3).map(x=>`<div class="sub" style="--cls:var(${CLASSES[x.L.c].v})">${imgFor(x.L.n)?`<img class="mini-pt" src="${imgFor(x.L.n)}" alt="">`:""}<span class="c">${CLASSES[x.L.c].ja}</span><span class="n">${esc(x.L.n)}</span><span class="p">シンクロ率 ${pct(x.s)}%</span></div>`).join("")}</div>
+    </div>
+
+    <div class="actions">
+      <textarea class="sharebox" id="share" readonly aria-label="シェア用テキスト">${esc(shareText)}</textarea>
+      <button class="cta" id="img">結果を画像でシェア</button>
+      <a class="ghost xbtn" id="xshare" href="#" target="_blank" rel="noopener noreferrer">Xでポストする</a>
+      <button class="ghost" id="copy">テキストをコピー</button>
+      <div class="toast" id="toast" aria-live="polite"></div>
+      <button class="ghost" id="retry">もう一度診断する</button>
+    </div>
+  </section>`;
+  const box=document.getElementById("share"), toast=document.getElementById("toast");
+  document.getElementById("copy").onclick=()=>{
+    const ok=()=>toast.textContent="コピーしました。フレンドに送ってみましょう";
+    const fb=()=>{box.focus();box.select();try{document.execCommand("copy");ok();}catch(e){toast.textContent="テキストを選択しました。長押しでコピーできます";}};
+    try{navigator.clipboard.writeText(box.value).then(ok,fb);}catch(e){fb();}
+  };
+  document.getElementById("retry").onclick=()=>{state={mbti:null,answers:[],step:"intro"};render();top();};
+  const siteUrl=location.origin+location.pathname;
+  document.getElementById("xshare").href="https://twitter.com/intent/tweet?text="+encodeURIComponent(shareText)+"&url="+encodeURIComponent(siteUrl+"#quiz");
+  document.getElementById("img").onclick=async()=>{
+    toast.textContent="画像を作っています…";
+    try{
+      const blob=await makeCard(L,cls,shareText,siteUrl);
+      const file=new File([blob],`apex-legend-${L.en.toLowerCase().replace(/[^a-z]/g,"")}.png`,{type:"image/png"});
+      if(navigator.canShare&&navigator.canShare({files:[file]})){
+        try{await navigator.share({files:[file],text:shareText+"\n"+siteUrl+"#quiz"});toast.textContent="";return;}
+        catch(e){if(e&&e.name==="AbortError"){toast.textContent="";return;}}
+      }
+      const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=file.name;document.body.appendChild(a);a.click();
+      setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},2000);
+      toast.textContent="画像を保存しました。Xやフレンドに送ってみましょう";
+    }catch(e){toast.textContent="画像を作れませんでした。テキストのコピーをお使いください";}
+  };
+}
+
+async function makeCard(L,cls,shareText,siteUrl){
+  const W=1080,H=1350,cv=document.createElement("canvas");cv.width=W;cv.height=H;const g=cv.getContext("2d");
+  const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim()||"#ffb03b";
+  const col=css(cls.v), amber=css("--amber")||"#ffb03b";
+  try{await document.fonts.ready;}catch(e){}
+  g.fillStyle="#10181c";g.fillRect(0,0,W,H);
+  g.strokeStyle="rgba(255,255,255,.035)";g.lineWidth=2;
+  for(let x=0;x<W;x+=54){g.beginPath();g.moveTo(x,0);g.lineTo(x,H);g.stroke();}
+  for(let y=0;y<H;y+=54){g.beginPath();g.moveTo(0,y);g.lineTo(W,y);g.stroke();}
+  const gr=g.createLinearGradient(0,0,W,H);gr.addColorStop(0,col+"55");gr.addColorStop(.6,"rgba(0,0,0,0)");g.fillStyle=gr;g.fillRect(0,0,W,H);
+  const src=imgFor(L.n);
+  if(src){await new Promise(res=>{const im=new Image();im.onload=()=>{let h=880,w=im.width*h/im.height;if(w>600){w=600;h=im.height*w/im.width;}g.drawImage(im,W-w-20,H-190-h,w,h);res();};im.onerror=res;im.src=src;});}
+  const sh=g.createLinearGradient(0,0,760,0);sh.addColorStop(0,"rgba(16,24,28,.92)");sh.addColorStop(.62,"rgba(16,24,28,.78)");sh.addColorStop(1,"rgba(16,24,28,0)");g.fillStyle=sh;g.fillRect(0,0,760,H);
+  const disp='"Dela Gothic One","Zen Kaku Gothic New",sans-serif', body='"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif', mono='"Chakra Petch",monospace';
+  g.textBaseline="top";
+  g.fillStyle=amber;g.font=`700 34px ${mono}`;g.fillText("MY APEX LEGEND / 適性診断",70,80);
+  g.fillStyle="#9aa8a6";g.font=`500 36px ${mono}`;g.fillText(L.en.toUpperCase(),70,170);
+  g.fillStyle="#ece3d0";let fs=150;g.font=`400 ${fs}px ${disp}`;while(g.measureText(L.n).width>620&&fs>70){fs-=6;g.font=`400 ${fs}px ${disp}`;}
+  g.fillText(L.n,66,220);
+  const y2=220+fs+30;g.fillStyle=col;g.font=`700 38px ${body}`;const cw=g.measureText(cls.ja).width+44;
+  g.fillRect(70,y2,cw,64);g.fillStyle="#14100a";g.fillText(cls.ja,92,y2+10);
+  g.fillStyle="#ece3d0";g.font=`500 38px ${mono}`;g.fillText("SYNC",70+cw+30,y2+12);g.fillStyle=amber;g.font=`700 64px ${mono}`;g.fillText("99%",70+cw+140,y2-2);
+  const wrap=(t,x,y,maxW,lh)=>{let line="";for(const ch of t){if(g.measureText(line+ch).width>maxW){g.fillText(line,x,y);y+=lh;line=ch;}else line+=ch;}if(line){g.fillText(line,x,y);y+=lh;}return y;};
+  g.fillStyle="#ece3d0";g.font=`700 48px ${body}`;let y=wrap(L.copy,70,y2+120,540,64);
+  g.fillStyle="#ece3d0";g.font=`500 38px ${body}`;const ye=wrap(L.roast,104,y+36,500,56);
+  g.fillStyle=col;g.fillRect(70,y+30,8,ye-y-14);
+  const by=H-190;g.fillStyle="rgba(16,24,28,.85)";g.fillRect(0,by-20,W,210);
+  g.fillStyle="#9aa8a6";g.font=`500 32px ${body}`;g.fillText(state.mbti?`MBTI ${state.mbti} ／ 相棒：${L.buddy}`:`相棒：${L.buddy}`,70,by+8);
+  g.fillStyle=amber;g.font=`700 38px ${mono}`;g.fillText(siteUrl.replace(/^https?:\/\//,"").replace(/\/$/,""),70,by+70);
+  g.fillStyle="#ece3d0";g.font=`400 40px ${disp}`;const t="あなたも診断 ▶";g.fillText(t,W-70-g.measureText(t).width,by+64);
+  return await new Promise((res,rej)=>cv.toBlob(b=>b?res(b):rej(new Error("toBlob")),"image/png"));
+}
+
+
+window.Quiz={mount(el){app=el;render();}};
+})();
+
+</script>
+<script>
+const CLS={assault:["アサルト","--c-assault"],skirm:["スカーミッシャー","--c-skirm"],recon:["リコン","--c-recon"],support:["サポート","--c-support"],ctrl:["コントローラー","--c-ctrl"]};
+const DIR={buff:"強化",nerf:"弱体化",change:"調整",rework:"リワーク"};
+const TR={up:"▲ 上昇",down:"▼ 下降",same:"― 維持",new:"NEW"};
+const D={state:null,meta:null,patches:[],weapons:[],legends:[]};
+window.QUIZ_IMG=n=>{const L=D.legends.find(x=>x.ja===n);return L&&/^img\/[a-z0-9-]+\.webp$/.test(L.img)?L.img:null;};
+let tab="rank"; try{const t=localStorage.getItem("apx-tab"); if(t) tab=t;}catch(e){}
+if(location.hash && /^#(rank|patch|legends|weapons|history|quiz)$/.test(location.hash)) tab=location.hash.slice(1);
+const ui={q:"",dir:"all",cls:"all",cat:"all"};
+const view=document.getElementById("view");
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmtDate=s=>esc(s?String(s).slice(0,10).replace(/-/g,"/"):"—");
+const byId=(arr,id)=>arr.find(x=>x.id===id);
+const pill=d=>`<span class="pill ${esc(d)}">${DIR[d]||esc(d)}</span>`;
+const clsChip=c=>CLS[c]?`<span class="chip"><i style="background:var(${CLS[c][1]})"></i>${CLS[c][0]}</span>`:"";
+function avatar(L,cls=""){
+  const c=CLS[L.cls]||["","--line"];
+  if(L.img) return `<span class="pt ${cls==="lg"?"lg":cls==="card"?"card":""}" style="--cls:var(${c[1]})"><img src="${esc(/^img\/[a-z0-9-]+\.webp$/.test(L.img)?L.img:"")}" alt="${esc(L.ja)}" loading="lazy"></span>`;
+  const ini=String(L.en||L.id||"?").replace(/[^A-Za-z]/g,"").slice(0,2).toUpperCase();
+  const inner=L.img?`<img src="${esc(/^img\/[a-z0-9-]+\.webp$/.test(L.img)?L.img:"")}" alt="${esc(L.ja)}" loading="lazy">`:"";
+  return `<span class="av ${cls}" style="--cls:var(${c[1]})"><span class="ini">${esc(ini)}</span>${inner?`<span style="position:absolute;inset:0">${inner}</span>`:""}</span>`;
+}
+const safeUrl=u=>{try{const x=new URL(String(u));return /^https?:$/.test(x.protocol)?x.href:null}catch(e){return null}};
+const srcLink=u=>safeUrl(u)?`<a class="src" href="${esc(safeUrl(u))}" target="_blank" rel="noopener noreferrer">出典</a>`:"";
+
+function header(){
+  const s=D.state;
+  if(s){
+    document.getElementById("seasonLine").textContent=`Season ${s.season} · ${s.seasonName}${s.split?` · Split ${s.split}`:""}`;
+    document.getElementById("checked").textContent=s.lastChecked?s.lastChecked.slice(0,16).replace("T"," ").replace(/-/g,"/"):"—";
+  }
+  const lp=D.patches[0]; document.getElementById("latestDate").textContent=lp?fmtDate(lp.date):"—";
+}
+
+function renderRank(){
+  const m=D.meta; if(!m||!m.ranking) return `<p class="empty">ランキングはまだありません</p>`;
+  return `<div class="stack">
+    <div class="patch-head"><h2>今強いレジェンド TOP10</h2><span class="src mono">${fmtDate(m.updated)} 時点</span></div>
+    <div class="rank-list">${m.ranking.map(r=>{
+      const L=byId(D.legends,r.id)||{ja:r.id,cls:""}; const c=CLS[L.cls]||["","--line"];
+      return `<div class="rank" style="--cls:var(${c[1]})">
+        <div class="no">${esc(r.rank)}</div>
+        ${avatar({...L,id:r.id},r.rank===1?"lg":"")}
+        <div><div class="nm"><b>${esc(L.ja)}</b>${clsChip(L.cls)}</div><p class="rs">${esc(r.reason)}</p></div>
+        <div class="side"><span class="tier ${esc(r.tier)}">${esc(r.tier)}</span><span class="trend ${esc(r.trend)}">${TR[r.trend]||""}</span></div>
+      </div>`}).join("")}</div>
+    <p class="banner">${esc(m.rankingBasis||"")}　出典：${(m.sourceUrls||[]).filter(safeUrl).map((u,i)=>`<a href="${esc(safeUrl(u))}" target="_blank" rel="noopener noreferrer">${esc(m.source||"ティアリスト")}${m.sourceUrls.length>1?` ${i+1}`:""}</a>`).join("・")}</p>
+    ${renderMeta()}
+    <button class="tab" data-go="quiz" style="border:1px solid var(--line);color:var(--amber);align-self:flex-start">あなたに合うレジェンドを診断する ▶</button>
+  </div>`;
+}
+function renderMeta(){
+  const m=D.meta; if(!m) return "";
+  const wname=id=>{const w=byId(D.weapons,id)||{name:id};return w.ja||w.name;};
+  return `<div class="card stack"><h2>武器ティア（上位）</h2>
+    <div>${(m.weaponTop||[]).map(t=>`<div class="tierblock"><span class="tier ${esc(t.tier)}">${esc(t.tier)}</span><div class="names">${t.names.map(n=>`<span class="name-chip">${esc(wname(n))}</span>`).join("")}</div></div>`).join("")}</div></div>
+    <div class="card stack"><h2>今のメタ</h2><ul class="notes">${(m.notes||[]).map(n=>`<li>${esc(n)}</li>`).join("")}</ul></div>`;
+}
+
+function patchCard(p,full){
+  const pid=p.id;
+  const ls=D.legends.filter(x=>(x.history||[]).some(h=>h.patchId===pid));
+  const ws=D.weapons.filter(x=>(x.history||[]).some(h=>h.patchId===pid));
+  ws.forEach(w=>w._n=w.ja||w.name);
+  const row=(arr,nameFn)=>arr.map(x=>{const h=x.history.find(h=>h.patchId===pid);return `<span class="meta-row"><b>${esc(nameFn(x))}</b>${pill(h.dir)}</span>`}).join("");
+  return `<article class="card patch">
+    <div class="patch-head"><span class="mono">${fmtDate(p.date)}</span><h2>${esc(p.title)}</h2>${srcLink(p.url)}</div>
+    <p>${esc(p.summary)}</p>
+    ${full&&p.highlights?`<ul>${p.highlights.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>`:""}
+    ${ls.length?`<div class="stack" style="gap:6px"><span class="eyebrow">Legends</span><div class="tools">${row(ls,x=>x.ja)}</div></div>`:""}
+    ${ws.length?`<div class="stack" style="gap:6px"><span class="eyebrow">Weapons</span><div class="tools">${row(ws,x=>x._n)}</div></div>`:""}
+  </article>`;
+}
+function renderPatch(){const p=D.patches[0]; return p?patchCard(p,true):`<p class="empty">パッチ情報はまだありません</p>`;}
+function renderHistory(){return D.patches.length?`<div class="stack">${D.patches.map(p=>patchCard(p,false)).join("")}</div>`:`<p class="empty">履歴はまだありません</p>`;}
+
+function histBlock(h){return `<div class="stack" style="gap:4px"><div class="meta-row"><span class="mono mute">${fmtDate(h.date)}</span>${pill(h.dir)}${srcLink(h.url)}</div><ul>${h.lines.map(l=>`<li>${esc(l)}</li>`).join("")}</ul></div>`;}
+function itemCard(title,sub,tier,hist,L){
+  const [h,...rest]=hist||[];
+  const t=`<div class="t"><b>${esc(title)}</b><small>${sub}</small></div>`;
+  return `<div class="item ${h?"":"quiet"}">
+    <div class="item-head">${L?`<div class="lg-head">${avatar(L,"card")}${t}</div>`:t}${tier?`<span class="tier ${esc(tier)}">${esc(tier)}</span>`:""}</div>
+    ${h?histBlock(h):`<p class="mute" style="font-size:13px">今シーズンの調整なし</p>`}
+    ${rest.length?`<details><summary>過去の変更 ${rest.length}件</summary><div class="hist">${rest.map(histBlock).join("")}</div></details>`:""}
+  </div>`;
+}
+function filterHist(x){
+  const q=ui.q.trim().toLowerCase();
+  if(q && !JSON.stringify([x.ja,x.en,x.name,x.id]).toLowerCase().includes(q)) return false;
+  if(ui.dir==="changed" && !(x.history||[]).length) return false;
+  if(["buff","nerf","rework","change"].includes(ui.dir) && !((x.history||[])[0]&&x.history[0].dir===ui.dir)) return false;
+  return true;
+}
+const sortChanged=(a,b)=>(b.latestDate||"").localeCompare(a.latestDate||"");
+function tools(extra){
+  return `<div class="tools">
+    <input id="q" type="search" placeholder="名前で検索" value="${esc(ui.q)}" aria-label="名前で検索">
+    <select id="dir" aria-label="変更の種類">
+      ${[["all","すべて"],["changed","変更あり"],["buff","強化"],["nerf","弱体化"],["rework","リワーク"],["change","調整"]].map(([v,l])=>`<option value="${v}" ${ui.dir===v?"selected":""}>${l}</option>`).join("")}
+    </select>${extra}</div>`;
+}
+function renderLegends(){
+  const opt=`<select id="cls" aria-label="クラス"><option value="all">全クラス</option>${Object.entries(CLS).map(([k,v])=>`<option value="${k}" ${ui.cls===k?"selected":""}>${v[0]}</option>`).join("")}</select>`;
+  const arr=D.legends.filter(x=>filterHist(x)&&(ui.cls==="all"||x.cls===ui.cls)).sort(sortChanged);
+  return `<div class="stack">${tools(opt)}<div class="items">${arr.map(x=>itemCard(x.ja,`${CLS[x.cls]?CLS[x.cls][0]:""}`,x.tier,x.history,x)).join("")||`<p class="empty">該当なし</p>`}</div></div>`;
+}
+function renderWeapons(){
+  const cats=[...new Set(D.weapons.map(w=>w.category))];
+  const opt=`<select id="cat" aria-label="カテゴリ"><option value="all">全カテゴリ</option>${cats.map(c=>`<option ${ui.cat===c?"selected":""}>${esc(c)}</option>`).join("")}</select>`;
+  const arr=D.weapons.filter(x=>filterHist(x)&&(ui.cat==="all"||x.category===ui.cat)).sort(sortChanged);
+  return `<div class="stack">${tools(opt)}<div class="items">${arr.map(x=>itemCard(x.ja||x.name,`${esc(x.category)}${x.pool==="care"?" · ケアパッケージ":""}`,x.tier,x.history)).join("")||`<p class="empty">該当なし</p>`}</div></div>`;
+}
+
+function render(){
+  header();
+  document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===tab));
+  if(tab==="quiz"){
+    if(view.dataset.mount!=="quiz"){view.dataset.mount="quiz";view.innerHTML='<div id="quiz" data-mount="quiz"></div>';window.Quiz&&Quiz.mount(document.getElementById("quiz"));}
+    return;
+  }
+  view.dataset.mount=tab;
+  const f={rank:renderRank,patch:renderPatch,legends:renderLegends,weapons:renderWeapons,history:renderHistory}[tab]||renderRank;
+  const focusId=document.activeElement&&document.activeElement.id, pos=focusId==="q"?document.activeElement.selectionStart:null;
+  view.innerHTML=f();
+  const bind=(id,key)=>{const el=document.getElementById(id); if(el) el.addEventListener(id==="q"?"input":"change",e=>{ui[key]=e.target.value;render();});};
+  bind("q","q");bind("dir","dir");bind("cls","cls");bind("cat","cat");
+  if(focusId==="q"){const q=document.getElementById("q"); if(q){q.focus(); try{q.setSelectionRange(pos,pos)}catch(e){}}}
+}
+document.getElementById("tabs").addEventListener("click",e=>{
+  const b=e.target.closest(".tab"); if(!b) return; tab=b.dataset.tab;
+  try{localStorage.setItem("apx-tab",tab)}catch(e){}
+  render();
+});
+
+(async()=>{
+  const dot=document.getElementById("liveDot"), txt=document.getElementById("liveText");
+  try{
+    const r=await fetch("data.json",{cache:"no-store"}); if(!r.ok) throw new Error(r.status);
+    const j=await r.json();
+    D.state=j.site&&j.site.state||null; D.meta=j.site&&j.site.meta||null;
+    D.patches=(j.patches||[]).slice().sort((a,b)=>String(b.date).localeCompare(String(a.date)));
+    D.weapons=j.weapons||[]; D.legends=j.legends||[];
+    dot.classList.remove("off"); txt.textContent="パッチごとに更新";
+    render();
+  }catch(e){
+    txt.textContent="データを読み込めませんでした";
+    if(tab!=="quiz") view.innerHTML=`<p class="empty">データを読み込めませんでした。ページを再読み込みしてください。</p>`;
+  }
+})();
+</script>
+</body>
+</html>

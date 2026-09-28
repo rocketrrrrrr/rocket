@@ -1,0 +1,1110 @@
+{
+ "site": {
+  "meta": {
+   "updated": "2026-09-17",
+   "source": "Two Average Gamers（Split 2 ティアリスト）",
+   "sourceUrls": [
+    "https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/",
+    "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/"
+   ],
+   "legendTop": [
+    {
+     "tier": "S",
+     "names": [
+      "loba",
+      "axle",
+      "seer"
+     ]
+    },
+    {
+     "tier": "A+",
+     "names": [
+      "vantage",
+      "pathfinder",
+      "conduit"
+     ]
+    },
+    {
+     "tier": "A",
+     "names": [
+      "bloodhound",
+      "sparrow"
+     ]
+    },
+    {
+     "tier": "B+",
+     "names": [
+      "fuse",
+      "catalyst",
+      "crypto"
+     ]
+    }
+   ],
+   "weaponTop": [
+    {
+     "tier": "S+",
+     "names": [
+      "30-30",
+      "kraber",
+      "lstar"
+     ]
+    },
+    {
+     "tier": "S",
+     "names": [
+      "charge-rifle",
+      "triple-take",
+      "bocek"
+     ]
+    },
+    {
+     "tier": "A+",
+     "names": [
+      "r301",
+      "prowler",
+      "devotion",
+      "nemesis",
+      "g7"
+     ]
+    },
+    {
+     "tier": "A",
+     "names": [
+      "wingman",
+      "p2020",
+      "re45"
+     ]
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "id": "loba",
+     "tier": "S",
+     "trend": "same",
+     "reason": "ルートが減った環境で物資を確保できる価値が最大。S30開幕で戦術・ウルトが強化"
+    },
+    {
+     "rank": 2,
+     "id": "axle",
+     "tier": "S",
+     "trend": "down",
+     "reason": "Split 2 でスタン 1.5秒→0.25秒に弱体化。それでも機動力で上位を維持"
+    },
+    {
+     "rank": 3,
+     "id": "seer",
+     "tier": "S",
+     "trend": "down",
+     "reason": "振り向き低下は削除されたが、戦術でシールドや蘇生の発動を止められる点が健在"
+    },
+    {
+     "rank": 4,
+     "id": "vantage",
+     "tier": "A+",
+     "trend": "same",
+     "reason": "遠距離武器が強い環境と相性が良い"
+    },
+    {
+     "rank": 5,
+     "id": "pathfinder",
+     "tier": "A+",
+     "trend": "same",
+     "reason": "グラップルとジップラインで部隊ごと動ける"
+    },
+    {
+     "rank": 6,
+     "id": "conduit",
+     "tier": "A+",
+     "trend": "up",
+     "reason": "Split 2 でウルトの展開速度などが強化"
+    },
+    {
+     "rank": 7,
+     "id": "bloodhound",
+     "tier": "A",
+     "trend": "up",
+     "reason": "S30で大幅リワーク、Split 2 でクロークがさらに強化"
+    },
+    {
+     "rank": 8,
+     "id": "sparrow",
+     "tier": "A",
+     "trend": "up",
+     "reason": "ボセック の矢ストック増加（クイーバー 50→70）の恩恵"
+    },
+    {
+     "rank": 9,
+     "id": "fuse",
+     "tier": "B+",
+     "trend": "up",
+     "reason": "Split 2 で爆発耐性パッシブ追加など大幅強化"
+    },
+    {
+     "rank": 10,
+     "id": "catalyst",
+     "tier": "B+",
+     "trend": "up",
+     "reason": "Split 2 で戦術CT短縮・ウルト高速化"
+    }
+   ],
+   "rankingBasis": "Split 2 ティアリストの順位に、Marked ミッドシーズン（9/15）の強化・弱体化を矢印で反映",
+   "notes": [
+    "ローバ はプレデター帯でピック率24%。ルートが減った今シーズンは物資を確保できる価値が高い",
+    "アクセル は Split 2 でスタンが大幅に短縮されたが、機動力で上位を維持",
+    "シア は戦術でシールド・壁・蘇生などの発動を止められる点が評価されている",
+    "遠距離武器（30-30リピーター / チャージライフル / トリプルテイク）が強い環境。Corrupted アタッチメントで構成の選び方が変わった"
+   ],
+   "id": "meta"
+  },
+  "state": {
+   "season": 30,
+   "seasonName": "Marked",
+   "split": 2,
+   "seasonEnd": "2026-11-03",
+   "latestPatchId": "2026-09-15-marked-mid",
+   "lastChecked": "2026-09-28T12:00:00+09:00",
+   "checkedBy": "初回作成",
+   "id": "state"
+  }
+ },
+ "patches": [
+  {
+   "date": "2026-09-15",
+   "title": "Marked ミッドシーズン（Split 2）",
+   "kind": "midseason",
+   "season": 30,
+   "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes",
+   "summary": "コンジット・ヒューズ・カタリスト・ブラッドハウンド が強化、アクセル・シア が弱体化。トリプルテイク / ボセック / チャージライフル に上方修正、ルート量の見直し。",
+   "highlights": [
+    "アクセル のウルト：スタン 1.5秒→0.25秒、CT 90秒→120秒",
+    "ヒューズ：爆発ダメージ 25%軽減のパッシブ追加、ナックルジャンプが標準に",
+    "カタリスト：戦術CT 20秒→15秒、ウルト展開が大幅に高速化",
+    "チャージライフル：200m超のダメージ 99→110",
+    "マップ：World's Edge / Olympus / Broken Moon",
+    "「Weapon Assist」の対象を全ベース武器に拡大"
+   ],
+   "id": "2026-09-15-marked-mid"
+  },
+  {
+   "date": "2026-08-04",
+   "title": "Season 30「Marked」開幕",
+   "kind": "season",
+   "season": 30,
+   "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes",
+   "summary": "ブラッドハウンド が大幅リワーク。ローバ・ランパート 強化、ヴァルキリー・アクセル 弱体化。エネルギー弾薬の自動回復化、Corrupted アタッチメント追加、ゴールド装備の削除。",
+   "highlights": [
+    "ブラッドハウンド：新ウルト「Allfather's Cloak」（周囲を透明化＋移動速度20%）",
+    "エネルギー弾薬の箱を廃止。エネルギー武器は弾が自動で回復",
+    "Corrupted アタッチメント（強力な効果と引き換えにデメリット付き）を5種追加",
+    "30-30リピーター がケアパッケージ入り（ダメージ 43→51）",
+    "G7スカウト が床に復帰（ダメージ 37→33、ダブルタップ削除）",
+    "ゴールドアタッチメント・ゴールドバックパックを削除"
+   ],
+   "id": "2026-08-04-marked"
+  },
+  {
+   "date": "2026-07-02",
+   "title": "ホットフィックス",
+   "kind": "hotfix",
+   "season": 29,
+   "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes",
+   "summary": "シア のアップグレード構成を調整（Home Base を Lv3へ、ウルト内の戦術CT補正 5秒→8秒）。",
+   "highlights": [
+    "シア：Home Base を Lv3 に移動",
+    "シア：Energizing Focus を Lv2 に移動"
+   ],
+   "id": "2026-07-02-hotfix"
+  }
+ ],
+ "weapons": [
+  {
+   "name": "30-30リピーター",
+   "category": "マークスマン",
+   "pool": "care",
+   "tier": "S+",
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "buff",
+     "lines": [
+      "ケアパッケージ武器に変更",
+      "ダメージ 43→51",
+      "ADSチャージ時間 0.4秒→0.25秒",
+      "リロード速度を改善",
+      "Dual Shell を削除し Shattercaps（7ペレット×8ダメージ）を内蔵"
+     ],
+     "url": "https://insider-gaming.com/apex-legends-season-30-marked-update-all-buffs-nerfs/"
+    }
+   ],
+   "ja": "30-30リピーター",
+   "id": "30-30"
+  },
+  {
+   "name": "オルタネーター",
+   "category": "SMG",
+   "pool": "floor",
+   "tier": "B+",
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "nerf",
+     "lines": [
+      "ダメージ 19→18",
+      "マガジン 18 / 20 / 22 / 26 に縮小"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes"
+    }
+   ],
+   "ja": "オルタネーター",
+   "id": "alternator"
+  },
+  {
+   "name": "ボセック Compound Bow",
+   "category": "マークスマン",
+   "pool": "floor",
+   "tier": "S",
+   "latestDate": "2026-09-15",
+   "history": [
+    {
+     "date": "2026-09-15",
+     "patchId": "2026-09-15-marked-mid",
+     "dir": "buff",
+     "lines": [
+      "矢のストック 40→60",
+      "エナジャイズ時の爆発矢 7→10",
+      "スパロー のクイーバー：ストック 50→70、爆発矢 9→12"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+    }
+   ],
+   "ja": "ボセックボウ",
+   "id": "bocek"
+  },
+  {
+   "name": "C.A.R. SMG",
+   "category": "SMG",
+   "pool": "floor",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "ja": "C.A.R.",
+   "id": "car"
+  },
+  {
+   "name": "チャージライフル",
+   "category": "スナイパー",
+   "pool": "floor",
+   "tier": "S",
+   "latestDate": "2026-09-15",
+   "history": [
+    {
+     "date": "2026-09-15",
+     "patchId": "2026-09-15-marked-mid",
+     "dir": "buff",
+     "lines": [
+      "200m超の最大ダメージ 99→110",
+      "セレクトファイア時のダメージペナルティ 40%→25%"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+    }
+   ],
+   "ja": "チャージライフル",
+   "id": "charge-rifle"
+  },
+  {
+   "name": "ディヴォーション",
+   "category": "LMG",
+   "pool": "floor",
+   "tier": "A+",
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "change",
+     "lines": [
+      "エネルギー弾薬の自動回復（3マガジン分）",
+      "ターボチャージャー解放ポイント 425→500"
+     ],
+     "url": "https://insider-gaming.com/apex-legends-season-30-marked-update-all-buffs-nerfs/"
+    }
+   ],
+   "ja": "ディヴォーション",
+   "id": "devotion"
+  },
+  {
+   "name": "EVA-8",
+   "category": "ショットガン",
+   "pool": "floor",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "ja": "EVA-8",
+   "id": "eva8"
+  },
+  {
+   "name": "VK-47 Flatline",
+   "category": "AR",
+   "pool": "floor",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "ja": "フラットライン",
+   "id": "flatline"
+  },
+  {
+   "name": "G7スカウト",
+   "category": "マークスマン",
+   "pool": "floor",
+   "tier": "A+",
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "nerf",
+     "lines": [
+      "ケアパッケージから床に復帰",
+      "ダメージ 37→33、連射速度を低下",
+      "ダブルタップ削除、スナイパースコープ装着不可",
+      "マガジン 白15→12 / 青18→14 / 紫20→16"
+     ],
+     "url": "https://insider-gaming.com/apex-legends-season-30-marked-update-all-buffs-nerfs/"
+    }
+   ],
+   "ja": "G7スカウト",
+   "id": "g7"
+  },
+  {
+   "name": "Havoc",
+   "category": "AR",
+   "pool": "floor",
+   "tier": null,
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "change",
+     "lines": [
+      "エネルギー弾薬の自動回復（3マガジン分）"
+     ],
+     "url": "https://insider-gaming.com/apex-legends-season-30-marked-update-all-buffs-nerfs/"
+    }
+   ],
+   "ja": "ハボック",
+   "id": "havoc"
+  },
+  {
+   "name": "ヘムロック",
+   "category": "AR",
+   "pool": "floor",
+   "tier": "B+",
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "nerf",
+     "lines": [
+      "ダメージ 22→21",
+      "ブリーチチャージのCT 25秒→30秒",
+      "ブリーチの構造物ダメージ 50%減"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes"
+    }
+   ],
+   "ja": "ヘムロック",
+   "id": "hemlok"
+  },
+  {
+   "name": "Kraber",
+   "category": "スナイパー",
+   "pool": "care",
+   "tier": "S+",
+   "latestDate": null,
+   "history": [],
+   "ja": "クレーバー",
+   "id": "kraber"
+  },
+  {
+   "name": "Longbow",
+   "category": "スナイパー",
+   "pool": "floor",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "ja": "ロングボウ",
+   "id": "longbow"
+  },
+  {
+   "name": "L-STAR EMG",
+   "category": "LMG",
+   "pool": "care",
+   "tier": "S+",
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "change",
+     "lines": [
+      "エネルギー弾薬の自動回復（4マガジン分）"
+     ],
+     "url": "https://insider-gaming.com/apex-legends-season-30-marked-update-all-buffs-nerfs/"
+    }
+   ],
+   "ja": "L-STAR",
+   "id": "lstar"
+  },
+  {
+   "name": "Mastiff",
+   "category": "ショットガン",
+   "pool": "floor",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "ja": "マスティフ",
+   "id": "mastiff"
+  },
+  {
+   "name": "Mozambique",
+   "category": "ショットガン",
+   "pool": "floor",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "ja": "モザンビーク",
+   "id": "mozambique"
+  },
+  {
+   "name": "Nemesis",
+   "category": "AR",
+   "pool": "floor",
+   "tier": "A+",
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "change",
+     "lines": [
+      "エネルギー弾薬の自動回復（3マガジン分）"
+     ],
+     "url": "https://insider-gaming.com/apex-legends-season-30-marked-update-all-buffs-nerfs/"
+    }
+   ],
+   "ja": "ネメシス",
+   "id": "nemesis"
+  },
+  {
+   "name": "P2020",
+   "category": "ピストル",
+   "pool": "floor",
+   "tier": "A",
+   "latestDate": null,
+   "history": [],
+   "ja": "P2020",
+   "id": "p2020"
+  },
+  {
+   "name": "Peacekeeper",
+   "category": "ショットガン",
+   "pool": "floor",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "ja": "ピースキーパー",
+   "id": "peacekeeper"
+  },
+  {
+   "name": "Prowler",
+   "category": "SMG",
+   "pool": "floor",
+   "tier": "A+",
+   "latestDate": null,
+   "history": [],
+   "ja": "プラウラー",
+   "id": "prowler"
+  },
+  {
+   "name": "R-301 Carbine",
+   "category": "AR",
+   "pool": "floor",
+   "tier": "A+",
+   "latestDate": null,
+   "history": [],
+   "ja": "R-301カービン",
+   "id": "r301"
+  },
+  {
+   "name": "R-99",
+   "category": "SMG",
+   "pool": "floor",
+   "tier": "B+",
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "nerf",
+     "lines": [
+      "ダメージ 13→12"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes"
+    }
+   ],
+   "ja": "R-99",
+   "id": "r99"
+  },
+  {
+   "name": "Rampage",
+   "category": "LMG",
+   "pool": "floor",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "ja": "ランページ",
+   "id": "rampage"
+  },
+  {
+   "name": "RE-45",
+   "category": "ピストル",
+   "pool": "floor",
+   "tier": "A",
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "nerf",
+     "lines": [
+      "ダメージ 17→16",
+      "紫マガジン 27→24",
+      "エネルギー弾薬の自動回復（2マガジン分）"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes"
+    }
+   ],
+   "ja": "RE-45",
+   "id": "re45"
+  },
+  {
+   "name": "Sentinel",
+   "category": "スナイパー",
+   "pool": "floor",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "ja": "センチネル",
+   "id": "sentinel"
+  },
+  {
+   "name": "M600 Spitfire",
+   "category": "LMG",
+   "pool": "floor",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "ja": "スピットファイア",
+   "id": "spitfire"
+  },
+  {
+   "name": "トリプルテイク",
+   "category": "マークスマン",
+   "pool": "floor",
+   "tier": "S",
+   "latestDate": "2026-09-15",
+   "history": [
+    {
+     "date": "2026-09-15",
+     "patchId": "2026-09-15-marked-mid",
+     "dir": "buff",
+     "lines": [
+      "ADS時の連射速度アップ",
+      "青マガジン 8→9"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+    },
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "change",
+     "lines": [
+      "エネルギー弾薬の自動回復（2マガジン分）"
+     ],
+     "url": "https://insider-gaming.com/apex-legends-season-30-marked-update-all-buffs-nerfs/"
+    }
+   ],
+   "ja": "トリプルテイク",
+   "id": "triple-take"
+  },
+  {
+   "name": "Volt SMG",
+   "category": "SMG",
+   "pool": "floor",
+   "tier": null,
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "change",
+     "lines": [
+      "エネルギー弾薬の自動回復（2マガジン分）"
+     ],
+     "url": "https://insider-gaming.com/apex-legends-season-30-marked-update-all-buffs-nerfs/"
+    }
+   ],
+   "ja": "ボルト",
+   "id": "volt"
+  },
+  {
+   "name": "Wingman",
+   "category": "ピストル",
+   "pool": "floor",
+   "tier": "A",
+   "latestDate": null,
+   "history": [],
+   "ja": "ウィングマン",
+   "id": "wingman"
+  }
+ ],
+ "legends": [
+  {
+   "ja": "オルター",
+   "en": "Alter",
+   "cls": "skirm",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "img": "img/alter.webp",
+   "id": "alter"
+  },
+  {
+   "ja": "アッシュ",
+   "en": "Ash",
+   "cls": "assault",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "img": "img/ash.webp",
+   "id": "ash"
+  },
+  {
+   "ja": "アクセル",
+   "en": "Axle",
+   "cls": "skirm",
+   "tier": "S",
+   "latestDate": "2026-09-15",
+   "history": [
+    {
+     "date": "2026-09-15",
+     "patchId": "2026-09-15-marked-mid",
+     "dir": "nerf",
+     "lines": [
+      "ニトロゲートの射出速度 750→700",
+      "ウルト：HP 200→150、CT 90秒→120秒、スタン 1.5秒→0.25秒",
+      "アップグレード：Jump Gate を Drone Deployer（CT 90秒に戻す）に置き換え"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+    },
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "nerf",
+     "lines": [
+      "戦術：スライドブーストの最大時間 5秒→3秒",
+      "ウルト：自分と味方にも作用するように変更"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes"
+    }
+   ],
+   "img": "img/axle.webp",
+   "id": "axle"
+  },
+  {
+   "ja": "バリスティック",
+   "en": "Ballistic",
+   "cls": "assault",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "img": "img/ballistic.webp",
+   "id": "ballistic"
+  },
+  {
+   "ja": "バンガロール",
+   "en": "Bangalore",
+   "cls": "assault",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "img": "img/bangalore.webp",
+   "id": "bangalore"
+  },
+  {
+   "ja": "ブラッドハウンド",
+   "en": "Bloodhound",
+   "cls": "recon",
+   "tier": "A",
+   "latestDate": "2026-09-15",
+   "history": [
+    {
+     "date": "2026-09-15",
+     "patchId": "2026-09-15-marked-mid",
+     "dir": "buff",
+     "lines": [
+      "ウルト：ドーム内のクローク時の見えやすさを低減",
+      "ウルト：リングダメージでクロークが解除されなくなった",
+      "戦術：スキャン時間 +1秒"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+    },
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "rework",
+     "lines": [
+      "新ウルト「Allfather's Cloak」：周囲の味方を透明化、移動速度 +20%、脅威ビジョン付き",
+      "戦術：全身スキャン3秒＋1.5秒間隔のスナップショット4回",
+      "パッシブ：新しい痕跡まで赤い道筋を表示、白いカラスは最大400m"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes"
+    }
+   ],
+   "img": "img/bloodhound.webp",
+   "id": "bloodhound"
+  },
+  {
+   "ja": "カタリスト",
+   "en": "Catalyst",
+   "cls": "ctrl",
+   "tier": "B+",
+   "latestDate": "2026-09-15",
+   "history": [
+    {
+     "date": "2026-09-15",
+     "patchId": "2026-09-15-marked-mid",
+     "dir": "buff",
+     "lines": [
+      "戦術：設置時にドアを自動で強化・再生成、CT 20秒→15秒",
+      "ウルト：展開が大幅に高速化、味方は通過しても減速・視界不良なし",
+      "Ferro-Door の強化ドア上限 4→6",
+      "パッシブ：他の カタリスト の能力への耐性を削除"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+    }
+   ],
+   "img": "img/catalyst.webp",
+   "id": "catalyst"
+  },
+  {
+   "ja": "コースティック",
+   "en": "Caustic",
+   "cls": "ctrl",
+   "tier": "状況次第",
+   "latestDate": null,
+   "history": [],
+   "img": "img/caustic.webp",
+   "id": "caustic"
+  },
+  {
+   "ja": "コンジット",
+   "en": "Conduit",
+   "cls": "support",
+   "tier": "A+",
+   "latestDate": "2026-09-15",
+   "history": [
+    {
+     "date": "2026-09-15",
+     "patchId": "2026-09-15-marked-mid",
+     "dir": "buff",
+     "lines": [
+      "ウルト：展開が速くなり、妨害装置の向きを切り替え可能に",
+      "新アップグレード Concurrency / Jammed Up（Lv2）",
+      "Battpack と Bigger Jam を削除"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+    }
+   ],
+   "img": "img/conduit.webp",
+   "id": "conduit"
+  },
+  {
+   "ja": "クリプト",
+   "en": "Crypto",
+   "cls": "recon",
+   "tier": "B+",
+   "latestDate": null,
+   "history": [],
+   "img": "img/crypto.webp",
+   "id": "crypto"
+  },
+  {
+   "ja": "ヒューズ",
+   "en": "Fuse",
+   "cls": "assault",
+   "tier": "B+",
+   "latestDate": "2026-09-15",
+   "history": [
+    {
+     "date": "2026-09-15",
+     "patchId": "2026-09-15-marked-mid",
+     "dir": "buff",
+     "lines": [
+      "パッシブ：爆発ダメージ 25%軽減、30m以内の爆発物をハイライト",
+      "戦術：ナックルジャンプが標準能力に（ジャンプ力は低下）",
+      "ウルト：展開と着弾が速くなり、小型爆弾の爆発も高速化",
+      "新アップグレード Big Bang / Sticky Bomb（Lv3）"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+    }
+   ],
+   "img": "img/fuse.webp",
+   "id": "fuse"
+  },
+  {
+   "ja": "ジブラルタル",
+   "en": "Gibraltar",
+   "cls": "support",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "img": "img/gibraltar.webp",
+   "id": "gibraltar"
+  },
+  {
+   "ja": "ホライゾン",
+   "en": "Horizon",
+   "cls": "skirm",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "img": "img/horizon.webp",
+   "id": "horizon"
+  },
+  {
+   "ja": "ライフライン",
+   "en": "Lifeline",
+   "cls": "support",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "img": "img/lifeline.webp",
+   "id": "lifeline"
+  },
+  {
+   "ja": "ローバ",
+   "en": "Loba",
+   "cls": "support",
+   "tier": "S",
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "buff",
+     "lines": [
+      "戦術の構え時間 0.6秒→0.4秒",
+      "ブレスレットの射程 約15%増、到達時間 約30%短縮",
+      "ウルトCT 150秒→120秒",
+      "Lv3：金ではなく紫のバッグ"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes"
+    }
+   ],
+   "img": "img/loba.webp",
+   "id": "loba"
+  },
+  {
+   "ja": "マッドマギー",
+   "en": "Mad Maggie",
+   "cls": "assault",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "img": "img/mad-maggie.webp",
+   "id": "mad-maggie"
+  },
+  {
+   "ja": "ミラージュ",
+   "en": "Mirage",
+   "cls": "support",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "img": "img/mirage.webp",
+   "id": "mirage"
+  },
+  {
+   "ja": "ニューキャッスル",
+   "en": "Newcastle",
+   "cls": "support",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "img": "img/newcastle.webp",
+   "id": "newcastle"
+  },
+  {
+   "ja": "オクタン",
+   "en": "Octane",
+   "cls": "skirm",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "img": "img/octane.webp",
+   "id": "octane"
+  },
+  {
+   "ja": "パスファインダー",
+   "en": "Pathfinder",
+   "cls": "skirm",
+   "tier": "A+",
+   "latestDate": null,
+   "history": [],
+   "img": "img/pathfinder.webp",
+   "id": "pathfinder"
+  },
+  {
+   "ja": "ランパート",
+   "en": "Rampart",
+   "cls": "ctrl",
+   "tier": "状況次第",
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "buff",
+     "lines": [
+      "パッシブ：ロックされたホップアップの進行 50%速く",
+      "戦術：壁の耐久 400/600/800→600/700/800、設置 0.5秒短縮",
+      "ウルト：シーラ射撃中の移動速度 70→104"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes"
+    }
+   ],
+   "img": "img/rampart.webp",
+   "id": "rampart"
+  },
+  {
+   "ja": "レヴナント",
+   "en": "Revenant",
+   "cls": "assault",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "img": "img/revenant.webp",
+   "id": "revenant"
+  },
+  {
+   "ja": "シア",
+   "en": "Seer",
+   "cls": "recon",
+   "tier": "S",
+   "latestDate": "2026-09-15",
+   "history": [
+    {
+     "date": "2026-09-15",
+     "patchId": "2026-09-15-marked-mid",
+     "dir": "nerf",
+     "lines": [
+      "戦術：命中時の振り向き速度低下を削除"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+    },
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "nerf",
+     "lines": [
+      "戦術：振り向き速度低下を軽減"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes"
+    },
+    {
+     "date": "2026-07-02",
+     "patchId": "2026-07-02-hotfix",
+     "dir": "nerf",
+     "lines": [
+      "Home Base を Lv3 に移動（ウルト内の戦術CT補正 5秒→8秒）",
+      "Energizing Focus を Lv2 に移動"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes"
+    }
+   ],
+   "img": "img/seer.webp",
+   "id": "seer"
+  },
+  {
+   "ja": "スパロー",
+   "en": "Sparrow",
+   "cls": "recon",
+   "tier": "A",
+   "latestDate": null,
+   "history": [],
+   "img": "img/sparrow.webp",
+   "id": "sparrow"
+  },
+  {
+   "ja": "ヴァルキリー",
+   "en": "Valkyrie",
+   "cls": "skirm",
+   "tier": null,
+   "latestDate": "2026-08-04",
+   "history": [
+    {
+     "date": "2026-08-04",
+     "patchId": "2026-08-04-marked",
+     "dir": "nerf",
+     "lines": [
+      "戦術の基礎ダメージ 25→15",
+      "ウルトの上昇高度 15%減",
+      "Lv2 の壁越しスキャン距離を100mに制限",
+      "Lv3 の発射時間短縮 50%→40%"
+     ],
+     "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes"
+    }
+   ],
+   "img": "img/valkyrie.webp",
+   "id": "valkyrie"
+  },
+  {
+   "ja": "ヴァンテージ",
+   "en": "Vantage",
+   "cls": "recon",
+   "tier": "A+",
+   "latestDate": null,
+   "history": [],
+   "img": "img/vantage.webp",
+   "id": "vantage"
+  },
+  {
+   "ja": "ワットソン",
+   "en": "Wattson",
+   "cls": "ctrl",
+   "tier": "状況次第",
+   "latestDate": null,
+   "history": [],
+   "img": "img/wattson.webp",
+   "id": "wattson"
+  },
+  {
+   "ja": "レイス",
+   "en": "Wraith",
+   "cls": "skirm",
+   "tier": null,
+   "latestDate": null,
+   "history": [],
+   "img": "img/wraith.webp",
+   "id": "wraith"
+  }
+ ]
+}
