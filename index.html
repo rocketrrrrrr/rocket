@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-pUlaQMF9NpsQoIXwrD32Qo37stdekOJ3FLSskgx4hKc='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-/xRifE7GK0xiIn4wirEnSP7WB1qwJxXZWkvpJnDWCOs='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="今のApexは、これだけ見ればいい。Apex Legends の最新パッチまとめ、今強いレジェンドTOP10、MBTIと8つの質問で選ぶレジェンド適性診断。">
@@ -162,6 +162,51 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--
 .pk{display:grid;grid-template-columns:96px 1fr 44px;align-items:center;gap:8px;font-size:12px}
 .pb{height:7px;background:var(--panel2);border-radius:4px;overflow:hidden}.pb i{display:block;height:100%;background:var(--amber)}
 .pv{text-align:right;font-family:"Chakra Petch",monospace;font-variant-numeric:tabular-nums;color:var(--mute)}
+.upnext:empty{display:none}
+.upnext{display:flex;flex-direction:column;gap:8px;margin-top:10px;padding-top:14px;border-top:1px solid var(--line)}
+.up-head{display:flex;align-items:baseline;gap:10px}.up-head h2{font-size:16px}
+.up-all{margin-left:auto;font-size:13px;color:var(--mute);text-decoration:underline;text-underline-offset:3px}
+.up-all:hover{color:var(--amber)}
+.tl-wrap{overflow-x:auto;scrollbar-width:thin}
+.tl{position:relative;min-width:max(100%,calc(var(--n)*22px));padding-top:18px;padding-bottom:4px}
+.tl-axis{position:relative;height:22px;border-bottom:1px solid var(--line)}
+.tk{position:absolute;top:0;height:100%;font-family:"Chakra Petch",monospace;font-size:11px;color:var(--mute);padding-left:3px;border-left:1px solid color-mix(in srgb,var(--line) 60%,transparent);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tk.we{background:rgba(255,255,255,.02)}
+.tl-now{position:absolute;top:18px;bottom:0;width:0;border-left:2px solid var(--amber);z-index:0;pointer-events:none}
+.tl-now span{position:absolute;top:-18px;left:0;transform:translateX(-50%);font-size:11px;font-weight:700;color:var(--amber);white-space:nowrap;line-height:16px}
+.tl-rows{position:relative;z-index:1;display:flex;flex-direction:column;gap:6px;padding-top:8px}
+.tl-row{position:relative;display:block;height:30px;text-decoration:none;color:var(--ink)}
+.tl-bar{position:absolute;top:0;bottom:0;min-width:8px;background:color-mix(in srgb,var(--k) 22%,var(--panel));border-left:3px solid var(--k);border-radius:2px 6px 6px 2px;display:flex;align-items:center}
+.tl-bar.live{background:color-mix(in srgb,var(--k) 34%,var(--panel))}
+.tl-txt{padding-left:8px;font-size:13px;font-weight:700;white-space:nowrap;overflow:visible}
+.tl-txt em{font-style:normal;font-weight:500;font-size:11px;color:var(--mute);margin-left:8px}
+.tl-row:hover .tl-bar{filter:brightness(1.15)}
+.tl-bar.lft .tl-txt{position:absolute;right:calc(100% + 8px);padding-left:0;text-align:right}
+.tl-key{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:11px;color:var(--mute)}
+.tl-key span::before{content:"";display:inline-block;width:10px;height:3px;background:var(--k);margin-right:5px;vertical-align:middle}
+.up-list{display:none;flex-direction:column}
+.ul{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;padding:9px 0 9px 10px;border-left:3px solid var(--k);border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:14px}
+.ul-d{font-weight:700;font-variant-numeric:tabular-nums}
+.ul-t{font-weight:700;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ul-s{font-size:12px;color:var(--mute);white-space:nowrap}.ul-s.live{color:var(--buff);font-weight:700}.ul-s.soon{color:var(--amber)}
+@media (max-width:640px){.tl-wrap{display:none}.up-list{display:flex}.tl-key{display:none}}
+.sched{display:flex;flex-direction:column}
+.sc{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:16px 0;border-top:1px solid var(--line)}
+.sc:last-child{border-bottom:1px solid var(--line)}
+.sc.done{opacity:.55}
+.sc-date{display:flex;flex-direction:column;gap:2px}
+.sc-d{font-family:"Chakra Petch",monospace;font-weight:700;font-size:30px;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.sc-w{font-size:12px;color:var(--mute)}
+.sc-to{font-family:"Chakra Petch",monospace;font-size:13px;color:var(--mute);margin-top:4px}
+.sc-body{display:flex;flex-direction:column;gap:4px;min-width:0;padding-left:14px;border-left:3px solid var(--k)}
+.sc-body h3{margin:0;font-size:17px}.sc-body p{margin:0;font-size:14px}
+.sc-meta{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px}
+.sc-kind{color:var(--k);font-weight:700}
+.sc-state{color:var(--mute)}
+.sc.live .sc-state{color:var(--buff);font-weight:700}
+.sc.soon .sc-state{color:var(--amber)}
+.sc-note{color:var(--mute)}
+@media (max-width:560px){.sc{grid-template-columns:1fr;gap:8px}.sc-date{flex-direction:row;align-items:baseline;gap:8px}.sc-d{font-size:24px}}
 .foot{font-size:12px;color:var(--mute);margin-top:28px;display:flex;flex-direction:column;gap:4px}
 @media (max-width:420px){
   .rank{grid-template-columns:28px auto 1fr;gap:10px}
@@ -290,10 +335,12 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--
       <span>最終チェック <b class="mono" id="checked">—</b></span>
       <span>最新パッチ <b class="mono" id="latestDate">—</b></span>
     </div>
+    <section id="upnext" class="upnext" aria-label="これからの予定"></section>
   </header>
 
   <nav><div class="tabs" role="tablist" id="tabs">
     <button class="tab" role="tab" data-tab="rank" aria-selected="true">強さTOP10</button>
+    <button class="tab" role="tab" data-tab="events">予定</button>
     <button class="tab" role="tab" data-tab="patch">最新パッチ</button>
     <button class="tab" role="tab" data-tab="legends">レジェンド</button>
     <button class="tab" role="tab" data-tab="weapons">武器</button>
@@ -781,10 +828,10 @@ window.Quiz={mount(el){app=el;render();}};
 const CLS={assault:["アサルト","--c-assault"],skirm:["スカーミッシャー","--c-skirm"],recon:["リコン","--c-recon"],support:["サポート","--c-support"],ctrl:["コントローラー","--c-ctrl"]};
 const DIR={buff:"強化",nerf:"弱体化",change:"調整",rework:"リワーク"};
 const TR={up:"▲ 上昇",down:"▼ 下降",same:"― 維持",new:"NEW"};
-const D={state:null,meta:null,patches:[],weapons:[],legends:[]};
+const D={state:null,meta:null,patches:[],weapons:[],legends:[],events:[]};
 window.QUIZ_IMG=n=>{const L=D.legends.find(x=>x.ja===n);return L&&/^img\/[a-z0-9-]+\.webp$/.test(L.img)?L.img:null;};
 let tab="rank"; try{const t=localStorage.getItem("apx-tab"); if(t) tab=t;}catch(e){}
-if(location.hash && /^#(rank|patch|legends|weapons|history|quiz)$/.test(location.hash)) tab=location.hash.slice(1);
+if(location.hash && /^#(rank|events|patch|legends|weapons|history|quiz)$/.test(location.hash)) tab=location.hash.slice(1);
 const ui={q:"",dir:"all",cls:"all",cat:"all",tier:"pred"};
 const view=document.getElementById("view");
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -827,6 +874,55 @@ function renderRank(){
     ${renderMeta()}
     <button class="tab" data-go="quiz" style="border:1px solid var(--line);color:var(--amber);align-self:flex-start">あなたに合うレジェンドを診断する ▶</button>
   </div>${renderComps()}</div>`;
+}
+const EVK={ingame:["ゲーム内イベント","--amber"],esports:["公式大会","--c-skirm"],streamer:["配信者大会","--c-ctrl"],season:["シーズン・ランク","--c-recon"]};
+const jst=s=>new Date(String(s).slice(0,10)+"T00:00:00+09:00");
+const DAY=86400000;
+function evState(e){const now=Date.now(),st=jst(e.start).getTime(),en=jst(e.end||e.start).getTime()+DAY;
+  if(now>=en) return {k:"done",t:"終了"}; if(now>=st) return {k:"live",t:"開催中"};
+  const n=Math.ceil((st-now)/DAY); return {k:"soon",t:n<=1?"明日":`あと${n}日`};}
+const jd=s=>{try{return jst(s).toLocaleDateString("ja-JP",{timeZone:"Asia/Tokyo",month:"numeric",day:"numeric",weekday:"short"})}catch(e){return fmtDate(s)}};
+const evRange=e=>esc(jd(e.start))+(e.end&&e.end!==e.start?" 〜 "+esc(jd(e.end)):"");
+function sortedEvents(){return D.events.slice().map(e=>({e,s:evState(e)})).sort((a,b)=>{const o={live:0,soon:1,done:2};return (o[a.s.k]-o[b.s.k])||(a.s.k==="done"?jst(b.e.end||b.e.start)-jst(a.e.end||a.e.start):jst(a.e.start)-jst(b.e.start));});}
+function evKind(e){const k=EVK[e.kind]||["その他","--line"];return `<span class="ev-kind" style="--k:var(${k[1]})">${k[0]}</span>`;}
+function renderUpnext(){
+  const el=document.getElementById("upnext"); if(!el) return;
+  const act=sortedEvents().filter(x=>x.s.k!=="done");
+  if(!act.length){el.innerHTML="";return;}
+  const today=jst(new Date(Date.now()+9*3600e3).toISOString().slice(0,10)).getTime();
+  const t0=today-2*DAY;
+  const last=Math.max(...act.map(x=>jst(x.e.end||x.e.start).getTime()));
+  const n=Math.min(Math.max(Math.round((last-t0)/DAY)+3,21),49);
+  const pos=d=>(jst(d).getTime()-t0)/DAY;
+  const ti=(today-t0)/DAY;
+  let ticks="";
+  for(let k=0;k<n;k++){const dt=new Date(t0+k*DAY+9*3600e3);const dd=dt.getUTCDate(),wd=dt.getUTCDay();
+    const lab=(k===0||dd===1)?`${dt.getUTCMonth()+1}/${dd}`:(dd%5===0?String(dd):"");
+    ticks+=`<span class="tk${wd===0||wd===6?" we":""}${k===ti?" td":""}" style="left:${k/n*100}%;width:${100/n}%">${lab}</span>`;}
+  const rows=act.map(({e,s})=>{const a=Math.max(0,pos(e.start)),b=Math.min(n,pos(e.end||e.start)+1);
+    const k=(EVK[e.kind]||["","--line"]);
+    return `<a class="tl-row" href="#events" data-go="events" aria-label="${esc(e.title)}"><span class="tl-bar${s.k==="live"?" live":""}${a/n>0.55?" lft":""}" style="left:${a/n*100}%;width:${(b-a)/n*100}%;--k:var(${k[1]})"><span class="tl-txt">${esc(e.title)}<em>${s.k==="live"?"開催中":esc(s.t)}</em></span></span></a>`;}).join("");
+  el.innerHTML=`<div class="up-head"><h2>これからの予定</h2><a href="#events" data-go="events" class="up-all">一覧で見る</a></div>
+  <div class="tl-wrap"><div class="tl" style="--n:${n}"><div class="tl-axis">${ticks}</div>
+    <div class="tl-now" style="left:${(ti+0.5)/n*100}%"><span>今日</span></div>
+    <div class="tl-rows">${rows}</div></div></div>
+  <div class="up-list">${act.slice(0,4).map(({e,s})=>{const k=(EVK[e.kind]||["","--line"]);const x=new Date(jst(e.start).getTime()+9*3600e3);
+    return `<a class="ul" href="#events" data-go="events" style="--k:var(${k[1]})"><span class="ul-d mono">${x.getUTCMonth()+1}/${x.getUTCDate()}</span><span class="ul-t">${esc(e.title)}</span><span class="ul-s ${s.k}">${esc(s.t)}</span></a>`}).join("")}</div>
+  <div class="tl-key">${Object.entries(EVK).filter(([k])=>act.some(x=>x.e.kind===k)).map(([k,v])=>`<span style="--k:var(${v[1]})">${v[0]}</span>`).join("")}</div>`;
+}
+function renderEvents(){
+  const list=sortedEvents(); if(!list.length) return `<p class="empty">予定はまだありません</p>`;
+  const big=d=>{const x=new Date(jst(d).getTime()+9*3600e3);return `${String(x.getUTCMonth()+1).padStart(2,"0")}.${String(x.getUTCDate()).padStart(2,"0")}`};
+  const wd=d=>"日月火水木金土"[new Date(jst(d).getTime()+9*3600e3).getUTCDay()];
+  return `<div class="stack"><div class="patch-head"><h2>Apex の予定</h2></div>
+  <p class="src">公式に発表された予定だけを載せています。日付は公式発表の表記です。</p>
+  <div class="sched">${list.map(({e,s})=>{const k=(EVK[e.kind]||["その他","--line"]);return `<article class="sc ${s.k}" style="--k:var(${k[1]})">
+    <div class="sc-date"><span class="sc-d">${big(e.start)}</span><span class="sc-w">${wd(e.start)}</span>${e.end&&e.end!==e.start?`<span class="sc-to">〜 ${big(e.end)}（${wd(e.end)}）</span>`:""}</div>
+    <div class="sc-body"><p class="sc-meta"><span class="sc-kind">${k[0]}</span><span class="sc-state">${esc(s.t)}</span>${e.status&&e.status!=="確定"?`<span class="sc-note">${esc(e.status)}</span>`:""}</p>
+      <h3>${esc(e.title)}</h3>
+      <p class="mute">${[e.time,e.place].filter(Boolean).map(esc).join("　")}</p>
+      ${e.note?`<p>${esc(e.note)}</p>`:""}${srcLink(e.url)}</div></article>`}).join("")}</div>
+  <p class="src">未発表の時刻やスクリム日程は、公式に発表され次第更新します。噂やリーク情報は載せていません。</p></div>`;
 }
 function renderComps(){
   const m=D.meta, ts=m&&m.tiers; if(!ts||!ts.length) return "";
@@ -913,14 +1009,14 @@ function renderWeapons(){
 }
 
 function render(){
-  header();
+  header(); renderUpnext();
   document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===tab));
   if(tab==="quiz"){
     if(view.dataset.mount!=="quiz"){view.dataset.mount="quiz";view.innerHTML='<div id="quiz" data-mount="quiz"></div>';window.Quiz&&Quiz.mount(document.getElementById("quiz"));}
     return;
   }
   view.dataset.mount=tab;
-  const f={rank:renderRank,patch:renderPatch,legends:renderLegends,weapons:renderWeapons,history:renderHistory}[tab]||renderRank;
+  const f={events:renderEvents,rank:renderRank,patch:renderPatch,legends:renderLegends,weapons:renderWeapons,history:renderHistory}[tab]||renderRank;
   const focusId=document.activeElement&&document.activeElement.id, pos=focusId==="q"?document.activeElement.selectionStart:null;
   view.innerHTML=f();
   const bind=(id,key)=>{const el=document.getElementById(id); if(el) el.addEventListener(id==="q"?"input":"change",e=>{ui[key]=e.target.value;render();});};
@@ -946,7 +1042,7 @@ document.getElementById("tabs").addEventListener("click",e=>{
     const j=await r.json();
     D.state=j.site&&j.site.state||null; D.meta=j.site&&j.site.meta||null;
     D.patches=(j.patches||[]).slice().sort((a,b)=>String(b.date).localeCompare(String(a.date)));
-    D.weapons=j.weapons||[]; D.legends=j.legends||[];
+    D.weapons=j.weapons||[]; D.legends=j.legends||[]; D.events=j.events||[];
     dot.classList.remove("off"); txt.textContent="パッチごとに更新";
     render();
   }catch(e){

@@ -1430,5 +1430,52 @@
    "img": "img/wraith.webp",
    "id": "wraith"
   }
+ ],
+ "events": [
+  {
+   "id": "sf6-collab",
+   "kind": "ingame",
+   "title": "ストリートファイター6 コラボイベント",
+   "start": "2026-09-22",
+   "end": "2026-10-13",
+   "time": "公式発表：9月22日〜10月13日",
+   "place": "ゲーム内",
+   "note": "新モード（ワイルドカード）でリュウ・春麗・豪鬼・ダルシムの能力が使える。SF6仕様のオリンパス、ミシック近接「波動拳」、コラボスキン8種",
+   "url": "https://www.ea.com/games/apex-legends/apex-legends/news/street-fighter-6-event"
+  },
+  {
+   "id": "ranked-ladders",
+   "kind": "season",
+   "title": "ランク ラダー（Split 2）",
+   "start": "2026-09-22",
+   "end": "2026-11-01",
+   "time": "",
+   "place": "ゲーム内",
+   "note": "9/22〜11/1 に6回のラダーを予定",
+   "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+  },
+  {
+   "id": "crcup-11",
+   "kind": "streamer",
+   "title": "第11回 CRカップ Apex Legends",
+   "start": "2026-10-04",
+   "end": "2026-10-04",
+   "time": "開始時刻は未発表",
+   "place": "オンライン配信",
+   "note": "約3年9か月ぶりの開催（Crazy Raccoon 公式発表）。開始時刻・スクリム日程・出場メンバーは発表待ち",
+   "status": "一部未発表",
+   "url": "https://kai-you.net/article/96465"
+  },
+  {
+   "id": "algs-y6-s2-playoffs",
+   "kind": "esports",
+   "title": "ALGS Year 6 Split 2 プレイオフ",
+   "start": "2026-10-29",
+   "end": "2026-11-01",
+   "time": "現地時間",
+   "place": "ラスベガス（アメリカ）",
+   "note": "世界の強豪チームが集まるオフライン大会。チャンピオンシップポイントを争う",
+   "url": "https://algs.ea.com/en/year-6/split-2-playoffs/competition-overview"
+  }
  ]
 }
