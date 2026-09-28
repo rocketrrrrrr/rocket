@@ -215,7 +215,7 @@
      "id": "pred",
      "label": "プレデター",
      "scope": "プレデター826人の集計",
-     "updated": "2026-09-26",
+     "updated": "2026-09-28",
      "comps": [
       {
        "legends": [
@@ -261,23 +261,23 @@
      "picks": [
       {
        "id": "axle",
-       "rate": 20.0
+       "rate": 20.3
       },
       {
        "id": "loba",
-       "rate": 18.8
+       "rate": 19.1
       },
       {
        "id": "pathfinder",
-       "rate": 13.5
+       "rate": 13.6
       },
       {
        "id": "vantage",
-       "rate": 8.8
+       "rate": 8.7
       },
       {
        "id": "seer",
-       "rate": 7.0
+       "rate": 6.8
       }
      ],
      "sources": [
@@ -487,7 +487,7 @@
    "split": 2,
    "seasonEnd": "2026-11-03",
    "latestPatchId": "2026-09-22-marked-update",
-   "lastChecked": "2026-09-29T05:45:00+09:00",
+   "lastChecked": "2026-09-28T12:00:00+09:00",
    "checkedBy": "定期チェック",
    "id": "state"
   }
@@ -1505,6 +1505,18 @@
    "place": "ラスベガス（アメリカ）",
    "note": "世界の強豪チームが集まるオフライン大会。チャンピオンシップポイントを争う",
    "url": "https://algs.ea.com/en/year-6/split-2-playoffs/competition-overview"
+  },
+  {
+   "id": "javelin-anticheat",
+   "kind": "ingame",
+   "title": "PC版アンチチート「EA Javelin」へ切り替え",
+   "start": "2026-09-29",
+   "end": "2026-09-29",
+   "time": "公式発表：9月29日（開始時刻は未発表）",
+   "place": "PC版（ゲーム内）",
+   "note": "PC版のアンチチートが Easy Anti Cheat から EA Javelin に変わる。アップデートを入れて起動すれば自動で移行し、BIOS設定の変更は不要。",
+   "status": "一部未発表",
+   "url": "https://www.ea.com/games/apex-legends/apex-legends/news/javelin-anticheat-announcement"
   }
  ]
 }
