@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//APEX NOW//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ranked-ladders@rocketrrrrrr.github.io
+DTSTAMP:20260928T201421Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20261102
+SUMMARY:ランク ラダー（Split 2）
+LOCATION:ゲーム内
+DESCRIPTION:9/22〜11/1 に6回のラダーを予定\n出典：https://ww
+ w.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-not
+ es\nAPEX NOW（https://rocketrrrrrr.github.io/rocket/）より
+URL:https://www.ea.com/games/apex-legends/apex-legends/news/marked-midsea
+ son-patch-notes
+END:VEVENT
+END:VCALENDAR

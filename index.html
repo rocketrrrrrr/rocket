@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-+xAq+H173nRZwTgY6JUu4sSq8xGaaWYkBah80v7nZlo='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-dX4kibYPDmU6IN039fMl8zkLYbuLArc3oQg/Psk8ebQ='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="今のApexは、これだけ見ればいい。Apex Legends の最新パッチまとめ、今強いレジェンドTOP10、MBTIと8つの質問で選ぶレジェンド適性診断。">
@@ -888,20 +888,6 @@ const DAY=86400000;
 const ymd=(s,add=0)=>{const d=new Date(String(s).slice(0,10)+"T00:00:00Z");d.setUTCDate(d.getUTCDate()+add);return d.toISOString().slice(0,10).replace(/-/g,"");};
 const calDesc=e=>[e.time,e.note,safeUrl(e.url)?"出典："+safeUrl(e.url):"","APEX NOW（https://rocketrrrrrr.github.io/rocket/）より"].filter(Boolean).join("\n");
 const gcalUrl=e=>"https://calendar.google.com/calendar/render?"+new URLSearchParams({action:"TEMPLATE",text:e.title||"",dates:`${ymd(e.start)}/${ymd(e.end||e.start,1)}`,details:calDesc(e),location:e.place||""});
-function icsFor(e){
-  const tx=s=>String(s||"").replace(/\\/g,"\\\\").replace(/[;,]/g,m=>"\\"+m).replace(/\r?\n/g,"\\n");
-  const fold=line=>{const enc=new TextEncoder();let out="",cur="",n=0;for(const ch of line){const b=enc.encode(ch).length;if(n+b>73){out+=cur+"\r\n ";cur="";n=1;}cur+=ch;n+=b;}return out+cur;};
-  const stamp=new Date().toISOString().replace(/[-:]/g,"").replace(/\.\d+/,"");
-  return ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//APEX NOW//JA","CALSCALE:GREGORIAN","BEGIN:VEVENT",
-    `UID:${tx(e.id)}@rocketrrrrrr.github.io`,`DTSTAMP:${stamp}`,`DTSTART;VALUE=DATE:${ymd(e.start)}`,`DTEND;VALUE=DATE:${ymd(e.end||e.start,1)}`,
-    `SUMMARY:${tx(e.title)}`,e.place?`LOCATION:${tx(e.place)}`:"",`DESCRIPTION:${tx(calDesc(e))}`,safeUrl(e.url)?`URL:${safeUrl(e.url)}`:"",
-    "END:VEVENT","END:VCALENDAR"].filter(Boolean).map(fold).join("\r\n")+"\r\n";
-}
-function downloadIcs(e){
-  const url=URL.createObjectURL(new Blob([icsFor(e)],{type:"text/calendar;charset=utf-8"}));
-  const a=document.createElement("a"); a.href=url; a.download=`apexnow-${String(e.id).replace(/[^a-z0-9-]/gi,"")||"event"}.ics`;
-  document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),1000);
-}
 function evState(e){const now=Date.now(),st=jst(e.start).getTime(),en=jst(e.end||e.start).getTime()+DAY;
   if(now>=en) return {k:"done",t:"終了"}; if(now>=st) return {k:"live",t:"開催中"};
   const n=Math.ceil((st-now)/DAY); return {k:"soon",t:n<=1?"明日":`あと${n}日`};}
@@ -946,7 +932,7 @@ function renderEvents(){
       <h3>${esc(e.title)}</h3>
       <p class="mute">${[e.time,e.place].filter(Boolean).map(esc).join("　")}</p>
       ${e.note?`<p>${esc(e.note)}</p>`:""}${srcLink(e.url)}
-      ${s.k!=="done"?`<div class="sc-cal"><button type="button" class="cal" data-ics="${esc(e.id)}" aria-label="${esc(e.title)} をカレンダーに追加（.ics）">カレンダーに追加</button><a class="cal" href="${esc(gcalUrl(e))}" target="_blank" rel="noopener noreferrer" aria-label="${esc(e.title)} を Google カレンダーに追加">Google カレンダー</a></div>`:""}</div></article>`}).join("")}</div>
+      ${s.k!=="done"?`<div class="sc-cal"><a class="cal" href="cal/${esc(String(e.id).replace(/[^a-z0-9-]/gi,""))}.ics" aria-label="${esc(e.title)} をカレンダーに追加">カレンダーに追加</a><a class="cal" href="${esc(gcalUrl(e))}" target="_blank" rel="noopener noreferrer" aria-label="${esc(e.title)} を Google カレンダーに追加">Google カレンダー</a></div>`:""}</div></article>`}).join("")}</div>
   <p class="src">未発表の時刻やスクリム日程は、公式に発表され次第更新します。噂やリーク情報は載せていません。</p></div>`;
 }
 function renderComps(){
@@ -1052,7 +1038,6 @@ function render(){
 }
 document.addEventListener("click",e=>{
   const tb=e.target.closest("[data-tier]"); if(tb){ui.tier=tb.dataset.tier;render();return;}
-  const ic=e.target.closest("[data-ics]"); if(ic){const ev=D.events.find(x=>x.id===ic.dataset.ics); if(ev) downloadIcs(ev); return;}
   const go=e.target.closest("[data-go]"); if(!go) return;
   e.preventDefault(); tab=go.dataset.go; try{localStorage.setItem("apx-tab",tab)}catch(_){}
   const lid=go.dataset.legend; if(lid){ui.q="";ui.dir="all";ui.cls="all";}
