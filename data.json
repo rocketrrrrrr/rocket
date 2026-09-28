@@ -166,7 +166,7 @@
       "pathfinder"
      ],
      "tag": "最多",
-     "stat": "1,639部隊・平均 +54.6 RP/試合",
+     "stat": "1,807部隊・平均 +52.9 RP/試合",
      "note": "アクセルとパスファインダーで部隊ごと動き、ローバで物資をそろえる"
     },
     {
@@ -176,7 +176,7 @@
       "vantage"
      ],
      "tag": "RP最高",
-     "stat": "1,378部隊・平均 +71.9 RP/試合",
+     "stat": "1,509部隊・平均 +72.1 RP/試合",
      "note": "遠距離武器が強い環境で、ヴァンテージが削りと索敵を担当"
     },
     {
@@ -186,7 +186,7 @@
       "seer"
      ],
      "tag": "野良向け",
-     "stat": "1,007部隊・平均 +60.4 RP/試合",
+     "stat": "1,090部隊・平均 +61.4 RP/試合",
      "note": "シアの索敵で情報を先に取る。野良でも組みやすい定番"
     },
     {
@@ -215,7 +215,7 @@
      "id": "pred",
      "label": "プレデター",
      "scope": "プレデター826人の集計",
-     "updated": "2026-09-26",
+     "updated": "2026-09-28",
      "comps": [
       {
        "legends": [
@@ -224,7 +224,7 @@
         "pathfinder"
        ],
        "tag": "最多",
-       "stat": "1,639部隊・平均 +54.6 RP/試合",
+       "stat": "1,807部隊・平均 +52.9 RP/試合",
        "note": "アクセルとパスファインダーで部隊ごと動き、ローバで物資をそろえる"
       },
       {
@@ -234,7 +234,7 @@
         "vantage"
        ],
        "tag": "RP最高",
-       "stat": "1,378部隊・平均 +71.9 RP/試合",
+       "stat": "1,509部隊・平均 +72.1 RP/試合",
        "note": "遠距離武器が強い環境で、ヴァンテージが削りと索敵を担当"
       },
       {
@@ -244,7 +244,7 @@
         "seer"
        ],
        "tag": "野良向け",
-       "stat": "1,007部隊・平均 +60.4 RP/試合",
+       "stat": "1,090部隊・平均 +61.4 RP/試合",
        "note": "シアの索敵で情報を先に取る。野良でも組みやすい定番"
       },
       {
@@ -261,23 +261,23 @@
      "picks": [
       {
        "id": "axle",
-       "rate": 20.0
+       "rate": 20.3
       },
       {
        "id": "loba",
-       "rate": 18.8
+       "rate": 19.1
       },
       {
        "id": "pathfinder",
-       "rate": 13.5
+       "rate": 13.6
       },
       {
        "id": "vantage",
-       "rate": 8.8
+       "rate": 8.7
       },
       {
        "id": "seer",
-       "rate": 7.0
+       "rate": 6.8
       }
      ],
      "sources": [
@@ -300,35 +300,35 @@
      "picks": [
       {
        "id": "axle",
-       "rate": 24.8
+       "rate": 24.0
       },
       {
        "id": "loba",
-       "rate": 19.2
+       "rate": 18.5
       },
       {
        "id": "pathfinder",
-       "rate": 13.2
+       "rate": 14.0
       },
       {
        "id": "mad-maggie",
-       "rate": 4.8
-      },
-      {
-       "id": "vantage",
        "rate": 4.7
       },
       {
-       "id": "seer",
-       "rate": 4.3
-      },
-      {
-       "id": "revenant",
+       "id": "vantage",
        "rate": 4.1
       },
       {
+       "id": "seer",
+       "rate": 4.1
+      },
+      {
+       "id": "revenant",
+       "rate": 4.0
+      },
+      {
        "id": "octane",
-       "rate": 3.8
+       "rate": 3.7
       }
      ],
      "sources": [
@@ -347,7 +347,7 @@
      "picks": [
       {
        "id": "axle",
-       "rate": 17.5
+       "rate": 17.4
       },
       {
        "id": "pathfinder",
@@ -394,34 +394,34 @@
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 11.9
+       "rate": 11.6
       },
       {
        "id": "axle",
-       "rate": 10.9
+       "rate": 10.8
+      },
+      {
+       "id": "loba",
+       "rate": 7.5
       },
       {
        "id": "mad-maggie",
        "rate": 7.4
       },
       {
-       "id": "loba",
-       "rate": 7.4
-      },
-      {
        "id": "fuse",
-       "rate": 6.8
-      },
-      {
-       "id": "conduit",
-       "rate": 5.4
+       "rate": 6.4
       },
       {
        "id": "octane",
-       "rate": 5.3
+       "rate": 5.6
       },
       {
-       "id": "bangalore",
+       "id": "conduit",
+       "rate": 5.0
+      },
+      {
+       "id": "wraith",
        "rate": 4.1
       }
      ],
@@ -486,13 +486,42 @@
    "seasonName": "Marked",
    "split": 2,
    "seasonEnd": "2026-11-03",
-   "latestPatchId": "2026-09-15-marked-mid",
-   "lastChecked": "2026-09-28T12:00:00+09:00",
-   "checkedBy": "初回作成",
+   "latestPatchId": "2026-09-22-marked-update",
+   "lastChecked": "2026-09-29T05:55:28+09:00",
+   "checkedBy": "定期チェック",
    "id": "state"
   }
  },
  "patches": [
+  {
+   "id": "2026-09-22-marked-update",
+   "date": "2026-09-22",
+   "title": "アップデート（9/22）",
+   "kind": "hotfix",
+   "season": 30,
+   "url": "https://store.steampowered.com/news/app/1172470/view/698776157349217396",
+   "summary": "オクタンのパッシブで体力が最大まで回復しない不具合と、バトルロイヤルでほぼすべての操作ができなくなる不具合を修正。",
+   "highlights": [
+    "オクタン：パッシブで再び体力が最大まで回復するよう修正",
+    "バトルロイヤル：まれにほぼすべての操作ができなくなる不具合を修正",
+    "出典は公式の Steam ニュース（本文は取得できず、報道・検索結果で内容を確認）"
+   ]
+  },
+  {
+   "id": "2026-09-21-marked-hotfix",
+   "date": "2026-09-21",
+   "title": "ホットフィックス（9/21）",
+   "kind": "hotfix",
+   "season": 30,
+   "url": "https://happygamer.com/apex-legends-lifeline-upgrade-order-bug-fix-wildcard-september-2026-165326/",
+   "summary": "ライフラインのアップグレード選択の表示順を修正。ワイルドカードで出現しなかったミシック版30-30リピーターとL-STARが戻った。",
+   "highlights": [
+    "ライフライン：アップグレード選択肢の並び順の不具合を修正",
+    "ワイルドカード：ミシック版30-30リピーターが出現しない不具合を修正",
+    "ワイルドカード：ミシック版L-STARが出現しない不具合を修正",
+    "出典は報道記事のみ（EA公式は取得できず未確認）"
+   ]
+  },
   {
    "date": "2026-09-15",
    "title": "Marked ミッドシーズン（Split 2）",
@@ -1476,6 +1505,18 @@
    "place": "ラスベガス（アメリカ）",
    "note": "世界の強豪チームが集まるオフライン大会。チャンピオンシップポイントを争う",
    "url": "https://algs.ea.com/en/year-6/split-2-playoffs/competition-overview"
+  },
+  {
+   "id": "javelin-anticheat",
+   "kind": "ingame",
+   "title": "PC版アンチチート「EA Javelin」へ切り替え",
+   "start": "2026-09-29",
+   "end": "2026-09-29",
+   "time": "公式発表：9月29日（開始時刻は未発表）",
+   "place": "PC版（ゲーム内）",
+   "note": "PC版のアンチチートが Easy Anti Cheat から EA Javelin に変わる。アップデートを入れて起動すれば自動で移行し、BIOS設定の変更は不要。",
+   "status": "一部未発表",
+   "url": "https://www.ea.com/games/apex-legends/apex-legends/news/javelin-anticheat-announcement"
   }
  ]
 }

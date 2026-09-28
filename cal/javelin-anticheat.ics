@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//APEX NOW//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:javelin-anticheat@rocketrrrrrr.github.io
+DTSTAMP:20260928T205040Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:PC版アンチチート「EA Javelin」へ切り替え
+LOCATION:PC版（ゲーム内）
+DESCRIPTION:公式発表：9月29日（開始時刻は未発表）\nPC版
+ のアンチチートが Easy Anti Cheat から EA Javelin に変わる
+ 。アップデートを入れて起動すれば自動で移行し、BIO
+ S設定の変更は不要。\n出典：https://www.ea.com/games/apex-leg
+ ends/apex-legends/news/javelin-anticheat-announcement\nAPEX NOW（https:
+ //rocketrrrrrr.github.io/rocket/）より
+URL:https://www.ea.com/games/apex-legends/apex-legends/news/javelin-antic
+ heat-announcement
+END:VEVENT
+END:VCALENDAR
