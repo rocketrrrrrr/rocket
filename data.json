@@ -1037,7 +1037,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/alter.webp",
-   "id": "alter"
+   "id": "alter",
+   "abilities": {
+    "passive": {
+     "name": "リフトの贈り物",
+     "desc": "デスボックスとリモートで相互作用してアイテムを1つ取得できます。シールドコアは対象外です。チームメイトのバナーをリモートで取得できます。"
+    },
+    "tactical": {
+     "name": "ヴォイドパッセージ",
+     "desc": "物体を通り抜けられるポータルを作成する。"
+    },
+    "ultimate": {
+     "name": "ヴォイドネクサス",
+     "desc": "すべての仲間が遠隔操作できる合流ポイントを作成する。これを使用することでフェーズトンネルが開き、合流地点に戻ることが可能。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/alter",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "アッシュ",
@@ -1047,7 +1063,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/ash.webp",
-   "id": "ash"
+   "id": "ash",
+   "abilities": {
+    "passive": {
+     "name": "捕食者の追跡",
+     "desc": "空中で突進する"
+    },
+    "tactical": {
+     "name": "アークスネア",
+     "desc": "回転するスネアを投げると最初に近づいてきた敵にダメージを与え、拘束することができる。"
+    },
+    "ultimate": {
+     "name": "フェーズティア",
+     "desc": "狙った場所に一方通行のポータルを開く。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/ash",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "アクセル",
@@ -1079,7 +1111,23 @@
     }
    ],
    "img": "img/axle.webp",
-   "id": "axle"
+   "id": "axle",
+   "abilities": {
+    "passive": {
+     "name": "ドリフト",
+     "desc": "スライディング中のコントロールが向上。"
+    },
+    "tactical": {
+     "name": "ニトロゲート",
+     "desc": "使用者をブーストスライドさせるスピードゲートを展開する。"
+    },
+    "ultimate": {
+     "name": "キックスタート",
+     "desc": "敵を追尾し、着弾時に標的を吹き飛ばすドローンを展開する。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/axle",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "バリスティック",
@@ -1089,7 +1137,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/ballistic.webp",
-   "id": "ballistic"
+   "id": "ballistic",
+   "abilities": {
+    "passive": {
+     "name": "ガンスリング",
+     "desc": "スリングに3つ目の武器を保管できる。スリング武器はアタッチメントを利用できない。"
+    },
+    "tactical": {
+     "name": "ウィスラー",
+     "desc": "当たると敵が銃を撃つにつれてオーバーヒートする弾を撃つ。オーバーヒートするとダメージを受ける。戦術アビリティをホールドでロックオンする。"
+    },
+    "ultimate": {
+     "name": "テンペスト",
+     "desc": "付近の仲間のリロード速度が上昇し、所持弾薬が無限になる。スリング武器は金にアップグレードする。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/ballistic",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "バンガロール",
@@ -1099,7 +1163,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/bangalore.webp",
-   "id": "bangalore"
+   "id": "bangalore",
+   "abilities": {
+    "passive": {
+     "name": "駆け足",
+     "desc": "スプリント中に被弾すると、移動速度が短時間向上する。"
+    },
+    "tactical": {
+     "name": "スモークランチャー",
+     "desc": "発煙缶を高速射出し、着弾時の爆発で煙の壁を作り出す。"
+    },
+    "ultimate": {
+     "name": "ローリングサンダー",
+     "desc": "一帯をゆっくりと巡る支援砲撃を要請する。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/bangalore",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "ブラッドハウンド",
@@ -1132,7 +1212,23 @@
     }
    ],
    "img": "img/bloodhound.webp",
-   "id": "bloodhound"
+   "id": "bloodhound",
+   "abilities": {
+    "passive": {
+     "name": "トラッカー",
+     "desc": "後を追うための手掛かりを敵が残す。白いカラスが現れ、戦場で導いてくれる。"
+    },
+    "tactical": {
+     "name": "全能の目",
+     "desc": "短い間だけ眼前の全構造物を見通して、敵や罠、手掛かりを見破る。"
+    },
+    "ultimate": {
+     "name": "主神のクローク",
+     "desc": "近くにいる者を透明化させるデバイスを投げる。移動速度が上昇し、敵を強調表示できるようになる。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/bloodhound",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "カタリスト",
@@ -1155,7 +1251,23 @@
     }
    ],
    "img": "img/catalyst.webp",
-   "id": "catalyst"
+   "id": "catalyst",
+   "abilities": {
+    "passive": {
+     "name": "レインフォース",
+     "desc": "長押しでドアを増強。増強されたドアは頑丈になり、敵は開けることができなくなる。ドアが破壊された場所も増強することができる。(最大4)"
+    },
+    "tactical": {
+     "name": "スパイクストリップ",
+     "desc": "敵が近づくとスパイクに変化する磁性流体を投げる。カタリストは敵のスパイクから影響を受けない。（最大数:3）"
+    },
+    "ultimate": {
+     "name": "フェロバリケード",
+     "desc": "磁性流体の透過可能な壁を作る。壁を通った敵は移動速度が低下し、一時的に視界が悪くなる。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/catalyst",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "コースティック",
@@ -1165,7 +1277,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/caustic.webp",
-   "id": "caustic"
+   "id": "caustic",
+   "abilities": {
+    "passive": {
+     "name": "フィールドリサーチ",
+     "desc": "ガスでダメージを与え、デスボックスを開け、リングコンソールをスキャンすることで追加のアップグレードポイントを獲得します。"
+    },
+    "tactical": {
+     "name": "Noxガストラップ",
+     "desc": "強力なNoxガスを放つ容器を最大6つ配置する。射撃か敵の接近によって起動する。Noxガスは敵にダメージを与え、地面に這いつくばらせる。"
+    },
+    "ultimate": {
+     "name": "Noxガスグレネード",
+     "desc": "広範囲をNoxガスで覆う。Noxガスは敵にダメージを与え、地面に這いつくばらせる。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/caustic",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "コンジット",
@@ -1187,7 +1315,23 @@
     }
    ],
    "img": "img/conduit.webp",
-   "id": "conduit"
+   "id": "conduit",
+   "abilities": {
+    "passive": {
+     "name": "セイバースピード",
+     "desc": "戦術アビリティの範囲外にいる仲間や味方のバナー、リスポーンビーコンに向かって走ると、スピードがブーストされる。"
+    },
+    "tactical": {
+     "name": "レイディアントトランスファー",
+     "desc": "仲間にエネルギーを一気に放出し、危機に陥った仲間とコンジットに一時的なシールドを生成する。"
+    },
+    "ultimate": {
+     "name": "エネルギーバリケード",
+     "desc": "敵にダメージを与えて動きを鈍らせるジャミングデバイスの一団を展開する。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/conduit",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "クリプト",
@@ -1197,7 +1341,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/crypto.webp",
-   "id": "crypto"
+   "id": "crypto",
+   "abilities": {
+    "passive": {
+     "name": "ニューロリンク",
+     "desc": "クリプトとチームメイトは、スパイドローンが30m以内で検知したものを確認できる。"
+    },
+    "tactical": {
+     "name": "スパイドローン",
+     "desc": "空中カメラ付きドローンを展開する。調査ビーコン、リスポーンビーコン、進化ハーベスター、味方のバナーカードに遠隔でアクションできる。ドローン操縦中はクリプトの姿が見えなくなる。"
+    },
+    "ultimate": {
+     "name": "ドローンEMP",
+     "desc": "ドローンからEMPをチャージする。衝撃波によって50シールドダメージを与え、プレイヤーの動きを遅らせつつ、罠を破壊する。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/crypto",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "ヒューズ",
@@ -1220,7 +1380,23 @@
     }
    ],
    "img": "img/fuse.webp",
-   "id": "fuse"
+   "id": "fuse",
+   "abilities": {
+    "passive": {
+     "name": "グレネーダー",
+     "desc": "インベントリの各スロットで所有できるグレネードが1個増加する。グレネードを遠くへ、素早く、正確に放てるようになる。爆発ダメージを受けても移動速度が低下しなくなる。"
+    },
+    "tactical": {
+     "name": "ナックルクラスター",
+     "desc": "着弾時に空中炸裂式の爆発物を連続射出するクラスター爆弾を発射する。"
+    },
+    "ultimate": {
+     "name": "マザーロード",
+     "desc": "着弾地点周辺に爆発物を散布する爆弾を発射する。エイム時、遮蔽物を貫通する爆弾を発射する。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/fuse",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "ジブラルタル",
@@ -1230,7 +1406,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/gibraltar.webp",
-   "id": "gibraltar"
+   "id": "gibraltar",
+   "abilities": {
+    "passive": {
+     "name": "ガンシールド",
+     "desc": "照準器越しにエイムを行うとガンシールドが展開し、被弾を防ぐ。"
+    },
+    "tactical": {
+     "name": "プロテクトドーム",
+     "desc": "内側と外側の両方の攻撃をブロックする。"
+    },
+    "ultimate": {
+     "name": "防衛爆撃",
+     "desc": "マークされた位置への迫撃砲の集中攻撃を要請します。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/gibraltar",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "ホライゾン",
@@ -1240,7 +1432,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/horizon.webp",
-   "id": "horizon"
+   "id": "horizon",
+   "abilities": {
+    "passive": {
+     "name": "スペースウォーク",
+     "desc": "ホライゾン独自の宇宙服で空中制御を向上させて、落下の衝撃を抑制する。"
+    },
+    "tactical": {
+     "name": "グラビティリフト",
+     "desc": "重力の流れを逆転させてプレイヤーを上に運び、脱出時にブーストをかける。"
+    },
+    "ultimate": {
+     "name": "ブラックホール",
+     "desc": "ニュートを展開してプレイヤーを吸引する極小ブラックホールを生成する。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/horizon",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "ライフライン",
@@ -1250,7 +1458,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/lifeline.webp",
-   "id": "lifeline"
+   "id": "lifeline",
+   "abilities": {
+    "passive": {
+     "name": "コンバットグライド",
+     "desc": "ライフラインは、D.O.Cを掴んで数秒間滑空することができる。D.O.C.を展開し仲間を復活させ、自身は自由に動いて防御に徹する。"
+    },
+    "tactical": {
+     "name": "D.O.C.ヒールドローン",
+     "desc": "D.O.C.が近くの味方を回復する。D.O.C.を展開すると、味方を指定して追従するよう指示を出すことができる。"
+    },
+    "ultimate": {
+     "name": "D.O.C.ヘイロー",
+     "desc": "D.O.C.を放つとヘイローシールドシステムが起動する。範囲内の全プレイヤーが、体力とシールドの消耗アイテムをより早く使用できる。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/lifeline",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "ローバ",
@@ -1273,7 +1497,23 @@
     }
    ],
    "img": "img/loba.webp",
-   "id": "loba"
+   "id": "loba",
+   "abilities": {
+    "passive": {
+     "name": "アイフォークオリティ",
+     "desc": "付近のスーパーレアとレジェンダリーのアイテムを壁越しに見ることができる。また、非武装時にエイムするとハイライトされたアイテムをピンできる。鍵なしでアイテム保管庫を開けられる。"
+    },
+    "tactical": {
+     "name": "盗賊の相棒",
+     "desc": "ジャンプドライブ・ブレスレットを投げ、たどり着きづらい場所にテレポートしたり、窮地から一瞬で脱する。"
+    },
+    "ultimate": {
+     "name": "ブラックマーケット",
+     "desc": "付近のアイテムをインベントリ内にテレポートさせられるポータブルデバイスを配置する。弾薬や小回復アイテム、味方のバナーは無制限。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/loba",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "マッドマギー",
@@ -1283,7 +1523,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/mad-maggie.webp",
-   "id": "mad-maggie"
+   "id": "mad-maggie",
+   "abilities": {
+    "passive": {
+     "name": "ウォーロードの怒り",
+     "desc": "ダメージを与えた敵が一時的にハイライト表示される。ショットガンでの移動が速くなる。"
+    },
+    "tactical": {
+     "name": "ライオットドリル",
+     "desc": "障害物に取り付けるドリルを撃ち、反対側にいる敵を焼き払う。"
+    },
+    "ultimate": {
+     "name": "レッカーボール",
+     "desc": "スピードブーストパッドを放ち、敵の近くで爆発するボールを投げる。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/mad-maggie",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "ミラージュ",
@@ -1293,7 +1549,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/mirage.webp",
-   "id": "mirage"
+   "id": "mirage",
+   "abilities": {
+    "passive": {
+     "name": "神出鬼没",
+     "desc": "リスポーンビーコン使用時とチームメイトの回復や復活時に、自動でクロークが発動する。"
+    },
+    "tactical": {
+     "name": "サイクアウト",
+     "desc": "ホログラフのデコイを発生させて、敵を混乱させる。"
+    },
+    "ultimate": {
+     "name": "パーティーライフ",
+     "desc": "ミラージュが操作可能なデコイ集団を展開して敵の注意を引く。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/mirage",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "ニューキャッスル",
@@ -1303,7 +1575,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/newcastle.webp",
-   "id": "newcastle"
+   "id": "newcastle",
+   "abilities": {
+    "passive": {
+     "name": "傷兵警護",
+     "desc": "倒れた味方を引きずりながら蘇生し、自分のリバイブシールドで守り通せ。"
+    },
+    "tactical": {
+     "name": "モバイルプロテクター",
+     "desc": "移動可能なエネルギーシールドを放つドローンを投げる。"
+    },
+    "ultimate": {
+     "name": "キャッスルウォール",
+     "desc": "標的にした味方やエリアに向かって飛び、地面に叩きつけて強固なストロングホールドを構築する。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/newcastle",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "オクタン",
@@ -1313,7 +1601,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/octane.webp",
-   "id": "octane"
+   "id": "octane",
+   "abilities": {
+    "passive": {
+     "name": "高速修復",
+     "desc": "ダメージを受けていない間、オクタンは体力が次第に回復する。高速修復は、オクタンの体力が少ないほど回復量が増加する。"
+    },
+    "tactical": {
+     "name": "興奮剤",
+     "desc": "6秒間、歩行速度が35、スプリント速度が45上昇する。体力を消費して使用。2回使用すると興奮剤サージとなり、興奮剤をリフレッシュして高速修復が発動する。"
+    },
+    "ultimate": {
+     "name": "ジャンプパッド",
+     "desc": "上に乗った者を空中へ射出するジャンプパッドを展開する。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/octane",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "パスファインダー",
@@ -1323,7 +1627,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/pathfinder.webp",
-   "id": "pathfinder"
+   "id": "pathfinder",
+   "abilities": {
+    "passive": {
+     "name": "内部情報",
+     "desc": "ケアパッケージ、リングコンソール、または調査ビーコンをスキャンして、ジップラインガンの25%を再充電し、クールダウンを永久に10秒短縮します。"
+    },
+    "tactical": {
+     "name": "グラップリングフック",
+     "desc": "グラップリングで、移動の難しい場所へ素早く移動できる。"
+    },
+    "ultimate": {
+     "name": "ジップラインガン",
+     "desc": "誰もが使えるジップラインを作成します。 エネルギーが充填されている間、ライダーは受けるダメージが50%減少します。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/pathfinder",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "ランパート",
@@ -1345,7 +1665,23 @@
     }
    ],
    "img": "img/rampart.webp",
-   "id": "rampart"
+   "id": "rampart",
+   "abilities": {
+    "passive": {
+     "name": "改造ローダー",
+     "desc": "LMGやミニガン使用時に装弾数が増加し、リロード速度が上昇する。増幅バリケードは、進化レベルが上がるごとに耐久力が上昇し、その効果が永続する。"
+    },
+    "tactical": {
+     "name": "増幅バリケード",
+     "desc": "敵の銃弾を防ぎ、味方の銃弾を強化する増幅シールドを構築する。増幅バリケードの被ダメージ、および増幅バリケードを貫通して受けたダメージで、この壁がチャージされる。壁を超えるとスピードブーストがチャージされる。"
+    },
+    "ultimate": {
+     "name": "モバイルミニガン「シーラ」",
+     "desc": "大容量マガジンを備えたモバイルシエラを使用します。誰でも使える固定式でリロード可能なタレットとして配置します。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/rampart",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "レヴナント",
@@ -1355,7 +1691,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/revenant.webp",
-   "id": "revenant"
+   "id": "revenant",
+   "abilities": {
+    "passive": {
+     "name": "アサシンの本能",
+     "desc": "付近に見えている体力の低い敵をハイライト表示する。しゃがんだ状態での歩行が速くなり、壁登りが強化される。"
+    },
+    "tactical": {
+     "name": "シャドウパウンス",
+     "desc": "前方に力強く飛び掛かる。長押しでチャージして、更に遠くまで飛ぶ。"
+    },
+    "ultimate": {
+     "name": "フォージシャドウ",
+     "desc": "ダメージをブロックし、再生する強力なシャドウを周囲に作り出す。シャドウは、ノックダウン時に再生される。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/revenant",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "シア",
@@ -1394,7 +1746,23 @@
     }
    ],
    "img": "img/seer.webp",
-   "id": "seer"
+   "id": "seer",
+   "abilities": {
+    "passive": {
+     "name": "ハートシーカー",
+     "desc": "エイム時に周辺の敵の心拍を捉えて視覚化する。"
+    },
+    "tactical": {
+     "name": "フォーカス・オブ・アテンション",
+     "desc": "マイクロドローンを呼び出して、敵の位置を明らかにし、聴覚を奪う遅延爆風を放出する。この効果は壁を貫通する。"
+    },
+    "ultimate": {
+     "name": "ショーケース",
+     "desc": "マイクロドローンの球体を作り出し、範囲内で素早く移動したり、射撃している敵の位置を明らかにする。球体の中ではダブルジャンプができる。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/seer",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "スパロー",
@@ -1404,7 +1772,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/sparrow.webp",
-   "id": "sparrow"
+   "id": "sparrow",
+   "abilities": {
+    "passive": {
+     "name": "ダブルジャンプ",
+     "desc": "キャラクターが空中で再びジャンプできるようになる。登りながらジャンプすると、スパローが壁から上へ飛び上がる。ボセック用の追加の矢と爆発矢を持ち運ぶことが可能。"
+    },
+    "tactical": {
+     "name": "トラッカーダーツ",
+     "desc": "ガントレットからトラッカーを発射し、範囲内を歩く敵を明らかにする。これらのダーツは、遠距離から調査ビーコンを起動することも可能。"
+    },
+    "ultimate": {
+     "name": "スティンガーボルト",
+     "desc": "着弾した場所に固定する大きなアローを放つ。チャージが完了すると範囲内の敵にショックを放ってダメージを与え、動きを鈍らせる。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/sparrow",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "ヴァルキリー",
@@ -1427,7 +1811,23 @@
     }
    ],
    "img": "img/valkyrie.webp",
-   "id": "valkyrie"
+   "id": "valkyrie",
+   "abilities": {
+    "passive": {
+     "name": "VTOLジェット",
+     "desc": "空中でジェットパックを起動でき、敵が強調表示される。スカイダイブの着地が改善する。"
+    },
+    "tactical": {
+     "name": "ミサイルスワーム",
+     "desc": "複数の小型ロケットを斉射して敵にダメージを与え、混乱に陥れる。"
+    },
+    "ultimate": {
+     "name": "スカイハイダイブ",
+     "desc": ""
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/valkyrie",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "ヴァンテージ",
@@ -1437,7 +1837,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/vantage.webp",
-   "id": "vantage"
+   "id": "vantage",
+   "abilities": {
+    "passive": {
+     "name": "スポッターレンズ",
+     "desc": "サイトを覗いて敵の体力バーとチームシールドレベルを確認してください。遠くの複数のターゲットを追跡するためにピンを使用します。中距離から長距離のスコープは、弾道落下の指標を表示し、弾がどこに着弾するかを確認できます。"
+    },
+    "tactical": {
+     "name": "エコー配置",
+     "desc": "翼を持つ相棒の「エコー」を配置し、その位置へ飛ぶ。エコーの方を向いていないと飛べない。エコーのもとに到達するとダブルジャンプでき、しゃがみでジャンプを中断できる。"
+    },
+    "ultimate": {
+     "name": "スナイパーのマーク",
+     "desc": "カスタムスナイパーライフルを使って敵のターゲットをマークすると、自分とチームにダメージボーナスが適用される。射撃すると、エイム時に短時間ターゲットレーザーが有効化する。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/vantage",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "ワットソン",
@@ -1447,7 +1863,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/wattson.webp",
-   "id": "wattson"
+   "id": "wattson",
+   "abilities": {
+    "passive": {
+     "name": "天才のひらめき",
+     "desc": "アルティメット促進剤でアルティメットがフルチャージされ、ワットソンは他のレジェンドより多く促進剤を携行できる。加えてワットソンのシールドがゆっくりと回復する。"
+    },
+    "tactical": {
+     "name": "周辺セキュリティ",
+     "desc": "ノードを接続して、敵にダメージを与え、動きを遅くする電気フェンスを作成します。ドアの近くのフェンスはドアを帯電させます。"
+    },
+    "ultimate": {
+     "name": "インターセプターパイロン",
+     "desc": "着弾する兵器を破壊し、損傷したシールドを修復する電気パイロンを設置します。迎撃された兵器はアークスターに変換されます。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/wattson",
+    "checked": "2026-09-28"
+   }
   },
   {
    "ja": "レイス",
@@ -1457,7 +1889,23 @@
    "latestDate": null,
    "history": [],
    "img": "img/wraith.webp",
-   "id": "wraith"
+   "id": "wraith",
+   "abilities": {
+    "passive": {
+     "name": "虚空からの声",
+     "desc": "危機が迫ると謎の声が警告を発する。判断の及ぶ限りでは、こちらの味方をしているようだ。"
+    },
+    "tactical": {
+     "name": "虚空へ",
+     "desc": "虚空を通り、安全かつ迅速に移動する。ダメージは一切受けない。"
+    },
+    "ultimate": {
+     "name": "ディメンションリフト",
+     "desc": "2地点間をポータルで45秒間連結し、チーム全体で使用できるようにする。"
+    },
+    "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/wraith",
+    "checked": "2026-09-28"
+   }
   }
  ],
  "events": [
