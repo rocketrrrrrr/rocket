@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-safWqkghTFqraZ4RZEyAj5lXRjoBCJOlVXGK9zy7K/w='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-8U7jSevqhCOtEzBZs4u8hOsaUjjOzbsvEwRH5sKwcw8='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="今のApexは、これだけ見ればいい。Apex Legends の最新パッチまとめ、今強いレジェンドTOP10、MBTIと8つの質問で選ぶレジェンド適性診断。">
@@ -93,6 +93,10 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--
 .trend.up{color:var(--buff)} .trend.down{color:var(--nerf)} .trend.same{color:var(--mute)}
 .rank:first-child{padding-block:18px;background:linear-gradient(100deg,color-mix(in srgb,var(--cls) 18%,var(--panel)),var(--panel) 60%)}
 .rank:first-child .no{font-size:36px}
+a.rank{color:inherit;text-decoration:none;cursor:pointer;transition:border-color .15s,background-color .15s}
+a.rank:hover,a.rank:focus-visible{border-color:var(--amber);border-left-color:var(--cls)}
+.rank .more{display:inline-block;font-size:12px;color:var(--amber);margin-top:4px}
+.item.flash{outline:2px solid var(--amber);outline-offset:2px}
 .rank:first-child .nm b{font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif;font-weight:700;font-size:24px}
 
 /* patch */
@@ -864,12 +868,12 @@ function renderRank(){
     <div class="patch-head"><h2>今強いレジェンド TOP10</h2><span class="src mono">${fmtDate(m.updated)} 時点</span></div>
     <div class="rank-list">${m.ranking.map(r=>{
       const L=byId(D.legends,r.id)||{ja:r.id,cls:""}; const c=CLS[L.cls]||["","--line"];
-      return `<div class="rank" style="--cls:var(${c[1]})">
+      return `<a class="rank" href="#legends" data-go="legends" data-legend="${esc(r.id)}" aria-label="${esc(L.ja)} の変更履歴を見る" style="--cls:var(${c[1]})">
         <div class="no">${esc(r.rank)}</div>
         ${avatar({...L,id:r.id},r.rank===1?"lg":"")}
-        <div><div class="nm"><b>${esc(L.ja)}</b>${clsChip(L.cls)}</div><p class="rs">${esc(r.reason)}</p></div>
+        <div><div class="nm"><b>${esc(L.ja)}</b>${clsChip(L.cls)}</div><p class="rs">${esc(r.reason)}</p><span class="more">変更履歴を見る ›</span></div>
         <div class="side"><span class="tier ${esc(r.tier)}">${esc(r.tier)}</span><span class="trend ${esc(r.trend)}">${TR[r.trend]||""}</span></div>
-      </div>`}).join("")}</div>
+      </a>`}).join("")}</div>
     <p class="banner">${esc(m.rankingBasis||"")}　出典：${(m.sourceUrls||[]).filter(safeUrl).map((u,i)=>`<a href="${esc(safeUrl(u))}" target="_blank" rel="noopener noreferrer">${esc(m.source||"ティアリスト")}${m.sourceUrls.length>1?` ${i+1}`:""}</a>`).join("・")}</p>
     ${renderMeta()}
     <button class="tab" data-go="quiz" style="border:1px solid var(--line);color:var(--amber);align-self:flex-start">あなたに合うレジェンドを診断する ▶</button>
@@ -977,7 +981,7 @@ function histBlock(h){return `<div class="stack" style="gap:4px"><div class="met
 function itemCard(title,sub,tier,hist,L){
   const [h,...rest]=hist||[];
   const t=`<div class="t"><b>${esc(title)}</b><small>${sub}</small></div>`;
-  return `<div class="item ${h?"":"quiet"}">
+  return `<div class="item ${h?"":"quiet"}"${L&&L.id?` id="lg-${esc(L.id)}"`:""}>
     <div class="item-head">${L?`<div class="lg-head">${avatar(L,"card")}${t}</div>`:t}${tier?`<span class="tier ${esc(tier)}">${esc(tier)}</span>`:""}</div>
     ${h?histBlock(h):`<p class="mute" style="font-size:13px">今シーズンの調整なし</p>`}
     ${rest.length?`<details><summary>過去の変更 ${rest.length}件</summary><div class="hist">${rest.map(histBlock).join("")}</div></details>`:""}
@@ -1029,7 +1033,16 @@ document.addEventListener("click",e=>{
   const tb=e.target.closest("[data-tier]"); if(tb){ui.tier=tb.dataset.tier;render();return;}
   const go=e.target.closest("[data-go]"); if(!go) return;
   e.preventDefault(); tab=go.dataset.go; try{localStorage.setItem("apx-tab",tab)}catch(_){}
-  render(); const nav=document.querySelector("nav"); if(nav) nav.scrollIntoView({block:"start"});
+  const lid=go.dataset.legend; if(lid){ui.q="";ui.dir="all";ui.cls="all";}
+  render();
+  const card=lid&&document.getElementById("lg-"+lid);
+  if(card){
+    const d=card.querySelector("details"); if(d) d.open=true;
+    card.scrollIntoView({block:"center",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
+    card.classList.add("flash"); setTimeout(()=>card.classList.remove("flash"),1600);
+    return;
+  }
+  const nav=document.querySelector("nav"); if(nav) nav.scrollIntoView({block:"start"});
 });
 document.getElementById("tabs").addEventListener("click",e=>{
   const b=e.target.closest(".tab"); if(!b) return; tab=b.dataset.tab;
