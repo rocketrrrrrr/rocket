@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-i2pMs/fXY5D9TCNJwpVOKHPrxjtYpvPYHS4rodlL44U='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-Yb3sYlTd3/d7zilMIFzqoHBv6mI3KQO8BIL8ChPxxQ4='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="今のApexは、これだけ見ればいい。Apex Legends の最新パッチまとめ、今強いレジェンドTOP10、MBTIと8つの質問で選ぶレジェンド適性診断。">
@@ -150,6 +150,17 @@ a.rank:hover,a.rank:focus-visible{border-color:var(--amber);border-left-color:va
 .abil dd{margin:2px 0 0;font-size:13px;color:var(--mute)}
 .ab-k{font-size:11px;color:var(--amber);border:1px solid var(--line);border-radius:999px;padding:0 8px;line-height:1.6}
 .hist-label{font-size:11px}
+.ins p{margin:0;font-size:13px;line-height:1.6}
+.ins .fit{color:var(--mute)}
+.ins .fit b{color:var(--ink);font-weight:700}
+.att{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
+.att summary{cursor:pointer;font-weight:700;font-size:15px}
+.att-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin-top:10px}
+.att-item{background:var(--panel2);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:4px;font-size:13px}
+.att-item b{font-size:14px}
+.att-item .pl{color:var(--buff)}
+.att-item .mi{color:var(--nerf)}
+.att-item .fw{color:var(--mute)}
 
 .rank-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;align-items:start}
 @media (min-width:900px){.rank-layout{grid-template-columns:minmax(0,1fr) 330px}.comps{position:sticky;top:calc(env(safe-area-inset-top,0px) + 72px)}}
@@ -418,7 +429,7 @@ a.rank:hover,a.rank:focus-visible{border-color:var(--amber);border-left-color:va
     <p class="banner">Split 2 ティアリストの順位に、Marked ミッドシーズン（9/15）の強化・弱体化を矢印で反映　出典：<a href="https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/" target="_blank" rel="noopener noreferrer">Two Average Gamers（Split 2 ティアリスト） 1</a>・<a href="https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/" target="_blank" rel="noopener noreferrer">Two Average Gamers（Split 2 ティアリスト） 2</a></p>
     <div class="card stack"><h2>武器ティア（上位）</h2>
     <div><div class="tierblock"><span class="tier S+">S+</span><div class="names"><span class="name-chip">30-30リピーター</span><span class="name-chip">クレーバー</span><span class="name-chip">L-STAR</span></div></div><div class="tierblock"><span class="tier S">S</span><div class="names"><span class="name-chip">チャージライフル</span><span class="name-chip">トリプルテイク</span><span class="name-chip">ボセックボウ</span></div></div><div class="tierblock"><span class="tier A+">A+</span><div class="names"><span class="name-chip">R-301カービン</span><span class="name-chip">プラウラー</span><span class="name-chip">ディヴォーション</span><span class="name-chip">ネメシス</span><span class="name-chip">G7スカウト</span></div></div><div class="tierblock"><span class="tier A">A</span><div class="names"><span class="name-chip">ウィングマン</span><span class="name-chip">P2020</span><span class="name-chip">RE-45</span></div></div></div></div>
-    <div class="card stack"><h2>今のメタ</h2><ul class="notes"><li>ローバ はプレデター帯でピック率18.8%（アクセルに次ぐ2位）。ルートが減った今シーズンは物資を確保できる価値が高い</li><li>アクセル は Split 2 でスタンが大幅に短縮されたが、機動力で上位を維持</li><li>シア は戦術でシールド・壁・蘇生などの発動を止められる点が評価されている</li><li>遠距離武器（30-30リピーター / チャージライフル / トリプルテイク）が強い環境。Corrupted アタッチメントで構成の選び方が変わった</li></ul></div>
+    <div class="card stack"><h2>今のメタ</h2><ul class="notes"><li>ローバ はプレデター帯でピック率18.8%（アクセルに次ぐ2位）。ルートが減った今シーズンは物資を確保できる価値が高い</li><li>アクセル は Split 2 でスタンが大幅に短縮されたが、機動力で上位を維持</li><li>シア は戦術でシールド・壁・蘇生などの発動を止められる点が評価されている</li><li>遠距離武器（30-30リピーター / チャージライフル / トリプルテイク）が強い環境。破損アタッチメントで構成の選び方が変わった</li></ul></div>
     <button class="tab" data-go="quiz" style="border:1px solid var(--line);color:var(--amber);align-self:flex-start">あなたに合うレジェンドを診断する ▶</button>
   </div><aside class="comps" aria-label="ランク帯別のメタ">
     <div class="eyebrow">Ranked Meta</div>
@@ -1001,12 +1012,27 @@ function abilBlock(L){
   if(!rows) return `<div class="abil"><span class="eyebrow">能力</span><p class="mute">能力の情報は未確認です</p></div>`;
   return `<div class="abil"><div class="meta-row"><span class="eyebrow">能力</span>${a.checked?`<span class="mono mute" style="font-size:12px">${fmtDate(a.checked)} 確認</span>`:""}${srcLink(a.source)}</div><dl>${rows}</dl></div>`;
 }
-function itemCard(title,sub,tier,hist,L){
+const attName=id=>{const a=(D.attachments||[]).find(x=>x.id===id);return a?a.name:id;};
+function insightBlock(W){
+  const n=W.insight; if(!n||!n.why) return "";
+  const fit=(n.fit||[]).filter(Boolean);
+  return `<div class="abil ins"><div class="meta-row"><span class="eyebrow">評価</span>${n.checked?`<span class="mono mute" style="font-size:12px">${fmtDate(n.checked)} 確認</span>`:""}${srcLink(n.source)}</div>
+    <p>${esc(n.why)}</p>${fit.length?`<p class="fit">相性の良い破損アタッチメント：${fit.map(f=>`<b>${esc(attName(f))}</b>`).join("、")}</p>`:""}</div>`;
+}
+function attGuide(){
+  const A=D.attachments||[]; if(!A.length) return "";
+  const src=A.map(a=>safeUrl(a.source)).find(Boolean);
+  return `<details class="att"><summary>破損アタッチメント（${A.length}種）の効果</summary>
+    <p class="src" style="margin:6px 0 0">1つの武器に1つだけ付けられる、強化と弱体化がセットになったアタッチメントです。効果は公式パッチノートより${src?`（<a class="src" href="${esc(src)}" target="_blank" rel="noopener noreferrer">出典</a>）`:""}。</p>
+    <div class="att-list">${A.map(a=>{const ws=D.weapons.filter(w=>w.insight&&(w.insight.fit||[]).includes(a.id)).map(w=>w.ja||w.name);
+      return `<div class="att-item"><b>${esc(a.name)}</b>${(a.plus||[]).map(x=>`<span class="pl">＋ ${esc(x)}</span>`).join("")}${(a.minus||[]).map(x=>`<span class="mi">－ ${esc(x)}</span>`).join("")}${ws.length?`<span class="fw">相性の良い武器（出典の評価）：${ws.map(esc).join("、")}</span>`:""}</div>`}).join("")}</div></details>`;
+}
+function itemCard(title,sub,tier,hist,L,W){
   const [h,...rest]=hist||[];
   const t=`<div class="t"><b>${esc(title)}</b><small>${sub}</small></div>`;
-  return `<div class="item ${h||(L&&L.abilities)?"":"quiet"}"${L&&L.id?` id="lg-${esc(L.id)}"`:""}>
+  return `<div class="item ${h||(L&&L.abilities)||(W&&W.insight)?"":"quiet"}"${L&&L.id?` id="lg-${esc(L.id)}"`:""}>
     <div class="item-head">${L?`<div class="lg-head">${avatar(L,"card")}${t}</div>`:t}${tier?`<span class="tier ${esc(tier)}">${esc(tier)}</span>`:""}</div>
-    ${L?abilBlock(L):""}${L&&h?`<span class="eyebrow hist-label">今シーズンの変更</span>`:""}
+    ${L?abilBlock(L):""}${W?insightBlock(W):""}${(L||(W&&W.insight))&&h?`<span class="eyebrow hist-label">今シーズンの変更</span>`:""}
     ${h?histBlock(h):`<p class="mute" style="font-size:13px">今シーズンの調整なし</p>`}
     ${rest.length?`<details><summary>過去の変更 ${rest.length}件</summary><div class="hist">${rest.map(histBlock).join("")}</div></details>`:""}
   </div>`;
@@ -1036,7 +1062,7 @@ function renderWeapons(){
   const cats=[...new Set(D.weapons.map(w=>w.category))];
   const opt=`<select id="cat" aria-label="カテゴリ"><option value="all">全カテゴリ</option>${cats.map(c=>`<option ${ui.cat===c?"selected":""}>${esc(c)}</option>`).join("")}</select>`;
   const arr=D.weapons.filter(x=>filterHist(x)&&(ui.cat==="all"||x.category===ui.cat)).sort(sortChanged);
-  return `<div class="stack">${tools(opt)}<div class="items">${arr.map(x=>itemCard(x.ja||x.name,`${esc(x.category)}${x.pool==="care"?" · ケアパッケージ":""}`,x.tier,x.history)).join("")||`<p class="empty">該当なし</p>`}</div></div>`;
+  return `<div class="stack">${tools(opt)}${attGuide()}<div class="items">${arr.map(x=>itemCard(x.ja||x.name,`${esc(x.category)}${x.pool==="care"?" · ケアパッケージ":""}`,x.tier,x.history,null,x)).join("")||`<p class="empty">該当なし</p>`}</div></div>`;
 }
 
 function render(){
@@ -1082,7 +1108,7 @@ document.getElementById("tabs").addEventListener("click",e=>{
     const j=await r.json();
     D.state=j.site&&j.site.state||null; D.meta=j.site&&j.site.meta||null;
     D.patches=(j.patches||[]).slice().sort((a,b)=>String(b.date).localeCompare(String(a.date)));
-    D.weapons=j.weapons||[]; D.legends=j.legends||[]; D.events=j.events||[];
+    D.weapons=j.weapons||[]; D.legends=j.legends||[]; D.events=j.events||[]; D.attachments=j.attachments||[];
     dot.classList.remove("off"); txt.textContent="毎週水曜に更新";
     render();
   }catch(e){

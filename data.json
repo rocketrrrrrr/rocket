@@ -153,7 +153,7 @@
     "ローバ はプレデター帯でピック率18.8%（アクセルに次ぐ2位）。ルートが減った今シーズンは物資を確保できる価値が高い",
     "アクセル は Split 2 でスタンが大幅に短縮されたが、機動力で上位を維持",
     "シア は戦術でシールド・壁・蘇生などの発動を止められる点が評価されている",
-    "遠距離武器（30-30リピーター / チャージライフル / トリプルテイク）が強い環境。Corrupted アタッチメントで構成の選び方が変わった"
+    "遠距離武器（30-30リピーター / チャージライフル / トリプルテイク）が強い環境。破損アタッチメントで構成の選び方が変わった"
    ],
    "id": "meta",
    "compsScope": "プレデター帯の集計。マスター帯だけの集計は未確認です",
@@ -545,11 +545,11 @@
    "kind": "season",
    "season": 30,
    "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes",
-   "summary": "ブラッドハウンド が大幅リワーク。ローバ・ランパート 強化、ヴァルキリー・アクセル 弱体化。エネルギー弾薬の自動回復化、Corrupted アタッチメント追加、ゴールド装備の削除。",
+   "summary": "ブラッドハウンド が大幅リワーク。ローバ・ランパート 強化、ヴァルキリー・アクセル 弱体化。エネルギー弾薬の自動回復化、破損アタッチメント追加、ゴールド装備の削除。",
    "highlights": [
     "ブラッドハウンド：新ウルト「Allfather's Cloak」（周囲を透明化＋移動速度20%）",
     "エネルギー弾薬の箱を廃止。エネルギー武器は弾が自動で回復",
-    "Corrupted アタッチメント（強力な効果と引き換えにデメリット付き）を5種追加",
+    "破損アタッチメント（強力な効果と引き換えにデメリット付き）を5種追加",
     "30-30リピーター がケアパッケージ入り（ダメージ 43→51）",
     "G7スカウト が床に復帰（ダメージ 37→33、ダブルタップ削除）",
     "ゴールドアタッチメント・ゴールドバックパックを削除"
@@ -587,13 +587,19 @@
       "ダメージ 43→51",
       "ADSチャージ時間 0.4秒→0.25秒",
       "リロード速度を改善",
-      "Dual Shell を削除し Shattercaps（7ペレット×8ダメージ）を内蔵"
+      "デュアルシェルを削除し、シャッターキャップ（7ペレット×8ダメージ）を内蔵"
      ],
      "url": "https://insider-gaming.com/apex-legends-season-30-marked-update-all-buffs-nerfs/"
     }
    ],
    "ja": "30-30リピーター",
-   "id": "30-30"
+   "id": "30-30",
+   "insight": {
+    "why": "シーズン開幕でケアパッケージ武器になり、G7スカウトに代わるケアパッケージのマークスマンに。ダメージ 43→51、ADSチャージ時間 0.25秒、新ホップアップ「シャッターキャップ」で近距離は7発の散弾になる。",
+    "fit": [],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "オルタネーター",
@@ -614,7 +620,13 @@
     }
    ],
    "ja": "オルタネーター",
-   "id": "alternator"
+   "id": "alternator",
+   "insight": {
+    "why": "全レアリティでマガジンが減り、ダメージも少し下がった。弱くはないが、以前ほどではない。",
+    "fit": [],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "ボセック Compound Bow",
@@ -636,7 +648,13 @@
     }
    ],
    "ja": "ボセックボウ",
-   "id": "bocek"
+   "id": "bocek",
+   "insight": {
+    "why": "矢の所持数 40→60、エナジャイズ時の爆発矢 7→10。矢は他の弾薬と取り合わないので、弾が少ない今シーズンに向いている。",
+    "fit": [],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "C.A.R. SMG",
@@ -667,7 +685,13 @@
     }
    ],
    "ja": "チャージライフル",
-   "id": "charge-rifle"
+   "id": "charge-rifle",
+   "insight": {
+    "why": "Split 2 で最も評価が上がった武器。200m超のダメージ 99→110、セレクトファイア時のダメージペナルティ 40%→25%。遠距離の撃ち合いで勝ち切れる武器になった。",
+    "fit": [],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "ディヴォーション",
@@ -688,7 +712,15 @@
     }
    ],
    "ja": "ディヴォーション",
-   "id": "devotion"
+   "id": "devotion",
+   "insight": {
+    "why": "もともと安定して強い武器。オーバーフローマガジンでマガジンが増え、リロードが遅くなる欠点を補える。",
+    "fit": [
+     "overflow-mag"
+    ],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "EVA-8",
@@ -731,7 +763,15 @@
     }
    ],
    "ja": "G7スカウト",
-   "id": "g7"
+   "id": "g7",
+   "insight": {
+    "why": "ケアパッケージから床に戻り、ダメージ低下・ダブルタップ削除・スナイパースコープ不可・マガジン減少。それでもラピッドスナイパーストックと組めば床武器として十分使える。",
+    "fit": [
+     "rapid-sniper-stock"
+    ],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "Havoc",
@@ -773,7 +813,13 @@
     }
    ],
    "ja": "ヘムロック",
-   "id": "hemlok"
+   "id": "hemlok",
+   "insight": {
+    "why": "ダメージが少し下がり、構造物へのダメージが半分に。ニューキャッスルの壁やランパートのシーラ相手には弱くなったが、中距離では十分使える。",
+    "fit": [],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "Kraber",
@@ -783,7 +829,13 @@
    "latestDate": null,
    "history": [],
    "ja": "クレーバー",
-   "id": "kraber"
+   "id": "kraber",
+   "insight": {
+    "why": "今シーズンの変更なし。ケアパッケージが落ちたら取り合う理由になる武器。",
+    "fit": [],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "Longbow",
@@ -813,7 +865,13 @@
     }
    ],
    "ja": "L-STAR",
-   "id": "lstar"
+   "id": "lstar",
+   "insight": {
+    "why": "今シーズンの変更なし。ケアパッケージが落ちたら取り合う理由になる武器。",
+    "fit": [],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "Mastiff",
@@ -853,7 +911,15 @@
     }
    ],
    "ja": "ネメシス",
-   "id": "nemesis"
+   "id": "nemesis",
+   "insight": {
+    "why": "もともと安定して強い武器。オーバーフローマガジンでマガジンが増え、リロードが遅くなる欠点を補える。",
+    "fit": [
+     "overflow-mag"
+    ],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "P2020",
@@ -863,7 +929,15 @@
    "latestDate": null,
    "history": [],
    "ja": "P2020",
-   "id": "p2020"
+   "id": "p2020",
+   "insight": {
+    "why": "タクティカルレーザーと相性が良い。リロードが速くなり腰撃ちが安定する。代わりにエイム時の反動は増える。",
+    "fit": [
+     "tactical-laser"
+    ],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "Peacekeeper",
@@ -883,7 +957,15 @@
    "latestDate": null,
    "history": [],
    "ja": "プラウラー",
-   "id": "prowler"
+   "id": "prowler",
+   "insight": {
+    "why": "もともと安定して強い武器。オーバーフローマガジンでマガジンが増え、リロードが遅くなる欠点を補える。",
+    "fit": [
+     "overflow-mag"
+    ],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "R-301 Carbine",
@@ -893,7 +975,15 @@
    "latestDate": null,
    "history": [],
    "ja": "R-301カービン",
-   "id": "r301"
+   "id": "r301",
+   "insight": {
+    "why": "もともと安定して強い武器。オーバーフローマガジンでマガジンが増え、リロードが遅くなる欠点を補える。",
+    "fit": [
+     "overflow-mag"
+    ],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "R-99",
@@ -913,7 +1003,13 @@
     }
    ],
    "ja": "R-99",
-   "id": "r99"
+   "id": "r99",
+   "insight": {
+    "why": "ダメージが1下がったが、影響が大きいのは主にプロの試合。序盤の撃ち合い用のSMGとしては十分使える。",
+    "fit": [],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "Rampage",
@@ -945,7 +1041,13 @@
     }
    ],
    "ja": "RE-45",
-   "id": "re45"
+   "id": "re45",
+   "insight": {
+    "why": "シーズン開幕で弱体化され、その後の調整で想定以上に弱くなったが、一部が戻された。エネルギー武器になり弾が自動で回復するので、その恩恵を受けやすい。",
+    "fit": [],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "Sentinel",
@@ -995,7 +1097,13 @@
     }
    ],
    "ja": "トリプルテイク",
-   "id": "triple-take"
+   "id": "triple-take",
+   "insight": {
+    "why": "Split 2 でエイム時の連射速度が上がり、マガジン 8→9。弾が少ない今シーズンでも、リロードを挟まず撃ち続けやすい。",
+    "fit": [],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   },
   {
    "name": "Volt SMG",
@@ -1025,7 +1133,15 @@
    "latestDate": null,
    "history": [],
    "ja": "ウィングマン",
-   "id": "wingman"
+   "id": "wingman",
+   "insight": {
+    "why": "タクティカルレーザーと相性が良い。リロードが速くなり腰撃ちが安定する。代わりにエイム時の反動は増える。",
+    "fit": [
+     "tactical-laser"
+    ],
+    "source": "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/",
+    "checked": "2026-09-29"
+   }
   }
  ],
  "legends": [
@@ -1965,6 +2081,73 @@
    "note": "PC版のアンチチートが Easy Anti Cheat から EA Javelin に変わる。アップデートを入れて起動すれば自動で移行し、BIOS設定の変更は不要。",
    "status": "一部未発表",
    "url": "https://www.ea.com/games/apex-legends/apex-legends/news/javelin-anticheat-announcement"
+  }
+ ],
+ "attachments": [
+  {
+   "id": "overflow-mag",
+   "name": "オーバーフローマガジン",
+   "plus": [
+    "紫マガジンよりもマガジンサイズが大きい"
+   ],
+   "minus": [
+    "リロード速度が遅くなる"
+   ],
+   "slot": "マガジンを装着できるすべての武器",
+   "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+  },
+  {
+   "id": "headseeker-barrel",
+   "name": "ヘッドシーカーバレル",
+   "plus": [
+    "ヘッドショットダメージが増加",
+    "反動を紫バレルと同レベルに軽減"
+   ],
+   "minus": [
+    "腰撃ちの命中精度が下がる"
+   ],
+   "slot": "",
+   "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+  },
+  {
+   "id": "tactical-laser",
+   "name": "タクティカルレーザー",
+   "plus": [
+    "リロード速度が上がる",
+    "腰撃ち精度が紫レーザーサイトと同レベルに"
+   ],
+   "minus": [
+    "エイム時の反動制御が下がる"
+   ],
+   "slot": "",
+   "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+  },
+  {
+   "id": "agile-stock",
+   "name": "アジャイル標準ストック",
+   "plus": [
+    "武器の移動速度ペナルティがなくなる",
+    "エイム時の移動速度が上がる",
+    "リロード速度と武器ハンドリングが紫標準ストックと同レベルに"
+   ],
+   "minus": [
+    "マガジンサイズが減る"
+   ],
+   "slot": "",
+   "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+  },
+  {
+   "id": "rapid-sniper-stock",
+   "name": "ラピッドスナイパーストック",
+   "plus": [
+    "発射速度が上がる",
+    "リロード速度と武器ハンドリングが紫スナイパーストックと同レベルに"
+   ],
+   "minus": [
+    "マガジンサイズが減る"
+   ],
+   "slot": "",
+   "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
   }
  ]
 }
