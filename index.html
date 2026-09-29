@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-Yb3sYlTd3/d7zilMIFzqoHBv6mI3KQO8BIL8ChPxxQ4='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-wcncafxtsQduWAIhMmD/oUODEbmfO5MLbGFq0sk1goU='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="今のApexは、これだけ見ればいい。Apex Legends の最新パッチまとめ、今強いレジェンドTOP10、MBTIと8つの質問で選ぶレジェンド適性診断。">
@@ -57,6 +57,25 @@ header .tagline{font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP"
 header .subline{font-size:14px;color:var(--mute);max-width:60ch}
 header .hero-go{align-self:flex-start;display:inline-flex;align-items:center;min-height:40px;padding:8px 14px;border:1px solid var(--amber);border-radius:8px;color:var(--amber);font-weight:700;font-size:14px;text-decoration:none}
 header .hero-go:hover{background:color-mix(in srgb,var(--amber) 12%,transparent)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:8px}
+.hero-go.primary{background:var(--amber);color:var(--amber-ink)}
+.hero-go.primary:hover{background:color-mix(in srgb,var(--amber) 88%,#fff)}
+.ab-ic{width:18px;height:18px;filter:invert(1);opacity:.9;flex:none}
+.upg{display:flex;flex-direction:column;gap:8px;padding:10px 12px;background:var(--panel2);border-radius:8px}
+.upg-lv{display:grid;grid-template-columns:34px 1fr;gap:8px;align-items:start}
+.upg-lv>.lv{font-family:"Chakra Petch",monospace;font-weight:700;font-size:13px;color:var(--amber);padding-top:8px}
+.upg-opts{display:grid;grid-template-columns:1fr;gap:6px}
+.items.wide{grid-template-columns:repeat(auto-fill,minmax(min(100%,500px),1fr))}
+.items.wide .upg-opts{grid-template-columns:1fr 1fr}
+.upg-opt{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.upg-opt .nm{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:700;line-height:1.3}
+.upg-opt p{margin:0;font-size:12.5px;color:var(--mute);line-height:1.55}
+.upg-opt .tag{font-size:11px;color:var(--mute);border:1px dashed var(--line);border-radius:999px;padding:0 6px;align-self:flex-start}
+.upg-opt .src{font-size:11px}
+.upg-note{font-size:12px;color:var(--mute);margin:0}
+.tog{font:inherit;font-size:14px;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer}
+.tog[aria-pressed="true"]{border-color:var(--amber);color:var(--amber);font-weight:700}
+@media (max-width:520px){.items.wide .upg-opts{grid-template-columns:1fr}}
 .status{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;color:var(--mute)}
 .status b{color:var(--ink);font-weight:500}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--buff);margin-right:6px;vertical-align:1px}
@@ -355,7 +374,7 @@ a.rank:hover,a.rank:focus-visible{border-color:var(--amber);border-left-color:va
     <h1 class="brand">APEX NOW</h1>
     <p class="tagline">今のApexは、これだけ見ればいい。</p>
     <p class="subline">最新パッチのまとめと、今強いレジェンドTOP10を毎週水曜に更新。さらに、MBTIと8つの質問で「あなたが使うべきレジェンド」も診断できます。</p>
-    <a class="hero-go" href="#quiz" data-go="quiz">あなたのレジェンドを診断する ▶</a>
+    <div class="hero-ctas"><a class="hero-go primary" href="#legends" data-go="legends" data-upg="1">全28レジェンドのアップグレード早見表 ▶</a><a class="hero-go" href="#quiz" data-go="quiz">あなたのレジェンドを診断する ▶</a></div>
     <div class="status">
       <span><span class="dot off" id="liveDot"></span><span id="liveText">読み込み中</span></span>
       <span>最終チェック <b class="mono" id="checked">—</b></span>
@@ -858,7 +877,7 @@ window.QUIZ_IMG=n=>{const L=D.legends.find(x=>x.ja===n);return L&&/^img\/[a-z0-9
 let tab="rank"; try{const t=localStorage.getItem("apx-tab"); if(t) tab=t;}catch(e){}
 if(location.hash && /^#(rank|events|patch|legends|weapons|history|quiz)$/.test(location.hash)) tab=location.hash.slice(1);
 if(tab==="history") tab="patch";
-const ui={q:"",dir:"all",cls:"all",cat:"all",tier:"pred"};
+const ui={q:"",dir:"all",cls:"all",cat:"all",tier:"pred",upg:false};
 const view=document.getElementById("view");
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const fmtDate=s=>esc(s?String(s).slice(0,10).replace(/-/g,"/"):"—");
@@ -890,10 +909,10 @@ function renderRank(){
     <div class="patch-head"><h2>今強いレジェンド TOP10</h2><span class="src mono">${fmtDate(m.updated)} 時点</span></div>
     <div class="rank-list">${m.ranking.map(r=>{
       const L=byId(D.legends,r.id)||{ja:r.id,cls:""}; const c=CLS[L.cls]||["","--line"];
-      return `<a class="rank" href="#legends" data-go="legends" data-legend="${esc(r.id)}" aria-label="${esc(L.ja)} の変更履歴を見る" style="--cls:var(${c[1]})">
+      return `<a class="rank" href="#legends" data-go="legends" data-legend="${esc(r.id)}" aria-label="${esc(L.ja)} の能力とアップグレードを見る" style="--cls:var(${c[1]})">
         <div class="no">${esc(r.rank)}</div>
         ${avatar({...L,id:r.id},r.rank===1?"lg":"")}
-        <div><div class="nm"><b>${esc(L.ja)}</b>${clsChip(L.cls)}</div><p class="rs">${esc(r.reason)}</p><span class="more">変更履歴を見る ›</span></div>
+        <div><div class="nm"><b>${esc(L.ja)}</b>${clsChip(L.cls)}</div><p class="rs">${esc(r.reason)}</p><span class="more">能力・アップグレードを見る ›</span></div>
         <div class="side"><span class="tier ${esc(r.tier)}">${esc(r.tier)}</span><span class="trend ${esc(r.trend)}">${TR[r.trend]||""}</span></div>
       </a>`}).join("")}</div>
     <p class="banner">${esc(m.rankingBasis||"")}　出典：${(m.sourceUrls||[]).filter(safeUrl).map((u,i)=>`<a href="${esc(safeUrl(u))}" target="_blank" rel="noopener noreferrer">${esc(m.source||"ティアリスト")}${m.sourceUrls.length>1?` ${i+1}`:""}</a>`).join("・")}</p>
@@ -1006,9 +1025,18 @@ function renderPatch(){
 function histBlock(h){return `<div class="stack" style="gap:4px"><div class="meta-row"><span class="mono mute">${fmtDate(h.date)}</span>${pill(h.dir)}${srcLink(h.url)}</div><ul>${h.lines.map(l=>`<li>${esc(l)}</li>`).join("")}</ul></div>`;}
 const ROLE={assault:"前に出て撃ち合う",skirm:"機動力で動き回る",recon:"敵の位置を探る",support:"味方を回復・援護する",ctrl:"エリアを守る"};
 const AB=[["passive","パッシブ"],["tactical","戦術"],["ultimate","アルティメット"]];
+const abIcon=a=>a&&/^img\/abilities\/[a-z0-9-]+\.svg$/.test(a.icon||"")?`<img class="ab-ic" src="${esc(a.icon)}" alt="" loading="lazy">`:"";
+const UPG_SRC=u=>/wiki\.gg/.test(u||"")?"Wiki":"公式";
+function upgBlock(L){
+  const U=L.upgrades; if(!U||!(U.lv2||U.lv3)) return `<div class="upg"><span class="eyebrow">アップグレード</span><p class="mute" style="margin:0;font-size:13px">アップグレードの情報は未確認です</p></div>`;
+  const ab=L.abilities||{};
+  const opt=u=>`<div class="upg-opt"><span class="nm">${u.ability&&ab[u.ability]?abIcon(ab[u.ability]):""}${esc(u.name)}</span>${u.nameUnconfirmed?`<span class="tag">日本語名未確認</span>`:""}<p>${u.effect?esc(u.effect):"効果は未確認"}</p>${safeUrl(u.source)?`<a class="src" href="${esc(safeUrl(u.source))}" target="_blank" rel="noopener noreferrer">出典（${UPG_SRC(u.source)}）</a>`:""}</div>`;
+  const lv=(n,a)=>a&&a.length?`<div class="upg-lv"><span class="lv">Lv${n}</span><div class="upg-opts">${a.map(opt).join("")}</div></div>`:"";
+  return `<div class="upg"><div class="meta-row"><span class="eyebrow">アップグレード</span>${U.checked?`<span class="mono mute" style="font-size:12px">${fmtDate(U.checked)} 確認</span>`:""}</div>${lv(2,U.lv2)}${lv(3,U.lv3)}</div>`;
+}
 function abilBlock(L){
   const a=L.abilities||{};
-  const rows=AB.filter(([k])=>a[k]&&a[k].name).map(([k,label])=>`<div><dt><span class="ab-k">${label}</span><b>${esc(a[k].name)}</b></dt><dd>${a[k].desc?esc(a[k].desc):"説明は未確認"}</dd></div>`).join("");
+  const rows=AB.filter(([k])=>a[k]&&a[k].name).map(([k,label])=>`<div><dt>${abIcon(a[k])}<span class="ab-k">${label}</span><b>${esc(a[k].name)}</b></dt><dd>${a[k].desc?esc(a[k].desc):"説明は未確認"}</dd></div>`).join("");
   if(!rows) return `<div class="abil"><span class="eyebrow">能力</span><p class="mute">能力の情報は未確認です</p></div>`;
   return `<div class="abil"><div class="meta-row"><span class="eyebrow">能力</span>${a.checked?`<span class="mono mute" style="font-size:12px">${fmtDate(a.checked)} 確認</span>`:""}${srcLink(a.source)}</div><dl>${rows}</dl></div>`;
 }
@@ -1030,9 +1058,12 @@ function attGuide(){
 function itemCard(title,sub,tier,hist,L,W){
   const [h,...rest]=hist||[];
   const t=`<div class="t"><b>${esc(title)}</b><small>${sub}</small></div>`;
-  return `<div class="item ${h||(L&&L.abilities)||(W&&W.insight)?"":"quiet"}"${L&&L.id?` id="lg-${esc(L.id)}"`:""}>
-    <div class="item-head">${L?`<div class="lg-head">${avatar(L,"card")}${t}</div>`:t}${tier?`<span class="tier ${esc(tier)}">${esc(tier)}</span>`:""}</div>
-    ${L?abilBlock(L):""}${W?insightBlock(W):""}${(L||(W&&W.insight))&&h?`<span class="eyebrow hist-label">今シーズンの変更</span>`:""}
+  const head=`<div class="item-head">${L?`<div class="lg-head">${avatar(L,"card")}${t}</div>`:t}${tier?`<span class="tier ${esc(tier)}">${esc(tier)}</span>`:""}</div>`;
+  const open=`<div class="item ${h||(L&&L.abilities)||(W&&W.insight)?"":"quiet"}"${L&&L.id?` id="lg-${esc(L.id)}"`:""}>`;
+  if(L&&ui.upg) return `${open}${head}${upgBlock(L)}</div>`;
+  return `${open}
+    ${head}
+    ${L?abilBlock(L)+upgBlock(L):""}${W?insightBlock(W):""}${(L||(W&&W.insight))&&h?`<span class="eyebrow hist-label">今シーズンの変更</span>`:""}
     ${h?histBlock(h):`<p class="mute" style="font-size:13px">今シーズンの調整なし</p>`}
     ${rest.length?`<details><summary>過去の変更 ${rest.length}件</summary><div class="hist">${rest.map(histBlock).join("")}</div></details>`:""}
   </div>`;
@@ -1040,7 +1071,8 @@ function itemCard(title,sub,tier,hist,L,W){
 function filterHist(x){
   const q=ui.q.trim().toLowerCase();
   const ab=x.abilities?AB.map(([k])=>x.abilities[k]&&x.abilities[k].name):[];
-  if(q && !JSON.stringify([x.ja,x.en,x.name,x.id,...ab]).toLowerCase().includes(q)) return false;
+  const ug=x.upgrades?[...(x.upgrades.lv2||[]),...(x.upgrades.lv3||[])].map(u=>u.name):[];
+  if(q && !JSON.stringify([x.ja,x.en,x.name,x.id,...ab,...ug]).toLowerCase().includes(q)) return false;
   if(ui.dir==="changed" && !(x.history||[]).length) return false;
   if(["buff","nerf","rework","change"].includes(ui.dir) && !((x.history||[])[0]&&x.history[0].dir===ui.dir)) return false;
   return true;
@@ -1056,7 +1088,9 @@ function tools(extra){
 function renderLegends(){
   const opt=`<select id="cls" aria-label="クラス"><option value="all">全クラス</option>${Object.entries(CLS).map(([k,v])=>`<option value="${k}" ${ui.cls===k?"selected":""}>${v[0]}</option>`).join("")}</select>`;
   const arr=D.legends.filter(x=>filterHist(x)&&(ui.cls==="all"||x.cls===ui.cls)).sort(sortChanged);
-  return `<div class="stack">${tools(opt)}<div class="items">${arr.map(x=>itemCard(x.ja,`${CLS[x.cls]?`${CLS[x.cls][0]}・${ROLE[x.cls]}`:""}`,x.tier,x.history,x)).join("")||`<p class="empty">該当なし</p>`}</div></div>`;
+  const tog=`<button type="button" class="tog" id="upgTog" aria-pressed="${ui.upg}">アップグレード早見表</button>`;
+  const note=ui.upg?`<p class="upg-note">試合中にレベル2・3で2つから1つを選ぶアップグレードの一覧です。名前と効果は EA 公式の日本語パッチノートを優先し、公式で確認できない部分はコミュニティ Wiki（apexlegends.wiki.gg）の説明を訳して載せています。「日本語名未確認」は公式の日本語名が見つからなかったものです。</p>`:"";
+  return `<div class="stack">${tools(opt+tog)}${note}<div class="items${ui.upg?" wide":""}">${arr.map(x=>itemCard(x.ja,`${CLS[x.cls]?`${CLS[x.cls][0]}・${ROLE[x.cls]}`:""}`,x.tier,x.history,x)).join("")||`<p class="empty">該当なし</p>`}</div></div>`;
 }
 function renderWeapons(){
   const cats=[...new Set(D.weapons.map(w=>w.category))];
@@ -1078,13 +1112,15 @@ function render(){
   view.innerHTML=f();
   const bind=(id,key)=>{const el=document.getElementById(id); if(el) el.addEventListener(id==="q"?"input":"change",e=>{ui[key]=e.target.value;render();});};
   bind("q","q");bind("dir","dir");bind("cls","cls");bind("cat","cat");
+  const tg=document.getElementById("upgTog"); if(tg) tg.addEventListener("click",()=>{ui.upg=!ui.upg;render();});
   if(focusId==="q"){const q=document.getElementById("q"); if(q){q.focus(); try{q.setSelectionRange(pos,pos)}catch(e){}}}
 }
 document.addEventListener("click",e=>{
   const tb=e.target.closest("[data-tier]"); if(tb){ui.tier=tb.dataset.tier;render();return;}
   const go=e.target.closest("[data-go]"); if(!go) return;
   e.preventDefault(); tab=go.dataset.go; try{localStorage.setItem("apx-tab",tab)}catch(_){}
-  const lid=go.dataset.legend; if(lid){ui.q="";ui.dir="all";ui.cls="all";}
+  const lid=go.dataset.legend; if(lid){ui.q="";ui.dir="all";ui.cls="all";ui.upg=false;}
+  if(go.dataset.upg){ui.q="";ui.dir="all";ui.cls="all";ui.upg=true;}
   render();
   const card=lid&&document.getElementById("lg-"+lid);
   if(card){

@@ -62,3 +62,21 @@
   { "id": "overflow-mag", "name": "公式の日本語名", "plus": ["良い効果"], "minus": ["悪い効果"], "slot": "", "source": "公式パッチノートの URL" }
 ]
 ```
+
+## レジェンドのアップグレード（data.json の legends[].upgrades）
+
+- レジェンドタブの各カードに「アップグレード」欄を出す。タブ上の「アップグレード早見表」ボタン（冒頭の黄色いボタンからも開く）で、アップグレードだけの一覧に切り替わる
+- 名前と効果は EA 公式の日本語パッチノートを優先する。公式で確認できない部分だけ、コミュニティ Wiki（apexlegends.wiki.gg）の説明を日本語に訳して入れ、source に Wiki の URL を書く
+- 公式の日本語名が見つからないものは英語名のまま `nameUnconfirmed: true` を付ける（サイトに「日本語名未確認」と出る）
+- `ability` は、そのアップグレードが強化する能力（passive / tactical / ultimate / other）。能力のアイコンを出すのに使う
+- 形式（既存のフィールドはそのまま、`upgrades` を足すだけ）
+
+```json
+"upgrades": {
+  "lv2": [ { "name": "公式の日本語名", "effect": "効果1文", "ability": "tactical", "source": "URL" }, { ... } ],
+  "lv3": [ { ... }, { ... } ],
+  "checked": "確認した日（YYYY-MM-DD）"
+}
+```
+
+- 能力のアイコンは `img/abilities/<レジェンドの id>-<passive|tactical|ultimate>.svg`（Wiki の SVG）。`abilities.<種類>.icon` にパスを書く。ランパートのパッシブはアイコン未取得

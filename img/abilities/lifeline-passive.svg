@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="Combat Glide.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1">Lifeline Combat Glide</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#463135"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.36862745"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.5554293"
+     inkscape:cx="281.59428"
+     inkscape:cy="17.037097"
+     inkscape:window-width="3840"
+     inkscape:window-height="2107"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     units="px"
+     height="512px"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient93"
+       id="linearGradient94"
+       x1="3259.2312"
+       y1="-2446.8093"
+       x2="3259.0764"
+       y2="-2877.8093"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-5.8461534)" />
+    <linearGradient
+       id="linearGradient93"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0"
+         id="stop98" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0.50437635"
+         id="stop93" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop94" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="display:inline">
+    <g
+       id="g100"
+       inkscape:label="Combat Glide"
+       transform="matrix(0.26458333,0,0,0.26458333,-792.6945,772.136)"
+       style="display:inline">
+      <path
+         id="rect3-3"
+         style="display:inline;fill:#000000;fill-opacity:0.498212;stroke:none;stroke-width:0.249674;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.9;stroke-opacity:1;paint-order:stroke markers fill"
+         d="m 3281.2324,-2821.9453 v 5.25 c 10.2539,0 20.508,0 30.7617,0 l 25.4375,25.4375 v 38.625 l 5.5,-6.9688 v -33.9375 l -28.4062,-28.4062 z m 0,37.1758 v 111.4629 23.6914 24.5703 110.584 h 17.625 l 6.5059,-6.5059 v -104.0781 h 104.5176 l 6.5058,-6.5059 v -35.25 l -6.5058,-6.5058 h -104.5176 v -104.9571 l -6.5059,-6.5058 z m -204.0801,62.8496 8.0918,45.3554 102.2637,102.4532 -15.0723,-52.2598 z m 314.0665,11.0449 -6.9688,5.5 h 38.625 l 25.4375,25.4375 c -0.01,20.5078 0,41.0157 0,61.5234 l -25.4375,25.4375 h -38.625 l 6.9688,5.5 h 33.9374 l 28.4063,-28.4062 v -66.586 l -28.4063,-28.4062 z m -301.0176,62.0938 4.1875,23.4707 110.2187,110.4843 -8.0547,-27.9238 z m 247.2304,102.1835 v 38.625 l -25.4375,25.4375 c -10.2537,-0.01 -20.5078,0 -30.7617,0 v 5.25 h 33.293 l 28.4062,-28.4062 v -33.9375 z" />
+      <path
+         id="rect1-9-6"
+         style="display:inline;fill:#000000;fill-opacity:1;stroke-width:0.36413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.9;paint-order:stroke markers fill"
+         d="m 3050.459,-2863.4297 19.916,108.3047 114.375,114.125 42.75,148.4043 0.375,-202.9043 z m 230.7734,56.7949 v 16.3887 h 19.3867 l 10.084,10.084 v 53.9121 31.1973 7.5449 8.8613 h 32.1446 68.9316 l 10.084,10.084 v 38.7734 l -10.084,10.084 h -68.9316 -15.7383 -16.4063 v 7.9824 8.4239 15.916 68.3144 l -10.084,10.084 h -19.3867 v 16.3887 h 27.0098 l 18.8672,-18.8672 v -91.8359 h 92.2754 l 18.8672,-18.8672 v -54.0195 l -18.8672,-18.8672 h -92.2754 v -92.7149 l -18.8672,-18.8672 z" />
+      <rect
+         style="fill:url(#linearGradient94);fill-opacity:1;stroke:none;stroke-width:0.245669;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.9;stroke-opacity:0.40882;paint-order:stroke markers fill"
+         id="rect90"
+         width="10.101316"
+         height="431"
+         x="3249.1079"
+         y="-2877.8093" />
+    </g>
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Lifeline Combat Glide</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

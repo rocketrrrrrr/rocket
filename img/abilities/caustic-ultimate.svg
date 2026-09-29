@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:serif="http://www.serif.com/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   xml:space="preserve"
+   style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"
+   id="svg10"
+   sodipodi:docname="Nox_Gas_Grenade.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
+   id="metadata16"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs14" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1017"
+   id="namedview12"
+   showgrid="false"
+   inkscape:zoom="0.45765028"
+   inkscape:cx="-424.45053"
+   inkscape:cy="-17.40857"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg10" />
+    <g
+   id="Nox-Grenade"
+   serif:id="Nox Grenade"
+   transform="matrix(1.3443526,0,0,1.3443525,10.655651,14.479494)">
+        <path
+   id="Ring"
+   d="m 364,194 -46,41 -16,32 22,4 c 1.032,25.156 -81.585,38 -141.5,38 C 122.585,309 39.968,296.156 41,271 l 22,-4 -16,-32 -46,-41 39,58 -37,6 26,9 c -15.634,15.416 26.352,49.873 153.5,49.873 127.148,0 169.134,-34.457 153.5,-49.873 l 26,-9 -37,-6 39,-58"
+   style="fill:#000000;fill-opacity:0.51000001"
+   inkscape:connector-curvature="0" />
+        <g
+   id="Cloud">
+            <path
+   id="Cloud-sans-Skull"
+   serif:id="Cloud sans Skull"
+   d="m 202,56 c 0,0 15.187,-17.631 39.125,-6.285 C 265.064,61.061 263,77 263,77 c 0,0 40.953,17.318 40.953,51.228 C 303.953,158.137 279,170 279,170 c 0,0 15.594,36.93 -21.417,73.941 C 217.571,283.953 166,250 166,250 c 0,0 -16.142,15.396 -38.411,7.437 C 105.32,249.477 104,228 104,228 104,228 61.919,212.609 63.663,176 65.221,143.313 89,136 89,136 89,136 72.258,83.52 117.666,54.883 163.073,26.245 202,56 202,56 Z m -14.357,43.285 c 25.231,2.801 42.957,25.592 42.957,37.715 0,3.114 2,3.125 2,10 0,9.875 -3,8.879 -3,14 0,2.121 -2.361,3 -3,3 -0.64,0 0.065,1.103 0,3 -0.023,0.673 0.613,1.449 1,2 0.732,1.042 1,0.166 1,6 0,3.834 3,4.166 2,7 -0.919,2.604 -10.775,19.327 -13,19 -2.226,-0.327 -1.867,-2 -4,-2 -2.134,0 -8,3.171 -8,9 0,3.829 0.355,3.644 -1,5 l -12.6,8 c -2.096,0 -0.631,-2 -2,-2 -1.369,0 0.002,2 -3,2 -0.346,0 -0.634,-0.125 -0.892,-0.312 l -1.434,-1.375 c -0.259,-0.188 -0.546,-0.313 -0.892,-0.313 -1.384,0 -0.151,3 -3.782,3 -3.631,0 -2.369,-4 -4,-4 -3.041,0 1.064,3 -5,3 -1.064,0 -1.027,-1.059 -2,-1 -0.973,0.059 -8.644,-5.644 -10,-7 -1.356,-1.356 -1,-1.171 -1,-5 0,-5.829 -5.867,-9 -8,-9 -2.133,0 -0.775,1.97 -4,2 -1.268,0.012 -13.578,-15.633 -14,-18 -0.317,-1.775 3,-4.166 3,-8 0,-5.834 0.268,-4.958 1,-6 0.387,-0.551 1.023,-1.327 1,-2 -0.065,-1.897 0.64,-3 0,-3 -0.64,0 -3,-0.879 -3,-3 0,-5.121 -3,-4.125 -3,-14 0,-6.875 2,-6.886 2,-10 0,-12.932 21.568,-38 49.5,-38 z"
+   style="fill:#000000;fill-opacity:1"
+   inkscape:connector-curvature="0" />
+        </g>
+        <g
+   id="Face">
+            <path
+   id="Nose"
+   d="m 181,179 c 3.907,0 6,8.431 6,14 0,3.703 1.361,5.143 2,6 2.263,3.036 -0.171,6 -2,6 -2.489,0 -2.511,-5 -6,-5 -2.489,0 -2.175,4 -4,4 -1.825,0 -4.451,-1.312 -3,-6 0.832,-2.688 2,-5.186 2,-8 0,-1.131 0.039,-11 5,-11 z"
+   style="fill:#000000;fill-opacity:1"
+   inkscape:connector-curvature="0" />
+            <path
+   id="Eye--Left"
+   serif:id="Eye, Left"
+   d="m 162,161.5 c -6.26,0 -12.485,2.945 -16.555,7.681 -4.222,4.911 -4.704,10.479 0.862,14.557 1.359,0.996 2.878,1.813 4.476,2.351 1.673,0.563 3.456,0.79 5.217,0.911 6.696,0.46 16.12,-4.14 18.56,-10.737 C 177.122,169.338 168.507,161.5 162,161.5 Z"
+   style="fill:#000000;fill-opacity:1"
+   inkscape:connector-curvature="0" />
+            <path
+   id="Eye--Right"
+   serif:id="Eye, Right"
+   d="m 203,161.5 c 6.26,0 12.485,2.945 16.555,7.681 4.222,4.911 4.704,10.479 -0.862,14.557 -1.359,0.996 -2.878,1.813 -4.476,2.351 -1.673,0.563 -3.456,0.79 -5.217,0.911 -6.696,0.46 -16.12,-4.14 -18.56,-10.737 -2.562,-6.925 6.053,-14.763 12.56,-14.763 z"
+   style="fill:#000000;fill-opacity:1"
+   inkscape:connector-curvature="0" />
+        </g>
+    </g>
+</svg>

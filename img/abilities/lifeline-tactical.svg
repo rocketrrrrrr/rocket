@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="D.O.C. Heal Drone.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1">Lifeline Heal Drone</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#463135"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.36862745"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.5554293"
+     inkscape:cx="281.59428"
+     inkscape:cy="17.037097"
+     inkscape:window-width="3840"
+     inkscape:window-height="2107"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     units="px"
+     height="512px"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="display:inline">
+    <g
+       id="g105"
+       transform="matrix(0.26458333,0,0,0.26458333,-999.73432,701.88195)"
+       style="display:inline"
+       inkscape:label="D.O.C. Heal Drone">
+      <path
+         id="path104"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 3998.5,-2551.0625 c -12.2278,1.1319 -12.1667,17.625 -18.25,26.4375 l -10.75,5.3125 v 9.4375 h 31.9375 l 0.875,0.8125 v 15.25 H 3980 l -64,33.3125 v 21.0625 h 32.875 v 22.8125 h -33.125 v 29 l 10.8125,2.5625 8.8125,-5.3125 29.875,5.875 20.875,27.5 24.25,7.625 v 77.1758 l 4.8418,13.3457 h 5.9219 l 4.5078,-13.6113 v -67.1739 h 24.75 v 94.6621 l 5.0371,14.0547 h 5.9219 l 4.4199,-13.3457 0.2344,-105.1074 20.4199,-7.1387 20.875,-27.5 29.875,-5.875 8.8125,5.3125 14.9219,-3.0488 v -29 h -33.125 v -22.8125 h 32.875 V -2460.5 l -64,-33.3125 h -22.3125 v -15.25 l 0.875,-0.8125 h 31.9375 v -9.4375 l -10.75,-5.3125 c -6.0833,-8.8125 -6.0222,-25.3056 -18.25,-26.4375 h -39.8301 z m 5.1387,9.5 34.6933,0.062 34.6914,-0.062 1.7637,1.625 7.125,14.625 -0.062,0.9375 h -43.5176 -43.5195 l -0.061,-0.9375 7.125,-14.625 z m 34.7617,78.5332 c 1.6517,0 3.3011,0.1249 4.9355,0.3633 18.9594,2.7643 32.0882,20.3746 29.3243,39.334 -2.7643,18.9592 -20.3746,32.0881 -39.334,29.3242 -18.9593,-2.7643 -32.0881,-20.3746 -29.3242,-39.334 2.489,-17.0725 17.1454,-29.7218 34.3984,-29.6875 z m -100.3457,88.2109 -9.3692,5.127 -30.7597,46.4922 11.5801,7.4238 59.4843,-39.332 -11.8437,-15.5567 z m 196.6777,0 -19.0918,4.1543 -11.8437,15.5567 59.4843,39.332 11.5801,-7.4238 -30.7597,-46.4922 z" />
+      <path
+         id="path106"
+         style="fill:#000000;fill-opacity:0.570918;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 3852.1406,-2601.7109 v 28.5039 h -28.5058 v 19.4472 h 28.5058 v 28.5039 h 19.4453 v -28.5039 h 28.5059 v -19.4472 h -28.5059 v -28.5039 z m 57.2754,64.1132 v 17.1036 h -17.1035 v 11.6679 h 17.1035 v 17.1035 h 11.668 v -17.1035 h 17.1035 v -11.6679 h -17.1035 v -17.1036 z m 69.1211,199.6368 -0.6191,0.707 c 11.7618,17.0171 -12.3535,42.397 -19.0918,52.5918 -2.8883,-22.0927 -4.7058,-41.426 0.1758,-50.0274 -2.0564,0.5551 -5.0285,3.4381 -7.336,7.1583 -3.0773,22.2704 0.2853,47.5099 5.0391,63.9062 12.1598,-13.1305 27.8926,-38.6701 31.9082,-57.2754 -2.4029,-9.0489 -7.8397,-15.3103 -10.0762,-17.0605 z m 134.084,1.1054 4.1992,11.4903 c 0.8173,13.8021 -1.4665,27.1399 -2.8281,40.6152 -2.6687,-5.8764 -25.2443,-27.884 -22.1152,-46.5391 0.082,-0.4912 -0.5007,-1.4844 -0.4688,-1.9863 l -7.6894,8.75 c 4.4839,26.568 21.2572,49.7343 32.4374,59.5293 6.3051,-20.9531 7.0601,-44.2158 4.375,-64.1699 -1.5483,-5.1361 -4.9692,-6.8469 -7.9101,-7.6895 z m 63.0098,33.7422 v 41.4805 h -41.4825 v 28.3008 h 41.4825 v 41.4785 h 28.2968 v -41.4785 h 41.4844 v -28.3008 h -41.4844 v -41.4805 z" />
+    </g>
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Lifeline Heal Drone</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

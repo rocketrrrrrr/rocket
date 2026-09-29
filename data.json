@@ -1157,18 +1157,55 @@
    "abilities": {
     "passive": {
      "name": "リフトの贈り物",
-     "desc": "デスボックスとリモートで相互作用してアイテムを1つ取得できます。シールドコアは対象外です。チームメイトのバナーをリモートで取得できます。"
+     "desc": "デスボックスとリモートで相互作用してアイテムを1つ取得できます。シールドコアは対象外です。チームメイトのバナーをリモートで取得できます。",
+     "icon": "img/abilities/alter-passive.svg"
     },
     "tactical": {
      "name": "ヴォイドパッセージ",
-     "desc": "物体を通り抜けられるポータルを作成する。"
+     "desc": "物体を通り抜けられるポータルを作成する。",
+     "icon": "img/abilities/alter-tactical.svg"
     },
     "ultimate": {
      "name": "ヴォイドネクサス",
-     "desc": "すべての仲間が遠隔操作できる合流ポイントを作成する。これを使用することでフェーズトンネルが開き、合流地点に戻ることが可能。"
+     "desc": "すべての仲間が遠隔操作できる合流ポイントを作成する。これを使用することでフェーズトンネルが開き、合流地点に戻ることが可能。",
+     "icon": "img/abilities/alter-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/alter",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "Eye to Another World",
+      "effect": "リコンクラスのパークをすべて得る。",
+      "ability": "other",
+      "source": "https://apexlegends.wiki.gg/wiki/Alter",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "Controller of Worlds",
+      "effect": "コントローラークラスのパークをすべて得る。",
+      "ability": "other",
+      "source": "https://apexlegends.wiki.gg/wiki/Alter",
+      "nameUnconfirmed": true
+     }
+    ],
+    "lv3": [
+     {
+      "name": "Staring into the Void",
+      "effect": "ヴォイドパッセージの敵スキャン時間が15秒延びる。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Alter",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "ヴォイドブリーチャー",
+      "effect": "（効果の全文は日本語記事に記載なし）移動速度上昇が30%から15%に弱体化された、と記載。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/overclocked-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1183,18 +1220,52 @@
    "abilities": {
     "passive": {
      "name": "捕食者の追跡",
-     "desc": "空中で突進する"
+     "desc": "空中で突進する",
+     "icon": "img/abilities/ash-passive.svg"
     },
     "tactical": {
      "name": "アークスネア",
-     "desc": "回転するスネアを投げると最初に近づいてきた敵にダメージを与え、拘束することができる。"
+     "desc": "回転するスネアを投げると最初に近づいてきた敵にダメージを与え、拘束することができる。",
+     "icon": "img/abilities/ash-tactical.svg"
     },
     "ultimate": {
      "name": "フェーズティア",
-     "desc": "狙った場所に一方通行のポータルを開く。"
+     "desc": "狙った場所に一方通行のポータルを開く。",
+     "icon": "img/abilities/ash-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/ash",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "射程距離延長",
+      "effect": "フェーズティアの射程を25m延長する。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/wild-iron-event"
+     },
+     {
+      "name": "アルティメットのクールダウン",
+      "effect": "フェーズティアのクールダウンを30秒短縮する。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/wild-iron-event"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "グリーディースネア",
+      "effect": "アークスネアの持続時間が3倍（5秒→15秒）になり、複数の敵を拘束できる。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Ash"
+     },
+     {
+      "name": "ツインスネア",
+      "effect": "アークスネアのチャージが1つ増える。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Ash"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1231,18 +1302,52 @@
    "abilities": {
     "passive": {
      "name": "ドリフト",
-     "desc": "スライディング中のコントロールが向上。"
+     "desc": "スライディング中のコントロールが向上。",
+     "icon": "img/abilities/axle-passive.svg"
     },
     "tactical": {
      "name": "ニトロゲート",
-     "desc": "使用者をブーストスライドさせるスピードゲートを展開する。"
+     "desc": "使用者をブーストスライドさせるスピードゲートを展開する。",
+     "icon": "img/abilities/axle-tactical.svg"
     },
     "ultimate": {
      "name": "キックスタート",
-     "desc": "敵を追尾し、着弾時に標的を吹き飛ばすドローンを展開する。"
+     "desc": "敵を追尾し、着弾時に標的を吹き飛ばすドローンを展開する。",
+     "icon": "img/abilities/axle-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/axle",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "スライディングシューター",
+      "effect": "スライディング中に撃った弾がマガジンではなくインベントリから直接供給される（最大マガジンサイズの半分まで）。",
+      "ability": "passive",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     },
+     {
+      "name": "ロングホール",
+      "effect": "戦術アビリティの最大スライドブースト時間が5秒に戻る。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "ドローンデプロイヤー",
+      "effect": "アルティメットのクールダウンを90秒に戻す。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+     },
+     {
+      "name": "スーパースライダー",
+      "effect": "ニトロゲートのクールダウンが5秒短縮され、ワールド内の最大設置数が+1される。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1257,18 +1362,52 @@
    "abilities": {
     "passive": {
      "name": "ガンスリング",
-     "desc": "スリングに3つ目の武器を保管できる。スリング武器はアタッチメントを利用できない。"
+     "desc": "スリングに3つ目の武器を保管できる。スリング武器はアタッチメントを利用できない。",
+     "icon": "img/abilities/ballistic-passive.svg"
     },
     "tactical": {
      "name": "ウィスラー",
-     "desc": "当たると敵が銃を撃つにつれてオーバーヒートする弾を撃つ。オーバーヒートするとダメージを受ける。戦術アビリティをホールドでロックオンする。"
+     "desc": "当たると敵が銃を撃つにつれてオーバーヒートする弾を撃つ。オーバーヒートするとダメージを受ける。戦術アビリティをホールドでロックオンする。",
+     "icon": "img/abilities/ballistic-tactical.svg"
     },
     "ultimate": {
      "name": "テンペスト",
-     "desc": "付近の仲間のリロード速度が上昇し、所持弾薬が無限になる。スリング武器は金にアップグレードする。"
+     "desc": "付近の仲間のリロード速度が上昇し、所持弾薬が無限になる。スリング武器は金にアップグレードする。",
+     "icon": "img/abilities/ballistic-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/ballistic",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "追加バレット",
+      "effect": "戦術アビリティのチャージが1つ増え、合計3チャージになる。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/overclocked-midseason-patch-notes"
+     },
+     {
+      "name": "トラップモード",
+      "effect": "設置したウィスラーが15秒間持続し、触れた敵に35ダメージを与える。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/overclocked-midseason-patch-notes"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "静かな時間",
+      "effect": "戦術アビリティがオーバーヒートを付与しない代わりに、命中時にサイレンスとスロウを付与する（クールダウンは長くなる）。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/overclocked-midseason-patch-notes"
+     },
+     {
+      "name": "キリングタイム",
+      "effect": "アルティメットの持続時間を15秒延長する。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/overclocked-midseason-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1283,18 +1422,52 @@
    "abilities": {
     "passive": {
      "name": "駆け足",
-     "desc": "スプリント中に被弾すると、移動速度が短時間向上する。"
+     "desc": "スプリント中に被弾すると、移動速度が短時間向上する。",
+     "icon": "img/abilities/bangalore-passive.svg"
     },
     "tactical": {
      "name": "スモークランチャー",
-     "desc": "発煙缶を高速射出し、着弾時の爆発で煙の壁を作り出す。"
+     "desc": "発煙缶を高速射出し、着弾時の爆発で煙の壁を作り出す。",
+     "icon": "img/abilities/bangalore-tactical.svg"
     },
     "ultimate": {
      "name": "ローリングサンダー",
-     "desc": "一帯をゆっくりと巡る支援砲撃を要請する。"
+     "desc": "一帯をゆっくりと巡る支援砲撃を要請する。",
+     "icon": "img/abilities/bangalore-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/bangalore",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "援護しろ",
+      "effect": "煙の中にいる味方の体力が回復する。駆け足を発動させた敵を自動でピンする。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Bangalore"
+     },
+     {
+      "name": "帯電煙幕",
+      "effect": "戦術アビリティが帯電し、敵のアルティメットに100ダメージを与え、敵の戦術アビリティを破壊する。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/showdown-patch-notes"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "ECMペイロード",
+      "effect": "アルティメットが帯電し、与えるダメージが10増加し、敵の展開型アイテムを破壊する。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/showdown-patch-notes"
+     },
+     {
+      "name": "名誉勲章",
+      "effect": "復活が速くなり、ノックダウンされた味方に向かって走るとパッシブが発動する。",
+      "ability": "passive",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/showdown-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1332,18 +1505,53 @@
    "abilities": {
     "passive": {
      "name": "トラッカー",
-     "desc": "後を追うための手掛かりを敵が残す。白いカラスが現れ、戦場で導いてくれる。"
+     "desc": "後を追うための手掛かりを敵が残す。白いカラスが現れ、戦場で導いてくれる。",
+     "icon": "img/abilities/bloodhound-passive.svg"
     },
     "tactical": {
      "name": "全能の目",
-     "desc": "短い間だけ眼前の全構造物を見通して、敵や罠、手掛かりを見破る。"
+     "desc": "短い間だけ眼前の全構造物を見通して、敵や罠、手掛かりを見破る。",
+     "icon": "img/abilities/bloodhound-tactical.svg"
     },
     "ultimate": {
      "name": "主神のクローク",
-     "desc": "近くにいる者を透明化させるデバイスを投げる。移動速度が上昇し、敵を強調表示できるようになる。"
+     "desc": "近くにいる者を透明化させるデバイスを投げる。移動速度が上昇し、敵を強調表示できるようになる。",
+     "icon": "img/abilities/bloodhound-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/bloodhound",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "ヒドゥンサイト",
+      "effect": "アルティメット使用で戦術アビリティのクールダウンがリフレッシュされ、クローク中に使う戦術アビリティの視覚効果が敵から見えなくなる。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     },
+     {
+      "name": "バードアイ",
+      "effect": "白いカラスが分裂し、最も近い2体の敵（異なる部隊）の方向へ飛ぶ。",
+      "ability": "passive",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "Hunter's Agility",
+      "effect": "全能の目の発動が速くなり、クールダウンが5秒短縮される（25秒→20秒）。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Bloodhound",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "トゥループレデター",
+      "effect": "射撃してもクロークが解除されず、一時的に中断されるだけになる。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1371,18 +1579,52 @@
    "abilities": {
     "passive": {
      "name": "レインフォース",
-     "desc": "長押しでドアを増強。増強されたドアは頑丈になり、敵は開けることができなくなる。ドアが破壊された場所も増強することができる。(最大4)"
+     "desc": "長押しでドアを増強。増強されたドアは頑丈になり、敵は開けることができなくなる。ドアが破壊された場所も増強することができる。(最大4)",
+     "icon": "img/abilities/catalyst-passive.svg"
     },
     "tactical": {
      "name": "スパイクストリップ",
-     "desc": "敵が近づくとスパイクに変化する磁性流体を投げる。カタリストは敵のスパイクから影響を受けない。（最大数:3）"
+     "desc": "敵が近づくとスパイクに変化する磁性流体を投げる。カタリストは敵のスパイクから影響を受けない。（最大数:3）",
+     "icon": "img/abilities/catalyst-tactical.svg"
     },
     "ultimate": {
      "name": "フェロバリケード",
-     "desc": "磁性流体の透過可能な壁を作る。壁を通った敵は移動速度が低下し、一時的に視界が悪くなる。"
+     "desc": "磁性流体の透過可能な壁を作る。壁を通った敵は移動速度が低下し、一時的に視界が悪くなる。",
+     "icon": "img/abilities/catalyst-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/catalyst",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "フェロドア",
+      "effect": "パッシブで補強できるドアの最大数が6になる（壊れたドアの再構築・補強）。",
+      "ability": "passive",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+     },
+     {
+      "name": "レジリエントベール",
+      "effect": "アルティメットの持続時間が延び、アルティメットのクールダウンが150秒から120秒に短縮される。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "ヒドゥンスパイク",
+      "effect": "スパイクの範囲が非アクティブ時に敵から見えなくなる。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+     },
+     {
+      "name": "フェロー・フレンジー",
+      "effect": "スパイクの最大設置数が1増え、スパイクは50%小さくなるがティックダメージの速度が上がる。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1397,18 +1639,52 @@
    "abilities": {
     "passive": {
      "name": "フィールドリサーチ",
-     "desc": "ガスでダメージを与え、デスボックスを開け、リングコンソールをスキャンすることで追加のアップグレードポイントを獲得します。"
+     "desc": "ガスでダメージを与え、デスボックスを開け、リングコンソールをスキャンすることで追加のアップグレードポイントを獲得します。",
+     "icon": "img/abilities/caustic-passive.svg"
     },
     "tactical": {
      "name": "Noxガストラップ",
-     "desc": "強力なNoxガスを放つ容器を最大6つ配置する。射撃か敵の接近によって起動する。Noxガスは敵にダメージを与え、地面に這いつくばらせる。"
+     "desc": "強力なNoxガスを放つ容器を最大6つ配置する。射撃か敵の接近によって起動する。Noxガスは敵にダメージを与え、地面に這いつくばらせる。",
+     "icon": "img/abilities/caustic-tactical.svg"
     },
     "ultimate": {
      "name": "Noxガスグレネード",
-     "desc": "広範囲をNoxガスで覆う。Noxガスは敵にダメージを与え、地面に這いつくばらせる。"
+     "desc": "広範囲をNoxガスで覆う。Noxガスは敵にダメージを与え、地面に這いつくばらせる。",
+     "icon": "img/abilities/caustic-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/caustic",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "追加トラップ",
+      "effect": "戦術アビリティのチャージが1つ増え、同時に設置できる数が2増える。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/showdown-patch-notes"
+     },
+     {
+      "name": "吸い込んでみろ",
+      "effect": "Noxガスの中にいる間、体力が毎秒1回復する。",
+      "ability": "other",
+      "source": "https://apexlegends.wiki.gg/wiki/Caustic"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "ガスファイター",
+      "effect": "ガスの中にいる間、戦術アビリティのリチャージが300%速くなる。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/showdown-patch-notes"
+     },
+     {
+      "name": "パーティクルディフューザー",
+      "effect": "アルティメットの半径が50%増加する。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/showdown-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1435,18 +1711,52 @@
    "abilities": {
     "passive": {
      "name": "セイバースピード",
-     "desc": "戦術アビリティの範囲外にいる仲間や味方のバナー、リスポーンビーコンに向かって走ると、スピードがブーストされる。"
+     "desc": "戦術アビリティの範囲外にいる仲間や味方のバナー、リスポーンビーコンに向かって走ると、スピードがブーストされる。",
+     "icon": "img/abilities/conduit-passive.svg"
     },
     "tactical": {
      "name": "レイディアントトランスファー",
-     "desc": "仲間にエネルギーを一気に放出し、危機に陥った仲間とコンジットに一時的なシールドを生成する。"
+     "desc": "仲間にエネルギーを一気に放出し、危機に陥った仲間とコンジットに一時的なシールドを生成する。",
+     "icon": "img/abilities/conduit-tactical.svg"
     },
     "ultimate": {
      "name": "エネルギーバリケード",
-     "desc": "敵にダメージを与えて動きを鈍らせるジャミングデバイスの一団を展開する。"
+     "desc": "敵にダメージを与えて動きを鈍らせるジャミングデバイスの一団を展開する。",
+     "icon": "img/abilities/conduit-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/conduit",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "同時発生",
+      "effect": "最初の発動から10秒以内なら、エネルギーバリケードをクールダウンなしで1回再発動できる（ジャマーは2個減り、密集して出現）。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+     },
+     {
+      "name": "ジャムアップ",
+      "effect": "ジャマーの範囲が25%拡大し、ジャマーでダメージを受けた敵のHUDが10秒間ジャミングされる。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "インスタントバリケード",
+      "effect": "レイディアントトランスファーの一時シールドの一部を即座に得る（再生時間は短くなる）。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/overclocked-midseason-patch-notes"
+     },
+     {
+      "name": "エンデュアリングバリケード",
+      "effect": "レイディアントトランスファーの一時シールド再生がダメージを受けても続く（リングダメージでは回復しない）。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/overclocked-midseason-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1461,18 +1771,54 @@
    "abilities": {
     "passive": {
      "name": "ニューロリンク",
-     "desc": "クリプトとチームメイトは、スパイドローンが30m以内で検知したものを確認できる。"
+     "desc": "クリプトとチームメイトは、スパイドローンが30m以内で検知したものを確認できる。",
+     "icon": "img/abilities/crypto-passive.svg"
     },
     "tactical": {
      "name": "スパイドローン",
-     "desc": "空中カメラ付きドローンを展開する。調査ビーコン、リスポーンビーコン、進化ハーベスター、味方のバナーカードに遠隔でアクションできる。ドローン操縦中はクリプトの姿が見えなくなる。"
+     "desc": "空中カメラ付きドローンを展開する。調査ビーコン、リスポーンビーコン、進化ハーベスター、味方のバナーカードに遠隔でアクションできる。ドローン操縦中はクリプトの姿が見えなくなる。",
+     "icon": "img/abilities/crypto-tactical.svg"
     },
     "ultimate": {
      "name": "ドローンEMP",
-     "desc": "ドローンからEMPをチャージする。衝撃波によって50シールドダメージを与え、プレイヤーの動きを遅らせつつ、罠を破壊する。"
+     "desc": "ドローンからEMPをチャージする。衝撃波によって50シールドダメージを与え、プレイヤーの動きを遅らせつつ、罠を破壊する。",
+     "icon": "img/abilities/crypto-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/crypto",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "Network Expansion",
+      "effect": "ニューロリンクとドローンEMPの範囲が25%広がる（30m→37.5m）。",
+      "ability": "passive",
+      "source": "https://apexlegends.wiki.gg/wiki/Crypto",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "Ally.MoveTo()",
+      "effect": "すべての味方の位置へ素早く移動できる。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/winter-wipeout-event"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "エネルギー結合",
+      "effect": "スキャンビーコンの使用とドローンによる敵のスキャンでアルティメットチャージを得る（EMP後5秒間は無効、1人スキャンにつき5）。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/breach-patch-notes"
+     },
+     {
+      "name": "Hackathon",
+      "effect": "スパイドローンのクールダウンが20秒短縮され（40秒→20秒）、ドローンEMPの発動時やドローンを失ったときに移動速度が上がる。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Crypto",
+      "nameUnconfirmed": true
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1500,18 +1846,52 @@
    "abilities": {
     "passive": {
      "name": "グレネーダー",
-     "desc": "インベントリの各スロットで所有できるグレネードが1個増加する。グレネードを遠くへ、素早く、正確に放てるようになる。爆発ダメージを受けても移動速度が低下しなくなる。"
+     "desc": "インベントリの各スロットで所有できるグレネードが1個増加する。グレネードを遠くへ、素早く、正確に放てるようになる。爆発ダメージを受けても移動速度が低下しなくなる。",
+     "icon": "img/abilities/fuse-passive.svg"
     },
     "tactical": {
      "name": "ナックルクラスター",
-     "desc": "着弾時に空中炸裂式の爆発物を連続射出するクラスター爆弾を発射する。"
+     "desc": "着弾時に空中炸裂式の爆発物を連続射出するクラスター爆弾を発射する。",
+     "icon": "img/abilities/fuse-tactical.svg"
     },
     "ultimate": {
      "name": "マザーロード",
-     "desc": "着弾地点周辺に爆発物を散布する爆弾を発射する。エイム時、遮蔽物を貫通する爆弾を発射する。"
+     "desc": "着弾地点周辺に爆発物を散布する爆弾を発射する。エイム時、遮蔽物を貫通する爆弾を発射する。",
+     "icon": "img/abilities/fuse-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/fuse",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "パイロテクニック",
+      "effect": "マザーロードの爆発後に炎の塊が残る（持続する炎の半径が2倍に）。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+     },
+     {
+      "name": "リイグニッション",
+      "effect": "敵に爆発ダメージを与えるとアルティメットがチャージされる（爆発ダメージ3につき1秒短縮）。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "ビッグバン",
+      "effect": "ナックルクラスターの爆発範囲が50%拡大する。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+     },
+     {
+      "name": "スティッキーボム",
+      "effect": "ナックルクラスターの最初の投射物が25%大きくなり敵に貼りつく。敵に7回ヒットするごとにナックルクラスターのクールダウンが1秒短縮される。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1526,18 +1906,52 @@
    "abilities": {
     "passive": {
      "name": "ガンシールド",
-     "desc": "照準器越しにエイムを行うとガンシールドが展開し、被弾を防ぐ。"
+     "desc": "照準器越しにエイムを行うとガンシールドが展開し、被弾を防ぐ。",
+     "icon": "img/abilities/gibraltar-passive.svg"
     },
     "tactical": {
      "name": "プロテクトドーム",
-     "desc": "内側と外側の両方の攻撃をブロックする。"
+     "desc": "内側と外側の両方の攻撃をブロックする。",
+     "icon": "img/abilities/gibraltar-tactical.svg"
     },
     "ultimate": {
      "name": "防衛爆撃",
-     "desc": "マークされた位置への迫撃砲の集中攻撃を要請します。"
+     "desc": "マークされた位置への迫撃砲の集中攻撃を要請します。",
+     "icon": "img/abilities/gibraltar-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/gibraltar",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "サンダードーム",
+      "effect": "ドームが帯電し、最初に侵入した敵に50ダメージを与えて移動速度を下げる。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/aftershock-event"
+     },
+     {
+      "name": "ドームヒーリング",
+      "effect": "ドームの持続時間が4秒延び、ドーム内では小回復アイテムの回復量が2倍になる。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/aftershock-event"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "トリプルボンバードメント",
+      "effect": "防衛爆撃を3チャージに分割する（1回ごとの範囲とミサイル数は減る）。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/aftershock-event"
+     },
+     {
+      "name": "ファストショッティ",
+      "effect": "ショットガンを持っていても収納時と同じ速度で動け、ノックするとショットガンが自動でリロードされる。",
+      "ability": "other",
+      "source": "https://apexlegends.wiki.gg/wiki/Gibraltar"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1552,18 +1966,52 @@
    "abilities": {
     "passive": {
      "name": "スペースウォーク",
-     "desc": "ホライゾン独自の宇宙服で空中制御を向上させて、落下の衝撃を抑制する。"
+     "desc": "ホライゾン独自の宇宙服で空中制御を向上させて、落下の衝撃を抑制する。",
+     "icon": "img/abilities/horizon-passive.svg"
     },
     "tactical": {
      "name": "グラビティリフト",
-     "desc": "重力の流れを逆転させてプレイヤーを上に運び、脱出時にブーストをかける。"
+     "desc": "重力の流れを逆転させてプレイヤーを上に運び、脱出時にブーストをかける。",
+     "icon": "img/abilities/horizon-tactical.svg"
     },
     "ultimate": {
      "name": "ブラックホール",
-     "desc": "ニュートを展開してプレイヤーを吸引する極小ブラックホールを生成する。"
+     "desc": "ニュートを展開してプレイヤーを吸引する極小ブラックホールを生成する。",
+     "icon": "img/abilities/horizon-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/horizon",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "グラビティブーツ",
+      "effect": "空中でしゃがむとより速く落下する。",
+      "ability": "passive",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/amped-patch-notes"
+     },
+     {
+      "name": "ニュート・スクート",
+      "effect": "グラビティリフトから出た後、ジャンプを押すとグライドする。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/amped-patch-notes"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "エネルギー保存",
+      "effect": "スペースウォークで着地を和らげると、シールドが25回復する。",
+      "ability": "passive",
+      "source": "https://apexlegends.wiki.gg/wiki/Horizon"
+     },
+     {
+      "name": "ノックエキスパート",
+      "effect": "ノック時に戦術アビリティのチャージを得る。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/amped-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1578,18 +2026,56 @@
    "abilities": {
     "passive": {
      "name": "コンバットグライド",
-     "desc": "ライフラインは、D.O.Cを掴んで数秒間滑空することができる。D.O.C.を展開し仲間を復活させ、自身は自由に動いて防御に徹する。"
+     "desc": "ライフラインは、D.O.Cを掴んで数秒間滑空することができる。D.O.C.を展開し仲間を復活させ、自身は自由に動いて防御に徹する。",
+     "icon": "img/abilities/lifeline-passive.svg"
     },
     "tactical": {
      "name": "D.O.C.ヒールドローン",
-     "desc": "D.O.C.が近くの味方を回復する。D.O.C.を展開すると、味方を指定して追従するよう指示を出すことができる。"
+     "desc": "D.O.C.が近くの味方を回復する。D.O.C.を展開すると、味方を指定して追従するよう指示を出すことができる。",
+     "icon": "img/abilities/lifeline-tactical.svg"
     },
     "ultimate": {
      "name": "D.O.C.ヘイロー",
-     "desc": "D.O.C.を放つとヘイローシールドシステムが起動する。範囲内の全プレイヤーが、体力とシールドの消耗アイテムをより早く使用できる。"
+     "desc": "D.O.C.を放つとヘイローシールドシステムが起動する。範囲内の全プレイヤーが、体力とシールドの消耗アイテムをより早く使用できる。",
+     "icon": "img/abilities/lifeline-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/lifeline",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "Extended Flight",
+      "effect": "コンバットグライドの時間が1.5秒延びる（4秒→5.5秒）。",
+      "ability": "passive",
+      "source": "https://apexlegends.wiki.gg/wiki/Lifeline",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "Battpack",
+      "effect": "シールドバッテリーを1スタックに1つ多く持てる（2→3）。デスボックスのバッテリー数が見える。",
+      "ability": "other",
+      "source": "https://apexlegends.wiki.gg/wiki/Lifeline",
+      "nameUnconfirmed": true
+     }
+    ],
+    "lv3": [
+     {
+      "name": "Enhanced Radio",
+      "effect": "D.O.C.ヒールドローンを指示できる範囲が50%広がる。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Lifeline",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "Tactical Cooldown+",
+      "effect": "D.O.C.ヒールドローンのクールダウンが10秒短縮される（45秒→35秒）。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Lifeline",
+      "nameUnconfirmed": true
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1617,18 +2103,55 @@
    "abilities": {
     "passive": {
      "name": "アイフォークオリティ",
-     "desc": "付近のスーパーレアとレジェンダリーのアイテムを壁越しに見ることができる。また、非武装時にエイムするとハイライトされたアイテムをピンできる。鍵なしでアイテム保管庫を開けられる。"
+     "desc": "付近のスーパーレアとレジェンダリーのアイテムを壁越しに見ることができる。また、非武装時にエイムするとハイライトされたアイテムをピンできる。鍵なしでアイテム保管庫を開けられる。",
+     "icon": "img/abilities/loba-passive.svg"
     },
     "tactical": {
      "name": "盗賊の相棒",
-     "desc": "ジャンプドライブ・ブレスレットを投げ、たどり着きづらい場所にテレポートしたり、窮地から一瞬で脱する。"
+     "desc": "ジャンプドライブ・ブレスレットを投げ、たどり着きづらい場所にテレポートしたり、窮地から一瞬で脱する。",
+     "icon": "img/abilities/loba-tactical.svg"
     },
     "ultimate": {
      "name": "ブラックマーケット",
-     "desc": "付近のアイテムをインベントリ内にテレポートさせられるポータブルデバイスを配置する。弾薬や小回復アイテム、味方のバナーは無制限。"
+     "desc": "付近のアイテムをインベントリ内にテレポートさせられるポータブルデバイスを配置する。弾薬や小回復アイテム、味方のバナーは無制限。",
+     "icon": "img/abilities/loba-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/loba",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "Wolf's Claws",
+      "effect": "盗賊の相棒でテレポートした後、移動速度が上がり、武器を素早く構えられる。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Loba",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "Shopping Spree",
+      "effect": "ブラックマーケットから部隊が取れるアイテムが1つ増える（2→3）。",
+      "ability": "ultimate",
+      "source": "https://apexlegends.wiki.gg/wiki/Loba",
+      "nameUnconfirmed": true
+     }
+    ],
+    "lv3": [
+     {
+      "name": "Escape Artist",
+      "effect": "盗賊の相棒でテレポートした後、ダメージを受けるまでシールドが25回復する。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Loba",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "ブランニューバッグ",
+      "effect": "選択すると部隊全員が紫のバックパックを得る（ゴールドバッグ廃止のため）。",
+      "ability": "other",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1643,18 +2166,54 @@
    "abilities": {
     "passive": {
      "name": "ウォーロードの怒り",
-     "desc": "ダメージを与えた敵が一時的にハイライト表示される。ショットガンでの移動が速くなる。"
+     "desc": "ダメージを与えた敵が一時的にハイライト表示される。ショットガンでの移動が速くなる。",
+     "icon": "img/abilities/mad-maggie-passive.svg"
     },
     "tactical": {
      "name": "ライオットドリル",
-     "desc": "障害物に取り付けるドリルを撃ち、反対側にいる敵を焼き払う。"
+     "desc": "障害物に取り付けるドリルを撃ち、反対側にいる敵を焼き払う。",
+     "icon": "img/abilities/mad-maggie-tactical.svg"
     },
     "ultimate": {
      "name": "レッカーボール",
-     "desc": "スピードブーストパッドを放ち、敵の近くで爆発するボールを投げる。"
+     "desc": "スピードブーストパッドを放ち、敵の近くで爆発するボールを投げる。",
+     "icon": "img/abilities/mad-maggie-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/mad-maggie",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "ガンランニング",
+      "effect": "パッシブの移動速度増加がSMGとピストルでも有効になる。",
+      "ability": "passive",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/wild-iron-event"
+     },
+     {
+      "name": "ファイヤーボール",
+      "effect": "移動しながら地面にマグマの塊を落とし、マギーが受ける火ダメージが50%減る。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/wild-iron-event"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "Drillslinger",
+      "effect": "ライオットドリルのチャージが1つ増えるが、持続時間は25%短くなる（9秒→6.75秒）。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Mad_Maggie",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "Big Drill",
+      "effect": "ライオットドリルの幅と深さが50%広がる。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Mad_Maggie",
+      "nameUnconfirmed": true
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1669,18 +2228,56 @@
    "abilities": {
     "passive": {
      "name": "神出鬼没",
-     "desc": "リスポーンビーコン使用時とチームメイトの回復や復活時に、自動でクロークが発動する。"
+     "desc": "リスポーンビーコン使用時とチームメイトの回復や復活時に、自動でクロークが発動する。",
+     "icon": "img/abilities/mirage-passive.svg"
     },
     "tactical": {
      "name": "サイクアウト",
-     "desc": "ホログラフのデコイを発生させて、敵を混乱させる。"
+     "desc": "ホログラフのデコイを発生させて、敵を混乱させる。",
+     "icon": "img/abilities/mirage-tactical.svg"
     },
     "ultimate": {
      "name": "パーティーライフ",
-     "desc": "ミラージュが操作可能なデコイ集団を展開して敵の注意を引く。"
+     "desc": "ミラージュが操作可能なデコイ集団を展開して敵の注意を引く。",
+     "icon": "img/abilities/mirage-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/mirage",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "Renaissance Man",
+      "effect": "すべてのクラスのワールド内アイテム（アサルトボックス、ケアパッケージのスキャン、調査ビーコン、リングコンソール）を使える。",
+      "ability": "other",
+      "source": "https://apexlegends.wiki.gg/wiki/Mirage",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "Boozle-Eye",
+      "effect": "デコイを撃った敵もスキャンされる。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Mirage",
+      "nameUnconfirmed": true
+     }
+    ],
+    "lv3": [
+     {
+      "name": "Me Two",
+      "effect": "サイクアウトのチャージが1つ増え、デコイを2体同時に出せる。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Mirage",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "Bamboozle Bonus",
+      "effect": "デコイで敵をだますと、サイクアウトのクールダウンがリセットされる。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Mirage",
+      "nameUnconfirmed": true
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1695,18 +2292,53 @@
    "abilities": {
     "passive": {
      "name": "傷兵警護",
-     "desc": "倒れた味方を引きずりながら蘇生し、自分のリバイブシールドで守り通せ。"
+     "desc": "倒れた味方を引きずりながら蘇生し、自分のリバイブシールドで守り通せ。",
+     "icon": "img/abilities/newcastle-passive.svg"
     },
     "tactical": {
      "name": "モバイルプロテクター",
-     "desc": "移動可能なエネルギーシールドを放つドローンを投げる。"
+     "desc": "移動可能なエネルギーシールドを放つドローンを投げる。",
+     "icon": "img/abilities/newcastle-tactical.svg"
     },
     "ultimate": {
      "name": "キャッスルウォール",
-     "desc": "標的にした味方やエリアに向かって飛び、地面に叩きつけて強固なストロングホールドを構築する。"
+     "desc": "標的にした味方やエリアに向かって飛び、地面に叩きつけて強固なストロングホールドを構築する。",
+     "icon": "img/abilities/newcastle-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/newcastle",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "ストロングホールド",
+      "effect": "キャッスルウォールの体力が500増え（合計1250）、帯電が120秒長く続く（120秒→240秒）。",
+      "ability": "ultimate",
+      "source": "https://apexlegends.wiki.gg/wiki/Newcastle"
+     },
+     {
+      "name": "レディー・トゥ・ランブル",
+      "effect": "味方を蘇生すると武器が自動でリロードされ、完全回復が発動する。",
+      "ability": "passive",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/winter-wipeout-event"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "Ultimate Savior",
+      "effect": "キャッスルウォールを叩きつけたとき、着地範囲にいる味方のシールドが15秒間回復し続ける。",
+      "ability": "ultimate",
+      "source": "https://apexlegends.wiki.gg/wiki/Newcastle",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "防衛線",
+      "effect": "戦術アビリティとリバイブシールドが敵を一度ノックバックする。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/winter-wipeout-event"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1721,18 +2353,52 @@
    "abilities": {
     "passive": {
      "name": "高速修復",
-     "desc": "ダメージを受けていない間、オクタンは体力が次第に回復する。高速修復は、オクタンの体力が少ないほど回復量が増加する。"
+     "desc": "ダメージを受けていない間、オクタンは体力が次第に回復する。高速修復は、オクタンの体力が少ないほど回復量が増加する。",
+     "icon": "img/abilities/octane-passive.svg"
     },
     "tactical": {
      "name": "興奮剤",
-     "desc": "6秒間、歩行速度が35、スプリント速度が45上昇する。体力を消費して使用。2回使用すると興奮剤サージとなり、興奮剤をリフレッシュして高速修復が発動する。"
+     "desc": "6秒間、歩行速度が35、スプリント速度が45上昇する。体力を消費して使用。2回使用すると興奮剤サージとなり、興奮剤をリフレッシュして高速修復が発動する。",
+     "icon": "img/abilities/octane-tactical.svg"
     },
     "ultimate": {
      "name": "ジャンプパッド",
-     "desc": "上に乗った者を空中へ射出するジャンプパッドを展開する。"
+     "desc": "上に乗った者を空中へ射出するジャンプパッドを展開する。",
+     "icon": "img/abilities/octane-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/octane",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "ストロングスキン",
+      "effect": "興奮剤の体力消費が10減る。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/winter-wipeout-event"
+     },
+     {
+      "name": "スクワッドラッシュ",
+      "effect": "ジャンプパッドを使った全員が、着地時に興奮剤の効果を得る。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/winter-wipeout-event"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "デアデビル",
+      "effect": "シールド破壊時に高速リロードを得て、HPが少ないほど興奮剤サージの持続時間が延びる（最大延長3秒）。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/breach-patch-notes"
+     },
+     {
+      "name": "トリプルジャンプ",
+      "effect": "ジャンプパッドから3回目のジャンプができる。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/winter-wipeout-event"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1747,18 +2413,52 @@
    "abilities": {
     "passive": {
      "name": "内部情報",
-     "desc": "ケアパッケージ、リングコンソール、または調査ビーコンをスキャンして、ジップラインガンの25%を再充電し、クールダウンを永久に10秒短縮します。"
+     "desc": "ケアパッケージ、リングコンソール、または調査ビーコンをスキャンして、ジップラインガンの25%を再充電し、クールダウンを永久に10秒短縮します。",
+     "icon": "img/abilities/pathfinder-passive.svg"
     },
     "tactical": {
      "name": "グラップリングフック",
-     "desc": "グラップリングで、移動の難しい場所へ素早く移動できる。"
+     "desc": "グラップリングで、移動の難しい場所へ素早く移動できる。",
+     "icon": "img/abilities/pathfinder-tactical.svg"
     },
     "ultimate": {
      "name": "ジップラインガン",
-     "desc": "誰もが使えるジップラインを作成します。 エネルギーが充填されている間、ライダーは受けるダメージが50%減少します。"
+     "desc": "誰もが使えるジップラインを作成します。 エネルギーが充填されている間、ライダーは受けるダメージが50%減少します。",
+     "icon": "img/abilities/pathfinder-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/pathfinder",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "フィールドリサーチ",
+      "effect": "調査ビーコンのスキャンに加え、すべてのリコンパークを得る。",
+      "ability": "other",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/overclocked-midseason-patch-notes"
+     },
+     {
+      "name": "リングマスター",
+      "effect": "リングコンソールへのアクセスに加え、すべてのコントローラーパークを得る。",
+      "ability": "other",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/overclocked-midseason-patch-notes"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "フィーリングジッピー",
+      "effect": "ジップラインガンのチャージが2つになる（通電中のジップラインで味方の速度と加速が上がる）。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/breach-patch-notes"
+     },
+     {
+      "name": "ランディングギア",
+      "effect": "空中でのコントロールが強化され、激しい着地からの回復が速くなる。",
+      "ability": "other",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/overclocked-midseason-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1789,14 +2489,47 @@
     },
     "tactical": {
      "name": "増幅バリケード",
-     "desc": "敵の銃弾を防ぎ、味方の銃弾を強化する増幅シールドを構築する。増幅バリケードの被ダメージ、および増幅バリケードを貫通して受けたダメージで、この壁がチャージされる。壁を超えるとスピードブーストがチャージされる。"
+     "desc": "敵の銃弾を防ぎ、味方の銃弾を強化する増幅シールドを構築する。増幅バリケードの被ダメージ、および増幅バリケードを貫通して受けたダメージで、この壁がチャージされる。壁を超えるとスピードブーストがチャージされる。",
+     "icon": "img/abilities/rampart-tactical.svg"
     },
     "ultimate": {
      "name": "モバイルミニガン「シーラ」",
-     "desc": "大容量マガジンを備えたモバイルシエラを使用します。誰でも使える固定式でリロード可能なタレットとして配置します。"
+     "desc": "大容量マガジンを備えたモバイルシエラを使用します。誰でも使える固定式でリロード可能なタレットとして配置します。",
+     "icon": "img/abilities/rampart-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/rampart",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "コンバット・リザーブ",
+      "effect": "弾薬所持数とグレネードスロットが増え、収納時リロードも得る。",
+      "ability": "other",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     },
+     {
+      "name": "臨戦態勢",
+      "effect": "増幅バリケードの後ろにいてシールドが保たれている間、リロードが速くなり無限弾薬を得る。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/amped-patch-notes"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "ランプアップ",
+      "effect": "シーラの射撃・展開中の移動速度がさらに上がる（104→139）。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     },
+     {
+      "name": "再構築モジュール",
+      "effect": "一定時間ダメージを受けないと、増幅バリケードが体力を回復しシールド部分を再構築する。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/amped-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1811,18 +2544,56 @@
    "abilities": {
     "passive": {
      "name": "アサシンの本能",
-     "desc": "付近に見えている体力の低い敵をハイライト表示する。しゃがんだ状態での歩行が速くなり、壁登りが強化される。"
+     "desc": "付近に見えている体力の低い敵をハイライト表示する。しゃがんだ状態での歩行が速くなり、壁登りが強化される。",
+     "icon": "img/abilities/revenant-passive.svg"
     },
     "tactical": {
      "name": "シャドウパウンス",
-     "desc": "前方に力強く飛び掛かる。長押しでチャージして、更に遠くまで飛ぶ。"
+     "desc": "前方に力強く飛び掛かる。長押しでチャージして、更に遠くまで飛ぶ。",
+     "icon": "img/abilities/revenant-tactical.svg"
     },
     "ultimate": {
      "name": "フォージシャドウ",
-     "desc": "ダメージをブロックし、再生する強力なシャドウを周囲に作り出す。シャドウは、ノックダウン時に再生される。"
+     "desc": "ダメージをブロックし、再生する強力なシャドウを周囲に作り出す。シャドウは、ノックダウン時に再生される。",
+     "icon": "img/abilities/revenant-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/revenant",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "Ultimate Cooldown",
+      "effect": "フォージシャドウのクールダウンが30秒短縮される（180秒→150秒）。",
+      "ability": "ultimate",
+      "source": "https://apexlegends.wiki.gg/wiki/Revenant",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "Try To Hide",
+      "effect": "アサシンの本能で表示される体力の低い敵のマーカーが2倍長く残る。",
+      "ability": "passive",
+      "source": "https://apexlegends.wiki.gg/wiki/Revenant",
+      "nameUnconfirmed": true
+     }
+    ],
+    "lv3": [
+     {
+      "name": "Tactical Cooldown",
+      "effect": "シャドウパウンスのクールダウンが5秒短縮される（20秒→15秒）。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Revenant",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "Agile Assassin",
+      "effect": "シャドウパウンスの発動とチャージが50%速くなる。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Revenant",
+      "nameUnconfirmed": true
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1866,18 +2637,52 @@
    "abilities": {
     "passive": {
      "name": "ハートシーカー",
-     "desc": "エイム時に周辺の敵の心拍を捉えて視覚化する。"
+     "desc": "エイム時に周辺の敵の心拍を捉えて視覚化する。",
+     "icon": "img/abilities/seer-passive.svg"
     },
     "tactical": {
      "name": "フォーカス・オブ・アテンション",
-     "desc": "マイクロドローンを呼び出して、敵の位置を明らかにし、聴覚を奪う遅延爆風を放出する。この効果は壁を貫通する。"
+     "desc": "マイクロドローンを呼び出して、敵の位置を明らかにし、聴覚を奪う遅延爆風を放出する。この効果は壁を貫通する。",
+     "icon": "img/abilities/seer-tactical.svg"
     },
     "ultimate": {
      "name": "ショーケース",
-     "desc": "マイクロドローンの球体を作り出し、範囲内で素早く移動したり、射撃している敵の位置を明らかにする。球体の中ではダブルジャンプができる。"
+     "desc": "マイクロドローンの球体を作り出し、範囲内で素早く移動したり、射撃している敵の位置を明らかにする。球体の中ではダブルジャンプができる。",
+     "icon": "img/abilities/seer-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/seer",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "ラスティングビート",
+      "effect": "ドームから離れた敵の位置を5秒間表示する。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/wild-iron-event"
+     },
+     {
+      "name": "エナジャイズフォーカス",
+      "effect": "戦術アビリティを敵に当てるとシールドが25回復する。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "ホームベース",
+      "effect": "ショーケース内で戦術アビリティのチャージが速くなる（倍率2.5、クールダウン8秒）。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     },
+     {
+      "name": "スプリットフォーカス",
+      "effect": "戦術アビリティのチャージが2つになる（2025-09-10に不利な要素を削除）。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1892,18 +2697,52 @@
    "abilities": {
     "passive": {
      "name": "ダブルジャンプ",
-     "desc": "キャラクターが空中で再びジャンプできるようになる。登りながらジャンプすると、スパローが壁から上へ飛び上がる。ボセック用の追加の矢と爆発矢を持ち運ぶことが可能。"
+     "desc": "キャラクターが空中で再びジャンプできるようになる。登りながらジャンプすると、スパローが壁から上へ飛び上がる。ボセック用の追加の矢と爆発矢を持ち運ぶことが可能。",
+     "icon": "img/abilities/sparrow-passive.svg"
     },
     "tactical": {
      "name": "トラッカーダーツ",
-     "desc": "ガントレットからトラッカーを発射し、範囲内を歩く敵を明らかにする。これらのダーツは、遠距離から調査ビーコンを起動することも可能。"
+     "desc": "ガントレットからトラッカーを発射し、範囲内を歩く敵を明らかにする。これらのダーツは、遠距離から調査ビーコンを起動することも可能。",
+     "icon": "img/abilities/sparrow-tactical.svg"
     },
     "ultimate": {
      "name": "スティンガーボルト",
-     "desc": "着弾した場所に固定する大きなアローを放つ。チャージが完了すると範囲内の敵にショックを放ってダメージを与え、動きを鈍らせる。"
+     "desc": "着弾した場所に固定する大きなアローを放つ。チャージが完了すると範囲内の敵にショックを放ってダメージを与え、動きを鈍らせる。",
+     "icon": "img/abilities/sparrow-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/sparrow",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "エクストラトラップ",
+      "effect": "戦術アビリティのチャージが1つ増え、罠を1つ多く設置できる。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/wild-iron-event"
+     },
+     {
+      "name": "ハントターゲット",
+      "effect": "マークされた敵の方向に進むと移動速度が上がる。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/prodigy-patch-notes"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "オルタネイトモード",
+      "effect": "アルティメットを3回チャージできるが、範囲が狭くパルス数が少なくなる。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/prodigy-patch-notes"
+     },
+     {
+      "name": "ライフサイフォン",
+      "effect": "アルティメットで敵にダメージを与えると、自分の体力とシールドが回復する。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/prodigy-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1931,18 +2770,52 @@
    "abilities": {
     "passive": {
      "name": "VTOLジェット",
-     "desc": "空中でジェットパックを起動でき、敵が強調表示される。スカイダイブの着地が改善する。"
+     "desc": "空中でジェットパックを起動でき、敵が強調表示される。スカイダイブの着地が改善する。",
+     "icon": "img/abilities/valkyrie-passive.svg"
     },
     "tactical": {
      "name": "ミサイルスワーム",
-     "desc": "複数の小型ロケットを斉射して敵にダメージを与え、混乱に陥れる。"
+     "desc": "複数の小型ロケットを斉射して敵にダメージを与え、混乱に陥れる。",
+     "icon": "img/abilities/valkyrie-tactical.svg"
     },
     "ultimate": {
      "name": "スカイハイダイブ",
-     "desc": ""
+     "desc": "",
+     "icon": "img/abilities/valkyrie-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/valkyrie",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "空の目",
+      "effect": "スカイダイブ中の敵スキャンが視線を必要とせず範囲も広い（壁越しは100m、視線が通れば250m）。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     },
+     {
+      "name": "フルカバー",
+      "effect": "ミサイルスワームの発射パターンが4x5になる（戦術クールダウン短縮も含む）。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/amped-patch-notes"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "スーパーソニック",
+      "effect": "アルティメットの発射までの時間を40%短縮する。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/marked-patch-notes"
+     },
+     {
+      "name": "エアリエルエキスパート",
+      "effect": "ジェットパックの水平速度と取り回しが大きく向上する（初期燃料消費が減り、総燃料はわずかに減る）。",
+      "ability": "passive",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/amped-patch-notes"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1957,18 +2830,52 @@
    "abilities": {
     "passive": {
      "name": "スポッターレンズ",
-     "desc": "サイトを覗いて敵の体力バーとチームシールドレベルを確認してください。遠くの複数のターゲットを追跡するためにピンを使用します。中距離から長距離のスコープは、弾道落下の指標を表示し、弾がどこに着弾するかを確認できます。"
+     "desc": "サイトを覗いて敵の体力バーとチームシールドレベルを確認してください。遠くの複数のターゲットを追跡するためにピンを使用します。中距離から長距離のスコープは、弾道落下の指標を表示し、弾がどこに着弾するかを確認できます。",
+     "icon": "img/abilities/vantage-passive.svg"
     },
     "tactical": {
      "name": "エコー配置",
-     "desc": "翼を持つ相棒の「エコー」を配置し、その位置へ飛ぶ。エコーの方を向いていないと飛べない。エコーのもとに到達するとダブルジャンプでき、しゃがみでジャンプを中断できる。"
+     "desc": "翼を持つ相棒の「エコー」を配置し、その位置へ飛ぶ。エコーの方を向いていないと飛べない。エコーのもとに到達するとダブルジャンプでき、しゃがみでジャンプを中断できる。",
+     "icon": "img/abilities/vantage-tactical.svg"
     },
     "ultimate": {
      "name": "スナイパーのマーク",
-     "desc": "カスタムスナイパーライフルを使って敵のターゲットをマークすると、自分とチームにダメージボーナスが適用される。射撃すると、エイム時に短時間ターゲットレーザーが有効化する。"
+     "desc": "カスタムスナイパーライフルを使って敵のターゲットをマークすると、自分とチームにダメージボーナスが適用される。射撃すると、エイム時に短時間ターゲットレーザーが有効化する。",
+     "icon": "img/abilities/vantage-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/vantage",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "獲物のコントロール",
+      "effect": "リングコンソールとゾーンオーバーチャージへのアクセスを得る。",
+      "ability": "other",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/future-icons-event"
+     },
+     {
+      "name": "インプルーブマーク",
+      "effect": "マークした敵のアイコンが壁越しに見え、一時的にハイライトされる。マークした敵の体力バーが部隊に表示される。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/future-icons-event"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "ハードトラッカー",
+      "effect": "敵にシグナルを送ると、その敵の部隊全体が追跡される。",
+      "ability": "passive",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/overclocked-patch-notes"
+     },
+     {
+      "name": "スナイパーカバー",
+      "effect": "スナイパーのマークにガンシールドが付く。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/future-icons-event"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -1983,18 +2890,52 @@
    "abilities": {
     "passive": {
      "name": "天才のひらめき",
-     "desc": "アルティメット促進剤でアルティメットがフルチャージされ、ワットソンは他のレジェンドより多く促進剤を携行できる。加えてワットソンのシールドがゆっくりと回復する。"
+     "desc": "アルティメット促進剤でアルティメットがフルチャージされ、ワットソンは他のレジェンドより多く促進剤を携行できる。加えてワットソンのシールドがゆっくりと回復する。",
+     "icon": "img/abilities/wattson-passive.svg"
     },
     "tactical": {
      "name": "周辺セキュリティ",
-     "desc": "ノードを接続して、敵にダメージを与え、動きを遅くする電気フェンスを作成します。ドアの近くのフェンスはドアを帯電させます。"
+     "desc": "ノードを接続して、敵にダメージを与え、動きを遅くする電気フェンスを作成します。ドアの近くのフェンスはドアを帯電させます。",
+     "icon": "img/abilities/wattson-tactical.svg"
     },
     "ultimate": {
      "name": "インターセプターパイロン",
-     "desc": "着弾する兵器を破壊し、損傷したシールドを修復する電気パイロンを設置します。迎撃された兵器はアークスターに変換されます。"
+     "desc": "着弾する兵器を破壊し、損傷したシールドを修復する電気パイロンを設置します。迎撃された兵器はアークスターに変換されます。",
+     "icon": "img/abilities/wattson-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/wattson",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "ヘルプイズヒア",
+      "effect": "すべてのサポートパーク（サポートボックス、体力回復つきの素早い復活、バナーでMRB）を得る。",
+      "ability": "other",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/future-icons-event"
+     },
+     {
+      "name": "究極電導体",
+      "effect": "敵へのダメージがアルティメットチャージに変換され、ノックでアルティメットチャージが30%増える。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/future-icons-event"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "エネルギーヒーラー",
+      "effect": "小回復アイテムの回復量が2倍になる。",
+      "ability": "other",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/future-icons-event"
+     },
+     {
+      "name": "パワーパイロン",
+      "effect": "インターセプターパイロンの体力、回復速度、容量が2倍になる。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/future-icons-event"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   },
   {
@@ -2009,18 +2950,54 @@
    "abilities": {
     "passive": {
      "name": "虚空からの声",
-     "desc": "危機が迫ると謎の声が警告を発する。判断の及ぶ限りでは、こちらの味方をしているようだ。"
+     "desc": "危機が迫ると謎の声が警告を発する。判断の及ぶ限りでは、こちらの味方をしているようだ。",
+     "icon": "img/abilities/wraith-passive.svg"
     },
     "tactical": {
      "name": "虚空へ",
-     "desc": "虚空を通り、安全かつ迅速に移動する。ダメージは一切受けない。"
+     "desc": "虚空を通り、安全かつ迅速に移動する。ダメージは一切受けない。",
+     "icon": "img/abilities/wraith-tactical.svg"
     },
     "ultimate": {
      "name": "ディメンションリフト",
-     "desc": "2地点間をポータルで45秒間連結し、チーム全体で使用できるようにする。"
+     "desc": "2地点間をポータルで45秒間連結し、チーム全体で使用できるようにする。",
+     "icon": "img/abilities/wraith-ultimate.svg"
     },
     "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/characters-hub/wraith",
     "checked": "2026-09-28"
+   },
+   "upgrades": {
+    "lv2": [
+     {
+      "name": "Sixth Sense",
+      "effect": "150m以内に新しい部隊が近づくと、虚空からの声が警告する。",
+      "ability": "passive",
+      "source": "https://apexlegends.wiki.gg/wiki/Wraith",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "フェーズドーム",
+      "effect": "アルティメットの発動を始めるとフェーズドームが生まれ、入った者は虚空に入る（30秒またはポータル設置まで）。",
+      "ability": "ultimate",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/aftershock-event"
+     }
+    ],
+    "lv3": [
+     {
+      "name": "Fast Phase",
+      "effect": "虚空への発動が30%速くなる（0.8秒→0.5秒）。",
+      "ability": "tactical",
+      "source": "https://apexlegends.wiki.gg/wiki/Wraith",
+      "nameUnconfirmed": true
+     },
+     {
+      "name": "ヴォイドジャンパー",
+      "effect": "戦術アビリティで虚空にいる時間が4秒から6秒に延び、虚空でダブルジャンプできる。",
+      "ability": "tactical",
+      "source": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/aftershock-event"
+     }
+    ],
+    "checked": "2026-09-29"
    }
   }
  ],
