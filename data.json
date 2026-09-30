@@ -1,7 +1,7 @@
 {
  "site": {
   "meta": {
-   "updated": "2026-09-17",
+   "updated": "2026-09-30",
    "source": "Two Average Gamers（Split 2 ティアリスト）",
    "sourceUrls": [
     "https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/",
@@ -161,43 +161,33 @@
    "comps": [
     {
      "legends": [
-      "axle",
       "loba",
-      "pathfinder"
+      "pathfinder",
+      "revenant"
      ],
-     "tag": "最多",
-     "stat": "1,807部隊・平均 +52.9 RP/試合",
-     "note": "アクセルとパスファインダーで部隊ごと動き、ローバで物資をそろえる"
+     "tag": "RP最高",
+     "stat": "272部隊・平均 +98.9 RP/試合",
+     "note": "ローバ・パスファインダー・レヴナントの組み合わせ。平均RPは3構成のなかで最も高い"
     },
     {
      "legends": [
       "axle",
+      "conduit",
+      "vantage"
+     ],
+     "tag": "",
+     "stat": "124部隊・平均 +89.2 RP/試合",
+     "note": "アクセル・コンジット・ヴァンテージの組み合わせ"
+    },
+    {
+     "legends": [
+      "crypto",
       "loba",
       "vantage"
      ],
-     "tag": "RP最高",
-     "stat": "1,509部隊・平均 +72.1 RP/試合",
-     "note": "遠距離武器が強い環境で、ヴァンテージが削りと索敵を担当"
-    },
-    {
-     "legends": [
-      "axle",
-      "loba",
-      "seer"
-     ],
-     "tag": "野良向け",
-     "stat": "1,090部隊・平均 +61.4 RP/試合",
-     "note": "シアの索敵で情報を先に取る。野良でも組みやすい定番"
-    },
-    {
-     "legends": [
-      "axle",
-      "loba",
-      "sparrow"
-     ],
-     "tag": "固定向け",
-     "stat": "",
-     "note": "シアの代わりにスパロー。連携の取れる固定パーティで採用が多い"
+     "tag": "",
+     "stat": "149部隊・平均 +84.0 RP/試合",
+     "note": "クリプト・ローバ・ヴァンテージの組み合わせ"
     }
    ],
    "compsSources": [
@@ -215,69 +205,59 @@
      "id": "pred",
      "label": "プレデター",
      "scope": "プレデター826人の集計",
-     "updated": "2026-09-28",
+     "updated": "2026-09-30",
      "comps": [
       {
        "legends": [
-        "axle",
         "loba",
-        "pathfinder"
+        "pathfinder",
+        "revenant"
        ],
-       "tag": "最多",
-       "stat": "1,807部隊・平均 +52.9 RP/試合",
-       "note": "アクセルとパスファインダーで部隊ごと動き、ローバで物資をそろえる"
+       "tag": "RP最高",
+       "stat": "272部隊・平均 +98.9 RP/試合",
+       "note": "ローバ・パスファインダー・レヴナントの組み合わせ。平均RPは3構成のなかで最も高い"
       },
       {
        "legends": [
         "axle",
+        "conduit",
+        "vantage"
+       ],
+       "tag": "",
+       "stat": "124部隊・平均 +89.2 RP/試合",
+       "note": "アクセル・コンジット・ヴァンテージの組み合わせ"
+      },
+      {
+       "legends": [
+        "crypto",
         "loba",
         "vantage"
        ],
-       "tag": "RP最高",
-       "stat": "1,509部隊・平均 +72.1 RP/試合",
-       "note": "遠距離武器が強い環境で、ヴァンテージが削りと索敵を担当"
-      },
-      {
-       "legends": [
-        "axle",
-        "loba",
-        "seer"
-       ],
-       "tag": "野良向け",
-       "stat": "1,090部隊・平均 +61.4 RP/試合",
-       "note": "シアの索敵で情報を先に取る。野良でも組みやすい定番"
-      },
-      {
-       "legends": [
-        "axle",
-        "loba",
-        "sparrow"
-       ],
-       "tag": "固定向け",
-       "stat": "",
-       "note": "シアの代わりにスパロー。連携の取れる固定パーティで採用が多い"
+       "tag": "",
+       "stat": "149部隊・平均 +84.0 RP/試合",
+       "note": "クリプト・ローバ・ヴァンテージの組み合わせ"
       }
      ],
      "picks": [
       {
        "id": "axle",
-       "rate": 20.3
+       "rate": 20.2
       },
       {
        "id": "loba",
-       "rate": 19.1
+       "rate": 19.3
       },
       {
        "id": "pathfinder",
-       "rate": 13.6
+       "rate": 13.8
       },
       {
        "id": "vantage",
-       "rate": 8.7
+       "rate": 8.6
       },
       {
        "id": "seer",
-       "rate": 6.8
+       "rate": 6.7
       }
      ],
      "sources": [
@@ -295,12 +275,12 @@
      "id": "masterpred",
      "label": "マスター＋プレデター",
      "scope": "マスターとプレデターの合算。マスターだけの集計は公開されていません。サンプルが少なめです",
-     "updated": "2026-09-29",
+     "updated": "2026-09-30",
      "comps": [],
      "picks": [
       {
        "id": "axle",
-       "rate": 24.0
+       "rate": 24.3
       },
       {
        "id": "loba",
@@ -312,23 +292,15 @@
       },
       {
        "id": "mad-maggie",
-       "rate": 4.7
+       "rate": 4.6
       },
       {
        "id": "vantage",
-       "rate": 4.1
-      },
-      {
-       "id": "seer",
-       "rate": 4.1
-      },
-      {
-       "id": "revenant",
        "rate": 4.0
       },
       {
-       "id": "octane",
-       "rate": 3.7
+       "id": "seer",
+       "rate": 3.9
       }
      ],
      "sources": [
@@ -342,12 +314,12 @@
      "id": "diamond",
      "label": "ダイヤ",
      "scope": "ダイヤ帯の集計",
-     "updated": "2026-09-29",
+     "updated": "2026-09-30",
      "comps": [],
      "picks": [
       {
        "id": "axle",
-       "rate": 17.4
+       "rate": 17.3
       },
       {
        "id": "pathfinder",
@@ -355,7 +327,7 @@
       },
       {
        "id": "loba",
-       "rate": 11.4
+       "rate": 11.2
       },
       {
        "id": "mad-maggie",
@@ -371,11 +343,11 @@
       },
       {
        "id": "octane",
-       "rate": 3.6
+       "rate": 3.7
       },
       {
        "id": "fuse",
-       "rate": 3.6
+       "rate": 3.7
       }
      ],
      "sources": [
@@ -389,28 +361,28 @@
      "id": "platinum",
      "label": "プラチナ",
      "scope": "プラチナ帯の集計",
-     "updated": "2026-09-29",
+     "updated": "2026-09-30",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 11.6
+       "rate": 11.7
       },
       {
        "id": "axle",
        "rate": 10.8
       },
       {
-       "id": "loba",
-       "rate": 7.5
-      },
-      {
        "id": "mad-maggie",
        "rate": 7.4
       },
       {
+       "id": "loba",
+       "rate": 7.4
+      },
+      {
        "id": "fuse",
-       "rate": 6.4
+       "rate": 6.3
       },
       {
        "id": "octane",
@@ -418,7 +390,7 @@
       },
       {
        "id": "conduit",
-       "rate": 5.0
+       "rate": 4.9
       },
       {
        "id": "wraith",
@@ -436,12 +408,12 @@
      "id": "gold",
      "label": "ゴールド",
      "scope": "ゴールド帯の集計",
-     "updated": "2026-09-29",
+     "updated": "2026-09-30",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 8.9
+       "rate": 8.7
       },
       {
        "id": "axle",
@@ -449,26 +421,26 @@
       },
       {
        "id": "octane",
-       "rate": 7.3
+       "rate": 7.4
       },
       {
        "id": "fuse",
-       "rate": 6.9
+       "rate": 6.8
       },
       {
        "id": "loba",
-       "rate": 6.0
+       "rate": 5.9
       },
       {
        "id": "mad-maggie",
-       "rate": 5.4
+       "rate": 5.5
       },
       {
        "id": "wraith",
        "rate": 5.2
       },
       {
-       "id": "conduit",
+       "id": "bangalore",
        "rate": 4.1
       }
      ],
@@ -487,7 +459,7 @@
    "split": 2,
    "seasonEnd": "2026-11-03",
    "latestPatchId": "2026-09-22-marked-update",
-   "lastChecked": "2026-09-29T05:55:28+09:00",
+   "lastChecked": "2026-09-30T09:49:18+09:00",
    "checkedBy": "定期チェック",
    "id": "state"
   }
