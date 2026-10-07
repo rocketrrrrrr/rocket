@@ -1,7 +1,7 @@
 {
  "site": {
   "meta": {
-   "updated": "2026-09-30",
+   "updated": "2026-10-07",
    "source": "Two Average Gamers（Split 2 ティアリスト）",
    "sourceUrls": [
     "https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/",
@@ -161,33 +161,33 @@
    "comps": [
     {
      "legends": [
+      "axle",
       "loba",
-      "pathfinder",
-      "revenant"
+      "pathfinder"
      ],
-     "tag": "RP最高",
-     "stat": "272部隊・平均 +98.9 RP/試合",
-     "note": "ローバ・パスファインダー・レヴナントの組み合わせ。平均RPは3構成のなかで最も高い"
+     "tag": "最多",
+     "stat": "2,495部隊・平均 +62.2 RP/試合",
+     "note": "アクセル・ローバ・パスファインダーの組み合わせ"
     },
     {
      "legends": [
       "axle",
-      "conduit",
-      "vantage"
-     ],
-     "tag": "",
-     "stat": "124部隊・平均 +89.2 RP/試合",
-     "note": "アクセル・コンジット・ヴァンテージの組み合わせ"
-    },
-    {
-     "legends": [
-      "crypto",
       "loba",
       "vantage"
      ],
+     "tag": "RP最高",
+     "stat": "1,735部隊・平均 +78.0 RP/試合",
+     "note": "アクセル・ローバ・ヴァンテージの組み合わせ"
+    },
+    {
+     "legends": [
+      "loba",
+      "pathfinder",
+      "vantage"
+     ],
      "tag": "",
-     "stat": "149部隊・平均 +84.0 RP/試合",
-     "note": "クリプト・ローバ・ヴァンテージの組み合わせ"
+     "stat": "1,272部隊・平均 +75.6 RP/試合",
+     "note": "ローバ・パスファインダー・ヴァンテージの組み合わせ"
     }
    ],
    "compsSources": [
@@ -205,59 +205,59 @@
      "id": "pred",
      "label": "プレデター",
      "scope": "プレデター826人の集計",
-     "updated": "2026-09-30",
+     "updated": "2026-10-07",
      "comps": [
       {
        "legends": [
+        "axle",
         "loba",
-        "pathfinder",
-        "revenant"
+        "pathfinder"
        ],
-       "tag": "RP最高",
-       "stat": "272部隊・平均 +98.9 RP/試合",
-       "note": "ローバ・パスファインダー・レヴナントの組み合わせ。平均RPは3構成のなかで最も高い"
+       "tag": "最多",
+       "stat": "2,495部隊・平均 +62.2 RP/試合",
+       "note": "アクセル・ローバ・パスファインダーの組み合わせ"
       },
       {
        "legends": [
         "axle",
-        "conduit",
-        "vantage"
-       ],
-       "tag": "",
-       "stat": "124部隊・平均 +89.2 RP/試合",
-       "note": "アクセル・コンジット・ヴァンテージの組み合わせ"
-      },
-      {
-       "legends": [
-        "crypto",
         "loba",
         "vantage"
        ],
+       "tag": "RP最高",
+       "stat": "1,735部隊・平均 +78.0 RP/試合",
+       "note": "アクセル・ローバ・ヴァンテージの組み合わせ"
+      },
+      {
+       "legends": [
+        "loba",
+        "pathfinder",
+        "vantage"
+       ],
        "tag": "",
-       "stat": "149部隊・平均 +84.0 RP/試合",
-       "note": "クリプト・ローバ・ヴァンテージの組み合わせ"
+       "stat": "1,272部隊・平均 +75.6 RP/試合",
+       "note": "ローバ・パスファインダー・ヴァンテージの組み合わせ"
       }
      ],
      "picks": [
       {
-       "id": "axle",
-       "rate": 20.2
+       "id": "loba",
+       "rate": 19.5
       },
       {
-       "id": "loba",
-       "rate": 19.3
+       "id": "axle",
+       "rate": 16.9
       },
       {
        "id": "pathfinder",
-       "rate": 13.8
+       "rate": 14.4
       },
       {
        "id": "vantage",
-       "rate": 8.6
+       "rate": 8.7
       },
       {
        "id": "seer",
-       "rate": 6.7
+       "rate": 6.5
       }
      ],
      "sources": [
@@ -275,32 +275,40 @@
      "id": "masterpred",
      "label": "マスター＋プレデター",
      "scope": "マスターとプレデターの合算。マスターだけの集計は公開されていません。サンプルが少なめです",
-     "updated": "2026-09-30",
+     "updated": "2026-10-07",
      "comps": [],
      "picks": [
       {
-       "id": "axle",
-       "rate": 24.3
-      },
-      {
        "id": "loba",
-       "rate": 18.5
+       "rate": 18.2
       },
       {
        "id": "pathfinder",
-       "rate": 14.0
+       "rate": 16.5
+      },
+      {
+       "id": "axle",
+       "rate": 8.7
+      },
+      {
+       "id": "octane",
+       "rate": 7.3
       },
       {
        "id": "mad-maggie",
-       "rate": 4.6
+       "rate": 6.5
+      },
+      {
+       "id": "revenant",
+       "rate": 5.2
+      },
+      {
+       "id": "bangalore",
+       "rate": 4.4
       },
       {
        "id": "vantage",
-       "rate": 4.0
-      },
-      {
-       "id": "seer",
-       "rate": 3.9
+       "rate": 4.2
       }
      ],
      "sources": [
@@ -314,40 +322,40 @@
      "id": "diamond",
      "label": "ダイヤ",
      "scope": "ダイヤ帯の集計",
-     "updated": "2026-09-30",
+     "updated": "2026-10-07",
      "comps": [],
      "picks": [
       {
-       "id": "axle",
-       "rate": 17.3
-      },
-      {
        "id": "pathfinder",
-       "rate": 14.6
+       "rate": 15.7
       },
       {
        "id": "loba",
-       "rate": 11.2
+       "rate": 11.0
+      },
+      {
+       "id": "axle",
+       "rate": 8.8
       },
       {
        "id": "mad-maggie",
-       "rate": 8.1
-      },
-      {
-       "id": "bangalore",
-       "rate": 4.4
-      },
-      {
-       "id": "conduit",
-       "rate": 4.3
+       "rate": 8.7
       },
       {
        "id": "octane",
-       "rate": 3.7
+       "rate": 5.2
       },
       {
-       "id": "fuse",
-       "rate": 3.7
+       "id": "bangalore",
+       "rate": 5.0
+      },
+      {
+       "id": "wraith",
+       "rate": 4.2
+      },
+      {
+       "id": "conduit",
+       "rate": 4.0
       }
      ],
      "sources": [
@@ -361,7 +369,7 @@
      "id": "platinum",
      "label": "プラチナ",
      "scope": "プラチナ帯の集計",
-     "updated": "2026-09-30",
+     "updated": "2026-10-07",
      "comps": [],
      "picks": [
       {
@@ -370,31 +378,31 @@
       },
       {
        "id": "axle",
-       "rate": 10.8
+       "rate": 7.5
       },
       {
        "id": "mad-maggie",
-       "rate": 7.4
+       "rate": 7.2
       },
       {
        "id": "loba",
-       "rate": 7.4
-      },
-      {
-       "id": "fuse",
-       "rate": 6.3
+       "rate": 7.2
       },
       {
        "id": "octane",
-       "rate": 5.6
+       "rate": 6.8
       },
       {
-       "id": "conduit",
-       "rate": 4.9
+       "id": "fuse",
+       "rate": 6.1
       },
       {
        "id": "wraith",
-       "rate": 4.1
+       "rate": 4.8
+      },
+      {
+       "id": "bangalore",
+       "rate": 4.3
       }
      ],
      "sources": [
@@ -408,40 +416,40 @@
      "id": "gold",
      "label": "ゴールド",
      "scope": "ゴールド帯の集計",
-     "updated": "2026-09-30",
+     "updated": "2026-10-07",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 8.7
-      },
-      {
-       "id": "axle",
-       "rate": 7.4
+       "rate": 9.0
       },
       {
        "id": "octane",
-       "rate": 7.4
+       "rate": 8.1
       },
       {
        "id": "fuse",
-       "rate": 6.8
-      },
-      {
-       "id": "loba",
-       "rate": 5.9
-      },
-      {
-       "id": "mad-maggie",
-       "rate": 5.5
+       "rate": 6.2
       },
       {
        "id": "wraith",
+       "rate": 5.9
+      },
+      {
+       "id": "loba",
+       "rate": 5.8
+      },
+      {
+       "id": "axle",
+       "rate": 5.7
+      },
+      {
+       "id": "mad-maggie",
        "rate": 5.2
       },
       {
        "id": "bangalore",
-       "rate": 4.1
+       "rate": 4.3
       }
      ],
      "sources": [
@@ -459,7 +467,7 @@
    "split": 2,
    "seasonEnd": "2026-11-03",
    "latestPatchId": "2026-09-22-marked-update",
-   "lastChecked": "2026-09-30T09:49:18+09:00",
+   "lastChecked": "2026-10-07T09:49:05+09:00",
    "checkedBy": "定期チェック",
    "id": "state"
   }
