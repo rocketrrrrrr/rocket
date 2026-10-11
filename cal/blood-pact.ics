@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//APEX NOW//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:blood-pact@rocketrrrrrr.github.io
+DTSTAMP:20261011T050050Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261104
+SUMMARY:血の盟約イベント
+LOCATION:ゲーム内（キングスキャニオン）
+DESCRIPTION:公式発表：10月13日〜11月3日（時刻は未発表）
+ \n野獣か悪魔の陣営に加わり、チャレンジ達成でワイ
+ ルドカードを獲得するイベント。マップにランダムで
+ 霧が発生する。スパロー・オルターの新スキンが登場
+ 。\n出典：https://www.ea.com/ja/games/apex-legends/apex-legends/news
+ /blood-pact-event\nAPEX NOW（https://rocketrrrrrr.github.io/rocket/）
+ より
+URL:https://www.ea.com/ja/games/apex-legends/apex-legends/news/blood-pact
+ -event
+END:VEVENT
+END:VCALENDAR
