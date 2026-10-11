@@ -494,11 +494,11 @@
    "kind": "hotfix",
    "season": 30,
    "url": "https://happygamer.com/apex-legends-lifeline-upgrade-order-bug-fix-wildcard-september-2026-165326/",
-   "summary": "ライフラインのアップグレード選択の表示順を修正。ワイルドカードで出現しなかったミシック版30-30リピーターとL-STARが戻った。",
+   "summary": "ライフラインのアップグレード選択の表示順を修正。ワイルドカードで出現しなかったミシック版30-30リピーターとL-スターが戻った。",
    "highlights": [
     "ライフライン：アップグレード選択肢の並び順の不具合を修正",
     "ワイルドカード：ミシック版30-30リピーターが出現しない不具合を修正",
-    "ワイルドカード：ミシック版L-STARが出現しない不具合を修正",
+    "ワイルドカード：ミシック版L-スターが出現しない不具合を修正",
     "出典は報道記事のみ（EA公式は取得できず未確認）"
    ]
   },
@@ -828,7 +828,7 @@
    "id": "longbow"
   },
   {
-   "name": "L-STAR EMG",
+   "name": "L-スター",
    "category": "LMG",
    "pool": "care",
    "tier": "S+",
@@ -844,7 +844,7 @@
      "url": "https://insider-gaming.com/apex-legends-season-30-marked-update-all-buffs-nerfs/"
     }
    ],
-   "ja": "L-STAR",
+   "ja": "L-スター",
    "id": "lstar",
    "insight": {
     "why": "今シーズンの変更なし。ケアパッケージが落ちたら取り合う理由になる武器。",

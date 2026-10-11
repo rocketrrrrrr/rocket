@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-+n8BqXCI91kD7DsUv+JU/Hd/kb7JhUtdTFabI6ynLmw='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-UskhbL8E3XjT2sQbWbs0HAZq7Iu+k8s4pNQJQfNogsw=' 'sha256-keB7adOgJIgCwRLCpH5ImLwi1JKuM+fkw3wcguT4qE0='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="今のApexは、これだけ見ればいい。Apex Legends の最新パッチまとめ、今強いレジェンドTOP10、MBTIと8つの質問で選ぶレジェンド適性診断。">
@@ -83,6 +83,7 @@ header .hero-go:hover{background:color-mix(in srgb,var(--amber) 12%,transparent)
 
 nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:8px;margin-bottom:8px;border-bottom:1px solid var(--line)}
 .tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.tabs.more{-webkit-mask-image:linear-gradient(to right,#000 80%,transparent);mask-image:linear-gradient(to right,#000 80%,transparent)}
 .tabs::-webkit-scrollbar{display:none}
 .tab{white-space:nowrap;padding:8px 14px;min-height:40px;border-radius:8px;color:var(--mute);font-weight:500}
 .tab[aria-selected="true"]{background:var(--panel2);color:var(--ink);box-shadow:inset 0 -2px 0 var(--amber)}
@@ -447,7 +448,7 @@ a.rank:hover,a.rank:focus-visible{border-color:var(--amber);border-left-color:va
       </div></div>
     <p class="banner">Split 2 ティアリストの順位に、Marked ミッドシーズン（9/15）の強化・弱体化を矢印で反映　出典：<a href="https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/" target="_blank" rel="noopener noreferrer">Two Average Gamers（Split 2 ティアリスト） 1</a>・<a href="https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/" target="_blank" rel="noopener noreferrer">Two Average Gamers（Split 2 ティアリスト） 2</a></p>
     <div class="card stack"><h2>武器ティア（上位）</h2>
-    <div><div class="tierblock"><span class="tier S+">S+</span><div class="names"><span class="name-chip">30-30リピーター</span><span class="name-chip">クレーバー</span><span class="name-chip">L-STAR</span></div></div><div class="tierblock"><span class="tier S">S</span><div class="names"><span class="name-chip">チャージライフル</span><span class="name-chip">トリプルテイク</span><span class="name-chip">ボセックボウ</span></div></div><div class="tierblock"><span class="tier A+">A+</span><div class="names"><span class="name-chip">R-301カービン</span><span class="name-chip">プラウラー</span><span class="name-chip">ディヴォーション</span><span class="name-chip">ネメシス</span><span class="name-chip">G7スカウト</span></div></div><div class="tierblock"><span class="tier A">A</span><div class="names"><span class="name-chip">ウィングマン</span><span class="name-chip">P2020</span><span class="name-chip">RE-45</span></div></div></div></div>
+    <div><div class="tierblock"><span class="tier S+">S+</span><div class="names"><span class="name-chip">30-30リピーター</span><span class="name-chip">クレーバー</span><span class="name-chip">L-スター</span></div></div><div class="tierblock"><span class="tier S">S</span><div class="names"><span class="name-chip">チャージライフル</span><span class="name-chip">トリプルテイク</span><span class="name-chip">ボセックボウ</span></div></div><div class="tierblock"><span class="tier A+">A+</span><div class="names"><span class="name-chip">R-301カービン</span><span class="name-chip">プラウラー</span><span class="name-chip">ディヴォーション</span><span class="name-chip">ネメシス</span><span class="name-chip">G7スカウト</span></div></div><div class="tierblock"><span class="tier A">A</span><div class="names"><span class="name-chip">ウィングマン</span><span class="name-chip">P2020</span><span class="name-chip">RE-45</span></div></div></div></div>
     <div class="card stack"><h2>今のメタ</h2><ul class="notes"><li>ローバ はプレデター帯でピック率18.8%（アクセルに次ぐ2位）。ルートが減った今シーズンは物資を確保できる価値が高い</li><li>アクセル は Split 2 でスタンが大幅に短縮されたが、機動力で上位を維持</li><li>シア は戦術でシールド・壁・蘇生などの発動を止められる点が評価されている</li><li>遠距離武器（30-30リピーター / チャージライフル / トリプルテイク）が強い環境。破損アタッチメントで構成の選び方が変わった</li></ul></div>
     <button class="tab" data-go="quiz" style="border:1px solid var(--line);color:var(--amber);align-self:flex-start">あなたに合うレジェンドを診断する ▶</button>
   </div><aside class="comps" aria-label="ランク帯別のメタ">
@@ -877,7 +878,7 @@ window.QUIZ_IMG=n=>{const L=D.legends.find(x=>x.ja===n);return L&&/^img\/[a-z0-9
 let tab="rank"; try{const t=localStorage.getItem("apx-tab"); if(t) tab=t;}catch(e){}
 if(location.hash && /^#(rank|events|patch|legends|weapons|history|quiz)$/.test(location.hash)) tab=location.hash.slice(1);
 if(tab==="history") tab="patch";
-const ui={q:"",dir:"all",cls:"all",cat:"all",tier:"pred",upg:false};
+const ui={q:"",dir:"all",cls:"all",cat:"all",tier:"pred",upg:false,rb:"all"};
 const view=document.getElementById("view");
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const fmtDate=s=>esc(s?String(s).slice(0,10).replace(/-/g,"/"):"—");
@@ -903,18 +904,34 @@ function header(){
   const lp=D.patches[0]; document.getElementById("latestDate").textContent=lp?fmtDate(lp.date):"—";
 }
 
-function renderRank(){
-  const m=D.meta; if(!m||!m.ranking) return `<p class="empty">ランキングはまだありません</p>`;
-  return `<div class="rank-layout"><div class="stack">
-    <div class="patch-head"><h2>今強いレジェンド TOP10</h2><span class="src mono">${fmtDate(m.updated)} 時点</span></div>
-    <div class="rank-list">${m.ranking.map(r=>{
-      const L=byId(D.legends,r.id)||{ja:r.id,cls:""}; const c=CLS[L.cls]||["","--line"];
-      return `<a class="rank" href="#legends" data-go="legends" data-legend="${esc(r.id)}" aria-label="${esc(L.ja)} の能力とアップグレードを見る" style="--cls:var(${c[1]})">
+function rankCard(r){
+  const L=byId(D.legends,r.id)||{ja:r.id,cls:""}; const c=CLS[L.cls]||["","--line"];
+  return `<a class="rank" href="#legends" data-go="legends" data-legend="${esc(r.id)}" aria-label="${esc(L.ja)} の能力とアップグレードを見る" style="--cls:var(${c[1]})">
         <div class="no">${esc(r.rank)}</div>
         ${avatar({...L,id:r.id},r.rank===1?"lg":"")}
         <div><div class="nm"><b>${esc(L.ja)}</b>${clsChip(L.cls)}</div><p class="rs">${esc(r.reason)}</p><span class="more">能力・アップグレードを見る ›</span></div>
-        <div class="side"><span class="tier ${esc(r.tier)}">${esc(r.tier)}</span><span class="trend ${esc(r.trend)}">${TR[r.trend]||""}</span></div>
-      </a>`}).join("")}</div>
+        <div class="side">${r.rate!=null?`<span class="mono" style="font-weight:700">${esc(r.rate)}%</span><span class="trend same">ピック率</span>`:`<span class="tier ${esc(r.tier)}">${esc(r.tier)}</span><span class="trend ${esc(r.trend)}">${TR[r.trend]||""}</span>`}</div>
+      </a>`;
+}
+function renderRank(){
+  const m=D.meta; if(!m||!m.ranking) return `<p class="empty">ランキングはまだありません</p>`;
+  const ts=(m.tiers||[]).filter(t=>(t.picks||[]).length);
+  const band=ts.find(t=>t.id===ui.rb);
+  const chips=ts.length?`<div class="tier-tabs" role="tablist" aria-label="ランク帯">${[["all","総合"],...ts.map(t=>[t.id,t.label])].map(([id,l])=>`<button class="tt" role="tab" data-rb="${esc(id)}" aria-selected="${(band?band.id:"all")===id}">${esc(l)}</button>`).join("")}</div>`:"";
+  if(band){
+    const list=band.picks.slice(0,10).map((p,i)=>({rank:i+1,id:p.id,rate:p.rate,reason:`${band.label}帯のピック率 ${p.rate}%（${i+1}位）`}));
+    const srcs=(band.sources||[]).filter(x=>x&&safeUrl(x.url));
+    return `<div class="rank-layout"><div class="stack">
+    <div class="patch-head"><h2>${esc(band.label)}帯でよく使われるレジェンド</h2><span class="src mono">${fmtDate(band.updated)} 時点</span></div>
+    ${chips}
+    <div class="rank-list">${list.map(rankCard).join("")}</div>
+    <p class="banner">${esc(band.scope||"")}。強さの評価ではなく、そのランク帯で実際に選ばれている割合です。${srcs.length?`　出典：${srcs.map(s=>`<a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a>`).join("・")}`:""}</p>
+  </div>${renderComps()}</div>`;
+  }
+  return `<div class="rank-layout"><div class="stack">
+    <div class="patch-head"><h2>今強いレジェンド TOP10</h2><span class="src mono">${fmtDate(m.updated)} 時点</span></div>
+    ${chips}
+    <div class="rank-list">${m.ranking.map(rankCard).join("")}</div>
     <p class="banner">${esc(m.rankingBasis||"")}　出典：${Array.isArray(m.sources)&&m.sources.length?m.sources.filter(s=>safeUrl(s.url)).map(s=>`<a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a>`).join("・"):(m.sourceUrls||[]).filter(safeUrl).map((u,i)=>`<a href="${esc(safeUrl(u))}" target="_blank" rel="noopener noreferrer">${esc(m.source||"ティアリスト")}${m.sourceUrls.length>1?` ${i+1}`:""}</a>`).join("・")}</p>
     ${renderMeta()}
     <button class="tab" data-go="quiz" style="border:1px solid var(--line);color:var(--amber);align-self:flex-start">あなたに合うレジェンドを診断する ▶</button>
@@ -1117,6 +1134,7 @@ function render(){
 }
 document.addEventListener("click",e=>{
   const tb=e.target.closest("[data-tier]"); if(tb){ui.tier=tb.dataset.tier;render();return;}
+  const rbb=e.target.closest("[data-rb]"); if(rbb){ui.rb=rbb.dataset.rb; if(ui.rb!=="all") ui.tier=ui.rb; render();return;}
   const go=e.target.closest("[data-go]"); if(!go) return;
   e.preventDefault(); tab=go.dataset.go; try{localStorage.setItem("apx-tab",tab)}catch(_){}
   const lid=go.dataset.legend; if(lid){ui.q="";ui.dir="all";ui.cls="all";ui.upg=false;}
@@ -1131,6 +1149,7 @@ document.addEventListener("click",e=>{
   }
   const nav=document.querySelector("nav"); if(nav) nav.scrollIntoView({block:"start"});
 });
+(()=>{const t=document.getElementById("tabs");const f=()=>t.classList.toggle("more",t.scrollLeft+t.clientWidth<t.scrollWidth-4);t.addEventListener("scroll",f,{passive:true});addEventListener("resize",f);f();})();
 document.getElementById("tabs").addEventListener("click",e=>{
   const b=e.target.closest(".tab"); if(!b) return; tab=b.dataset.tab;
   try{localStorage.setItem("apx-tab",tab)}catch(e){}
