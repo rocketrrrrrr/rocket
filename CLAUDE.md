@@ -80,3 +80,8 @@
 ```
 
 - 能力のアイコンは `img/abilities/<レジェンドの id>-<passive|tactical|ultimate>.svg`（Wiki の SVG）。`abilities.<種類>.icon` にパスを書く。ランパートのパッシブはアイコン未取得
+
+## 強さTOP10 の出典表示（data.json の site.meta.sources）
+
+- TOP10 の下の「出典：」は `site.meta.sources`（`[{ "name": "出典名（データの日付）", "url": "URL" }]`）があればそれを表示する。ない場合は従来の `source` と `sourceUrls` を使う
+- TOP10 の決め方は週次ルーチンの手順に書いてある（ティアリスト2件＋プレデター帯ピック率を合算し、矢印は前週の順位との比較）
