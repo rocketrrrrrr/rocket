@@ -23,7 +23,7 @@
 ## カレンダーファイル（cal/）
 
 - 予定タブの「カレンダーに追加」は `cal/<予定の id>.ics` を開く。iPhone でカレンダーの追加画面を出すため、ブラウザ内で作らずファイルとして置いている
-- `cal/` は data.json が main に入ると GitHub Actions（`.github/workflows/build-ics.yml`）が `scripts/build-ics.mjs` で自動生成する。手で編集しない
+- `cal/` は data.json が main に入ると GitHub Actions（`.github/workflows/build-ics.yml`）が `scripts/build-ics.mjs` で自動生成する。手で編集しない（下の「検索エンジン向けの静的ページ」と同じワークフローで、1回のコミットにまとめている）
 - 同じ予定の日付などを直すときは id を変えない（カレンダー側で同じ予定として扱われる）
 
 ## レジェンドの能力（data.json の legends[].abilities）
@@ -85,3 +85,12 @@
 
 - TOP10 の下の「出典：」は `site.meta.sources`（`[{ "name": "出典名（データの日付）", "url": "URL" }]`）があればそれを表示する。ない場合は従来の `source` と `sourceUrls` を使う
 - TOP10 の決め方は週次ルーチンの手順に書いてある（ティアリスト2件＋プレデター帯ピック率を合算し、矢印は前週の順位との比較）
+
+## 検索エンジン向けの静的ページ（自動生成）
+
+- `upgrades/`、`legends/<id>/`、`weapons/`、`tier/`、`patch/`、`shindan/` の各 `index.html` と `sitemap.xml` は、`scripts/build-pages.mjs` が data.json から生成する。手で編集しない（直すときはスクリプトか data.json を直す）
+- index.html の `<!-- pages:start -->` 〜 `<!-- pages:end -->` の間（ページ下部のリンク一覧）も同じスクリプトが書き換える。この印は消さない
+- 見た目は `assets/pages.css`。トップページ（index.html）のタブ式の画面は、これとは別に今までどおり data.json から JavaScript で描く
+- data.json が main に入ると、GitHub Actions（`.github/workflows/build-ics.yml`）が「カレンダー生成 → ページ生成 → `scripts/check-pages.mjs` でリンクと画像のパスを確認 → 1回のコミット」を行う。リンク切れがあればコミットせずに止まる
+- 手元で確かめるときは `node scripts/build-pages.mjs && node scripts/check-pages.mjs`
+- 生成ページの値は data.json にあるものだけを使う。null の項目は表示しない。`nameUnconfirmed` は「（名称未確認）」、効果が空のものは「未確認」と出る

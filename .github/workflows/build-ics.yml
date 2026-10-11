@@ -1,9 +1,15 @@
-name: Build calendar files
+name: Build calendar files and pages
 
+# data.json が main に入ったら、カレンダー用ファイル（cal/）と検索エンジン向けの静的ページ、sitemap.xml を作り直し、
+# 1回のコミットにまとめて push する（2つの処理が別々に push してぶつからないよう、同じワークフローにしている）。
 on:
   push:
     branches: [main]
-    paths: [data.json, scripts/build-ics.mjs]
+    paths:
+      - data.json
+      - scripts/build-ics.mjs
+      - scripts/build-pages.mjs
+      - scripts/check-pages.mjs
   workflow_dispatch:
 
 permissions:
@@ -21,15 +27,24 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: node scripts/build-ics.mjs
-      - name: Commit updated calendar files
+      - name: Build calendar files
+        run: node scripts/build-ics.mjs
+      - name: Build static pages and sitemap
+        run: node scripts/build-pages.mjs
+      - name: Check links and image paths
+        run: node scripts/check-pages.mjs
+      - name: Commit generated files
         run: |
-          git add -A cal
+          git add -A cal upgrades legends weapons tier patch shindan sitemap.xml index.html
           if git diff --cached --quiet; then
             echo "No changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update calendar files from data.json"
-          git push
+          git commit -m "Update generated files from data.json"
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase origin main
+          done
+          exit 1

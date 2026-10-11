@@ -1,0 +1,92 @@
+/* 生成ページ（upgrades/ legends/ weapons/ tier/ patch/ shindan/）共通のスタイル。トップページの配色に合わせている */
+:root{
+  color-scheme:dark;
+  --bg:#10181c;--panel:#18242a;--panel2:#1f2e35;--line:#2d4049;
+  --ink:#ece3d0;--mute:#9aa8a6;--amber:#ffb03b;--amber-ink:#1b1206;
+  --buff:#6fd68a;--nerf:#f0715a;--change:#8fb7c9;--rework:#c79af2;
+  --c-assault:#ec6a4c;--c-skirm:#4cc3e6;--c-recon:#9ad461;--c-support:#f0cf4f;--c-ctrl:#bb8cf0;
+  --r:10px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.7;font-size:15px;overflow-wrap:anywhere}
+a{color:var(--amber)}
+a:hover{text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1040px;margin:0 auto;padding:16px 16px 40px}
+.mono{font-family:"Chakra Petch",ui-monospace,monospace}
+.mute{color:var(--mute)}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:4px 0 12px;border-bottom:1px solid var(--line)}
+.brand{font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:22px;letter-spacing:.04em;color:var(--ink);text-decoration:none}
+.brand small{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;font-size:12px;color:var(--amber);letter-spacing:0}
+.gnav{display:flex;flex-wrap:wrap;gap:6px}
+.gnav a{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 10px;line-height:1.5}
+.gnav a[aria-current="page"]{border-color:var(--amber);color:var(--amber);font-weight:700}
+.crumbs{font-size:12px;color:var(--mute);margin:12px 0 4px}
+.crumbs ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px}
+.crumbs li+li::before{content:"＞";margin-right:4px;color:var(--line)}
+.crumbs a{color:var(--mute)}
+h1{font-size:24px;line-height:1.4;margin:8px 0 6px}
+h2{font-size:19px;margin:28px 0 10px;padding-left:10px;border-left:4px solid var(--amber)}
+h3{font-size:16px;margin:0}
+.lead{color:var(--mute);margin:0 0 6px;font-size:14px}
+.meta{font-size:12px;color:var(--mute);margin:0 0 12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr));gap:10px}
+.grid.sm{grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.stack{display:flex;flex-direction:column;gap:10px}
+.lg-head{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.pt{width:56px;height:56px;border-radius:8px;object-fit:cover;object-position:top;background:var(--panel2);border:1px solid var(--line);flex:none}
+.pt.lg{width:96px;height:96px}
+.lg-head .nm{font-weight:700;font-size:17px;color:var(--ink);text-decoration:none}
+.lg-head a.nm:hover{color:var(--amber)}
+.sub{font-size:12px;color:var(--mute)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;border:1px solid var(--line);border-radius:999px;padding:0 8px;color:var(--mute)}
+.chip i{width:8px;height:8px;border-radius:2px;display:inline-block}
+.tier{white-space:nowrap;display:inline-block;font-family:"Chakra Petch",monospace;font-weight:700;font-size:12px;padding:1px 8px;border-radius:6px;background:var(--panel2);border:1px solid var(--line);color:var(--ink)}
+.tier.S,.tier.S\+{background:var(--amber);color:var(--amber-ink);border-color:var(--amber)}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:0 8px;border-radius:6px;border:1px solid var(--line)}
+.pill.buff{color:var(--buff)}.pill.nerf{color:var(--nerf)}.pill.change{color:var(--change)}.pill.rework{color:var(--rework)}
+.ab-ic{width:18px;height:18px;filter:invert(1);opacity:.9;flex:none;vertical-align:-3px}
+.lvl{display:grid;grid-template-columns:34px 1fr;gap:8px;align-items:start;margin-top:8px}
+.lvl>.lv{font-family:"Chakra Petch",monospace;font-weight:700;font-size:13px;color:var(--amber);padding-top:8px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.opt{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.opt .on{display:flex;align-items:center;gap:6px;font-weight:700;font-size:14px;line-height:1.35}
+.opt p{margin:0;font-size:13px;color:var(--mute);line-height:1.6}
+.tag{font-size:11px;color:var(--mute);font-weight:500}
+.src{font-size:11px;color:var(--mute)}
+.src a{color:var(--mute)}
+.ab{display:flex;flex-direction:column;gap:2px;padding:8px 0;border-top:1px solid var(--line)}
+.ab:first-of-type{border-top:0}
+.ab .on{display:flex;align-items:center;gap:6px;font-weight:700}
+.ab .k{font-size:11px;color:var(--amber);border:1px solid var(--line);border-radius:999px;padding:0 8px}
+.ab p{margin:0;font-size:14px;color:var(--mute)}
+.hist{border-top:1px solid var(--line);padding:8px 0}
+.hist:first-child{border-top:0;padding-top:0}
+.hist ul{margin:4px 0 0;padding-left:1.2em;font-size:14px}
+.rows{display:flex;flex-direction:column;gap:8px}
+.rank{display:grid;grid-template-columns:34px 56px 1fr auto;gap:10px;align-items:center}
+.rank .no{font-family:"Chakra Petch",monospace;font-weight:700;font-size:22px;text-align:center;color:var(--mute)}
+.rank:nth-child(-n+3) .no{color:var(--amber)}
+.rank p{margin:2px 0 0;font-size:13px;color:var(--mute)}
+.rank .side{display:flex;flex-direction:column;align-items:flex-end;gap:4px;font-size:12px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--mute);font-weight:500;font-size:12px}
+td.num{font-family:"Chakra Petch",monospace;text-align:right}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 4px}
+.toc a{font-size:13px;text-decoration:none;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:2px 10px}
+.cta{display:inline-block;background:var(--amber);color:var(--amber-ink);font-weight:700;text-decoration:none;border-radius:8px;padding:10px 16px;margin:6px 0}
+details summary{cursor:pointer;color:var(--mute);font-size:13px}
+.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--mute)}
+.foot p{margin:4px 0}
+.foot nav{display:flex;flex-wrap:wrap;gap:4px 12px;margin:8px 0}
+.foot nav a{color:var(--mute)}
+@media (max-width:560px){
+  h1{font-size:21px}
+  .opts{grid-template-columns:1fr}
+  .rank{grid-template-columns:28px 44px 1fr auto;gap:8px}
+  .pt{width:44px;height:44px}
+  .pt.lg{width:72px;height:72px}
+}
