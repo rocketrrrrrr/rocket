@@ -466,13 +466,28 @@
    "seasonName": "Marked",
    "split": 2,
    "seasonEnd": "2026-11-03",
-   "latestPatchId": "2026-09-22-marked-update",
-   "lastChecked": "2026-10-07T09:49:05+09:00",
-   "checkedBy": "定期チェック",
+   "latestPatchId": "2026-10-08-blood-pact",
+   "lastChecked": "2026-10-11T14:00:38+09:00",
+   "checkedBy": "毎朝の見回り",
    "id": "state"
   }
  },
  "patches": [
+  {
+   "id": "2026-10-08-blood-pact",
+   "date": "2026-10-08",
+   "title": "血の盟約イベント パッチノート",
+   "kind": "patch",
+   "season": 30,
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/blood-pact-event",
+   "summary": "血の盟約イベントの告知記事に載ったパッチノート。レジェンド・武器の数値変更はなく、不具合修正のみ。",
+   "highlights": [
+    "一部プラットフォームで更新された言語パックにアクセスできない問題を修正",
+    "対応中：オルターのポータルが誤った場所にドロップする問題",
+    "対応中：Broken Moon の一部構造物で地面を通り抜ける問題",
+    "対応中：一部プレイヤーで起動時にゲーム設定がリセットされる問題"
+   ]
+  },
   {
    "id": "2026-09-22-marked-update",
    "date": "2026-09-22",
@@ -3038,6 +3053,17 @@
    "note": "PC版のアンチチートが Easy Anti Cheat から EA Javelin に変わる。アップデートを入れて起動すれば自動で移行し、BIOS設定の変更は不要。",
    "status": "一部未発表",
    "url": "https://www.ea.com/games/apex-legends/apex-legends/news/javelin-anticheat-announcement"
+  },
+  {
+   "id": "blood-pact",
+   "kind": "ingame",
+   "title": "血の盟約イベント",
+   "start": "2026-10-13",
+   "end": "2026-11-03",
+   "time": "公式発表：10月13日〜11月3日（時刻は未発表）",
+   "place": "ゲーム内（キングスキャニオン）",
+   "note": "野獣か悪魔の陣営に加わり、チャレンジ達成でワイルドカードを獲得するイベント。マップにランダムで霧が発生する。スパロー・オルターの新スキンが登場。",
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/blood-pact-event"
   }
  ],
  "attachments": [
