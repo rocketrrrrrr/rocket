@@ -19,6 +19,8 @@
 - 日本語で書く。レジェンド名、武器名は公式の日本語名を使う
 - 「効く」という言葉は使わない（「有効」「機能する」などに言い換える）
 - data.json の構造（id、history、img など既存のフィールド）を壊さない
+- index.html の `<meta name="google-site-verification" ...>` タグは Google Search Console の確認用なので、削除・変更しない
+- `upgrades/`、`legends/` などの静的ページと `sitemap.xml` は data.json から自動生成しているので、直接編集しない。直すときは生成スクリプト（`scripts/`）を直す
 
 ## カレンダーファイル（cal/）
 
