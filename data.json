@@ -1,11 +1,12 @@
 {
  "site": {
   "meta": {
-   "updated": "2026-10-07",
-   "source": "Two Average Gamers（Split 2 ティアリスト）",
+   "updated": "2026-10-14",
+   "source": "Two Average Gamers（2026-09-17）、LFCarry（2026-10-14）、ApexRanked（2026-10-07）",
    "sourceUrls": [
     "https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/",
-    "https://www.twoaveragegamers.com/apex-legends-weapon-tier-list-season-30/"
+    "https://lfcarry.com/guides/apex-legends-tier-list",
+    "https://apexranked.com/meta"
    ],
    "legendTop": [
     {
@@ -13,28 +14,31 @@
      "names": [
       "loba",
       "axle",
-      "seer"
+      "pathfinder"
      ]
     },
     {
      "tier": "A+",
      "names": [
+      "seer",
       "vantage",
-      "pathfinder",
       "conduit"
      ]
     },
     {
      "tier": "A",
      "names": [
-      "bloodhound",
-      "sparrow"
+      "mad-maggie",
+      "alter",
+      "octane",
+      "revenant"
      ]
     },
     {
      "tier": "B+",
      "names": [
-      "fuse",
+      "sparrow",
+      "bloodhound",
       "catalyst",
       "crypto"
      ]
@@ -82,82 +86,83 @@
      "id": "loba",
      "tier": "S",
      "trend": "same",
-     "reason": "ルートが減った環境で物資を確保できる価値が最大。S30開幕で戦術・ウルトが強化"
+     "reason": "プレデター帯ピック率 19.6% で1位、LFCarry・Two Average Gamers ともに S"
     },
     {
      "rank": 2,
      "id": "axle",
      "tier": "S",
-     "trend": "down",
-     "reason": "Split 2 でスタン 1.5秒→0.25秒に弱体化。それでも機動力で上位を維持"
+     "trend": "same",
+     "reason": "プレデター帯ピック率 15.7% で2位、10/1 の弱体化後も両ティアリストで S"
     },
     {
      "rank": 3,
-     "id": "seer",
+     "id": "pathfinder",
      "tier": "S",
-     "trend": "down",
-     "reason": "振り向き低下は削除されたが、戦術でシールドや蘇生の発動を止められる点が健在"
+     "trend": "up",
+     "reason": "プレデター帯ピック率 14.5% で3位、LFCarry で S（Two Average Gamers は A+）"
     },
     {
      "rank": 4,
-     "id": "vantage",
+     "id": "seer",
      "tier": "A+",
-     "trend": "same",
-     "reason": "遠距離武器が強い環境と相性が良い"
+     "trend": "down",
+     "reason": "プレデター帯ピック率 6.5% で5位、Two Average Gamers で S（LFCarry は S から A に変更）"
     },
     {
      "rank": 5,
-     "id": "pathfinder",
+     "id": "vantage",
      "tier": "A+",
-     "trend": "same",
-     "reason": "グラップルとジップラインで部隊ごと動ける"
+     "trend": "down",
+     "reason": "プレデター帯ピック率 8.6% で4位、Two Average Gamers で A+（LFCarry は A）"
     },
     {
      "rank": 6,
      "id": "conduit",
      "tier": "A+",
-     "trend": "up",
-     "reason": "Split 2 でウルトの展開速度などが強化"
+     "trend": "same",
+     "reason": "両ティアリストで A+ と A の評価、プレデター帯ピック率 2.2%（LFCarry で B から A に変更）"
     },
     {
      "rank": 7,
-     "id": "bloodhound",
+     "id": "mad-maggie",
      "tier": "A",
-     "trend": "up",
-     "reason": "S30で大幅リワーク、Split 2 でクロークがさらに強化"
+     "trend": "new",
+     "reason": "プレデター帯ピック率 6.2% で6位、LFCarry で A"
     },
     {
      "rank": 8,
-     "id": "sparrow",
+     "id": "alter",
      "tier": "A",
-     "trend": "up",
-     "reason": "ボセック の矢ストック増加（クイーバー 50→70）の恩恵"
+     "trend": "new",
+     "reason": "プレデター帯ピック率 5.1% で7位、LFCarry で A"
     },
     {
      "rank": 9,
-     "id": "fuse",
-     "tier": "B+",
-     "trend": "up",
-     "reason": "Split 2 で爆発耐性パッシブ追加など大幅強化"
+     "id": "octane",
+     "tier": "A",
+     "trend": "new",
+     "reason": "プレデター帯ピック率 4.8% で8位、LFCarry で A"
     },
     {
      "rank": 10,
-     "id": "catalyst",
-     "tier": "B+",
-     "trend": "up",
-     "reason": "Split 2 で戦術CT短縮・ウルト高速化"
+     "id": "revenant",
+     "tier": "A",
+     "trend": "new",
+     "reason": "プレデター帯ピック率 3.7% で9位、LFCarry で A"
     }
    ],
-   "rankingBasis": "Split 2 ティアリストの順位に、Marked ミッドシーズン（9/15）の強化・弱体化を矢印で反映",
+   "rankingBasis": "ティアリスト2件（9/17・10/14）の評価とプレデター帯ピック率（10/7時点）を合算",
    "notes": [
-    "ローバ はプレデター帯でピック率18.8%（アクセルに次ぐ2位）。ルートが減った今シーズンは物資を確保できる価値が高い",
-    "アクセル は Split 2 でスタンが大幅に短縮されたが、機動力で上位を維持",
-    "シア は戦術でシールド・壁・蘇生などの発動を止められる点が評価されている",
+    "ローバ はプレデター帯でピック率19.6%（1位）。ルートが減った今シーズンは物資を確保できる価値が高い",
+    "アクセル は 10/1 の弱体化後もピック率15.7%で2位だが、LFCarry の集計では1週間でピック率が大きく下がっている",
+    "パスファインダー は LFCarry で S 評価。ゴールド〜ダイヤ帯のピック率でも1位",
+    "シア は LFCarry で S から A に変更。戦術でシールド・壁・蘇生などの発動を止められる点は変わらず評価されている",
     "遠距離武器（30-30リピーター / チャージライフル / トリプルテイク）が強い環境。破損アタッチメントで構成の選び方が変わった"
    ],
    "id": "meta",
    "compsScope": "プレデター帯の集計。マスター帯だけの集計は未確認です",
-   "compsUpdated": "2026-09-27",
+   "compsUpdated": "2026-10-07",
    "comps": [
     {
      "legends": [
@@ -166,7 +171,7 @@
       "pathfinder"
      ],
      "tag": "最多",
-     "stat": "2,495部隊・平均 +62.2 RP/試合",
+     "stat": "2,454部隊・平均 +64.3 RP/試合",
      "note": "アクセル・ローバ・パスファインダーの組み合わせ"
     },
     {
@@ -175,8 +180,8 @@
       "loba",
       "vantage"
      ],
-     "tag": "RP最高",
-     "stat": "1,735部隊・平均 +78.0 RP/試合",
+     "tag": "",
+     "stat": "1,733部隊・平均 +78.3 RP/試合",
      "note": "アクセル・ローバ・ヴァンテージの組み合わせ"
     },
     {
@@ -185,14 +190,14 @@
       "pathfinder",
       "vantage"
      ],
-     "tag": "",
-     "stat": "1,272部隊・平均 +75.6 RP/試合",
+     "tag": "RP最高",
+     "stat": "1,430部隊・平均 +79.9 RP/試合",
      "note": "ローバ・パスファインダー・ヴァンテージの組み合わせ"
     }
    ],
    "compsSources": [
     {
-     "name": "ApexRanked（プレデター826人の集計）",
+     "name": "ApexRanked（プレデター822人の集計）",
      "url": "https://apexranked.com/meta"
     },
     {
@@ -204,7 +209,7 @@
     {
      "id": "pred",
      "label": "プレデター",
-     "scope": "プレデター826人の集計",
+     "scope": "プレデター822人の集計（ApexRanked の 10/7 時点）",
      "updated": "2026-10-07",
      "comps": [
       {
@@ -214,7 +219,7 @@
         "pathfinder"
        ],
        "tag": "最多",
-       "stat": "2,495部隊・平均 +62.2 RP/試合",
+       "stat": "2,454部隊・平均 +64.3 RP/試合",
        "note": "アクセル・ローバ・パスファインダーの組み合わせ"
       },
       {
@@ -223,8 +228,8 @@
         "loba",
         "vantage"
        ],
-       "tag": "RP最高",
-       "stat": "1,735部隊・平均 +78.0 RP/試合",
+       "tag": "",
+       "stat": "1,733部隊・平均 +78.3 RP/試合",
        "note": "アクセル・ローバ・ヴァンテージの組み合わせ"
       },
       {
@@ -233,27 +238,27 @@
         "pathfinder",
         "vantage"
        ],
-       "tag": "",
-       "stat": "1,272部隊・平均 +75.6 RP/試合",
+       "tag": "RP最高",
+       "stat": "1,430部隊・平均 +79.9 RP/試合",
        "note": "ローバ・パスファインダー・ヴァンテージの組み合わせ"
       }
      ],
      "picks": [
       {
        "id": "loba",
-       "rate": 19.5
+       "rate": 19.6
       },
       {
        "id": "axle",
-       "rate": 16.9
+       "rate": 15.7
       },
       {
        "id": "pathfinder",
-       "rate": 14.4
+       "rate": 14.5
       },
       {
        "id": "vantage",
-       "rate": 8.7
+       "rate": 8.6
       },
       {
        "id": "seer",
@@ -275,40 +280,40 @@
      "id": "masterpred",
      "label": "マスター＋プレデター",
      "scope": "マスターとプレデターの合算。マスターだけの集計は公開されていません。サンプルが少なめです",
-     "updated": "2026-10-07",
+     "updated": "2026-10-14",
      "comps": [],
      "picks": [
       {
        "id": "loba",
-       "rate": 18.2
+       "rate": 18.3
       },
       {
        "id": "pathfinder",
-       "rate": 16.5
-      },
-      {
-       "id": "axle",
-       "rate": 8.7
+       "rate": 16.8
       },
       {
        "id": "octane",
-       "rate": 7.3
+       "rate": 8.2
       },
       {
        "id": "mad-maggie",
-       "rate": 6.5
+       "rate": 7.6
       },
       {
-       "id": "revenant",
-       "rate": 5.2
+       "id": "axle",
+       "rate": 6.1
       },
       {
        "id": "bangalore",
-       "rate": 4.4
+       "rate": 5.0
       },
       {
-       "id": "vantage",
-       "rate": 4.2
+       "id": "alter",
+       "rate": 4.5
+      },
+      {
+       "id": "revenant",
+       "rate": 4.5
       }
      ],
      "sources": [
@@ -322,39 +327,39 @@
      "id": "diamond",
      "label": "ダイヤ",
      "scope": "ダイヤ帯の集計",
-     "updated": "2026-10-07",
+     "updated": "2026-10-14",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 15.7
+       "rate": 15.8
       },
       {
        "id": "loba",
-       "rate": 11.0
-      },
-      {
-       "id": "axle",
-       "rate": 8.8
+       "rate": 11.1
       },
       {
        "id": "mad-maggie",
-       "rate": 8.7
+       "rate": 8.8
+      },
+      {
+       "id": "axle",
+       "rate": 6.4
       },
       {
        "id": "octane",
-       "rate": 5.2
+       "rate": 5.9
       },
       {
        "id": "bangalore",
-       "rate": 5.0
+       "rate": 4.9
       },
       {
        "id": "wraith",
-       "rate": 4.2
+       "rate": 4.5
       },
       {
-       "id": "conduit",
+       "id": "vantage",
        "rate": 4.0
       }
      ],
@@ -369,36 +374,36 @@
      "id": "platinum",
      "label": "プラチナ",
      "scope": "プラチナ帯の集計",
-     "updated": "2026-10-07",
+     "updated": "2026-10-14",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 11.7
-      },
-      {
-       "id": "axle",
-       "rate": 7.5
+       "rate": 12.1
       },
       {
        "id": "mad-maggie",
-       "rate": 7.2
+       "rate": 7.3
       },
       {
        "id": "loba",
-       "rate": 7.2
+       "rate": 7.3
       },
       {
        "id": "octane",
-       "rate": 6.8
+       "rate": 7.2
       },
       {
        "id": "fuse",
-       "rate": 6.1
+       "rate": 6.3
+      },
+      {
+       "id": "axle",
+       "rate": 5.8
       },
       {
        "id": "wraith",
-       "rate": 4.8
+       "rate": 5.0
       },
       {
        "id": "bangalore",
@@ -416,40 +421,40 @@
      "id": "gold",
      "label": "ゴールド",
      "scope": "ゴールド帯の集計",
-     "updated": "2026-10-07",
+     "updated": "2026-10-14",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 9.0
+       "rate": 9.5
       },
       {
        "id": "octane",
-       "rate": 8.1
+       "rate": 8.4
       },
       {
        "id": "fuse",
-       "rate": 6.2
-      },
-      {
-       "id": "wraith",
-       "rate": 5.9
+       "rate": 6.5
       },
       {
        "id": "loba",
-       "rate": 5.8
+       "rate": 6.0
       },
       {
-       "id": "axle",
+       "id": "wraith",
        "rate": 5.7
       },
       {
        "id": "mad-maggie",
-       "rate": 5.2
+       "rate": 5.3
+      },
+      {
+       "id": "axle",
+       "rate": 4.7
       },
       {
        "id": "bangalore",
-       "rate": 4.3
+       "rate": 4.4
       }
      ],
      "sources": [
@@ -459,6 +464,20 @@
       }
      ]
     }
+   ],
+   "sources": [
+    {
+     "name": "Two Average Gamers（2026-09-17）",
+     "url": "https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/"
+    },
+    {
+     "name": "LFCarry（2026-10-14）",
+     "url": "https://lfcarry.com/guides/apex-legends-tier-list"
+    },
+    {
+     "name": "ApexRanked プレデター帯ピック率（2026-10-07）",
+     "url": "https://apexranked.com/meta"
+    }
    ]
   },
   "state": {
@@ -466,13 +485,73 @@
    "seasonName": "Marked",
    "split": 2,
    "seasonEnd": "2026-11-03",
-   "latestPatchId": "2026-10-08-blood-pact",
-   "lastChecked": "2026-10-11T14:00:38+09:00",
-   "checkedBy": "毎朝の見回り",
+   "latestPatchId": "2026-10-09-marked-update",
+   "lastChecked": "2026-10-14T09:51:57+09:00",
+   "checkedBy": "定期チェック",
    "id": "state"
   }
  },
  "patches": [
+  {
+   "id": "2026-10-09-marked-update",
+   "date": "2026-10-09",
+   "title": "アップデート（10/9）",
+   "kind": "hotfix",
+   "season": 30,
+   "url": "https://store.steampowered.com/news/app/1172470/view/703281660030880603",
+   "summary": "Platinum 以上のマッチメイキング待ち時間を延ばすテストを開始。あわせて、1発でマガジンを撃ち切れる不具合など武器の悪用手口を修正。",
+   "highlights": [
+    "テスト：Platinum 以上の最大待ち時間を延長（ランク帯が高いほど長く、マスターで最大約30秒）",
+    "目的：高ランク帯の試合でスキル差を小さくし、高ランク帯が中ランク帯の試合に混ざるのを減らすこと",
+    "テストはシーズン終了まで、または十分なデータが集まるまで続く",
+    "アンチチート情報（10/9）：マガジンを1発で撃ち切れる悪用と、センチネル／C.A.R. SMG の連射・リロードの悪用を修正"
+   ]
+  },
+  {
+   "id": "2026-10-08-console-fix",
+   "date": "2026-10-08",
+   "title": "アップデート（10/8）",
+   "kind": "hotfix",
+   "season": 30,
+   "url": "https://store.steampowered.com/news/app/1172470/view/703281660030879764",
+   "summary": "コンソールで一部レジェンドの動作が正常でなかった問題を修正。",
+   "highlights": [
+    "アッシュのダッシュと二段ジャンプ",
+    "スパローの二段ジャンプ",
+    "レヴナントの登りとマントル",
+    "ライフラインの走りアニメーション"
+   ]
+  },
+  {
+   "id": "2026-10-02-marked-update",
+   "date": "2026-10-02",
+   "title": "アップデート（10/2）",
+   "kind": "hotfix",
+   "season": 30,
+   "url": "https://store.steampowered.com/news/app/1172470/view/703281025618281776",
+   "summary": "Steam で再起動のたびに設定が初期化される問題を修正し、ワイルドカードの「ファストドロウ」を弱めた。",
+   "highlights": [
+    "修正：Steam 版で、ゲームを起動し直すたびに設定が初期化される問題（特に APAC で多発）",
+    "ファストドロウ（ワイルドカード）：リロード時間短縮 35%→25%",
+    "ファストドロウ（ワイルドカード）：消耗品の使用時間短縮 50%→25%"
+   ]
+  },
+  {
+   "id": "2026-10-01-marked-update",
+   "date": "2026-10-01",
+   "title": "アップデート（10/1）",
+   "kind": "patch",
+   "season": 30,
+   "url": "https://store.steampowered.com/news/app/1172470/view/703281025618281404",
+   "summary": "アクセルをさらに弱体化。オルターの不具合を修正し、Apex KO（ワイルドカード）のファイターを調整。",
+   "highlights": [
+    "アクセル：パッシブのスライド横方向コントロール 50%減",
+    "アクセル：ニトロゲートの初期押し出し速度 700→650、使用中はエイムアシスト無効",
+    "アクセル：キックスタートの追尾時間 10秒→8秒、最大打ち上げ 700→650",
+    "オルター：大きな動く構造物の近くで戦術・ウルトが不安定な問題を修正",
+    "Apex KO：ファイターの防御 55%→50%、リュウ／春麗／ダルシムのウルト最大チャージ 3→2"
+   ]
+  },
   {
    "id": "2026-10-08-blood-pact",
    "date": "2026-10-08",
@@ -1144,9 +1223,19 @@
    "ja": "オルター",
    "en": "Alter",
    "cls": "skirm",
-   "tier": null,
-   "latestDate": null,
-   "history": [],
+   "tier": "A",
+   "latestDate": "2026-10-01",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "patchId": "2026-10-01-marked-update",
+     "dir": "change",
+     "lines": [
+      "修正：大きな動く構造物の近くで戦術とウルトが不安定になる問題"
+     ],
+     "url": "https://store.steampowered.com/news/app/1172470/view/703281025618281404"
+    }
+   ],
    "img": "img/alter.webp",
    "id": "alter",
    "abilities": {
@@ -1268,8 +1357,23 @@
    "en": "Axle",
    "cls": "skirm",
    "tier": "S",
-   "latestDate": "2026-09-15",
+   "latestDate": "2026-10-01",
    "history": [
+    {
+     "date": "2026-10-01",
+     "patchId": "2026-10-01-marked-update",
+     "dir": "nerf",
+     "lines": [
+      "パッシブ：スライドの横方向コントロール 50%減",
+      "戦術：ニトロゲート使用者のスライド横方向コントロール 25%減",
+      "戦術：ニトロゲートの使用中はエイムアシスト無効",
+      "戦術：ニトロゲートの初期押し出し速度 700→650",
+      "ウルト：展開直後にロックオンした場合の打ち上げを大きく減らした",
+      "ウルト：最大打ち上げ 700→650",
+      "ウルト：ドローンの最大追尾時間 10秒→8秒"
+     ],
+     "url": "https://store.steampowered.com/news/app/1172470/view/703281025618281404"
+    },
     {
      "date": "2026-09-15",
      "patchId": "2026-09-15-marked-mid",
@@ -1409,7 +1513,7 @@
    "ja": "バンガロール",
    "en": "Bangalore",
    "cls": "assault",
-   "tier": null,
+   "tier": "A",
    "latestDate": null,
    "history": [],
    "img": "img/bangalore.webp",
@@ -1469,7 +1573,7 @@
    "ja": "ブラッドハウンド",
    "en": "Bloodhound",
    "cls": "recon",
-   "tier": "A",
+   "tier": "B+",
    "latestDate": "2026-09-15",
    "history": [
     {
@@ -1626,7 +1730,7 @@
    "ja": "コースティック",
    "en": "Caustic",
    "cls": "ctrl",
-   "tier": "状況次第",
+   "tier": "B",
    "latestDate": null,
    "history": [],
    "img": "img/caustic.webp",
@@ -1820,7 +1924,7 @@
    "ja": "ヒューズ",
    "en": "Fuse",
    "cls": "assault",
-   "tier": "B+",
+   "tier": "B",
    "latestDate": "2026-09-15",
    "history": [
     {
@@ -1893,7 +1997,7 @@
    "ja": "ジブラルタル",
    "en": "Gibraltar",
    "cls": "support",
-   "tier": null,
+   "tier": "A",
    "latestDate": null,
    "history": [],
    "img": "img/gibraltar.webp",
@@ -1953,7 +2057,7 @@
    "ja": "ホライゾン",
    "en": "Horizon",
    "cls": "skirm",
-   "tier": null,
+   "tier": "A",
    "latestDate": null,
    "history": [],
    "img": "img/horizon.webp",
@@ -2153,7 +2257,7 @@
    "ja": "マッドマギー",
    "en": "Mad Maggie",
    "cls": "assault",
-   "tier": null,
+   "tier": "A",
    "latestDate": null,
    "history": [],
    "img": "img/mad-maggie.webp",
@@ -2215,7 +2319,7 @@
    "ja": "ミラージュ",
    "en": "Mirage",
    "cls": "support",
-   "tier": null,
+   "tier": "B",
    "latestDate": null,
    "history": [],
    "img": "img/mirage.webp",
@@ -2340,7 +2444,7 @@
    "ja": "オクタン",
    "en": "Octane",
    "cls": "skirm",
-   "tier": null,
+   "tier": "A",
    "latestDate": null,
    "history": [],
    "img": "img/octane.webp",
@@ -2400,7 +2504,7 @@
    "ja": "パスファインダー",
    "en": "Pathfinder",
    "cls": "skirm",
-   "tier": "A+",
+   "tier": "S",
    "latestDate": null,
    "history": [],
    "img": "img/pathfinder.webp",
@@ -2531,7 +2635,7 @@
    "ja": "レヴナント",
    "en": "Revenant",
    "cls": "assault",
-   "tier": null,
+   "tier": "A",
    "latestDate": null,
    "history": [],
    "img": "img/revenant.webp",
@@ -2595,7 +2699,7 @@
    "ja": "シア",
    "en": "Seer",
    "cls": "recon",
-   "tier": "S",
+   "tier": "A+",
    "latestDate": "2026-09-15",
    "history": [
     {
@@ -2684,7 +2788,7 @@
    "ja": "スパロー",
    "en": "Sparrow",
    "cls": "recon",
-   "tier": "A",
+   "tier": "B+",
    "latestDate": null,
    "history": [],
    "img": "img/sparrow.webp",
@@ -2744,7 +2848,7 @@
    "ja": "ヴァルキリー",
    "en": "Valkyrie",
    "cls": "skirm",
-   "tier": null,
+   "tier": "B",
    "latestDate": "2026-08-04",
    "history": [
     {
@@ -2937,7 +3041,7 @@
    "ja": "レイス",
    "en": "Wraith",
    "cls": "skirm",
-   "tier": null,
+   "tier": "B",
    "latestDate": null,
    "history": [],
    "img": "img/wraith.webp",
@@ -3041,18 +3145,6 @@
    "place": "ラスベガス（アメリカ）",
    "note": "世界の強豪チームが集まるオフライン大会。チャンピオンシップポイントを争う",
    "url": "https://algs.ea.com/en/year-6/split-2-playoffs/competition-overview"
-  },
-  {
-   "id": "javelin-anticheat",
-   "kind": "ingame",
-   "title": "PC版アンチチート「EA Javelin」へ切り替え",
-   "start": "2026-09-29",
-   "end": "2026-09-29",
-   "time": "公式発表：9月29日（開始時刻は未発表）",
-   "place": "PC版（ゲーム内）",
-   "note": "PC版のアンチチートが Easy Anti Cheat から EA Javelin に変わる。アップデートを入れて起動すれば自動で移行し、BIOS設定の変更は不要。",
-   "status": "一部未発表",
-   "url": "https://www.ea.com/games/apex-legends/apex-legends/news/javelin-anticheat-announcement"
   },
   {
    "id": "blood-pact",
