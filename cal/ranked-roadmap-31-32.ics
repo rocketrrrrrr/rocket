@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//APEX NOW//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ranked-roadmap-31-32@rocketrrrrrr.github.io
+DTSTAMP:20261020T235422Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:ランクのロードマップ発表（シーズン31・32）
+LOCATION:ランクマッチ
+DESCRIPTION:未発表\nシーズン31（11月開始）はダイアモン
+ ド以上でレジェンド禁止フェーズを導入。シーズン32
+ （2027年初頭）はアイアン・エメラルド・グランドマ
+ スターの新ランクとリーグ構造の刷新を予定。開始日
+ の詳細は未発表。\n出典：https://www.ea.com/ja/games/apex-lege
+ nds/apex-legends/news/ranked-roadmap-31-32\nAPEX NOW（https://rocketrrr
+ rrr.github.io/rocket/）より
+URL:https://www.ea.com/ja/games/apex-legends/apex-legends/news/ranked-roa
+ dmap-31-32
+END:VEVENT
+END:VCALENDAR
