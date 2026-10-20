@@ -486,8 +486,8 @@
    "split": 2,
    "seasonEnd": "2026-11-03",
    "latestPatchId": "2026-10-09-marked-update",
-   "lastChecked": "2026-10-14T09:51:57+09:00",
-   "checkedBy": "定期チェック",
+   "lastChecked": "2026-10-21T08:54:06+09:00",
+   "checkedBy": "毎朝の見回り",
    "id": "state"
   }
  },
@@ -3156,6 +3156,18 @@
    "place": "ゲーム内（キングスキャニオン）",
    "note": "野獣か悪魔の陣営に加わり、チャレンジ達成でワイルドカードを獲得するイベント。マップにランダムで霧が発生する。スパロー・オルターの新スキンが登場。",
    "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/blood-pact-event"
+  },
+  {
+   "id": "ranked-roadmap-31-32",
+   "kind": "season",
+   "title": "ランクのロードマップ発表（シーズン31・32）",
+   "start": "2026-10-20",
+   "end": "2026-10-20",
+   "time": "未発表",
+   "place": "ランクマッチ",
+   "note": "シーズン31（11月開始）はダイアモンド以上でレジェンド禁止フェーズを導入。シーズン32（2027年初頭）はアイアン・エメラルド・グランドマスターの新ランクとリーグ構造の刷新を予定。開始日の詳細は未発表。",
+   "status": "一部未発表",
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/ranked-roadmap-31-32"
   }
  ],
  "attachments": [
