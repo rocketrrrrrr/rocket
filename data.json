@@ -1,8 +1,8 @@
 {
  "site": {
   "meta": {
-   "updated": "2026-10-14",
-   "source": "Two Average Gamers（2026-09-17）、LFCarry（2026-10-14）、ApexRanked（2026-10-07）",
+   "updated": "2026-10-20",
+   "source": "Two Average Gamers（2026-09-17） / LFCarry（2026-10-20） / ApexRanked プレデター帯ピック率（2026-10-17）",
    "sourceUrls": [
     "https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/",
     "https://lfcarry.com/guides/apex-legends-tier-list",
@@ -13,8 +13,8 @@
      "tier": "S",
      "names": [
       "loba",
-      "axle",
-      "pathfinder"
+      "pathfinder",
+      "axle"
      ]
     },
     {
@@ -28,19 +28,10 @@
     {
      "tier": "A",
      "names": [
-      "mad-maggie",
-      "alter",
       "octane",
-      "revenant"
-     ]
-    },
-    {
-     "tier": "B+",
-     "names": [
-      "sparrow",
-      "bloodhound",
-      "catalyst",
-      "crypto"
+      "revenant",
+      "mad-maggie",
+      "gibraltar"
      ]
     }
    ],
@@ -86,73 +77,73 @@
      "id": "loba",
      "tier": "S",
      "trend": "same",
-     "reason": "プレデター帯ピック率 19.6% で1位、LFCarry・Two Average Gamers ともに S"
+     "reason": "プレデター帯ピック率 23.3% で1位、LFCarry・Two Average Gamers ともに S"
     },
     {
      "rank": 2,
-     "id": "axle",
-     "tier": "S",
-     "trend": "same",
-     "reason": "プレデター帯ピック率 15.7% で2位、10/1 の弱体化後も両ティアリストで S"
-    },
-    {
-     "rank": 3,
      "id": "pathfinder",
      "tier": "S",
      "trend": "up",
-     "reason": "プレデター帯ピック率 14.5% で3位、LFCarry で S（Two Average Gamers は A+）"
+     "reason": "プレデター帯ピック率 16.7% で2位、LFCarry で S（Two Average Gamers は A+）"
+    },
+    {
+     "rank": 3,
+     "id": "axle",
+     "tier": "S",
+     "trend": "down",
+     "reason": "LFCarry・Two Average Gamers ともに S だが、プレデター帯ピック率は 3.2%（10位）に低下"
     },
     {
      "rank": 4,
      "id": "seer",
      "tier": "A+",
-     "trend": "down",
-     "reason": "プレデター帯ピック率 6.5% で5位、Two Average Gamers で S（LFCarry は S から A に変更）"
+     "trend": "same",
+     "reason": "プレデター帯ピック率 7.1% で4位、Two Average Gamers で S（LFCarry は A）"
     },
     {
      "rank": 5,
-     "id": "vantage",
-     "tier": "A+",
-     "trend": "down",
-     "reason": "プレデター帯ピック率 8.6% で4位、Two Average Gamers で A+（LFCarry は A）"
+     "id": "octane",
+     "tier": "A",
+     "trend": "up",
+     "reason": "プレデター帯ピック率 12.2% で3位、LFCarry で A"
     },
     {
      "rank": 6,
-     "id": "conduit",
+     "id": "vantage",
      "tier": "A+",
-     "trend": "same",
-     "reason": "両ティアリストで A+ と A の評価、プレデター帯ピック率 2.2%（LFCarry で B から A に変更）"
+     "trend": "down",
+     "reason": "Two Average Gamers で A+（LFCarry は A）、プレデター帯ピック率 3.9%"
     },
     {
      "rank": 7,
-     "id": "mad-maggie",
+     "id": "revenant",
      "tier": "A",
-     "trend": "new",
-     "reason": "プレデター帯ピック率 6.2% で6位、LFCarry で A"
+     "trend": "up",
+     "reason": "プレデター帯ピック率 6.3% で5位、LFCarry で A"
     },
     {
      "rank": 8,
-     "id": "alter",
-     "tier": "A",
-     "trend": "new",
-     "reason": "プレデター帯ピック率 5.1% で7位、LFCarry で A"
+     "id": "conduit",
+     "tier": "A+",
+     "trend": "down",
+     "reason": "Two Average Gamers で A+、LFCarry で A、プレデター帯ピック率 1.0%"
     },
     {
      "rank": 9,
-     "id": "octane",
+     "id": "mad-maggie",
      "tier": "A",
-     "trend": "new",
-     "reason": "プレデター帯ピック率 4.8% で8位、LFCarry で A"
+     "trend": "down",
+     "reason": "プレデター帯ピック率 4.4% で6位、LFCarry で A"
     },
     {
      "rank": 10,
-     "id": "revenant",
+     "id": "gibraltar",
      "tier": "A",
      "trend": "new",
-     "reason": "プレデター帯ピック率 3.7% で9位、LFCarry で A"
+     "reason": "プレデター帯ピック率 4.3% で7位、LFCarry で A"
     }
    ],
-   "rankingBasis": "ティアリスト2件（9/17・10/14）の評価とプレデター帯ピック率（10/7時点）を合算",
+   "rankingBasis": "ティアリスト2件（9/17・10/20）の評価とプレデター帯ピック率（10/17時点）を合算",
    "notes": [
     "ローバ はプレデター帯でピック率19.6%（1位）。ルートが減った今シーズンは物資を確保できる価値が高い",
     "アクセル は 10/1 の弱体化後もピック率15.7%で2位だが、LFCarry の集計では1週間でピック率が大きく下がっている",
@@ -166,23 +157,13 @@
    "comps": [
     {
      "legends": [
-      "axle",
       "loba",
+      "octane",
       "pathfinder"
      ],
      "tag": "最多",
-     "stat": "2,454部隊・平均 +64.3 RP/試合",
-     "note": "アクセル・ローバ・パスファインダーの組み合わせ"
-    },
-    {
-     "legends": [
-      "axle",
-      "loba",
-      "vantage"
-     ],
-     "tag": "",
-     "stat": "1,733部隊・平均 +78.3 RP/試合",
-     "note": "アクセル・ローバ・ヴァンテージの組み合わせ"
+     "stat": "35回観測・RPは未確認",
+     "note": "ローバ・オクタン・パスファインダーの組み合わせ"
     },
     {
      "legends": [
@@ -190,9 +171,19 @@
       "pathfinder",
       "vantage"
      ],
-     "tag": "RP最高",
-     "stat": "1,430部隊・平均 +79.9 RP/試合",
+     "tag": "",
+     "stat": "34回観測・RPは未確認",
      "note": "ローバ・パスファインダー・ヴァンテージの組み合わせ"
+    },
+    {
+     "legends": [
+      "loba",
+      "pathfinder",
+      "seer"
+     ],
+     "tag": "",
+     "stat": "33回観測・RPは未確認",
+     "note": "ローバ・パスファインダー・シアの組み合わせ"
     }
    ],
    "compsSources": [
@@ -209,28 +200,18 @@
     {
      "id": "pred",
      "label": "プレデター",
-     "scope": "プレデター822人の集計（ApexRanked の 10/7 時点）",
-     "updated": "2026-10-07",
+     "scope": "プレデター883人の集計（ApexRanked の 10/17 時点）",
+     "updated": "2026-10-17",
      "comps": [
       {
        "legends": [
-        "axle",
         "loba",
+        "octane",
         "pathfinder"
        ],
        "tag": "最多",
-       "stat": "2,454部隊・平均 +64.3 RP/試合",
-       "note": "アクセル・ローバ・パスファインダーの組み合わせ"
-      },
-      {
-       "legends": [
-        "axle",
-        "loba",
-        "vantage"
-       ],
-       "tag": "",
-       "stat": "1,733部隊・平均 +78.3 RP/試合",
-       "note": "アクセル・ローバ・ヴァンテージの組み合わせ"
+       "stat": "35回観測・RPは未確認",
+       "note": "ローバ・オクタン・パスファインダーの組み合わせ"
       },
       {
        "legends": [
@@ -238,31 +219,41 @@
         "pathfinder",
         "vantage"
        ],
-       "tag": "RP最高",
-       "stat": "1,430部隊・平均 +79.9 RP/試合",
+       "tag": "",
+       "stat": "34回観測・RPは未確認",
        "note": "ローバ・パスファインダー・ヴァンテージの組み合わせ"
+      },
+      {
+       "legends": [
+        "loba",
+        "pathfinder",
+        "seer"
+       ],
+       "tag": "",
+       "stat": "33回観測・RPは未確認",
+       "note": "ローバ・パスファインダー・シアの組み合わせ"
       }
      ],
      "picks": [
       {
        "id": "loba",
-       "rate": 19.6
-      },
-      {
-       "id": "axle",
-       "rate": 15.7
+       "rate": 23.3
       },
       {
        "id": "pathfinder",
-       "rate": 14.5
+       "rate": 16.7
       },
       {
-       "id": "vantage",
-       "rate": 8.6
+       "id": "octane",
+       "rate": 12.2
       },
       {
        "id": "seer",
-       "rate": 6.5
+       "rate": 7.1
+      },
+      {
+       "id": "revenant",
+       "rate": 6.3
       }
      ],
      "sources": [
@@ -280,40 +271,40 @@
      "id": "masterpred",
      "label": "マスター＋プレデター",
      "scope": "マスターとプレデターの合算。マスターだけの集計は公開されていません。サンプルが少なめです",
-     "updated": "2026-10-14",
+     "updated": "2026-10-21",
      "comps": [],
      "picks": [
       {
-       "id": "loba",
-       "rate": 18.3
+       "id": "pathfinder",
+       "rate": 17.5
       },
       {
-       "id": "pathfinder",
-       "rate": 16.8
+       "id": "loba",
+       "rate": 17.2
       },
       {
        "id": "octane",
-       "rate": 8.2
+       "rate": 8.1
       },
       {
        "id": "mad-maggie",
-       "rate": 7.6
-      },
-      {
-       "id": "axle",
-       "rate": 6.1
-      },
-      {
-       "id": "bangalore",
-       "rate": 5.0
+       "rate": 7.7
       },
       {
        "id": "alter",
-       "rate": 4.5
+       "rate": 5.7
       },
       {
-       "id": "revenant",
-       "rate": 4.5
+       "id": "axle",
+       "rate": 5.1
+      },
+      {
+       "id": "bangalore",
+       "rate": 4.6
+      },
+      {
+       "id": "vantage",
+       "rate": 4.4
       }
      ],
      "sources": [
@@ -327,40 +318,40 @@
      "id": "diamond",
      "label": "ダイヤ",
      "scope": "ダイヤ帯の集計",
-     "updated": "2026-10-14",
+     "updated": "2026-10-21",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 15.8
+       "rate": 15.7
       },
       {
        "id": "loba",
-       "rate": 11.1
+       "rate": 11.2
       },
       {
        "id": "mad-maggie",
-       "rate": 8.8
-      },
-      {
-       "id": "axle",
-       "rate": 6.4
+       "rate": 8.6
       },
       {
        "id": "octane",
-       "rate": 5.9
+       "rate": 6.2
+      },
+      {
+       "id": "axle",
+       "rate": 5.4
       },
       {
        "id": "bangalore",
-       "rate": 4.9
+       "rate": 4.8
       },
       {
        "id": "wraith",
-       "rate": 4.5
+       "rate": 4.6
       },
       {
        "id": "vantage",
-       "rate": 4.0
+       "rate": 4.4
       }
      ],
      "sources": [
@@ -374,36 +365,36 @@
      "id": "platinum",
      "label": "プラチナ",
      "scope": "プラチナ帯の集計",
-     "updated": "2026-10-14",
+     "updated": "2026-10-21",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 12.1
+       "rate": 11.5
       },
       {
-       "id": "mad-maggie",
-       "rate": 7.3
+       "id": "octane",
+       "rate": 7.6
       },
       {
        "id": "loba",
        "rate": 7.3
       },
       {
-       "id": "octane",
-       "rate": 7.2
+       "id": "mad-maggie",
+       "rate": 7.0
       },
       {
        "id": "fuse",
-       "rate": 6.3
-      },
-      {
-       "id": "axle",
-       "rate": 5.8
+       "rate": 6.1
       },
       {
        "id": "wraith",
-       "rate": 5.0
+       "rate": 5.3
+      },
+      {
+       "id": "axle",
+       "rate": 4.9
       },
       {
        "id": "bangalore",
@@ -421,7 +412,7 @@
      "id": "gold",
      "label": "ゴールド",
      "scope": "ゴールド帯の集計",
-     "updated": "2026-10-14",
+     "updated": "2026-10-21",
      "comps": [],
      "picks": [
       {
@@ -430,31 +421,31 @@
       },
       {
        "id": "octane",
-       "rate": 8.4
+       "rate": 8.7
       },
       {
        "id": "fuse",
-       "rate": 6.5
+       "rate": 6.3
       },
       {
        "id": "loba",
-       "rate": 6.0
+       "rate": 6.1
       },
       {
        "id": "wraith",
-       "rate": 5.7
+       "rate": 5.8
       },
       {
        "id": "mad-maggie",
-       "rate": 5.3
-      },
-      {
-       "id": "axle",
-       "rate": 4.7
+       "rate": 5.2
       },
       {
        "id": "bangalore",
        "rate": 4.4
+      },
+      {
+       "id": "lifeline",
+       "rate": 4.3
       }
      ],
      "sources": [
@@ -471,11 +462,11 @@
      "url": "https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/"
     },
     {
-     "name": "LFCarry（2026-10-14）",
+     "name": "LFCarry（2026-10-20）",
      "url": "https://lfcarry.com/guides/apex-legends-tier-list"
     },
     {
-     "name": "ApexRanked プレデター帯ピック率（2026-10-07）",
+     "name": "ApexRanked プレデター帯ピック率（2026-10-17）",
      "url": "https://apexranked.com/meta"
     }
    ]
@@ -486,8 +477,8 @@
    "split": 2,
    "seasonEnd": "2026-11-03",
    "latestPatchId": "2026-10-09-marked-update",
-   "lastChecked": "2026-10-21T08:54:06+09:00",
-   "checkedBy": "毎朝の見回り",
+   "lastChecked": "2026-10-21T09:51:21+09:00",
+   "checkedBy": "定期チェック",
    "id": "state"
   }
  },
@@ -3122,18 +3113,6 @@
    "place": "ゲーム内",
    "note": "9/22〜11/1 に6回のラダーを予定",
    "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
-  },
-  {
-   "id": "crcup-11",
-   "kind": "streamer",
-   "title": "第11回 CRカップ Apex Legends",
-   "start": "2026-10-04",
-   "end": "2026-10-04",
-   "time": "開始時刻は未発表",
-   "place": "オンライン配信",
-   "note": "約3年9か月ぶりの開催（Crazy Raccoon 公式発表）。開始時刻・スクリム日程・出場メンバーは発表待ち",
-   "status": "一部未発表",
-   "url": "https://kai-you.net/article/96465"
   },
   {
    "id": "algs-y6-s2-playoffs",
