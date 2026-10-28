@@ -476,13 +476,25 @@
    "seasonName": "Marked",
    "split": 2,
    "seasonEnd": "2026-11-03",
-   "latestPatchId": "2026-10-09-marked-update",
-   "lastChecked": "2026-10-28T09:51:29+09:00",
-   "checkedBy": "定期チェック",
+   "latestPatchId": "2026-10-28-ranked-fix",
+   "lastChecked": "2026-10-29T08:54:03+09:00",
+   "checkedBy": "毎朝の見回り",
    "id": "state"
   }
  },
  "patches": [
+  {
+   "id": "2026-10-28-ranked-fix",
+   "date": "2026-10-28",
+   "title": "アップデート（10/26 付）",
+   "kind": "hotfix",
+   "season": 30,
+   "url": "https://store.steampowered.com/news/app/1172470/view/680765564125184067",
+   "summary": "ランクマッチに参加コストを払わずに入れる悪用手口を修正。",
+   "highlights": [
+    "修正：一部のプレイヤーが、参加コストを払わずにランクマッチに入れる悪用を削除"
+   ]
+  },
   {
    "id": "2026-10-09-marked-update",
    "date": "2026-10-09",
