@@ -477,7 +477,7 @@
    "split": 2,
    "seasonEnd": "2026-11-03",
    "latestPatchId": "2026-10-28-ranked-fix",
-   "lastChecked": "2026-10-29T08:54:03+09:00",
+   "lastChecked": "2026-10-30T08:55:00+09:00",
    "checkedBy": "毎朝の見回り",
    "id": "state"
   }
@@ -3148,6 +3148,18 @@
    "note": "シーズン31（11月開始）はダイアモンド以上でレジェンド禁止フェーズを導入。シーズン32（2027年初頭）はアイアン・エメラルド・グランドマスターの新ランクとリーグ構造の刷新を予定。開始日の詳細は未発表。",
    "status": "一部未発表",
    "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/ranked-roadmap-31-32"
+  },
+  {
+   "id": "s31-cipher-announce",
+   "kind": "season",
+   "title": "シーズン31「サイファー」アップデート発表",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "time": "未発表",
+   "place": "公式ニュース",
+   "note": "クリプトのリワーク、二丁拳銃ウィングマン、新要素ストロングホールド、ダイヤモンド以上のランクでの使用禁止レジェンド投票などが公式に発表された。シーズン開始日と各調整の数値は未発表。",
+   "status": "一部未発表",
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-game-updates"
   }
  ],
  "attachments": [
