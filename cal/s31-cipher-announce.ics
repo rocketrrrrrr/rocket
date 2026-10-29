@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//APEX NOW//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:s31-cipher-announce@rocketrrrrrr.github.io
+DTSTAMP:20261029T235409Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:シーズン31「サイファー」アップデート発表
+LOCATION:公式ニュース
+DESCRIPTION:未発表\nクリプトのリワーク、二丁拳銃ウィ
+ ングマン、新要素ストロングホールド、ダイヤモンド
+ 以上のランクでの使用禁止レジェンド投票などが公式
+ に発表された。シーズン開始日と各調整の数値は未発
+ 表。\n出典：https://www.ea.com/ja/games/apex-legends/apex-legends/n
+ ews/cipher-game-updates\nAPEX NOW（https://rocketrrrrrr.github.io/rocke
+ t/）より
+URL:https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-gam
+ e-updates
+END:VEVENT
+END:VCALENDAR
