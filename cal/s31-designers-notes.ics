@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//APEX NOW//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:s31-designers-notes@rocketrrrrrr.github.io
+DTSTAMP:20261030T235359Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:シーズン31「サイファー」デザイナーノート公開
+LOCATION:公式ニュース
+DESCRIPTION:未発表\nフルパッチノートは11月2日、シーズ
+ ン31の開始は11月3日と案内された。ストロングホール
+ ド、二丁拳銃ウィングマン、ヘムロック復活などの内
+ 容が紹介されたが、個別の数値はフルパッチノートま
+ で未確認。\n出典：https://www.ea.com/ja/games/apex-legends/apex-
+ legends/news/31-0-designers-notes\nAPEX NOW（https://rocketrrrrrr.githu
+ b.io/rocket/）より
+URL:https://www.ea.com/ja/games/apex-legends/apex-legends/news/31-0-desig
+ ners-notes
+END:VEVENT
+END:VCALENDAR
