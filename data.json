@@ -477,7 +477,7 @@
    "split": 2,
    "seasonEnd": "2026-11-03",
    "latestPatchId": "2026-10-28-ranked-fix",
-   "lastChecked": "2026-10-30T08:55:00+09:00",
+   "lastChecked": "2026-10-31T08:53:45+09:00",
    "checkedBy": "毎朝の見回り",
    "id": "state"
   }
@@ -3160,6 +3160,18 @@
    "note": "クリプトのリワーク、二丁拳銃ウィングマン、新要素ストロングホールド、ダイヤモンド以上のランクでの使用禁止レジェンド投票などが公式に発表された。シーズン開始日と各調整の数値は未発表。",
    "status": "一部未発表",
    "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-game-updates"
+  },
+  {
+   "id": "s31-designers-notes",
+   "kind": "season",
+   "title": "シーズン31「サイファー」デザイナーノート公開",
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "time": "未発表",
+   "place": "公式ニュース",
+   "note": "フルパッチノートは11月2日、シーズン31の開始は11月3日と案内された。ストロングホールド、二丁拳銃ウィングマン、ヘムロック復活などの内容が紹介されたが、個別の数値はフルパッチノートまで未確認。",
+   "status": "一部未発表",
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/31-0-designers-notes"
   }
  ],
  "attachments": [
