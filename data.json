@@ -476,13 +476,32 @@
    "seasonName": "Marked",
    "split": 2,
    "seasonEnd": "2026-11-03",
-   "latestPatchId": "2026-10-28-ranked-fix",
-   "lastChecked": "2026-10-31T08:53:45+09:00",
+   "latestPatchId": "2026-11-02-cipher",
+   "lastChecked": "2026-11-03T08:53:45+09:00",
    "checkedBy": "毎朝の見回り",
    "id": "state"
   }
  },
  "patches": [
+  {
+   "id": "2026-11-02-cipher",
+   "date": "2026-11-02",
+   "title": "『Apex Legends: サイファー』パッチノート",
+   "kind": "season",
+   "season": 31,
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes",
+   "summary": "シーズン31「サイファー」（11月3日開幕）のパッチノート。ランクのレジェンドBAN、アキンボ・ウィングマン、ストロングホールドが追加され、クリプトなどのレジェンドと多くの武器が調整された。",
+   "highlights": [
+    "ダイヤモンド以上のランクでレジェンドBANを導入（2体がBAN）",
+    "アキンボ・ウィングマン追加（基本ダメージ 50→45、弾薬はヘビー）",
+    "新要素ストロングホールド：占拠でチームのレベルが1上がる",
+    "クリプトのドローンがバッテリー制に変更",
+    "ライフライン・レヴナントのクールダウン短縮、ローバは増加",
+    "ヘムロック：エリート版を削除しバースト・単発射撃が復活",
+    "L-スター：基本ダメージ 21→19、ストック容量 168→88",
+    "ミックステープは11/3〜1/5、ワイルドカードは各ラウンド開始時にHUDで選択"
+   ]
+  },
   {
    "id": "2026-10-28-ranked-fix",
    "date": "2026-10-28",
@@ -804,8 +823,18 @@
    "category": "ショットガン",
    "pool": "floor",
    "tier": null,
-   "latestDate": null,
-   "history": [],
+   "latestDate": "2026-11-02",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "change",
+     "lines": [
+      "ダブルタップトリガーを削除し、ディスラプター弾を追加"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    }
+   ],
    "ja": "EVA-8",
    "id": "eva8"
   },
@@ -824,8 +853,17 @@
    "category": "マークスマン",
    "pool": "floor",
    "tier": "A+",
-   "latestDate": "2026-08-04",
+   "latestDate": "2026-11-02",
    "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "nerf",
+     "lines": [
+      "スナイパーストック（破損）：連射速度倍率 1.2→1.1"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    },
     {
      "date": "2026-08-04",
      "patchId": "2026-08-04-marked",
@@ -875,8 +913,18 @@
    "category": "AR",
    "pool": "floor",
    "tier": "B+",
-   "latestDate": "2026-08-04",
+   "latestDate": "2026-11-02",
    "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "rework",
+     "lines": [
+      "エリート版を削除し、バースト・単発射撃が復活",
+      "胴体ダメージ 21、ヘッドショット 29"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    },
     {
      "date": "2026-08-04",
      "patchId": "2026-08-04-marked",
@@ -919,8 +967,18 @@
    "category": "スナイパー",
    "pool": "floor",
    "tier": null,
-   "latestDate": null,
-   "history": [],
+   "latestDate": "2026-11-02",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "nerf",
+     "lines": [
+      "スナイパーストック（破損）：連射速度倍率 1.2→1.1"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    }
+   ],
    "ja": "ロングボウ",
    "id": "longbow"
   },
@@ -929,8 +987,20 @@
    "category": "LMG",
    "pool": "care",
    "tier": "S+",
-   "latestDate": "2026-08-04",
+   "latestDate": "2026-11-02",
    "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "nerf",
+     "lines": [
+      "（拾得可能な L-スターEMG）基本ダメージ 21→19",
+      "オーバーヒートまでの射撃数 28→22",
+      "ストック容量 168→88",
+      "レッドラインホップアップを削除"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    },
     {
      "date": "2026-08-04",
      "patchId": "2026-08-04-marked",
@@ -965,8 +1035,19 @@
    "category": "ショットガン",
    "pool": "floor",
    "tier": null,
-   "latestDate": null,
-   "history": [],
+   "latestDate": "2026-11-02",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "buff",
+     "lines": [
+      "アキンボ・モザンビーク（ケアパッケージ）：1ペレットのダメージ 17→18",
+      "毎秒15のシールド回復ホップアップを追加"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    }
+   ],
    "ja": "モザンビーク",
    "id": "mozambique"
   },
@@ -975,8 +1056,17 @@
    "category": "AR",
    "pool": "floor",
    "tier": "A+",
-   "latestDate": "2026-08-04",
+   "latestDate": "2026-11-02",
    "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "nerf",
+     "lines": [
+      "垂直反動が増加"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    },
     {
      "date": "2026-08-04",
      "patchId": "2026-08-04-marked",
@@ -1021,8 +1111,18 @@
    "category": "ショットガン",
    "pool": "floor",
    "tier": null,
-   "latestDate": null,
-   "history": [],
+   "latestDate": "2026-11-02",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "buff",
+     "lines": [
+      "発射速度が上昇"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    }
+   ],
    "ja": "ピースキーパー",
    "id": "peacekeeper"
   },
@@ -1031,8 +1131,18 @@
    "category": "SMG",
    "pool": "floor",
    "tier": "A+",
-   "latestDate": null,
-   "history": [],
+   "latestDate": "2026-11-02",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "nerf",
+     "lines": [
+      "反動が増加し、セレクトファイアホップアップを削除"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    }
+   ],
    "ja": "プラウラー",
    "id": "prowler",
    "insight": {
@@ -1151,8 +1261,17 @@
    "category": "マークスマン",
    "pool": "floor",
    "tier": "S",
-   "latestDate": "2026-09-15",
+   "latestDate": "2026-11-02",
    "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "nerf",
+     "lines": [
+      "スナイパーストック（破損）：連射速度倍率 1.2→1.1"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    },
     {
      "date": "2026-09-15",
      "patchId": "2026-09-15-marked-mid",
@@ -1207,8 +1326,19 @@
    "category": "ピストル",
    "pool": "floor",
    "tier": "A",
-   "latestDate": null,
-   "history": [],
+   "latestDate": "2026-11-02",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "change",
+     "lines": [
+      "アキンボ・ウィングマン追加：基本ダメージ 50→45、弾薬はスナイパーからヘビーに変更",
+      "2丁目を拾うと自動でアキンボモードになり、マガジンサイズは2倍、反動とリロード時間は増加"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    }
+   ],
    "ja": "ウィングマン",
    "id": "wingman",
    "insight": {
@@ -1360,8 +1490,18 @@
    "en": "Axle",
    "cls": "skirm",
    "tier": "S",
-   "latestDate": "2026-10-01",
+   "latestDate": "2026-11-02",
    "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "nerf",
+     "lines": [
+      "（10/1 ホットフィックス分）ノックアップの最大値 700→650",
+      "ドローンの追跡時間 10秒→8秒"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    },
     {
      "date": "2026-10-01",
      "patchId": "2026-10-01-marked-update",
@@ -1866,8 +2006,19 @@
    "en": "Crypto",
    "cls": "recon",
    "tier": "B+",
-   "latestDate": null,
-   "history": [],
+   "latestDate": "2026-11-02",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "rework",
+     "lines": [
+      "ドローンがバッテリー制に変更（稼働25秒、回収6秒）",
+      "マーク時間 8秒、マークのクールダウン 4秒"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    }
+   ],
    "img": "img/crypto.webp",
    "id": "crypto",
    "abilities": {
@@ -2121,8 +2272,18 @@
    "en": "Lifeline",
    "cls": "support",
    "tier": null,
-   "latestDate": null,
-   "history": [],
+   "latestDate": "2026-11-02",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "buff",
+     "lines": [
+      "戦術のクールダウン 25秒→15秒"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    }
+   ],
    "img": "img/lifeline.webp",
    "id": "lifeline",
    "abilities": {
@@ -2185,8 +2346,18 @@
    "en": "Loba",
    "cls": "support",
    "tier": "S",
-   "latestDate": "2026-08-04",
+   "latestDate": "2026-11-02",
    "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "nerf",
+     "lines": [
+      "戦術のクールダウン 25秒→30秒",
+      "アルティメットのクールダウン 120秒→150秒"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    },
     {
      "date": "2026-08-04",
      "patchId": "2026-08-04-marked",
@@ -2639,8 +2810,19 @@
    "en": "Revenant",
    "cls": "assault",
    "tier": "A",
-   "latestDate": null,
-   "history": [],
+   "latestDate": "2026-11-02",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "patchId": "2026-11-02-cipher",
+     "dir": "buff",
+     "lines": [
+      "戦術のクールダウン 20秒→15秒",
+      "アルティメットのクールダウン 180秒→150秒"
+     ],
+     "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+    }
+   ],
    "img": "img/revenant.webp",
    "id": "revenant",
    "abilities": {
@@ -3172,6 +3354,41 @@
    "note": "フルパッチノートは11月2日、シーズン31の開始は11月3日と案内された。ストロングホールド、二丁拳銃ウィングマン、ヘムロック復活などの内容が紹介されたが、個別の数値はフルパッチノートまで未確認。",
    "status": "一部未発表",
    "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/31-0-designers-notes"
+  },
+  {
+   "id": "s31-cipher-start",
+   "kind": "season",
+   "title": "シーズン31「サイファー」開幕",
+   "start": "2026-11-03",
+   "end": "2026-11-03",
+   "time": "未発表",
+   "place": "全プラットフォーム",
+   "note": "パッチノートでシーズン31の開幕が11月3日と案内された。開始時刻は未発表。",
+   "status": "一部未発表",
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+  },
+  {
+   "id": "s31-ranked-ladder1",
+   "kind": "season",
+   "title": "ランク ラダー1（シーズン31）",
+   "start": "2026-11-10",
+   "end": "2026-11-15",
+   "time": "未発表",
+   "place": "ランクマッチ",
+   "note": "パッチノートによると、ラダー1は11月10日〜15日。ラダー5は12月8日〜13日。",
+   "status": "一部未発表",
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+  },
+  {
+   "id": "s31-mixtape",
+   "kind": "ingame",
+   "title": "ミックステープ（TDM・コントロール・ガンゲーム）",
+   "start": "2026-11-03",
+   "end": "2027-01-05",
+   "time": "未発表",
+   "place": "ミックステープ",
+   "note": "パッチノートによると、ミックステープは11月3日〜1月5日にTDM、コントロール、ガンゲームの各マップで開催される。",
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
   }
  ],
  "attachments": [
