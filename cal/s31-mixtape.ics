@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//APEX NOW//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:s31-mixtape@rocketrrrrrr.github.io
+DTSTAMP:20261102T235359Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20270106
+SUMMARY:ミックステープ（TDM・コントロール・ガンゲー
+ ム）
+LOCATION:ミックステープ
+DESCRIPTION:未発表\nパッチノートによると、ミックステ
+ ープは11月3日〜1月5日にTDM、コントロール、ガンゲー
+ ムの各マップで開催される。\n出典：https://www.ea.com/ja/
+ games/apex-legends/apex-legends/news/cipher-patch-notes\nAPEX NOW（http
+ s://rocketrrrrrr.github.io/rocket/）より
+URL:https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-pat
+ ch-notes
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//APEX NOW//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:s31-ranked-ladder1@rocketrrrrrr.github.io
+DTSTAMP:20261102T235359Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261116
+SUMMARY:ランク ラダー1（シーズン31）
+LOCATION:ランクマッチ
+DESCRIPTION:未発表\nパッチノートによると、ラダー1は11
+ 月10日〜15日。ラダー5は12月8日〜13日。\n出典：https://w
+ ww.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes\nAP
+ EX NOW（https://rocketrrrrrr.github.io/rocket/）より
+URL:https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-pat
+ ch-notes
+END:VEVENT
+END:VCALENDAR
