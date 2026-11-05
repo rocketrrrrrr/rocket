@@ -477,8 +477,8 @@
    "split": 2,
    "seasonEnd": "2026-11-03",
    "latestPatchId": "2026-11-02-cipher",
-   "lastChecked": "2026-11-04T09:50:19+09:00",
-   "checkedBy": "定期チェック",
+   "lastChecked": "2026-11-06T08:53:22+09:00",
+   "checkedBy": "毎朝の見回り",
    "id": "state"
   }
  },
@@ -3377,6 +3377,18 @@
    "place": "ミックステープ",
    "note": "パッチノートによると、ミックステープは11月3日〜1月5日にTDM、コントロール、ガンゲームの各マップで開催される。",
    "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+  },
+  {
+   "id": "godzilla-event",
+   "kind": "ingame",
+   "title": "ゴジライベント",
+   "start": "2026-11-10",
+   "end": "2026-12-01",
+   "time": "公式発表：11月10日〜12月1日（時刻は未発表）",
+   "place": "ゲーム内",
+   "note": "ゴジラ作品とのコラボイベント。イベントパスでオクタン用エピックスキン「ジェットジャガー」などを入手できる。11月10〜17日はTwitchドロップも実施。",
+   "status": "一部未発表",
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/godzilla-event"
   }
  ],
  "attachments": [
