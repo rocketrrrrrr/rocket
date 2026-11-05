@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//APEX NOW//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:godzilla-event@rocketrrrrrr.github.io
+DTSTAMP:20261105T235337Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261202
+SUMMARY:ゴジライベント
+LOCATION:ゲーム内
+DESCRIPTION:公式発表：11月10日〜12月1日（時刻は未発表）
+ \nゴジラ作品とのコラボイベント。イベントパスでオ
+ クタン用エピックスキン「ジェットジャガー」などを
+ 入手できる。11月10〜17日はTwitchドロップも実施。\n出
+ 典：https://www.ea.com/ja/games/apex-legends/apex-legends/news/godzill
+ a-event\nAPEX NOW（https://rocketrrrrrr.github.io/rocket/）より
+URL:https://www.ea.com/ja/games/apex-legends/apex-legends/news/godzilla-e
+ vent
+END:VEVENT
+END:VCALENDAR
