@@ -476,13 +476,26 @@
    "seasonName": "Marked",
    "split": 2,
    "seasonEnd": "2026-11-03",
-   "latestPatchId": "2026-11-11-crypto-update",
-   "lastChecked": "2026-11-11T09:55:11+09:00",
-   "checkedBy": "定期チェック",
+   "latestPatchId": "2026-11-13-wingman-fix",
+   "lastChecked": "2026-11-13T08:54:16+09:00",
+   "checkedBy": "毎朝の見回り",
    "id": "state"
   }
  },
  "patches": [
+  {
+   "id": "2026-11-13-wingman-fix",
+   "date": "2026-11-13",
+   "title": "アップデート（11/12 付）",
+   "kind": "hotfix",
+   "season": 31,
+   "url": "https://store.steampowered.com/news/app/1172470/view/708914425087656297",
+   "summary": "アキンボ・ウィングマンを想定より速く撃てる不具合と、降下船の経路が原因のクラッシュを修正。",
+   "highlights": [
+    "修正：アキンボ・ウィングマンを想定より速く連射できる不具合（エクスプロイト）",
+    "修正：降下船の経路の誤りによって起きるクライアントのクラッシュ"
+   ]
+  },
   {
    "id": "2026-11-11-crypto-update",
    "date": "2026-11-11",
@@ -1373,8 +1386,17 @@
    "category": "ピストル",
    "pool": "floor",
    "tier": "A",
-   "latestDate": "2026-11-02",
+   "latestDate": "2026-11-13",
    "history": [
+    {
+     "date": "2026-11-13",
+     "patchId": "2026-11-13-wingman-fix",
+     "dir": "change",
+     "lines": [
+      "修正：アキンボ・ウィングマンを想定より速く連射できる不具合（エクスプロイト）"
+     ],
+     "url": "https://store.steampowered.com/news/app/1172470/view/708914425087656297"
+    },
     {
      "date": "2026-11-02",
      "patchId": "2026-11-02-cipher",
