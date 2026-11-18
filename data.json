@@ -1,8 +1,8 @@
 {
  "site": {
   "meta": {
-   "updated": "2026-11-11",
-   "source": "Two Average Gamers（2026-09-17） / LFCarry（2026-11-11） / ApexRanked プレデター帯ピック率（2026-11-10）",
+   "updated": "2026-11-18",
+   "source": "Two Average Gamers（2026-09-17） / LFCarry（2026-11-18） / ApexRanked プレデター帯ピック率（2026-11-17）",
    "sourceUrls": [
     "https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/",
     "https://lfcarry.com/guides/apex-legends-tier-list",
@@ -77,73 +77,73 @@
      "id": "loba",
      "tier": "S",
      "trend": "same",
-     "reason": "プレデター帯ピック率 17.6% で2位、LFCarry で S、Two Average Gamers で S"
+     "reason": "プレデター帯ピック率 17.9% で2位、LFCarry で S、Two Average Gamers で S"
     },
     {
      "rank": 2,
      "id": "pathfinder",
      "tier": "S",
      "trend": "same",
-     "reason": "プレデター帯ピック率 20.7% で1位、LFCarry で S、Two Average Gamers で A+"
+     "reason": "プレデター帯ピック率 21.1% で1位、LFCarry で S、Two Average Gamers で A+"
     },
     {
      "rank": 3,
      "id": "axle",
      "tier": "S",
      "trend": "same",
-     "reason": "プレデター帯ピック率 1.4%（14位）、LFCarry で S、Two Average Gamers で S"
+     "reason": "プレデター帯ピック率 0.9%（18位）、LFCarry で S、Two Average Gamers で S"
     },
     {
      "rank": 4,
      "id": "revenant",
      "tier": "A",
-     "trend": "up",
-     "reason": "プレデター帯ピック率 13.2% で3位、LFCarry で A、Two Average Gamers に記載なし"
+     "trend": "same",
+     "reason": "プレデター帯ピック率 15.8% で3位、LFCarry で A、Two Average Gamers に記載なし"
     },
     {
      "rank": 5,
      "id": "seer",
      "tier": "A+",
-     "trend": "down",
-     "reason": "プレデター帯ピック率 2.7% で9位、LFCarry で A、Two Average Gamers で S"
+     "trend": "same",
+     "reason": "プレデター帯ピック率 1.9%（12位）、LFCarry で A、Two Average Gamers で S"
     },
     {
      "rank": 6,
      "id": "octane",
      "tier": "A",
      "trend": "same",
-     "reason": "プレデター帯ピック率 9.3% で4位、LFCarry で A、Two Average Gamers に記載なし"
+     "reason": "プレデター帯ピック率 10.4% で4位、LFCarry で A、Two Average Gamers に記載なし"
     },
     {
      "rank": 7,
      "id": "vantage",
      "tier": "A+",
-     "trend": "down",
-     "reason": "プレデター帯ピック率 1.8%（12位）、LFCarry で A、Two Average Gamers で A+"
+     "trend": "same",
+     "reason": "プレデター帯ピック率 1.7%（13位）、LFCarry で A、Two Average Gamers で A+"
     },
     {
      "rank": 8,
-     "id": "alter",
-     "tier": "A",
-     "trend": "new",
-     "reason": "プレデター帯ピック率 6.4% で5位、LFCarry で A、Two Average Gamers に記載なし"
+     "id": "conduit",
+     "tier": "A+",
+     "trend": "up",
+     "reason": "プレデター帯ピック率 1.5%（14位）、LFCarry で A、Two Average Gamers で A+"
     },
     {
      "rank": 9,
-     "id": "conduit",
-     "tier": "A+",
+     "id": "alter",
+     "tier": "A",
      "trend": "down",
-     "reason": "プレデター帯ピック率 1.0%（19位）、LFCarry で A、Two Average Gamers で A+"
+     "reason": "プレデター帯ピック率 5.5% で5位、LFCarry で A、Two Average Gamers に記載なし"
     },
     {
      "rank": 10,
      "id": "mad-maggie",
      "tier": "A",
-     "trend": "down",
-     "reason": "プレデター帯ピック率 4.8% で6位、LFCarry で A、Two Average Gamers に記載なし"
+     "trend": "same",
+     "reason": "プレデター帯ピック率 3.6% で6位、LFCarry で A、Two Average Gamers に記載なし"
     }
    ],
-   "rankingBasis": "ティアリスト2件（9/17・11/11）の評価とプレデター帯ピック率（11/10時点）を合算",
+   "rankingBasis": "ティアリスト2件（9/17・11/18）の評価とプレデター帯ピック率（11/17時点）を合算",
    "notes": [
     "ローバ はプレデター帯でピック率24.9%（1位）。ルートが減った今シーズンは物資を確保できる価値が高い",
     "アクセル は LFCarry・Two Average Gamers ともに S だが、プレデター帯ピック率は 1.7%（11位）まで下がっている",
@@ -162,28 +162,28 @@
       "revenant"
      ],
      "tag": "最多",
-     "stat": "18回観測・平均RP +185.0（1試合）",
+     "stat": "42回観測・平均RP +208.9（1試合）",
      "note": "ローバ・パスファインダー・レヴナントの組み合わせ"
     },
     {
      "legends": [
-      "alter",
       "loba",
-      "revenant"
-     ],
-     "tag": "",
-     "stat": "10回観測・平均RP +220.3（1試合）",
-     "note": "オルター・ローバ・レヴナントの組み合わせ"
-    },
-    {
-     "legends": [
-      "alter",
-      "loba",
+      "octane",
       "pathfinder"
      ],
      "tag": "",
-     "stat": "6回観測・平均RP +257.0（1試合）",
-     "note": "オルター・ローバ・パスファインダーの組み合わせ"
+     "stat": "14回観測・平均RP +204.8（1試合）",
+     "note": "ローバ・オクタン・パスファインダーの組み合わせ"
+    },
+    {
+     "legends": [
+      "gibraltar",
+      "pathfinder",
+      "revenant"
+     ],
+     "tag": "",
+     "stat": "12回観測・平均RP +85.0（1試合）",
+     "note": "ジブラルタル・パスファインダー・レヴナントの組み合わせ"
     }
    ],
    "compsSources": [
@@ -200,8 +200,8 @@
     {
      "id": "pred",
      "label": "プレデター",
-     "scope": "プレデター595人の集計（ApexRanked の 11/9〜11/10 の24時間、シーズン31 スプリット1）",
-     "updated": "2026-11-10",
+     "scope": "プレデター1,390人の集計（ApexRanked の 11/16〜11/17 の24時間、シーズン31 スプリット1）",
+     "updated": "2026-11-17",
      "comps": [
       {
        "legends": [
@@ -210,50 +210,50 @@
         "revenant"
        ],
        "tag": "最多",
-       "stat": "18回観測・平均RP +185.0（1試合）",
+       "stat": "42回観測・平均RP +208.9（1試合）",
        "note": "ローバ・パスファインダー・レヴナントの組み合わせ"
       },
       {
        "legends": [
-        "alter",
         "loba",
-        "revenant"
-       ],
-       "tag": "",
-       "stat": "10回観測・平均RP +220.3（1試合）",
-       "note": "オルター・ローバ・レヴナントの組み合わせ"
-      },
-      {
-       "legends": [
-        "alter",
-        "loba",
+        "octane",
         "pathfinder"
        ],
        "tag": "",
-       "stat": "6回観測・平均RP +257.0（1試合）",
-       "note": "オルター・ローバ・パスファインダーの組み合わせ"
+       "stat": "14回観測・平均RP +204.8（1試合）",
+       "note": "ローバ・オクタン・パスファインダーの組み合わせ"
+      },
+      {
+       "legends": [
+        "gibraltar",
+        "pathfinder",
+        "revenant"
+       ],
+       "tag": "",
+       "stat": "12回観測・平均RP +85.0（1試合）",
+       "note": "ジブラルタル・パスファインダー・レヴナントの組み合わせ"
       }
      ],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 20.7
+       "rate": 21.1
       },
       {
        "id": "loba",
-       "rate": 17.6
+       "rate": 17.9
       },
       {
        "id": "revenant",
-       "rate": 13.2
+       "rate": 15.8
       },
       {
        "id": "octane",
-       "rate": 9.3
+       "rate": 10.4
       },
       {
        "id": "alter",
-       "rate": 6.4
+       "rate": 5.5
       }
      ],
      "sources": [
@@ -271,40 +271,40 @@
      "id": "masterpred",
      "label": "マスター＋プレデター",
      "scope": "マスターとプレデターの合算。マスターだけの集計は公開されていません。サンプルが少なめです",
-     "updated": "2026-11-11",
+     "updated": "2026-11-18",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 19.6
+       "rate": 18.7
       },
       {
        "id": "loba",
-       "rate": 15.1
+       "rate": 14.5
       },
       {
        "id": "revenant",
-       "rate": 12.7
+       "rate": 13
       },
       {
        "id": "octane",
-       "rate": 7.6
+       "rate": 9.6
       },
       {
        "id": "mad-maggie",
-       "rate": 5.5
+       "rate": 6.1
       },
       {
        "id": "alter",
-       "rate": 5.0
+       "rate": 4.9
       },
       {
-       "id": "horizon",
+       "id": "bangalore",
        "rate": 4.1
       },
       {
-       "id": "wraith",
-       "rate": 3.6
+       "id": "horizon",
+       "rate": 3.7
       }
      ],
      "sources": [
@@ -318,12 +318,12 @@
      "id": "diamond",
      "label": "ダイヤ",
      "scope": "ダイヤ帯の集計",
-     "updated": "2026-11-11",
+     "updated": "2026-11-18",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 17.4
+       "rate": 17.3
       },
       {
        "id": "loba",
@@ -331,27 +331,27 @@
       },
       {
        "id": "revenant",
-       "rate": 10.3
+       "rate": 10.7
       },
       {
        "id": "mad-maggie",
-       "rate": 7.2
+       "rate": 8.4
       },
       {
        "id": "octane",
-       "rate": 7.1
+       "rate": 6.3
       },
       {
        "id": "alter",
-       "rate": 4.5
+       "rate": 5.2
       },
       {
        "id": "bangalore",
-       "rate": 4.4
+       "rate": 5.2
       },
       {
        "id": "axle",
-       "rate": 4.3
+       "rate": 3.6
       }
      ],
      "sources": [
@@ -365,40 +365,40 @@
      "id": "platinum",
      "label": "プラチナ",
      "scope": "プラチナ帯の集計",
-     "updated": "2026-11-11",
+     "updated": "2026-11-18",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 15.5
-      },
-      {
-       "id": "revenant",
-       "rate": 10.8
+       "rate": 15.6
       },
       {
        "id": "mad-maggie",
-       "rate": 7.5
+       "rate": 8.3
+      },
+      {
+       "id": "revenant",
+       "rate": 8.3
       },
       {
        "id": "loba",
-       "rate": 6.9
-      },
-      {
-       "id": "lifeline",
-       "rate": 6.3
+       "rate": 6.5
       },
       {
        "id": "octane",
-       "rate": 6.3
+       "rate": 6.2
+      },
+      {
+       "id": "lifeline",
+       "rate": 5.8
       },
       {
        "id": "bangalore",
-       "rate": 5.0
+       "rate": 5.1
       },
       {
        "id": "wraith",
-       "rate": 4.5
+       "rate": 4.6
       }
      ],
      "sources": [
@@ -412,40 +412,40 @@
      "id": "gold",
      "label": "ゴールド",
      "scope": "ゴールド帯の集計",
-     "updated": "2026-11-11",
+     "updated": "2026-11-18",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 13.2
+       "rate": 12.6
       },
       {
        "id": "revenant",
-       "rate": 9.9
+       "rate": 7.3
       },
       {
        "id": "lifeline",
-       "rate": 8.5
-      },
-      {
-       "id": "mad-maggie",
-       "rate": 6.6
+       "rate": 7.3
       },
       {
        "id": "octane",
-       "rate": 6.4
+       "rate": 7.1
+      },
+      {
+       "id": "mad-maggie",
+       "rate": 6.9
       },
       {
        "id": "wraith",
-       "rate": 5.2
-      },
-      {
-       "id": "crypto",
-       "rate": 4.9
+       "rate": 5.3
       },
       {
        "id": "loba",
        "rate": 4.7
+      },
+      {
+       "id": "bangalore",
+       "rate": 4.4
       }
      ],
      "sources": [
@@ -462,23 +462,23 @@
      "url": "https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/"
     },
     {
-     "name": "LFCarry（2026-11-11）",
+     "name": "LFCarry（2026-11-18）",
      "url": "https://lfcarry.com/guides/apex-legends-tier-list"
     },
     {
-     "name": "ApexRanked プレデター帯ピック率（2026-11-10）",
+     "name": "ApexRanked プレデター帯ピック率（2026-11-17）",
      "url": "https://apexranked.com/meta"
     }
    ]
   },
   "state": {
-   "season": 30,
-   "seasonName": "Marked",
-   "split": 2,
-   "seasonEnd": "2026-11-03",
+   "season": 31,
+   "seasonName": "Cipher",
+   "split": 1,
+   "seasonEnd": null,
    "latestPatchId": "2026-11-18-drain-gain-fix",
-   "lastChecked": "2026-11-18T08:53:44+09:00",
-   "checkedBy": "毎朝の見回り",
+   "lastChecked": "2026-11-18T09:52:42+09:00",
+   "checkedBy": "定期チェック",
    "id": "state"
   }
  },
@@ -3387,87 +3387,6 @@
  ],
  "events": [
   {
-   "id": "ranked-ladders",
-   "kind": "season",
-   "title": "ランク ラダー（Split 2）",
-   "start": "2026-09-22",
-   "end": "2026-11-01",
-   "time": "",
-   "place": "ゲーム内",
-   "note": "9/22〜11/1 に6回のラダーを予定",
-   "url": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes"
-  },
-  {
-   "id": "algs-y6-s2-playoffs",
-   "kind": "esports",
-   "title": "ALGS Year 6 Split 2 プレイオフ",
-   "start": "2026-10-29",
-   "end": "2026-11-01",
-   "time": "現地時間",
-   "place": "ラスベガス（アメリカ）",
-   "note": "世界の強豪チームが集まるオフライン大会。チャンピオンシップポイントを争う",
-   "url": "https://algs.ea.com/en/year-6/split-2-playoffs/competition-overview"
-  },
-  {
-   "id": "blood-pact",
-   "kind": "ingame",
-   "title": "血の盟約イベント",
-   "start": "2026-10-13",
-   "end": "2026-11-03",
-   "time": "公式発表：10月13日〜11月3日（時刻は未発表）",
-   "place": "ゲーム内（キングスキャニオン）",
-   "note": "野獣か悪魔の陣営に加わり、チャレンジ達成でワイルドカードを獲得するイベント。マップにランダムで霧が発生する。スパロー・オルターの新スキンが登場。",
-   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/blood-pact-event"
-  },
-  {
-   "id": "s31-cipher-announce",
-   "kind": "season",
-   "title": "シーズン31「サイファー」アップデート発表",
-   "start": "2026-10-29",
-   "end": "2026-10-29",
-   "time": "未発表",
-   "place": "公式ニュース",
-   "note": "クリプトのリワーク、二丁拳銃ウィングマン、新要素ストロングホールド、ダイヤモンド以上のランクでの使用禁止レジェンド投票などが公式に発表された。シーズン開始日と各調整の数値は未発表。",
-   "status": "一部未発表",
-   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-game-updates"
-  },
-  {
-   "id": "s31-designers-notes",
-   "kind": "season",
-   "title": "シーズン31「サイファー」デザイナーノート公開",
-   "start": "2026-10-30",
-   "end": "2026-10-30",
-   "time": "未発表",
-   "place": "公式ニュース",
-   "note": "フルパッチノートは11月2日、シーズン31の開始は11月3日と案内された。ストロングホールド、二丁拳銃ウィングマン、ヘムロック復活などの内容が紹介されたが、個別の数値はフルパッチノートまで未確認。",
-   "status": "一部未発表",
-   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/31-0-designers-notes"
-  },
-  {
-   "id": "s31-cipher-start",
-   "kind": "season",
-   "title": "シーズン31「サイファー」開幕",
-   "start": "2026-11-03",
-   "end": "2026-11-03",
-   "time": "未発表",
-   "place": "全プラットフォーム",
-   "note": "パッチノートでシーズン31の開幕が11月3日と案内された。開始時刻は未発表。",
-   "status": "一部未発表",
-   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
-  },
-  {
-   "id": "s31-ranked-ladder1",
-   "kind": "season",
-   "title": "ランク ラダー1（シーズン31）",
-   "start": "2026-11-10",
-   "end": "2026-11-15",
-   "time": "未発表",
-   "place": "ランクマッチ",
-   "note": "パッチノートによると、ラダー1は11月10日〜15日。ラダー5は12月8日〜13日。",
-   "status": "一部未発表",
-   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
-  },
-  {
    "id": "s31-mixtape",
    "kind": "ingame",
    "title": "ミックステープ（TDM・コントロール・ガンゲーム）",
@@ -3489,6 +3408,66 @@
    "note": "ゴジラ作品とのコラボイベント。イベントパスでオクタン用エピックスキン「ジェットジャガー」などを入手できる。11月10〜17日はTwitchドロップも実施。",
    "status": "一部未発表",
    "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/godzilla-event"
+  },
+  {
+   "id": "s31-ranked-ladder1",
+   "kind": "season",
+   "title": "ランク ラダー1（シーズン31）",
+   "start": "2026-11-10",
+   "end": "2026-11-15",
+   "time": "未発表",
+   "place": "ランクマッチ",
+   "note": "パッチノートによると、ラダー1は11月10日〜15日。ラダー5は12月8日〜13日。",
+   "status": "一部未発表",
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+  },
+  {
+   "id": "s31-ranked-ladder2",
+   "kind": "season",
+   "title": "ランク ラダー2（シーズン31）",
+   "start": "2026-11-17",
+   "end": "2026-11-22",
+   "time": "未発表",
+   "place": "ランクマッチ",
+   "note": "シーズン31のパッチノートで、ラダー2は11月17日〜11月22日と案内された。開始時刻は未発表。",
+   "status": "一部未発表",
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+  },
+  {
+   "id": "s31-ranked-ladder3",
+   "kind": "season",
+   "title": "ランク ラダー3（シーズン31）",
+   "start": "2026-11-24",
+   "end": "2026-11-29",
+   "time": "未発表",
+   "place": "ランクマッチ",
+   "note": "シーズン31のパッチノートで、ラダー3は11月24日〜11月29日と案内された。開始時刻は未発表。",
+   "status": "一部未発表",
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+  },
+  {
+   "id": "s31-ranked-ladder4",
+   "kind": "season",
+   "title": "ランク ラダー4（シーズン31）",
+   "start": "2026-12-01",
+   "end": "2026-12-06",
+   "time": "未発表",
+   "place": "ランクマッチ",
+   "note": "シーズン31のパッチノートで、ラダー4は12月1日〜12月6日と案内された。開始時刻は未発表。",
+   "status": "一部未発表",
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
+  },
+  {
+   "id": "s31-ranked-ladder5",
+   "kind": "season",
+   "title": "ランク ラダー5（シーズン31）",
+   "start": "2026-12-08",
+   "end": "2026-12-13",
+   "time": "未発表",
+   "place": "ランクマッチ",
+   "note": "シーズン31のパッチノートで、ラダー5は12月8日〜12月13日と案内された。開始時刻は未発表。",
+   "status": "一部未発表",
+   "url": "https://www.ea.com/ja/games/apex-legends/apex-legends/news/cipher-patch-notes"
   }
  ],
  "attachments": [
