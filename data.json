@@ -476,13 +476,29 @@
    "seasonName": "Cipher",
    "split": 1,
    "seasonEnd": null,
-   "latestPatchId": "2026-11-19-upgrade-tree-fix",
-   "lastChecked": "2026-11-25T09:52:39+09:00",
-   "checkedBy": "定期チェック",
+   "latestPatchId": "2026-11-26-crypto-drone-edistrict",
+   "lastChecked": "2026-11-26T08:53:45+09:00",
+   "checkedBy": "毎朝の見回り",
    "id": "state"
   }
  },
  "patches": [
+  {
+   "id": "2026-11-26-crypto-drone-edistrict",
+   "date": "2026-11-26",
+   "title": "アップデート（11/25 付）",
+   "kind": "patch",
+   "season": 31,
+   "url": "https://store.steampowered.com/news/app/1172470/view/680768104678031635",
+   "summary": "夜の E-District がマップローテーションに復帰し、霧を薄くするなど視認性を改善。クリプトのドローンの展開が速くなり、バッテリーは操縦中だけ減るようになった。",
+   "highlights": [
+    "マップ：夜の E-District がローテーションに復帰（明るさを上げ、霧の濃さ約20%減、霧の明るさ約40%減、霧の描画距離2倍）",
+    "クリプト：ドローンの展開と乗り込みにかかる時間 2.2秒→1.3秒",
+    "クリプト：ドローンのバッテリーが操縦中のみ減るように変更",
+    "修正：フューズのアルティメット（マザーロード）での Breach モード関連のクラッシュ、敵の体力バーを設定で非表示にできない不具合、シェーダーのコンパイルが100%で完了しないことがある不具合 など",
+    "追加：プレイヤーが BAN によりキックされた際、マッチ内のメッセージで表示されるようになった"
+   ]
+  },
   {
    "id": "2026-11-19-upgrade-tree-fix",
    "date": "2026-11-19",
@@ -2108,8 +2124,18 @@
    "en": "Crypto",
    "cls": "recon",
    "tier": "B+",
-   "latestDate": "2026-11-11",
+   "latestDate": "2026-11-26",
    "history": [
+    {
+     "date": "2026-11-26",
+     "patchId": "2026-11-26-crypto-drone-edistrict",
+     "dir": "buff",
+     "lines": [
+      "ドローンの展開と乗り込みにかかる時間 2.2秒→1.3秒",
+      "ドローンのバッテリーが操縦中のみ減るように変更"
+     ],
+     "url": "https://store.steampowered.com/news/app/1172470/view/680768104678031635"
+    },
     {
      "date": "2026-11-11",
      "patchId": "2026-11-11-crypto-update",
