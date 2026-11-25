@@ -1,8 +1,8 @@
 {
  "site": {
   "meta": {
-   "updated": "2026-11-18",
-   "source": "Two Average Gamers（2026-09-17） / LFCarry（2026-11-18） / ApexRanked プレデター帯ピック率（2026-11-17）",
+   "updated": "2026-11-24",
+   "source": "Two Average Gamers（2026-09-17） / LFCarry（2026-11-21） / ApexRanked プレデター帯ピック率（2026-11-24）",
    "sourceUrls": [
     "https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/",
     "https://lfcarry.com/guides/apex-legends-tier-list",
@@ -31,7 +31,7 @@
       "revenant",
       "octane",
       "alter",
-      "mad-maggie"
+      "gibraltar"
      ]
     }
    ],
@@ -77,28 +77,28 @@
      "id": "loba",
      "tier": "S",
      "trend": "same",
-     "reason": "プレデター帯ピック率 17.9% で2位、LFCarry で S、Two Average Gamers で S"
+     "reason": "プレデター帯ピック率 17.8% で2位、LFCarry で S、Two Average Gamers で S"
     },
     {
      "rank": 2,
      "id": "pathfinder",
      "tier": "S",
      "trend": "same",
-     "reason": "プレデター帯ピック率 21.1% で1位、LFCarry で S、Two Average Gamers で A+"
+     "reason": "プレデター帯ピック率 20.6% で1位、LFCarry で S、Two Average Gamers で A+"
     },
     {
      "rank": 3,
      "id": "axle",
      "tier": "S",
      "trend": "same",
-     "reason": "プレデター帯ピック率 0.9%（18位）、LFCarry で S、Two Average Gamers で S"
+     "reason": "プレデター帯ピック率 1.4%（15位）、LFCarry で S、Two Average Gamers で S"
     },
     {
      "rank": 4,
      "id": "revenant",
      "tier": "A",
      "trend": "same",
-     "reason": "プレデター帯ピック率 15.8% で3位、LFCarry で A、Two Average Gamers に記載なし"
+     "reason": "プレデター帯ピック率 15.4% で3位、LFCarry で A、Two Average Gamers に記載なし"
     },
     {
      "rank": 5,
@@ -112,42 +112,42 @@
      "id": "octane",
      "tier": "A",
      "trend": "same",
-     "reason": "プレデター帯ピック率 10.4% で4位、LFCarry で A、Two Average Gamers に記載なし"
+     "reason": "プレデター帯ピック率 11.5% で4位、LFCarry で A、Two Average Gamers に記載なし"
     },
     {
      "rank": 7,
      "id": "vantage",
      "tier": "A+",
      "trend": "same",
-     "reason": "プレデター帯ピック率 1.7%（13位）、LFCarry で A、Two Average Gamers で A+"
+     "reason": "プレデター帯ピック率 2.2%（11位）、LFCarry で A、Two Average Gamers で A+"
     },
     {
      "rank": 8,
      "id": "conduit",
      "tier": "A+",
-     "trend": "up",
-     "reason": "プレデター帯ピック率 1.5%（14位）、LFCarry で A、Two Average Gamers で A+"
+     "trend": "same",
+     "reason": "プレデター帯ピック率 1.4%（16位）、LFCarry で A、Two Average Gamers で A+"
     },
     {
      "rank": 9,
      "id": "alter",
      "tier": "A",
-     "trend": "down",
-     "reason": "プレデター帯ピック率 5.5% で5位、LFCarry で A、Two Average Gamers に記載なし"
+     "trend": "same",
+     "reason": "プレデター帯ピック率 4.5% で5位、LFCarry で A、Two Average Gamers に記載なし"
     },
     {
      "rank": 10,
-     "id": "mad-maggie",
+     "id": "gibraltar",
      "tier": "A",
-     "trend": "same",
-     "reason": "プレデター帯ピック率 3.6% で6位、LFCarry で A、Two Average Gamers に記載なし"
+     "trend": "new",
+     "reason": "プレデター帯ピック率 3.5% で6位、LFCarry で A、Two Average Gamers に記載なし"
     }
    ],
-   "rankingBasis": "ティアリスト2件（9/17・11/18）の評価とプレデター帯ピック率（11/17時点）を合算",
+   "rankingBasis": "ティアリスト2件（9/17・11/21）の評価とプレデター帯ピック率（11/24時点）を合算",
    "notes": [
-    "ローバ はプレデター帯でピック率24.9%（1位）。ルートが減った今シーズンは物資を確保できる価値が高い",
-    "アクセル は LFCarry・Two Average Gamers ともに S だが、プレデター帯ピック率は 1.7%（11位）まで下がっている",
-    "パスファインダー は LFCarry で S 評価。プレデター帯ピック率 18.9% で2位、ゴールド〜ダイヤ帯でも1位",
+    "ローバ はプレデター帯でピック率17.8%（2位）。ルートが減った今シーズンは物資を確保できる価値が高い",
+    "アクセル は LFCarry・Two Average Gamers ともに S だが、プレデター帯ピック率は 1.4%（15位）にとどまる",
+    "パスファインダー は LFCarry で S 評価。プレデター帯ピック率 20.6% で1位、ゴールド〜ダイヤ帯でも1位",
     "シア は LFCarry で A、Two Average Gamers で S。戦術でシールド・壁・蘇生などの発動を止められる点が評価されている",
     "遠距離武器（30-30リピーター / チャージライフル / トリプルテイク）が強い環境。破損アタッチメントで構成の選び方が変わった"
    ],
@@ -162,7 +162,7 @@
       "revenant"
      ],
      "tag": "最多",
-     "stat": "42回観測・平均RP +208.9（1試合）",
+     "stat": "38回観測・平均RP +141.1（7試合）",
      "note": "ローバ・パスファインダー・レヴナントの組み合わせ"
     },
     {
@@ -172,18 +172,18 @@
       "pathfinder"
      ],
      "tag": "",
-     "stat": "14回観測・平均RP +204.8（1試合）",
+     "stat": "24回観測・平均RP +79.5（5試合）",
      "note": "ローバ・オクタン・パスファインダーの組み合わせ"
     },
     {
      "legends": [
-      "gibraltar",
-      "pathfinder",
-      "revenant"
+      "loba",
+      "mad-maggie",
+      "pathfinder"
      ],
      "tag": "",
-     "stat": "12回観測・平均RP +85.0（1試合）",
-     "note": "ジブラルタル・パスファインダー・レヴナントの組み合わせ"
+     "stat": "17回観測・平均RP +258.2（3試合）",
+     "note": "ローバ・マッドマギー・パスファインダーの組み合わせ"
     }
    ],
    "compsSources": [
@@ -200,8 +200,8 @@
     {
      "id": "pred",
      "label": "プレデター",
-     "scope": "プレデター1,390人の集計（ApexRanked の 11/16〜11/17 の24時間、シーズン31 スプリット1）",
-     "updated": "2026-11-17",
+     "scope": "プレデター1,325人の集計（ApexRanked の 11/23〜11/24 の24時間、シーズン31 スプリット1）",
+     "updated": "2026-11-24",
      "comps": [
       {
        "legends": [
@@ -210,7 +210,7 @@
         "revenant"
        ],
        "tag": "最多",
-       "stat": "42回観測・平均RP +208.9（1試合）",
+       "stat": "38回観測・平均RP +141.1（7試合）",
        "note": "ローバ・パスファインダー・レヴナントの組み合わせ"
       },
       {
@@ -220,40 +220,40 @@
         "pathfinder"
        ],
        "tag": "",
-       "stat": "14回観測・平均RP +204.8（1試合）",
+       "stat": "24回観測・平均RP +79.5（5試合）",
        "note": "ローバ・オクタン・パスファインダーの組み合わせ"
       },
       {
        "legends": [
-        "gibraltar",
-        "pathfinder",
-        "revenant"
+        "loba",
+        "mad-maggie",
+        "pathfinder"
        ],
        "tag": "",
-       "stat": "12回観測・平均RP +85.0（1試合）",
-       "note": "ジブラルタル・パスファインダー・レヴナントの組み合わせ"
+       "stat": "17回観測・平均RP +258.2（3試合）",
+       "note": "ローバ・マッドマギー・パスファインダーの組み合わせ"
       }
      ],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 21.1
+       "rate": 20.6
       },
       {
        "id": "loba",
-       "rate": 17.9
+       "rate": 17.8
       },
       {
        "id": "revenant",
-       "rate": 15.8
+       "rate": 15.4
       },
       {
        "id": "octane",
-       "rate": 10.4
+       "rate": 11.5
       },
       {
        "id": "alter",
-       "rate": 5.5
+       "rate": 4.5
       }
      ],
      "sources": [
@@ -271,7 +271,7 @@
      "id": "masterpred",
      "label": "マスター＋プレデター",
      "scope": "マスターとプレデターの合算。マスターだけの集計は公開されていません。サンプルが少なめです",
-     "updated": "2026-11-18",
+     "updated": "2026-11-25",
      "comps": [],
      "picks": [
       {
@@ -284,27 +284,27 @@
       },
       {
        "id": "revenant",
-       "rate": 13
+       "rate": 13.2
       },
       {
        "id": "octane",
-       "rate": 9.6
+       "rate": 9.5
       },
       {
        "id": "mad-maggie",
-       "rate": 6.1
-      },
-      {
-       "id": "alter",
-       "rate": 4.9
+       "rate": 6.4
       },
       {
        "id": "bangalore",
-       "rate": 4.1
+       "rate": 4.5
       },
       {
        "id": "horizon",
-       "rate": 3.7
+       "rate": 4.2
+      },
+      {
+       "id": "alter",
+       "rate": 4.2
       }
      ],
      "sources": [
@@ -318,7 +318,7 @@
      "id": "diamond",
      "label": "ダイヤ",
      "scope": "ダイヤ帯の集計",
-     "updated": "2026-11-18",
+     "updated": "2026-11-25",
      "comps": [],
      "picks": [
       {
@@ -327,31 +327,31 @@
       },
       {
        "id": "loba",
-       "rate": 10.9
-      },
-      {
-       "id": "revenant",
-       "rate": 10.7
+       "rate": 9.6
       },
       {
        "id": "mad-maggie",
-       "rate": 8.4
+       "rate": 8.9
+      },
+      {
+       "id": "revenant",
+       "rate": 8.8
       },
       {
        "id": "octane",
-       "rate": 6.3
-      },
-      {
-       "id": "alter",
-       "rate": 5.2
+       "rate": 6.4
       },
       {
        "id": "bangalore",
-       "rate": 5.2
+       "rate": 5.6
       },
       {
-       "id": "axle",
-       "rate": 3.6
+       "id": "alter",
+       "rate": 4.7
+      },
+      {
+       "id": "wraith",
+       "rate": 4.1
       }
      ],
      "sources": [
@@ -365,12 +365,12 @@
      "id": "platinum",
      "label": "プラチナ",
      "scope": "プラチナ帯の集計",
-     "updated": "2026-11-18",
+     "updated": "2026-11-25",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 15.6
+       "rate": 15.2
       },
       {
        "id": "mad-maggie",
@@ -378,19 +378,19 @@
       },
       {
        "id": "revenant",
-       "rate": 8.3
-      },
-      {
-       "id": "loba",
-       "rate": 6.5
+       "rate": 6.7
       },
       {
        "id": "octane",
-       "rate": 6.2
+       "rate": 6.5
+      },
+      {
+       "id": "loba",
+       "rate": 5.8
       },
       {
        "id": "lifeline",
-       "rate": 5.8
+       "rate": 5.5
       },
       {
        "id": "bangalore",
@@ -398,7 +398,7 @@
       },
       {
        "id": "wraith",
-       "rate": 4.6
+       "rate": 4.7
       }
      ],
      "sources": [
@@ -412,28 +412,28 @@
      "id": "gold",
      "label": "ゴールド",
      "scope": "ゴールド帯の集計",
-     "updated": "2026-11-18",
+     "updated": "2026-11-25",
      "comps": [],
      "picks": [
       {
        "id": "pathfinder",
-       "rate": 12.6
-      },
-      {
-       "id": "revenant",
-       "rate": 7.3
-      },
-      {
-       "id": "lifeline",
-       "rate": 7.3
+       "rate": 11.9
       },
       {
        "id": "octane",
-       "rate": 7.1
+       "rate": 7.5
+      },
+      {
+       "id": "lifeline",
+       "rate": 6.7
       },
       {
        "id": "mad-maggie",
-       "rate": 6.9
+       "rate": 6.7
+      },
+      {
+       "id": "revenant",
+       "rate": 6.0
       },
       {
        "id": "wraith",
@@ -441,11 +441,11 @@
       },
       {
        "id": "loba",
-       "rate": 4.7
+       "rate": 4.6
       },
       {
        "id": "bangalore",
-       "rate": 4.4
+       "rate": 4.5
       }
      ],
      "sources": [
@@ -462,11 +462,11 @@
      "url": "https://www.twoaveragegamers.com/apex-legends-legend-tier-list-season-30/"
     },
     {
-     "name": "LFCarry（2026-11-18）",
+     "name": "LFCarry（2026-11-21）",
      "url": "https://lfcarry.com/guides/apex-legends-tier-list"
     },
     {
-     "name": "ApexRanked プレデター帯ピック率（2026-11-17）",
+     "name": "ApexRanked プレデター帯ピック率（2026-11-24）",
      "url": "https://apexranked.com/meta"
     }
    ]
@@ -477,8 +477,8 @@
    "split": 1,
    "seasonEnd": null,
    "latestPatchId": "2026-11-19-upgrade-tree-fix",
-   "lastChecked": "2026-11-20T08:53:40+09:00",
-   "checkedBy": "毎朝の見回り",
+   "lastChecked": "2026-11-25T09:52:39+09:00",
+   "checkedBy": "定期チェック",
    "id": "state"
   }
  },
